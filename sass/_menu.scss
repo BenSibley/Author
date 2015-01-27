@@ -1,0 +1,263 @@
+
+/* Styles for the primary menu */
+
+.menu-primary {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+
+  a {
+    @extend %white-link;
+    text-decoration: none;
+    display: block;
+  }
+}
+.menu-primary-items,
+.menu-unset > ul {
+  list-style: none;
+  margin: 0;
+
+  ul {
+    list-style: none;
+  }
+}
+
+/* Tier 2 */
+
+.menu-item-has-children,
+.page_item_has_children {
+  position: relative; // keeps the dropdown arrows from showing overtop the content
+
+  > a {
+
+    &:after {
+      content: '\f107';
+      font-family: 'FontAwesome';
+      position: absolute;
+      margin-left: 4px;
+      backface-visibility: hidden;
+      transition: all 0.1s ease-in-out;
+    }
+  }
+  &.open {
+
+    > a:after {
+      transform: rotate(180deg);
+    }
+  }
+  ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-in-out;
+
+    a {
+      color: $color-gray-80;
+
+      &:link,
+      &:visited,
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color-gray-80;
+      }
+    }
+  }
+}
+
+/* Current Menu item */
+.current-menu-item,
+.current_page_item {
+//  text-decoration: underline;
+}
+
+/* 900px */
+@media all and (min-width: 56.25em) {
+
+  .toggle-navigation {
+    display: none;
+  }
+  .menu-primary {
+    position: relative;
+    max-height: none; // allow menu items to be seen w/o toggling
+  }
+  .menu-primary-items,
+  .menu-unset > ul {
+
+    li {
+      display: inline-block;
+      margin-right: -4px; // remove inline-block native 4px space
+
+      // so bg stays dark when hovering over children
+      &:hover {
+
+        > a {
+//          background: $gray-93;
+//          color: $gray-23;
+        }
+      }
+    }
+    a {
+//      color: $gray-40;
+//      padding: 15px 12px;
+//      transition: background 0.15s ease-in-out;
+
+      &:link,
+      &:visited {
+//        color: $gray-40;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+//        color: $gray-23;
+//        text-decoration: none;
+//        background: $gray-93;
+      }
+    }
+  }
+  /* 2nd tier */
+  .menu-item-has-children,
+  .menu-unset .page_item_has_children {
+
+    &:hover {
+
+      > a:after {
+        transform: translateY(3px);
+      }
+    }
+    > a {
+      padding-right: 24px; // to make room for the dropdown icon
+
+      &:hover,
+      &:active,
+      &:focus {
+
+        &:after {
+          transform: translateY(3px);
+        }
+        + ul {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    ul {
+      position: absolute;
+      opacity: 0;
+      max-height: 999px;
+      overflow: visible;
+      visibility: hidden;
+      z-index: 9;
+      background: white;
+      top: 48px;
+      left: 0;
+      margin: 0;
+      min-width: 100%;
+//      border: solid 1px $gray-87;
+      transition: all 0.15s ease-in-out;
+      backface-visibility: hidden; // fixed keyboard focus z-index issue
+
+      li {
+        display: block;
+        white-space: nowrap;
+        margin-right: 0;
+        backface-visibility: hidden; // fixed keyboard focus z-index issue
+
+        &:hover {
+
+          > a:after {
+            transform: translateX(3px);
+          }
+        }
+      }
+      a {
+//        color: $gray-40;
+
+        &:link,
+        &:visited {
+//          color: $gray-40;
+        }
+        &:active,
+        &:hover,
+        &:focus {
+//          color: $gray-23;
+
+          &:after {
+            transform: translateX(3px);
+          }
+        }
+      }
+      &:hover,
+      &.focused {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    /* tier 3 */
+    ul {
+
+      ul {
+        top: -1px; // b/c of the border
+        left: 100%;
+      }
+      .menu-item-has-children,
+      .page_item_has_children {
+
+        > a {
+
+          &:after {
+            content: '\f105';
+          }
+        }
+      }
+    }
+  }
+  /* Current Menu item */
+  .current-menu-item,
+  .current_page_item,
+  .current-menu-ancestor,
+  .current_page_ancestor {
+    text-decoration: none;
+//    background: $gray-93;
+//    color: $gray-23;
+
+    a {
+
+      &:link,
+      &:visited {
+//        color: $gray-23;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+//        color: $gray-23;
+//        background: $gray-85;
+      }
+    }
+  }
+  // CSSJanus can't do this for RTL stylesheet
+  .rtl {
+
+    .menu-primary-items ul,
+    .menu-unset ul ul {
+
+      .menu-item-has-children,
+      .menu-unset .page_item_has_children {
+
+        > a {
+
+          &:after {
+            content: '\f104';
+          }
+          &:hover,
+          &:active,
+          &:focus {
+
+            &:after {
+              transform: translateX(-3px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

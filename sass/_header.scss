@@ -1,0 +1,37 @@
+.site-header {
+  padding: $baseline-height $column * 2;
+  background: $color-gray-17-blue;
+  color: white;
+
+  &:after {
+    @include clearfix; // due to toggle-navigation float: right;
+  }
+}
+.title-container {
+  display: inline-block; // so toggle-navigation can be on same line
+}
+.site-title {
+  @extend %twenty-one-pixels;
+  line-height: 36px; // to vertically center with toggle button
+
+  a {
+    @extend %white-link;
+    text-decoration: none;
+  }
+}
+.tagline {
+  display: none; // hide for now
+}
+.toggle-navigation {
+  float: right;
+  height: 36px;
+  width: 36px;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  background: none;
+  border: solid 1px $color-gray-27-blue;
+}
