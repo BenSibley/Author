@@ -399,6 +399,17 @@ function ct_author_profile_image_output(){
     }
 }
 
+/*
+ * WP will apply the ".menu-primary-items" class & id to the containing <div> instead of <ul>
+ * making styling difficult and confusing. Using this wrapper to add a unique class to make styling easier.
+ */
+function ct_author_wp_page_menu() {
+    wp_page_menu(array(
+            "menu_class" => "menu-unset"
+        )
+    );
+}
+
 function ct_author_wp_backwards_compatibility() {
 
 	// not using this function, simply remove it so use of "has_image_size" doesn't break < 3.9

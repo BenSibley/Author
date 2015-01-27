@@ -34,6 +34,6 @@ if ( have_posts() ) :
     endwhile;
 endif; ?>
 
-<?php ct_unlimited_post_navigation(); ?>
+<?php ct_author_post_navigation(); ?>
 
 <?php get_footer(); ?>

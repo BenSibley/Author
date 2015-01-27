@@ -1,6 +1,6 @@
 <div <?php post_class(); ?>>
 	<article>
-		<?php ct_unlimited_featured_image(); ?>
+		<?php ct_author_featured_image(); ?>
 		<div class="post-meta">
 			<?php get_template_part('content/post-meta'); ?>
 		</div>
@@ -9,7 +9,7 @@
 			<?php get_template_part('content/post-categories'); ?>
 		</div>
 		<div class="post-content">
-			<?php ct_unlimited_excerpt(); ?>
+			<?php ct_author_excerpt(); ?>
 		</div>
 	</article>
 </div>

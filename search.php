@@ -6,9 +6,9 @@
             global $wp_query;
             $total_results = $wp_query->found_posts;
             if($total_results) {
-                printf(__('%d search results for','unlimited'), $total_results);
+                printf(__('%d search results for','author'), $total_results);
             } else {
-                _e("No search results for ", 'unlimited');
+                _e("No search results for ", 'author');
             }
             ?>
             <span>"<?php echo $s ?>"</span>
@@ -34,7 +34,7 @@
     if($total_results) {
         ?>
         <div class="search-bottom">
-            <p><?php _e("Can't find what you're looking for?  Try refining your search:", "unlimited"); ?></p>
+            <p><?php _e("Can't find what you're looking for?  Try refining your search:", "author"); ?></p>
             <?php get_search_form(); ?>
         </div>
     <?php } ?>
