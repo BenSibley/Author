@@ -435,3 +435,15 @@ function ct_author_set_date_format() {
 	}
 }
 add_action( 'init', 'ct_author_set_date_format' );
+
+function ct_author_output_avatar() {
+
+    // get method for displaying avatar
+    $avatar_method = get_theme_mod('avatar_method');
+
+    if( $avatar_method== 'gravatar' ){
+        echo get_avatar( get_option('admin_email'), 96, '', 'admin avatar' );
+    } elseif( $avatar_method == 'upload') {
+        echo '<img alt="admin avatar" src="' . get_theme_mod('avatar') . '" class="avatar avatar-96 photo" height="96" width="96" itemprop="image">';
+    }
+}

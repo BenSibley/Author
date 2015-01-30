@@ -1,7 +1,4 @@
 .site-header {
-  padding: $baseline-height $column * 2;
-  background: $color-gray-17-blue;
-  color: white;
 
   &:after {
     @include clearfix; // due to toggle-navigation float: right;
@@ -21,6 +18,7 @@
 }
 .tagline {
   display: none; // hide for now
+  @extend %twelve-pixels;
 }
 .toggle-navigation {
   float: right;
@@ -34,4 +32,29 @@
   color: white;
   background: none;
   border: solid 1px $color-gray-27-blue;
+
+  &:focus {
+    border-color: $color-gray-60;
+    outline: none;
+  }
+}
+// .open added to .site-header when menu displaying
+.open {
+
+  .toggle-navigation {
+    border-color: $color-gray-60;
+  }
+}
+
+@media all and (min-width: 550px) {
+
+  .site-title {
+    font-size: 1.75em; /* 28px / 16px */
+    line-height: 1;
+  }
+  .tagline {
+    display: block;
+    color: $color-gray-80;
+    margin: 0;
+  }
 }

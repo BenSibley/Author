@@ -1,0 +1,28 @@
+// 550px
+@media all and (min-width: 550px) {
+
+  .main {
+    padding: $baseline-height $column * 2;
+  }
+  .open + .main {
+    transform: translateX(320px);
+  }
+}
+
+// 950px
+@media all and (min-width: 950px) {
+
+  .main {
+    float: left;
+    padding: $baseline-height $column-9 / 2;
+    width: $column-9 * 6.5;
+  }
+}
+// 1150px
+@media all and (min-width: 1150px) {
+
+  .main {
+    width: $column-9 * 7;
+    padding: $baseline-height $column-9 * 1.5 $baseline-height $column-9 / 2;
+  }
+}

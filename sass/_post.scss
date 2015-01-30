@@ -1,0 +1,28 @@
+.post {
+  background: white;
+  padding: 0 $column * 2;
+  margin-bottom: $baseline-height;
+}
+
+// 950px
+@media all and (min-width: 950px) {
+
+  .post {
+    padding: 0;
+
+    article {
+      padding: 0 $column-9 * 0.75 * 1.636;
+    }
+  }
+}
+
+// 1150px
+@media all and (min-width: 1150px) {
+
+  .post {
+
+    article {
+      padding: 0 $column-9 * 0.5 * 1.8;
+    }
+  }
+}

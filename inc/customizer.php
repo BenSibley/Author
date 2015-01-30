@@ -51,17 +51,60 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		<?php }
 	}
 
+	/***** Avatar *****/
+
+	// section
+	$wp_customize->add_section( 'ct_author_avatar', array(
+		'title'      => __( 'Avatar', 'author' ),
+		'priority'   => 30,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'avatar_method', array(
+		'default'           => 'none',
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'ct_author_sanitize_avatar_method',
+//		'transport'         => 'postMessage'
+	) );
+	// control
+	$wp_customize->add_control( 'avatar_method', array(
+		'label'    => __( 'Where to get Avatar image from:', 'author' ),
+		'section'  => 'ct_author_avatar',
+		'settings' => 'avatar_method',
+		'type'     => 'radio',
+		'choices'  => array(
+			'gravatar'  => __('Gravatar', 'author'),
+			'upload'  => __('Upload an image', 'author'),
+			'none'  => __('Do not display avatar', 'author')
+		)
+	) );
+	// setting
+	$wp_customize->add_setting( 'avatar', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw',
+//		'transport'         => 'postMessage'
+	) );
+	// control
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+		$wp_customize, 'avatar', array(
+			'label'    => __( 'Upload your avatar', 'author' ),
+			'section'  => 'ct_author_avatar',
+			'settings' => 'avatar',
+		)
+	) );
+
 	/***** Logo Upload *****/
 
 	// section
 	$wp_customize->add_section( 'ct_author_logo_upload', array(
 		'title'      => __( 'Logo Upload', 'author' ),
-		'priority'   => 30,
+		'priority'   => 35,
 		'capability' => 'edit_theme_options'
 	) );
 	// setting
 	$wp_customize->add_setting( 'logo_upload', array(
-		'default'           => '',
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'esc_url_raw',
@@ -236,5 +279,22 @@ function ct_author_sanitize_comments_setting($input){
 		} else {
 			return '';
 		}
+	}
+}
+
+function ct_author_sanitize_avatar_method($input) {
+
+	// valid data
+	$valid = array(
+		'gravatar'  => __('Gravatar', 'author'),
+		'upload'  => __('Upload an image', 'author'),
+		'none'  => __('Do not display avatar', 'author')
+	);
+
+	// if returned data is in array use it, else return nothing
+	if ( array_key_exists( $input, $valid ) ) {
+		return $input;
+	} else {
+		return '';
 	}
 }
