@@ -346,6 +346,7 @@ a img {
   .main-sidebar {
     float: left;
     width: 27.775%;
+    padding: 1.5em 3.7037%;
   }
 }
 @media all and (min-width: 1150px) {
@@ -450,6 +451,27 @@ a img {
     height: 0;
   }
 }
+@media all and (min-width: 950px) {
+  .site-avatar {
+    float: none;
+    height: 96px;
+    width: 96px;
+    margin: 0 auto;
+  }
+
+  .title-container {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+  .title-container .container {
+    float: none;
+    top: auto;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
 /* Styles for the primary menu */
 .menu-primary {
   max-height: 0;
@@ -538,8 +560,8 @@ a img {
     margin-top: 0;
   }
 }
-/* 900px */
-@media all and (min-width: 56.25em) {
+/* 950px */
+@media all and (min-width: 950px) {
   .toggle-navigation {
     display: none;
   }
@@ -547,12 +569,8 @@ a img {
   .menu-primary {
     position: relative;
     max-height: none;
-  }
-
-  .menu-primary-items li,
-  .menu-unset > ul li {
-    display: inline-block;
-    margin-right: -4px;
+    width: auto;
+    padding: 0;
   }
 
   /* 2nd tier */

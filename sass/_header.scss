@@ -90,3 +90,24 @@
     }
   }
 }
+
+@media all and (min-width: 950px) {
+
+  .site-avatar {
+    float: none;
+    height: 96px;
+    width: 96px;
+    margin: 0 auto;
+  }
+  .title-container {
+    display: block;
+    height: auto;
+    text-align: center;
+
+    .container {
+      float: none;
+      top: auto;
+      transform: none;
+    }
+  }
+}

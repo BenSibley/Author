@@ -107,8 +107,8 @@
     margin-top: 0;
   }
 }
-/* 900px */
-@media all and (min-width: 56.25em) {
+/* 950px */
+@media all and (min-width: 950px) {
 
   .toggle-navigation {
     display: none;
@@ -116,14 +116,13 @@
   .menu-primary {
     position: relative;
     max-height: none; // allow menu items to be seen w/o toggling
+    width: auto;
+    padding: 0;
   }
   .menu-primary-items,
   .menu-unset > ul {
 
     li {
-      display: inline-block;
-      margin-right: -4px; // remove inline-block native 4px space
-
       // so bg stays dark when hovering over children
       &:hover {
 
