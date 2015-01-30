@@ -6,6 +6,10 @@
 }
 .title-container {
   display: inline-block; // so toggle-navigation can be on same line
+
+  .avatar {
+    display: none;
+  }
 }
 .site-title {
   @extend %twenty-one-pixels;

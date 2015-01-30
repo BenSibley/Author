@@ -441,9 +441,17 @@ function ct_author_output_avatar() {
     // get method for displaying avatar
     $avatar_method = get_theme_mod('avatar_method');
 
-    if( $avatar_method== 'gravatar' ){
-        echo get_avatar( get_option('admin_email'), 96, '', 'admin avatar' );
+    if( $avatar_method == 'gravatar' ){
+        $avatar = get_avatar( get_option('admin_email'));
+        $avatar = ct_author_get_avatar_url($avatar);
+        echo '<div id="site-avatar" class="site-avatar" style="background-image: url(' . $avatar .')"></div>';
     } elseif( $avatar_method == 'upload') {
-        echo '<img alt="admin avatar" src="' . get_theme_mod('avatar') . '" class="avatar avatar-96 photo" height="96" width="96" itemprop="image">';
+        $avatar = get_theme_mod('avatar');
+        echo '<div id="site-avatar" class="site-avatar" style="background-image: url(' . $avatar .')"></div>';
     }
+}
+
+function ct_author_get_avatar_url($get_avatar){
+    preg_match("/src='(.*?)'/i", $get_avatar, $matches);
+    return $matches[1];
 }

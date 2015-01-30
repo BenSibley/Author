@@ -365,6 +365,9 @@ a img {
 .title-container {
   display: inline-block;
 }
+.title-container .avatar {
+  display: none;
+}
 
 .site-title {
   line-height: 36px;
