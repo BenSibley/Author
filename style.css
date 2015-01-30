@@ -365,7 +365,8 @@ a img {
 .title-container {
   display: inline-block;
 }
-.title-container .avatar {
+
+.site-avatar {
   display: none;
 }
 
@@ -413,6 +414,40 @@ a img {
     display: block;
     color: #cccccc;
     margin: 0;
+  }
+}
+@media all and (min-width: 700px) {
+  .site-avatar {
+    display: block;
+    float: left;
+    margin-right: 0.75em;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title-container {
+    position: relative;
+    height: 48px;
+  }
+  .title-container .container {
+    position: relative;
+    float: left;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .title-container:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
   }
 }
 /* Styles for the primary menu */

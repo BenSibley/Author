@@ -14,8 +14,10 @@
 	<header class="site-header" id="site-header" role="banner">
 		<div id="title-container" class="title-container">
 			<?php ct_author_output_avatar(); ?>
-			<?php get_template_part('logo')  ?>
-			<p class="tagline"><?php bloginfo('description'); ?></p>
+			<div class="container">
+				<?php get_template_part('logo')  ?>
+				<p class="tagline"><?php bloginfo('description'); ?></p>
+			</div>
 		</div>
 		<button id="toggle-navigation" class="toggle-navigation">
 			<i class="fa fa-bars"></i>

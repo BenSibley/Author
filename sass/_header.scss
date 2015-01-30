@@ -6,10 +6,9 @@
 }
 .title-container {
   display: inline-block; // so toggle-navigation can be on same line
-
-  .avatar {
-    display: none;
-  }
+}
+.site-avatar {
+  display: none;
 }
 .site-title {
   @extend %twenty-one-pixels;
@@ -60,5 +59,34 @@
     display: block;
     color: $color-gray-80;
     margin: 0;
+  }
+}
+
+@media all and (min-width: 700px) {
+
+  .site-avatar {
+    display: block;
+    float: left;
+    margin-right: $baseline-height / 2;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .title-container {
+    position: relative;
+    height: 48px;
+
+    .container {
+      position: relative;
+      float: left;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:after {
+      @include clearfix;
+    }
   }
 }
