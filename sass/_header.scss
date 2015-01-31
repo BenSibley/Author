@@ -97,17 +97,19 @@
     float: none;
     height: 96px;
     width: 96px;
-    margin: 0 auto;
+    margin: 0 auto $baseline-height / 2;
   }
   .title-container {
     display: block;
     height: auto;
     text-align: center;
+    padding-bottom: $baseline-height / 2;
 
     .container {
       float: none;
       top: auto;
       transform: none;
+      margin-bottom: $baseline-height / 2;
     }
   }
 }

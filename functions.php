@@ -455,3 +455,12 @@ function ct_author_get_avatar_url($get_avatar){
     preg_match("/src='(.*?)'/i", $get_avatar, $matches);
     return $matches[1];
 }
+
+function ct_author_nav_description( $item_output, $item, $depth, $args ) {
+    if ( 'primary' == $args->theme_location ) {
+        $item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown"><span class="screen-reader-text">expand child menu</span></button>', $item_output );
+    }
+
+    return $item_output;
+}
+add_filter( 'walker_nav_menu_start_el', 'ct_author_nav_description', 10, 4 );

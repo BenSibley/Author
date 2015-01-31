@@ -456,13 +456,14 @@ a img {
     float: none;
     height: 96px;
     width: 96px;
-    margin: 0 auto;
+    margin: 0 auto 0.75em;
   }
 
   .title-container {
     display: block;
     height: auto;
     text-align: center;
+    padding-bottom: 0.75em;
   }
   .title-container .container {
     float: none;
@@ -470,6 +471,7 @@ a img {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+    margin-bottom: 0.75em;
   }
 }
 /* Styles for the primary menu */
@@ -485,7 +487,7 @@ a img {
 .menu-primary a:hover, .menu-primary a:active, .menu-primary a:focus {
   text-decoration: underline;
 }
-.menu-primary li:last-child a {
+.menu-primary > li:last-child a {
   margin-bottom: 0;
 }
 
@@ -527,6 +529,7 @@ a img {
 .page_item_has_children ul {
   max-height: 0;
   overflow: hidden;
+  margin: 0 0 0 0.75em;
 }
 .menu-item-has-children ul a,
 .page_item_has_children ul a {

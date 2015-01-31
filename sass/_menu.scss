@@ -17,8 +17,8 @@
       text-decoration: underline;
     }
   }
-  // no additional margin at bottom
-  li {
+  // no additional margin at bottom (top-level only to prevent spacing below bottom of menu)
+  > li {
 
     &:last-child {
 
@@ -66,6 +66,7 @@
   ul {
     max-height: 0;
     overflow: hidden;
+    margin: 0 0 0 $baseline-height / 2;
 
     a {
       color: $color-gray-80;

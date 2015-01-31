@@ -110,7 +110,7 @@ jQuery(document).ready(function($){
         } else {
 
             // add styling class to reveal primary menu
-            {.addClass('open');
+            sidebar.addClass('open');
 
             // open to show whole menu plus 48px of padding for style
             //$('#menu-primary').css('max-height', menuHeight + 48);
