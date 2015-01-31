@@ -188,6 +188,12 @@ function ct_author_excerpt_read_more_link($output) {
 
 add_filter('the_excerpt', 'ct_author_excerpt_read_more_link');
 
+// change the length of the excerpts
+function ct_author_custom_excerpt_length( $length ) {
+    return 25;
+}
+add_filter( 'excerpt_length', 'ct_author_custom_excerpt_length', 99 );
+
 // switch [...] to ellipsis on automatic excerpt
 function ct_author_new_excerpt_more( $more ) {
 	return '&#8230;';

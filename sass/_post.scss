@@ -1,7 +1,45 @@
 .post {
   background: white;
-  padding: 0 $column * 2;
+  padding: $baseline-height $column * 2;
   margin-bottom: $baseline-height;
+}
+.post-header {
+  text-align: center;
+  margin: $baseline-height 0;
+}
+.post-title {
+  @extend %thirty-seven-pixels;
+
+  a {
+    text-decoration: none;
+  }
+}
+.blog,
+.archive {
+
+  .post {
+    text-align: center;
+  }
+  .post-header {
+    border-bottom: solid 1px $color-gray-85;
+    padding-bottom: $baseline-height;
+  }
+}
+.more-link {
+  text-decoration: none;
+  display: inline-block;
+  background: $color-gray-17-blue;
+  border-radius: 24px;
+  color: white;
+  padding: 6px 20px;
+
+  &:link,
+  &:visited,
+  &:active,
+  &:hover,
+  &:focus {
+    color: white;
+  }
 }
 
 // 950px

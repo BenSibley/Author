@@ -18,6 +18,12 @@ Author is distributed under the terms of the GNU GPL
 /* Social Media Brand Colors */
 /*===== Mixins =====*/
 /***** Silent Classes *****/
+.post-title {
+  font-size: 2.3125em;
+  /* 37px / 16px */
+  line-height: 1;
+}
+
 h1 {
   font-size: 1.75em;
   /* 28px / 16px */
@@ -86,6 +92,7 @@ body {
 .main {
   margin: 0 auto;
   background: #f0f1f2;
+  padding: 1.5em 0;
 }
 
 p {
@@ -652,8 +659,39 @@ a img {
 }
 .post {
   background: white;
-  padding: 0 7.4074%;
+  padding: 1.5em 7.4074%;
   margin-bottom: 1.5em;
+}
+
+.post-header {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.post-title a {
+  text-decoration: none;
+}
+
+.blog .post,
+.archive .post {
+  text-align: center;
+}
+.blog .post-header,
+.archive .post-header {
+  border-bottom: solid 1px #d9d9d9;
+  padding-bottom: 1.5em;
+}
+
+.more-link {
+  text-decoration: none;
+  display: inline-block;
+  background: #27292b;
+  border-radius: 24px;
+  color: white;
+  padding: 6px 20px;
+}
+.more-link:link, .more-link:visited, .more-link:active, .more-link:hover, .more-link:focus {
+  color: white;
 }
 
 @media all and (min-width: 950px) {
