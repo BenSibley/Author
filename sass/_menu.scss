@@ -8,23 +8,14 @@
   a {
     @extend %white-link;
     text-decoration: none;
-    display: block;
-    margin-bottom: $baseline-height / 2;
+    display: inline-block;
+    margin: $baseline-height / 4 0 $baseline-height / 4;
+    clear: both;
 
     &:hover,
     &:active,
     &:focus {
       text-decoration: underline;
-    }
-  }
-  // no additional margin at bottom (top-level only to prevent spacing below bottom of menu)
-  > li {
-
-    &:last-child {
-
-      a {
-        margin-bottom: 0;
-      }
     }
   }
 }
@@ -38,6 +29,22 @@
   ul {
     list-style: none;
   }
+  // no additional margin at bottom (top-level only to prevent spacing below bottom of menu)
+  > li {
+
+    &:last-child {
+
+      a {
+        margin-bottom: 0;
+      }
+    }
+    &:first-child {
+
+      a {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 /* Tier 2 */
@@ -46,21 +53,26 @@
 .page_item_has_children {
   position: relative; // keeps the dropdown arrows from showing overtop the content
 
-  > a {
+  button {
+    float: right;
+    height: 32px;
+    width: 32px;
+    margin: 2px 0 0 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1;
+    background: none;
+    color: white;
+    border: solid 1px $color-gray-27-blue;
 
+    &:focus {
+      outline: none;
+      border-color: $color-gray-60;
+    }
     &:after {
       content: '\f107';
       font-family: 'FontAwesome';
-      position: absolute;
-      margin-left: 4px;
-      backface-visibility: hidden;
       transition: all 0.1s ease-in-out;
-    }
-  }
-  &.open {
-
-    > a:after {
-      transform: rotate(180deg);
     }
   }
   ul {
@@ -79,6 +91,34 @@
         color: $color-gray-80;
       }
     }
+    // tier 3
+    ul {
+
+      a {
+        color: $color-gray-60;
+
+        &:link,
+        &:visited,
+        &:hover,
+        &:active,
+        &:focus {
+          color: $color-gray-60;
+        }
+      }
+      button:after {
+        color: $color-gray-80;
+      }
+    }
+  }
+  &.open {
+
+    > button {
+      transform: rotate(180deg);
+      border-color: $color-gray-60;
+    }
+    > ul {
+      max-height: 9999px;
+    }
   }
 }
 
@@ -90,7 +130,10 @@
 /* Current Menu item */
 .current-menu-item,
 .current_page_item {
-//  text-decoration: underline;
+
+  > a {
+    text-decoration: underline;
+  }
 }
 
 // 550px
@@ -119,181 +162,12 @@
     max-height: none; // allow menu items to be seen w/o toggling
     width: auto;
     padding: 0;
-  }
-  .menu-primary-items,
-  .menu-unset > ul {
 
-    li {
-      // so bg stays dark when hovering over children
+    button {
+
       &:hover {
-
-        > a {
-//          background: $gray-93;
-//          color: $gray-23;
-        }
-      }
-    }
-    a {
-//      color: $gray-40;
-//      padding: 15px 12px;
-//      transition: background 0.15s ease-in-out;
-
-      &:link,
-      &:visited {
-//        color: $gray-40;
-      }
-      &:hover,
-      &:active,
-      &:focus {
-//        color: $gray-23;
-//        text-decoration: none;
-//        background: $gray-93;
-      }
-    }
-  }
-  /* 2nd tier */
-  .menu-item-has-children,
-  .menu-unset .page_item_has_children {
-
-    &:hover {
-
-      > a:after {
-        transform: translateY(3px);
-      }
-    }
-    > a {
-      padding-right: 24px; // to make room for the dropdown icon
-
-      &:hover,
-      &:active,
-      &:focus {
-
-        &:after {
-          transform: translateY(3px);
-        }
-        + ul {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
-    }
-    ul {
-      position: absolute;
-      opacity: 0;
-      max-height: 999px;
-      overflow: visible;
-      visibility: hidden;
-      z-index: 9;
-      background: white;
-      top: 48px;
-      left: 0;
-      margin: 0;
-      min-width: 100%;
-//      border: solid 1px $gray-87;
-      transition: all 0.15s ease-in-out;
-      backface-visibility: hidden; // fixed keyboard focus z-index issue
-
-      li {
-        display: block;
-        white-space: nowrap;
-        margin-right: 0;
-        backface-visibility: hidden; // fixed keyboard focus z-index issue
-
-        &:hover {
-
-          > a:after {
-            transform: translateX(3px);
-          }
-        }
-      }
-      a {
-//        color: $gray-40;
-
-        &:link,
-        &:visited {
-//          color: $gray-40;
-        }
-        &:active,
-        &:hover,
-        &:focus {
-//          color: $gray-23;
-
-          &:after {
-            transform: translateX(3px);
-          }
-        }
-      }
-      &:hover,
-      &.focused {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-    /* tier 3 */
-    ul {
-
-      ul {
-        top: -1px; // b/c of the border
-        left: 100%;
-      }
-      .menu-item-has-children,
-      .page_item_has_children {
-
-        > a {
-
-          &:after {
-            content: '\f105';
-          }
-        }
-      }
-    }
-  }
-  /* Current Menu item */
-  .current-menu-item,
-  .current_page_item,
-  .current-menu-ancestor,
-  .current_page_ancestor {
-    text-decoration: none;
-//    background: $gray-93;
-//    color: $gray-23;
-
-    a {
-
-      &:link,
-      &:visited {
-//        color: $gray-23;
-      }
-      &:hover,
-      &:active,
-      &:focus {
-//        color: $gray-23;
-//        background: $gray-85;
-      }
-    }
-  }
-  // CSSJanus can't do this for RTL stylesheet
-  .rtl {
-
-    .menu-primary-items ul,
-    .menu-unset ul ul {
-
-      .menu-item-has-children,
-      .menu-unset .page_item_has_children {
-
-        > a {
-
-          &:after {
-            content: '\f104';
-          }
-          &:hover,
-          &:active,
-          &:focus {
-
-            &:after {
-              transform: translateX(-3px);
-            }
-          }
-        }
+        cursor: pointer;
+        border-color: $color-gray-60;
       }
     }
   }

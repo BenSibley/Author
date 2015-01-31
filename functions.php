@@ -457,6 +457,7 @@ function ct_author_get_avatar_url($get_avatar){
 }
 
 function ct_author_nav_description( $item_output, $item, $depth, $args ) {
+
     if ( 'primary' == $args->theme_location) {
 
         if( in_array('menu-item-has-children', $item->classes ) || in_array('page_item_has_children', $item->classes ) ) {

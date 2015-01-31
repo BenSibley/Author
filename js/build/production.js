@@ -104,16 +104,24 @@ jQuery(document).ready(function($){
             $('.menu-item-has-children').each(function(){
                 if( $(this).hasClass('open') ) {
                     $(this).removeClass('open');
-                    $(this).addClass('closed');
                 }
             });
         } else {
-
-            // add styling class to reveal primary menu
             sidebar.addClass('open');
+        }
+    }
 
-            // open to show whole menu plus 48px of padding for style
-            //$('#menu-primary').css('max-height', menuHeight + 48);
+    // display the dropdown menus
+    $('.toggle-dropdown').on('click', openDropdownMenu);
+
+    function openDropdownMenu() {
+
+        var menuItem = $(this).parent();
+
+        if( menuItem.hasClass('open') ) {
+            menuItem.removeClass('open');
+        } else {
+            menuItem.addClass('open');
         }
     }
 
