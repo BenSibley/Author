@@ -39,20 +39,20 @@ h2, .site-title {
 }
 
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .tagline {
+textarea, input[type="submit"], .tagline, .post-tags a {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.125;
   /* 18px */
 }
 
-.site-title a, .menu-primary a {
+.site-title a, .menu-primary a, .post-tags a {
   color: white;
 }
-.site-title a:link, .menu-primary a:link, .site-title a:visited, .menu-primary a:visited {
+.site-title a:link, .menu-primary a:link, .post-tags a:link, .site-title a:visited, .menu-primary a:visited, .post-tags a:visited {
   color: white;
 }
-.site-title a:hover, .menu-primary a:hover, .site-title a:active, .menu-primary a:active, .site-title a:focus, .menu-primary a:focus {
+.site-title a:hover, .menu-primary a:hover, .post-tags a:hover, .site-title a:active, .menu-primary a:active, .post-tags a:active, .site-title a:focus, .menu-primary a:focus, .post-tags a:focus {
   color: white;
 }
 
@@ -692,6 +692,38 @@ a img {
 
 .post-content {
   margin: 1.5em 0;
+}
+
+.singular .post-content {
+  border-bottom: solid 1px #d9d9d9;
+}
+
+.post-categories {
+  margin: 1.5em 0;
+}
+.post-categories a {
+  display: inline-block;
+  margin-left: 0.75em;
+}
+
+.post-tags {
+  margin: 1.5em 0;
+}
+.post-tags ul {
+  list-style: none;
+  margin: 0;
+}
+.post-tags li {
+  display: inline-block;
+}
+.post-tags a {
+  line-height: 1;
+  display: inline-block;
+  padding: 6px 20px;
+  margin: 0 6px 6px 0;
+  background: #27292b;
+  border-radius: 24px;
+  text-decoration: none;
 }
 
 .blog .post,
