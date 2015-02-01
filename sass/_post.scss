@@ -1,11 +1,30 @@
 .post {
   background: white;
-  padding: $baseline-height $column * 2;
   margin-bottom: $baseline-height;
+
+  article {
+    padding: $baseline-height $column * 2;
+  }
+}
+.featured-image {
+  position: relative;
+  height: 0;
+  padding-bottom: 50%;
+  background-size: cover;
+  background-position: 50%;
+
+  a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+  }
 }
 .post-header {
   text-align: center;
-  margin: $baseline-height 0;
+  margin: $baseline-height / 2 0 $baseline-height;
 }
 .post-title {
   @extend %thirty-seven-pixels;
@@ -13,6 +32,9 @@
   a {
     text-decoration: none;
   }
+}
+.post-content {
+  margin: $baseline-height 0;
 }
 .blog,
 .archive {
@@ -42,6 +64,14 @@
   }
 }
 
+// 550px
+@media all and (min-width: 550px) {
+
+  .post {
+    box-shadow: 0 0 2px 0 hsla(210, 9, 17, 0.1);
+  }
+}
+
 // 950px
 @media all and (min-width: 950px) {
 
@@ -49,7 +79,7 @@
     padding: 0;
 
     article {
-      padding: 0 $column-9 * 0.75 * 1.636;
+      padding: $baseline-height $column-9 * 0.75 * 1.636;
     }
   }
 }
@@ -60,7 +90,13 @@
   .post {
 
     article {
-      padding: 0 $column-9 * 0.5 * 1.8;
+      padding: $baseline-height $column-9 * 0.5 * 1.8;
     }
+  }
+  .post-title {
+    font-size: 3.1875em; /* 51px / 16px */
+  }
+  .post-header {
+    margin-top: $baseline-height;
   }
 }
