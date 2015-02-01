@@ -14,7 +14,7 @@
 
   .main {
     float: left;
-    padding: $baseline-height $column-9 / 2;
+    padding: $baseline-height * 2 $column-9 / 2;
     width: $column-9 * 6.5;
   }
 }
@@ -23,6 +23,6 @@
 
   .main {
     width: $column-9 * 7;
-    padding: $baseline-height $column-9 * 1.5 $baseline-height $column-9 / 2;
+    padding: $baseline-height * 2 $column-9 * 1.5 $baseline-height * 2 $column-9 / 2;
   }
 }

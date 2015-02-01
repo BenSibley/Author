@@ -353,7 +353,7 @@ a img {
   .main-sidebar {
     float: left;
     width: 27.775%;
-    padding: 1.5em 1.85185%;
+    padding: 3em 1.85185%;
   }
 }
 @media all and (min-width: 1150px) {
@@ -647,14 +647,14 @@ a img {
 @media all and (min-width: 950px) {
   .main {
     float: left;
-    padding: 1.5em 5.555%;
+    padding: 3em 5.555%;
     width: 72.215%;
   }
 }
 @media all and (min-width: 1150px) {
   .main {
     width: 77.77%;
-    padding: 1.5em 16.665% 1.5em 5.555%;
+    padding: 3em 16.665% 3em 5.555%;
   }
 }
 .post {
@@ -719,6 +719,10 @@ a img {
 @media all and (min-width: 550px) {
   .post {
     box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1);
+  }
+
+  .singular .post-header {
+    margin-bottom: 2.25em;
   }
 }
 @media all and (min-width: 950px) {

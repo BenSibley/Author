@@ -70,6 +70,12 @@
   .post {
     box-shadow: 0 0 2px 0 hsla(210, 9, 17, 0.1);
   }
+  .singular {
+
+    .post-header {
+      margin-bottom: $baseline-height * 1.5;
+    }
+  }
 }
 
 // 950px
