@@ -742,4 +742,8 @@ a img {
   .post-header {
     margin-top: 1.5em;
   }
+
+  .has-post-thumbnail .post-header {
+    margin-top: 0;
+  }
 }

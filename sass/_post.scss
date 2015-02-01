@@ -99,4 +99,10 @@
   .post-header {
     margin-top: $baseline-height;
   }
+  .has-post-thumbnail {
+
+    .post-header {
+      margin-top: 0;
+    }
+  }
 }
