@@ -38,6 +38,9 @@
 }
 .singular {
 
+  .post {
+    margin-top: -$baseline-height; // remove gap on posts/pages
+  }
   .post-content {
     border-bottom: solid 1px $color-gray-85;
   }
@@ -51,7 +54,7 @@
   }
 }
 .post-tags {
-  margin: $baseline-height 0;
+  margin: $baseline-height 0 0;
 
   ul {
     list-style: none;
@@ -70,7 +73,22 @@
     background: $color-gray-17-blue;
     border-radius: 24px;
     text-decoration: none;
+  }
+}
+.further-reading {
+  text-align: center;
+  background: $color-gray-85;
+  padding: $baseline-height / 2 $column * 2;
 
+  div {
+    margin: $baseline-height 0;
+  }
+  span {
+    @extend %twelve-pixels;
+  }
+  span,
+  a {
+    display: block;
   }
 }
 .blog,
@@ -111,6 +129,9 @@
 
     .post-header {
       margin-bottom: $baseline-height * 1.5;
+    }
+    .post {
+      margin-top: 0;
     }
   }
 }
