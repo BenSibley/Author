@@ -149,21 +149,14 @@
   }
 }
 
-// 700px
-@media all and (min-width: 700px) {
-
-  .further-reading {
-    padding: $baseline-height $column * 2;
-  }
-}
-
 // 950px
 @media all and (min-width: 950px) {
 
   .post {
     padding: 0;
 
-    article {
+    article,
+    .further-reading {
       padding: $baseline-height $column-9 * 0.75 * 1.636;
     }
   }
@@ -174,7 +167,8 @@
 
   .post {
 
-    article {
+    article,
+    .further-reading {
       padding: $baseline-height $column-9 * 0.5 * 1.8;
     }
   }

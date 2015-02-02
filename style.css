@@ -798,21 +798,18 @@ a img {
     float: right;
   }
 }
-@media all and (min-width: 700px) {
-  .further-reading {
-    padding: 1.5em 7.4074%;
-  }
-}
 @media all and (min-width: 950px) {
   .post {
     padding: 0;
   }
-  .post article {
+  .post article,
+  .post .further-reading {
     padding: 1.5em 13.63197%;
   }
 }
 @media all and (min-width: 1150px) {
-  .post article {
+  .post article,
+  .post .further-reading {
     padding: 1.5em 9.999%;
   }
 
@@ -847,10 +844,18 @@ a img {
 }
 .comment-list ul {
   list-style: none;
-  margin: 1.5em 0 1.5em 1.5em;
+  margin: 1.5em 0;
+  padding-left: 1.5em;
+  border-left: solid 2px #d9d9d9;
 }
 .comment-list li {
   margin: 1.5em 0;
+}
+.comment-list li .comment-respond {
+  box-shadow: none;
+}
+.comment-list li .comment-respond small {
+  font-size: 0.568em;
 }
 
 .comment-author {
@@ -900,16 +905,46 @@ a img {
   border-left: solid 1px #999999;
 }
 
-.comment-respond {
+.comment-respond,
+.comments-closed,
+.comment-pagination {
   padding: 1.5em 7.4074%;
   background: white;
 }
-.comment-respond label {
+.comment-respond label,
+.comments-closed label,
+.comment-pagination label {
   display: block;
 }
 
+.comment-pagination {
+  margin: 1.5em 0;
+}
+.comment-pagination p {
+  margin: 0;
+  width: 50%;
+}
+.comment-pagination:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.comment-pagination .previous-comment {
+  text-align: left;
+  float: left;
+}
+.comment-pagination .next-comment {
+  text-align: right;
+  float: right;
+}
+
 @media all and (min-width: 550px) {
-  .comment-respond {
+  .comment-respond,
+  .comments-closed,
+  .comment-pagination {
     box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1);
   }
 }
@@ -922,16 +957,26 @@ a img {
   }
 
   .comment-list ul {
-    margin-left: 3em;
+    padding-left: 3em;
   }
 }
 @media all and (min-width: 950px) {
   .comment-respond {
     padding: 3em 13.63197% 1.5em;
   }
+
+  .comments-closed,
+  .comment-pagination {
+    padding: 1.5em 13.63197%;
+  }
 }
 @media all and (min-width: 1150px) {
   .comment-respond {
     padding: 3em 9.999% 1.5em;
+  }
+
+  .comments-closed,
+  .comment-pagination {
+    padding: 1.5em 9.999%;
   }
 }

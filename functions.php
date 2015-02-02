@@ -211,11 +211,6 @@ function ct_author_remove_more_link_scroll( $link ) {
 }
 add_filter( 'the_content_more_link', 'ct_author_remove_more_link_scroll' );
 
-// Adds navigation through pages in the loop
-function ct_author_post_navigation() {
-    if ( current_theme_supports( 'loop-pagination' ) ) loop_pagination();
-}
-
 // for displaying featured images
 function ct_author_featured_image() {
 
