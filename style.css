@@ -18,20 +18,20 @@ Author is distributed under the terms of the GNU GPL
 /* Social Media Brand Colors */
 /*===== Mixins =====*/
 /***** Silent Classes *****/
-.post-title {
+h1, .post-title {
   font-size: 2.3125em;
   /* 37px / 16px */
   line-height: 1;
 }
 
-h1 {
+h2 {
   font-size: 1.75em;
   /* 28px / 16px */
   line-height: 1.321;
   /* 37px */
 }
 
-h2, .site-title {
+h3, .site-title {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
@@ -39,7 +39,8 @@ h2, .site-title {
 }
 
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .tagline, .post-tags a, .further-reading span {
+textarea, input[type="submit"], .tagline, .post-tags a, .further-reading span, .comment-footer a,
+.comment-footer span {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.125;
@@ -116,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-h3, h4, h5, h6 {
+h4, h5, h6 {
   font-size: 1em;
   line-height: 1.5;
 }
@@ -658,11 +659,11 @@ a img {
   }
 }
 .post {
-  background: white;
   margin-bottom: 1.5em;
 }
 .post article {
   padding: 1.5em 7.4074%;
+  background: white;
 }
 
 .featured-image {
@@ -692,6 +693,14 @@ a img {
 
 .post-content {
   margin: 1.5em 0;
+}
+.post-content:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .singular .post {
@@ -746,26 +755,19 @@ a img {
 .archive .post {
   text-align: center;
 }
-.blog .post-header,
-.archive .post-header {
-  border-bottom: solid 1px #d9d9d9;
-  padding-bottom: 1.5em;
+.blog .post-content,
+.archive .post-content {
+  margin-bottom: 0.75em;
 }
-
-.more-link {
-  text-decoration: none;
-  display: inline-block;
-  background: #27292b;
-  border-radius: 24px;
-  color: white;
-  padding: 6px 20px;
-}
-.more-link:link, .more-link:visited, .more-link:active, .more-link:hover, .more-link:focus {
-  color: white;
+.blog .post-content p:last-child,
+.archive .post-content p:last-child {
+  padding-top: 1.5em;
+  margin-bottom: 0;
+  border-top: solid 1px #d9d9d9;
 }
 
 @media all and (min-width: 550px) {
-  .post {
+  .post article {
     box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1);
   }
 
@@ -774,6 +776,31 @@ a img {
   }
   .singular .post {
     margin-top: 0;
+  }
+
+  .further-reading:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  .further-reading div {
+    width: 50%;
+  }
+  .further-reading .previous {
+    text-align: left;
+    float: left;
+  }
+  .further-reading .next {
+    text-align: right;
+    float: right;
+  }
+}
+@media all and (min-width: 700px) {
+  .further-reading {
+    padding: 1.5em 7.4074%;
   }
 }
 @media all and (min-width: 950px) {
@@ -800,5 +827,87 @@ a img {
 
   .has-post-thumbnail .post-header {
     margin-top: 0;
+  }
+}
+.comments {
+  margin: 1.5em 0;
+}
+
+.comments-number {
+  background: white;
+  box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1);
+  padding: 1.5em;
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.comment-list {
+  margin: 1.5em 0;
+  list-style: none;
+}
+.comment-list ul {
+  list-style: none;
+  margin: 1.5em 0 1.5em 1.5em;
+}
+.comment-list li {
+  margin: 1.5em 0;
+}
+
+.comment-author {
+  margin-bottom: 1.5em;
+}
+.comment-author:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.comment-author img {
+  float: left;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.comment-author .author-name {
+  line-height: 48px;
+}
+
+.comment-content {
+  margin: 1.5em 0;
+  clear: both;
+  border-bottom: solid 1px #d9d9d9;
+}
+.comment-content blockquote,
+.comment-content ul,
+.comment-content ol,
+.comment-content pre,
+.comment-content table {
+  text-align: left;
+}
+.comment-content ul {
+  list-style: disc;
+}
+
+.comment-footer {
+  margin-top: 1.5em;
+}
+
+.comment-reply-link,
+.comment-edit-link {
+  margin-left: 2px;
+  padding-left: 6px;
+  border-left: solid 1px #999999;
+}
+
+@media all and (min-width: 700px) {
+  .comments-number h3 {
+    font-size: 2.3125em;
+    /* 37px / 16px */
+    line-height: 1;
+  }
+
+  .comment-list ul {
+    margin-left: 3em;
   }
 }

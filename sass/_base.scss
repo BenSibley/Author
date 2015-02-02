@@ -55,12 +55,15 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 400;
 }
 h1 {
-  @extend %twenty-eight-pixels;
+  @extend %thirty-seven-pixels;
 }
 h2 {
-  @extend %twenty-one-pixels;
+  @extend %twenty-eight-pixels;
 }
-h3, h4, h5, h6 {
+h3 {
+  @extend  %twenty-one-pixels;
+}
+h4, h5, h6 {
   font-size: 1em;
   line-height: 1.5;
 }

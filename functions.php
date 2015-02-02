@@ -75,12 +75,7 @@ function ct_author_customize_comments( $comment, $args, $depth ) {
                     echo get_avatar( get_comment_author_email(), 48 );
                 }
                 ?>
-                <div>
-                    <div class="author-name"><?php comment_author_link(); ?></div>
-                    <div class="comment-date"><?php comment_date('n/j/Y'); ?></div>
-                    <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'author' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-                    <?php edit_comment_link( 'edit' ); ?>
-                </div>    
+                <span class="author-name"><?php comment_author_link(); ?></span>
             </div>
             <div class="comment-content">
                 <?php if ($comment->comment_approved == '0') : ?>
@@ -88,6 +83,11 @@ function ct_author_customize_comments( $comment, $args, $depth ) {
                     <br />
                 <?php endif; ?>
                 <?php comment_text(); ?>
+            </div>
+            <div class="comment-footer">
+                <span class="comment-date"><?php comment_date('n/j/Y'); ?></span>
+                <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'author' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+                <?php edit_comment_link( 'edit' ); ?>
             </div>
         </article>
     <?php
