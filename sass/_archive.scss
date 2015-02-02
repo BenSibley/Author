@@ -1,4 +1,5 @@
-.archive-header {
+.archive-header,
+.loop-pagination {
   padding: $baseline-height $column-27 * 2;
   margin-bottom: $baseline-height;
   background: white;
@@ -10,11 +11,29 @@
     margin-left: 6px;
   }
 }
+.loop-pagination {
+  position: relative;
+  margin: $baseline-height 0;
+
+  a,
+  span {
+    margin: 0 4px;
+  }
+  .next {
+    position: absolute;
+    right: $column-27 * 2;
+  }
+  .prev {
+    position: absolute;
+    left: $column-27 * 2;
+  }
+}
 
 // 550px
 @media all and (min-width: 550px) {
 
-  .archive-header {
+  .archive-header,
+  .loop-pagination  {
     box-shadow: $box-shadow;
   }
 }
@@ -22,15 +41,35 @@
 // 950px
 @media all and (min-width: 950px) {
 
-  .archive-header {
+  .archive-header,
+  .loop-pagination  {
     padding: $baseline-height $column-9 * 0.75 * 1.636;
+  }
+  .loop-pagination {
+
+    .next {
+      right: $column-9 * 0.75 * 1.636;
+    }
+    .prev {
+      left: $column-9 * 0.75 * 1.636;
+    }
   }
 }
 
 // 1150px
 @media all and (min-width: 1150px) {
 
-  .archive-header {
+  .archive-header,
+  .loop-pagination  {
     padding: $baseline-height $column-9 * 0.5 * 1.8;
+  }
+  .loop-pagination {
+
+    .next {
+      right: $column-9 * 0.5 * 1.8;
+    }
+    .prev {
+      left: $column-9 * 0.5 * 1.8;
+    }
   }
 }
