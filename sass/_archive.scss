@@ -1,0 +1,36 @@
+.archive-header {
+  padding: $baseline-height $column-27 * 2;
+  margin-bottom: $baseline-height;
+  background: white;
+  text-align: center;
+
+  h2 {
+    @extend %twenty-one-pixels;
+    display: inline-block;
+    margin-left: 6px;
+  }
+}
+
+// 550px
+@media all and (min-width: 550px) {
+
+  .archive-header {
+    box-shadow: $box-shadow;
+  }
+}
+
+// 950px
+@media all and (min-width: 950px) {
+
+  .archive-header {
+    padding: $baseline-height $column-9 * 0.75 * 1.636;
+  }
+}
+
+// 1150px
+@media all and (min-width: 1150px) {
+
+  .archive-header {
+    padding: $baseline-height $column-9 * 0.5 * 1.8;
+  }
+}

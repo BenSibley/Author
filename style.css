@@ -31,7 +31,7 @@ h2 {
   /* 37px */
 }
 
-h3, .site-title {
+h3, .site-title, .archive-header h2 {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
@@ -977,6 +977,32 @@ a img {
 
   .comments-closed,
   .comment-pagination {
+    padding: 1.5em 9.999%;
+  }
+}
+.archive-header {
+  padding: 1.5em 7.4074%;
+  margin-bottom: 1.5em;
+  background: white;
+  text-align: center;
+}
+.archive-header h2 {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+@media all and (min-width: 550px) {
+  .archive-header {
+    box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1);
+  }
+}
+@media all and (min-width: 950px) {
+  .archive-header {
+    padding: 1.5em 13.63197%;
+  }
+}
+@media all and (min-width: 1150px) {
+  .archive-header {
     padding: 1.5em 9.999%;
   }
 }
