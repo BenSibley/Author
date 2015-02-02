@@ -65,11 +65,29 @@
   padding-left: 6px;
   border-left: solid 1px $color-gray-60;
 }
+.comment-respond {
+  padding: $baseline-height $column * 2;
+  background: white;
+
+  label {
+    display: block;
+//    margin-bottom: 4px;
+  }
+}
+
+// 550px
+@media all and (min-width: 550px) {
+
+  .comment-respond {
+    box-shadow: $box-shadow;
+  }
+}
 
 // 700px
 @media all and (min-width: 700px) {
 
-  .comments-number {
+  .comments-number,
+  .comment-respond {
 
     h3 {
       font-size: 2.3125em; /* 37px / 16px */
@@ -82,4 +100,20 @@
       margin-left: $baseline-height * 2;
     }
   }
+}
+
+// 950px
+@media all and (min-width: 950px) {
+
+  .comment-respond {
+    padding: $baseline-height * 2 $column-9 * 0.75 * 1.636 $baseline-height;
+  }
+}
+
+// 1150px
+@media all and (min-width: 1150px) {
+
+  .comment-respond {
+      padding: $baseline-height * 2 $column-9 * 0.5 * 1.8 $baseline-height;
+    }
 }

@@ -94,60 +94,64 @@ function ct_author_customize_comments( $comment, $args, $depth ) {
 }
 
 /* added HTML5 placeholders for each default field and aria-required to required */
-function ct_author_update_fields($fields) {
+if( ! function_exists( 'author_update_fields' ) ) {
+    function author_update_fields( $fields ) {
 
-	// get commenter object
-    $commenter = wp_get_current_commenter();
+        // get commenter object
+        $commenter = wp_get_current_commenter();
 
-	// are name and email required?
-    $req = get_option( 'require_name_email' );
+        // are name and email required?
+        $req = get_option( 'require_name_email' );
 
-	// required or optional label to be added
-	if( $req == 1 ) {
-		$label = '*';
-	} else {
-		$label = ' (optional)';
-	}
+        // required or optional label to be added
+        if ( $req == 1 ) {
+            $label = '*';
+        } else {
+            $label = ' ' . __("optional", "author");
+        }
 
-	// adds aria required tag if required
-	$aria_req = ( $req ? " aria-required='true'" : '' );
+        // adds aria required tag if required
+        $aria_req = ( $req ? " aria-required='true'" : '' );
 
-    $fields['author'] =
-        '<p class="comment-form-author">
-            <label class="screen-reader-text">' . __("Your Name", "author") . '</label>
-            <input placeholder="' . __("Your Name", "author") . $label . '" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
-        '" size="30" ' . $aria_req . ' />
-    	</p>';
+        $fields['author'] =
+            '<p class="comment-form-author">
+	            <label>' . __( "Name", "author" ) . $label . '</label>
+	            <input placeholder="' . __( "John Doe", "author" ) . '" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+            '" size="30" ' . $aria_req . ' />
+	        </p>';
 
-    $fields['email'] =
-        '<p class="comment-form-email">
-            <label class="screen-reader-text">' . __("Your Email", "author") . '</label>
-            <input placeholder="' . __("Your Email", "author") . $label . '" id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) .
-        '" size="30" ' . $aria_req . ' />
-    	</p>';
+        $fields['email'] =
+            '<p class="comment-form-email">
+	            <label>' . __( "Email", "author" ) . $label . '</label>
+	            <input placeholder="' . __( "name@email.com", "author" ) . '" id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) .
+            '" size="30" ' . $aria_req . ' />
+	        </p>';
 
-    $fields['url'] =
-        '<p class="comment-form-url">
-            <label class="screen-reader-text">' . __("Your Website URL", "author") . '</label>
-            <input placeholder="' . __("Your URL", "author") . ' (optional)" id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
-        '" size="30" />
-            </p>';
+        $fields['url'] =
+            '<p class="comment-form-url">
+	            <label>' . __( "Website", "author" ) . '</label>
+	            <input placeholder="' . __( "http://example.com", "author" ) . '" id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
+            '" size="30" />
+	            </p>';
 
-    return $fields;
+        return $fields;
+    }
 }
-add_filter('comment_form_default_fields','ct_author_update_fields');
+add_filter('comment_form_default_fields','author_update_fields');
 
-function ct_author_update_comment_field($comment_field) {
-	
-	$comment_field =
-        '<p class="comment-form-comment">
-            <label class="screen-reader-text">' . __("Your Comment", "author") . '</label>
-            <textarea required placeholder="' . __("Enter Your Comment", "author") . '&#8230;" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
-        </p>';
-	
-	return $comment_field;
+if( ! function_exists( 'author_update_comment_field' ) ) {
+    function author_update_comment_field( $comment_field ) {
+
+        $comment_field =
+            '<p class="comment-form-comment">
+	            <label>' . __( "Comment", "author" ) . '</label>
+	            <textarea required placeholder="' . __( "Enter Your Comment", "author" ) . '&#8230;" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+	        </p>';
+
+        return $comment_field;
+    }
 }
-add_filter('comment_form_field_comment','ct_author_update_comment_field');
+add_filter('comment_form_field_comment','author_update_comment_field');
 
 // remove allowed tags text after comment form
 function ct_author_remove_comments_notes_after($defaults){

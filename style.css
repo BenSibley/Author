@@ -43,7 +43,7 @@ textarea, input[type="submit"], .tagline, .post-tags a, .further-reading span, .
 .comment-footer span {
   font-size: 0.75em;
   /* 12px / 16px */
-  line-height: 1.125;
+  line-height: 1.5;
   /* 18px */
 }
 
@@ -230,7 +230,7 @@ img,
 /* Form styles */
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
 textarea {
-  padding: 0.8em;
+  padding: 9px 12px;
   width: 100%;
   max-width: 27.75em;
   background: #f0f1f2;
@@ -900,8 +900,22 @@ a img {
   border-left: solid 1px #999999;
 }
 
+.comment-respond {
+  padding: 1.5em 7.4074%;
+  background: white;
+}
+.comment-respond label {
+  display: block;
+}
+
+@media all and (min-width: 550px) {
+  .comment-respond {
+    box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1);
+  }
+}
 @media all and (min-width: 700px) {
-  .comments-number h3 {
+  .comments-number h3,
+  .comment-respond h3 {
     font-size: 2.3125em;
     /* 37px / 16px */
     line-height: 1;
@@ -909,5 +923,15 @@ a img {
 
   .comment-list ul {
     margin-left: 3em;
+  }
+}
+@media all and (min-width: 950px) {
+  .comment-respond {
+    padding: 3em 13.63197% 1.5em;
+  }
+}
+@media all and (min-width: 1150px) {
+  .comment-respond {
+    padding: 3em 9.999% 1.5em;
   }
 }
