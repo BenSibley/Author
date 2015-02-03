@@ -1,0 +1,24 @@
+.search-form-container {
+
+  input[type="search"] {
+    margin-bottom: 12px;
+    max-width: none !important;
+  }
+  input[type="submit"] {
+    max-width: none;
+  }
+}
+
+// 550px
+@media all and (min-width: 550px) {
+
+  .search-form-container {
+
+    input[type="search"] {
+      width: 70% !important;
+    }
+    input[type="submit"] {
+      width: calc(30% - 6px);
+    }
+  }
+}

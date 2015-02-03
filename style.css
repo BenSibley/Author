@@ -274,7 +274,7 @@ input[type="submit"]:hover {
 }
 
 input[type="search"] {
-  margin-right: 1.5em;
+  margin-right: 2px;
   padding-right: 0.375em;
   /* so safari 'x' doesn't get cut off */
 }
@@ -1244,4 +1244,25 @@ a img {
 .widget_tag_cloud a {
   background: #3e4145;
   margin-right: 0px;
+}
+
+.error-404 .post article {
+  padding-bottom: 3em;
+}
+
+.search-form-container input[type="search"] {
+  margin-bottom: 12px;
+  max-width: none !important;
+}
+.search-form-container input[type="submit"] {
+  max-width: none;
+}
+
+@media all and (min-width: 550px) {
+  .search-form-container input[type="search"] {
+    width: 70% !important;
+  }
+  .search-form-container input[type="submit"] {
+    width: calc(30% - 6px);
+  }
 }

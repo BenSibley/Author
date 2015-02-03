@@ -197,7 +197,7 @@ input[type="submit"]:hover {
   background: $color-gray-27-blue;
 }
 input[type="search"] {
-  margin-right: $baseline-height;
+  margin-right: 2px;
   padding-right: $baseline-height / 4; /* so safari 'x' doesn't get cut off */
 }
 ::-webkit-input-placeholder {
