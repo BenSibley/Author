@@ -1,4 +1,4 @@
-.post {
+.entry {
   margin-bottom: $baseline-height;
 
   article {
@@ -42,9 +42,12 @@
 }
 .singular {
 
-  .post {
+  .entry {
     margin-top: -$baseline-height; // remove gap on posts/pages
   }
+}
+.singular-post {
+
   .post-content {
     border-bottom: solid 1px $color-gray-85;
   }
@@ -96,9 +99,10 @@
   }
 }
 .blog,
-.archive {
+.archive,
+.search {
 
-  .post {
+  .entry  {
     text-align: center;
   }
   .post-content {
@@ -115,7 +119,7 @@
 // 550px
 @media all and (min-width: 550px) {
 
-  .post {
+  .entry {
 
     article {
       box-shadow: $box-shadow;
@@ -126,7 +130,7 @@
     .post-header {
       margin-bottom: $baseline-height * 1.5;
     }
-    .post {
+    .entry {
       margin-top: 0;
     }
   }
@@ -152,7 +156,7 @@
 // 950px
 @media all and (min-width: 950px) {
 
-  .post {
+  .entry {
     padding: 0;
 
     article,
@@ -165,7 +169,7 @@
 // 1150px
 @media all and (min-width: 1150px) {
 
-  .post {
+  .entry {
 
     article,
     .further-reading {

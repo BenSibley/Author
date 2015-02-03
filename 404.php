@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="post">
+	<div class="entry">
 		<article>
 			<div class='post-header'>
 				<h1 class='post-title'><?php _e('404: Page Not Found', 'author'); ?></h1>

@@ -1,6 +1,6 @@
 <div <?php post_class(); ?>>
+	<?php ct_author_featured_image(); ?>
 	<article>
-		<?php ct_author_featured_image(); ?>
 		<div class='post-header'>
 			<h1 class='post-title'><?php the_title(); ?></h1>
 		</div>

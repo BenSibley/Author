@@ -726,10 +726,10 @@ a img {
     padding: 3em 16.665% 3em 5.555%;
   }
 }
-.post {
+.entry {
   margin-bottom: 1.5em;
 }
-.post article {
+.entry article {
   padding: 1.5em 7.4074%;
   background: white;
 }
@@ -771,10 +771,11 @@ a img {
   height: 0;
 }
 
-.singular .post {
+.singular .entry {
   margin-top: -1.5em;
 }
-.singular .post-content {
+
+.singular-post .post-content {
   border-bottom: solid 1px #d9d9d9;
 }
 
@@ -819,30 +820,33 @@ a img {
   display: block;
 }
 
-.blog .post,
-.archive .post {
+.blog .entry,
+.archive .entry,
+.search .entry {
   text-align: center;
 }
 .blog .post-content,
-.archive .post-content {
+.archive .post-content,
+.search .post-content {
   margin-bottom: 0.75em;
 }
 .blog .post-content p:last-child,
-.archive .post-content p:last-child {
+.archive .post-content p:last-child,
+.search .post-content p:last-child {
   padding-top: 1.5em;
   margin-bottom: 0;
   border-top: solid 1px #d9d9d9;
 }
 
 @media all and (min-width: 550px) {
-  .post article {
+  .entry article {
     box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1);
   }
 
   .singular .post-header {
     margin-bottom: 2.25em;
   }
-  .singular .post {
+  .singular .entry {
     margin-top: 0;
   }
 
@@ -867,17 +871,17 @@ a img {
   }
 }
 @media all and (min-width: 950px) {
-  .post {
+  .entry {
     padding: 0;
   }
-  .post article,
-  .post .further-reading {
+  .entry article,
+  .entry .further-reading {
     padding: 1.5em 13.63197%;
   }
 }
 @media all and (min-width: 1150px) {
-  .post article,
-  .post .further-reading {
+  .entry article,
+  .entry .further-reading {
     padding: 1.5em 9.999%;
   }
 
@@ -1246,7 +1250,7 @@ a img {
   margin-right: 0px;
 }
 
-.error-404 .post article {
+.error-404 .entry article {
   padding-bottom: 3em;
 }
 
@@ -1261,8 +1265,15 @@ a img {
 @media all and (min-width: 550px) {
   .search-form-container input[type="search"] {
     width: 70% !important;
+    margin-bottom: 0;
   }
   .search-form-container input[type="submit"] {
     width: calc(30% - 6px);
   }
+}
+.search .archive-header .post-title {
+  margin-bottom: 24px;
+}
+.search .search-bottom {
+  padding-bottom: 3em;
 }
