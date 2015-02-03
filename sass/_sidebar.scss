@@ -4,6 +4,23 @@
   background: $color-gray-17-blue;
   color: white;
 }
+// widget container
+.sidebar-primary {
+  max-height: 0;
+  overflow: hidden;
+}
+// menu open
+.open .sidebar-primary {
+  max-height: 9999px;
+}
+
+// 550px
+@media all and (min-width: 550px) {
+
+  .sidebar-primary {
+    position: absolute;
+  }
+}
 
 // 950px
 @media all and (min-width: 950px) {
@@ -12,6 +29,10 @@
     float: left;
     width: $column-9 * 2.5;
     padding: $baseline-height * 2 $column-27 / 2;
+  }
+  .sidebar-primary {
+    position: relative;
+    max-height: none; // allow menu items to be seen w/o toggling
   }
 }
 

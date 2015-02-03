@@ -114,3 +114,16 @@ $tencent-weibo: #20b8e5;
     color: white;
   }
 }
+%gray-eight-five-link {
+  color: $color-gray-85;
+
+  &:link,
+  &:visited {
+    color: $color-gray-85;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-gray-85;
+  }
+}

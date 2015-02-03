@@ -125,6 +125,35 @@ jQuery(document).ready(function($){
         }
     }
 
+    function positionSidebar() {
+
+        var windowWidth = $(window).width();
+
+        // if at width when menu is absolutely positioned
+        if( windowWidth > 549 && windowWidth < 950 ) {
+
+            // get the selector for the primary menu
+            if( $('.menu-unset').length ) {
+                var menu = $('.menu-unset');
+            } else {
+                var menu = $('#menu-primary-items');
+            }
+            var menuHeight = menu.height();
+            var headerHeight = $('#main-sidebar').outerHeight();
+
+            // below the header and menu + 24 for margin
+            $('#sidebar-primary').css('top', headerHeight + menuHeight + 24 + 'px');
+        }
+        else {
+            $('#sidebar-primary').css('top', '');
+        }
+    }
+    positionSidebar();
+
+    $(window).resize(function(){
+        positionSidebar();
+    });
+
 });
 /*
  * Adapted from: http://mikejolley.com/2012/12/using-the-new-wordpress-3-5-media-uploader-in-plugins/

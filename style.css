@@ -41,7 +41,7 @@ h3, .site-title, .archive-header h2,
 
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
 textarea, input[type="submit"], .tagline, .post-tags a, .further-reading span, .comment-footer a,
-.comment-footer span {
+.comment-footer span, .widget > * {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -56,6 +56,16 @@ textarea, input[type="submit"], .tagline, .post-tags a, .further-reading span, .
 }
 .site-title a:hover, .menu-primary a:hover, .post-tags a:hover, .site-title a:active, .menu-primary a:active, .post-tags a:active, .site-title a:focus, .menu-primary a:focus, .post-tags a:focus {
   color: white;
+}
+
+.sidebar-primary .widget a {
+  color: #d9d9d9;
+}
+.sidebar-primary .widget a:link, .sidebar-primary .widget a:visited {
+  color: #d9d9d9;
+}
+.sidebar-primary .widget a:hover, .sidebar-primary .widget a:active, .sidebar-primary .widget a:focus {
+  color: #d9d9d9;
 }
 
 /* apply a natural box layout model to all elements */
@@ -345,11 +355,30 @@ a img {
   color: white;
 }
 
+.sidebar-primary {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.open .sidebar-primary {
+  max-height: 9999px;
+}
+
+@media all and (min-width: 550px) {
+  .sidebar-primary {
+    position: absolute;
+  }
+}
 @media all and (min-width: 950px) {
   .main-sidebar {
     float: left;
     width: 27.775%;
     padding: 3em 1.85185%;
+  }
+
+  .sidebar-primary {
+    position: relative;
+    max-height: none;
   }
 }
 @media all and (min-width: 1150px) {
@@ -1036,4 +1065,28 @@ a img {
   .loop-pagination .prev {
     left: 9.999%;
   }
+}
+.widget {
+  padding: 1.5em 0;
+}
+.widget .widget-title {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 0.75em;
+}
+.widget ul {
+  list-style: none;
+  margin: 0;
+}
+.widget ul a {
+  text-decoration: none;
+}
+.widget li {
+  line-height: 2em;
+}
+
+.sidebar-primary .widget {
+  color: white;
+  border-top: solid 1px #3e4145;
 }

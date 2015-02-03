@@ -1,0 +1,35 @@
+.widget {
+  padding: $baseline-height 0;
+
+  > * {
+    @extend %twelve-pixels; // all elements in widget 12px without further decreasing child element font size
+  }
+  .widget-title {
+    font-family: $primary-font-stack;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: $baseline-height / 2;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+  li {
+    line-height: 2em;
+  }
+}
+.sidebar-primary {
+
+  .widget {
+    color: white;
+    border-top: solid 1px $color-gray-27-blue;
+
+    a {
+      @extend %gray-eight-five-link;
+    }
+  }
+}
