@@ -532,6 +532,7 @@ a img {
   margin: 1.5em 0;
   padding: 1.5em 0 0;
   border-top: solid 1px #3e4145;
+  /* Tier 2 */
 }
 .menu-primary-items ul,
 .menu-unset > ul ul {
@@ -545,14 +546,16 @@ a img {
 .menu-unset > ul > li:first-child a {
   margin-top: 0;
 }
-
-/* Tier 2 */
-.menu-item-has-children,
-.page_item_has_children {
+.menu-primary-items .menu-item-has-children,
+.menu-primary-items .page_item_has_children,
+.menu-unset > ul .menu-item-has-children,
+.menu-unset > ul .page_item_has_children {
   position: relative;
 }
-.menu-item-has-children button,
-.page_item_has_children button {
+.menu-primary-items .menu-item-has-children button,
+.menu-primary-items .page_item_has_children button,
+.menu-unset > ul .menu-item-has-children button,
+.menu-unset > ul .page_item_has_children button {
   float: right;
   height: 32px;
   width: 32px;
@@ -564,61 +567,97 @@ a img {
   color: white;
   border: solid 1px #3e4145;
 }
-.menu-item-has-children button:focus,
-.page_item_has_children button:focus {
+.menu-primary-items .menu-item-has-children button:focus,
+.menu-primary-items .page_item_has_children button:focus,
+.menu-unset > ul .menu-item-has-children button:focus,
+.menu-unset > ul .page_item_has_children button:focus {
   outline: none;
   border-color: #999999;
 }
-.menu-item-has-children button:after,
-.page_item_has_children button:after {
+.menu-primary-items .menu-item-has-children button:after,
+.menu-primary-items .page_item_has_children button:after,
+.menu-unset > ul .menu-item-has-children button:after,
+.menu-unset > ul .page_item_has_children button:after {
   content: '\f107';
   font-family: 'FontAwesome';
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-.menu-item-has-children ul,
-.page_item_has_children ul {
+.menu-primary-items .menu-item-has-children ul,
+.menu-primary-items .page_item_has_children ul,
+.menu-unset > ul .menu-item-has-children ul,
+.menu-unset > ul .page_item_has_children ul {
   max-height: 0;
   overflow: hidden;
   margin: 0 0 0 0.75em;
 }
-.menu-item-has-children ul a,
-.page_item_has_children ul a {
+.menu-primary-items .menu-item-has-children ul a,
+.menu-primary-items .page_item_has_children ul a,
+.menu-unset > ul .menu-item-has-children ul a,
+.menu-unset > ul .page_item_has_children ul a {
   color: #cccccc;
 }
-.menu-item-has-children ul a:link, .menu-item-has-children ul a:visited, .menu-item-has-children ul a:hover, .menu-item-has-children ul a:active, .menu-item-has-children ul a:focus,
-.page_item_has_children ul a:link,
-.page_item_has_children ul a:visited,
-.page_item_has_children ul a:hover,
-.page_item_has_children ul a:active,
-.page_item_has_children ul a:focus {
+.menu-primary-items .menu-item-has-children ul a:link, .menu-primary-items .menu-item-has-children ul a:visited, .menu-primary-items .menu-item-has-children ul a:hover, .menu-primary-items .menu-item-has-children ul a:active, .menu-primary-items .menu-item-has-children ul a:focus,
+.menu-primary-items .page_item_has_children ul a:link,
+.menu-primary-items .page_item_has_children ul a:visited,
+.menu-primary-items .page_item_has_children ul a:hover,
+.menu-primary-items .page_item_has_children ul a:active,
+.menu-primary-items .page_item_has_children ul a:focus,
+.menu-unset > ul .menu-item-has-children ul a:link,
+.menu-unset > ul .menu-item-has-children ul a:visited,
+.menu-unset > ul .menu-item-has-children ul a:hover,
+.menu-unset > ul .menu-item-has-children ul a:active,
+.menu-unset > ul .menu-item-has-children ul a:focus,
+.menu-unset > ul .page_item_has_children ul a:link,
+.menu-unset > ul .page_item_has_children ul a:visited,
+.menu-unset > ul .page_item_has_children ul a:hover,
+.menu-unset > ul .page_item_has_children ul a:active,
+.menu-unset > ul .page_item_has_children ul a:focus {
   color: #cccccc;
 }
-.menu-item-has-children ul ul a,
-.page_item_has_children ul ul a {
+.menu-primary-items .menu-item-has-children ul ul a,
+.menu-primary-items .page_item_has_children ul ul a,
+.menu-unset > ul .menu-item-has-children ul ul a,
+.menu-unset > ul .page_item_has_children ul ul a {
   color: #999999;
 }
-.menu-item-has-children ul ul a:link, .menu-item-has-children ul ul a:visited, .menu-item-has-children ul ul a:hover, .menu-item-has-children ul ul a:active, .menu-item-has-children ul ul a:focus,
-.page_item_has_children ul ul a:link,
-.page_item_has_children ul ul a:visited,
-.page_item_has_children ul ul a:hover,
-.page_item_has_children ul ul a:active,
-.page_item_has_children ul ul a:focus {
+.menu-primary-items .menu-item-has-children ul ul a:link, .menu-primary-items .menu-item-has-children ul ul a:visited, .menu-primary-items .menu-item-has-children ul ul a:hover, .menu-primary-items .menu-item-has-children ul ul a:active, .menu-primary-items .menu-item-has-children ul ul a:focus,
+.menu-primary-items .page_item_has_children ul ul a:link,
+.menu-primary-items .page_item_has_children ul ul a:visited,
+.menu-primary-items .page_item_has_children ul ul a:hover,
+.menu-primary-items .page_item_has_children ul ul a:active,
+.menu-primary-items .page_item_has_children ul ul a:focus,
+.menu-unset > ul .menu-item-has-children ul ul a:link,
+.menu-unset > ul .menu-item-has-children ul ul a:visited,
+.menu-unset > ul .menu-item-has-children ul ul a:hover,
+.menu-unset > ul .menu-item-has-children ul ul a:active,
+.menu-unset > ul .menu-item-has-children ul ul a:focus,
+.menu-unset > ul .page_item_has_children ul ul a:link,
+.menu-unset > ul .page_item_has_children ul ul a:visited,
+.menu-unset > ul .page_item_has_children ul ul a:hover,
+.menu-unset > ul .page_item_has_children ul ul a:active,
+.menu-unset > ul .page_item_has_children ul ul a:focus {
   color: #999999;
 }
-.menu-item-has-children ul ul button:after,
-.page_item_has_children ul ul button:after {
+.menu-primary-items .menu-item-has-children ul ul button:after,
+.menu-primary-items .page_item_has_children ul ul button:after,
+.menu-unset > ul .menu-item-has-children ul ul button:after,
+.menu-unset > ul .page_item_has_children ul ul button:after {
   color: #cccccc;
 }
-.menu-item-has-children.open > button,
-.page_item_has_children.open > button {
+.menu-primary-items .menu-item-has-children.open > button,
+.menu-primary-items .page_item_has_children.open > button,
+.menu-unset > ul .menu-item-has-children.open > button,
+.menu-unset > ul .page_item_has_children.open > button {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   border-color: #999999;
 }
-.menu-item-has-children.open > ul,
-.page_item_has_children.open > ul {
+.menu-primary-items .menu-item-has-children.open > ul,
+.menu-primary-items .page_item_has_children.open > ul,
+.menu-unset > ul .menu-item-has-children.open > ul,
+.menu-unset > ul .page_item_has_children.open > ul {
   max-height: 9999px;
 }
 
@@ -1095,6 +1134,37 @@ a img {
   color: white;
   border-top: solid 1px #3e4145;
 }
+.sidebar-primary .widget_archive li,
+.sidebar-primary .widget_categories li,
+.sidebar-primary .widget_nav_menu li {
+  color: #cccccc;
+}
+.sidebar-primary .widget_archive ul ul li,
+.sidebar-primary .widget_categories ul ul li,
+.sidebar-primary .widget_nav_menu ul ul li {
+  color: #999999;
+}
+.sidebar-primary .widget_archive ul ul a,
+.sidebar-primary .widget_categories ul ul a,
+.sidebar-primary .widget_nav_menu ul ul a {
+  color: #999999;
+}
+.sidebar-primary .widget_archive ul ul a:link, .sidebar-primary .widget_archive ul ul a:visited,
+.sidebar-primary .widget_categories ul ul a:link,
+.sidebar-primary .widget_categories ul ul a:visited,
+.sidebar-primary .widget_nav_menu ul ul a:link,
+.sidebar-primary .widget_nav_menu ul ul a:visited {
+  color: #999999;
+}
+.sidebar-primary .widget_archive ul ul a:hover, .sidebar-primary .widget_archive ul ul a:active, .sidebar-primary .widget_archive ul ul a:focus,
+.sidebar-primary .widget_categories ul ul a:hover,
+.sidebar-primary .widget_categories ul ul a:active,
+.sidebar-primary .widget_categories ul ul a:focus,
+.sidebar-primary .widget_nav_menu ul ul a:hover,
+.sidebar-primary .widget_nav_menu ul ul a:active,
+.sidebar-primary .widget_nav_menu ul ul a:focus {
+  color: #999999;
+}
 
 .widget_recent_entries span {
   display: block;
@@ -1107,12 +1177,9 @@ a img {
   text-decoration: underline;
 }
 
-.widget_archive li,
-.widget_categories li {
-  color: #cccccc;
-}
 .widget_archive ul ul,
-.widget_categories ul ul {
+.widget_categories ul ul,
+.widget_nav_menu ul ul {
   margin-left: 12px;
 }
 

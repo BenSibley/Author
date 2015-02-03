@@ -32,6 +32,35 @@
       @extend %gray-eighty-link;
     }
   }
+  .widget_archive,
+  .widget_categories,
+  .widget_nav_menu {
+
+    // to keep the post count gray
+    li {
+      color: $color-gray-80;
+    }
+    ul ul {
+
+      // make 2nd tier darker
+      li {
+        color: $color-gray-60;
+      }
+      a {
+        color: $color-gray-60;
+
+        &:link,
+        &:visited {
+          color: $color-gray-60;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+          color: $color-gray-60;
+        }
+      }
+    }
+  }
 }
 // individual widget styles
 .widget_recent_entries {
@@ -50,12 +79,9 @@
   }
 }
 .widget_archive,
-.widget_categories {
+.widget_categories,
+.widget_nav_menu {
 
-  // to keep the post count gray
-  li {
-    color: $color-gray-80;
-  }
   // show hierarchy
   ul ul {
     margin-left: 12px;

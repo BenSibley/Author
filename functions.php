@@ -461,7 +461,7 @@ function ct_author_get_avatar_url($get_avatar){
     return $matches[1];
 }
 
-function ct_author_nav_description( $item_output, $item, $depth, $args ) {
+function ct_author_nav_dropdown_buttons( $item_output, $item, $depth, $args ) {
 
     if ( 'primary' == $args->theme_location) {
 
@@ -472,4 +472,4 @@ function ct_author_nav_description( $item_output, $item, $depth, $args ) {
 
     return $item_output;
 }
-add_filter( 'walker_nav_menu_start_el', 'ct_author_nav_description', 10, 4 );
+add_filter( 'walker_nav_menu_start_el', 'ct_author_nav_dropdown_buttons', 10, 4 );

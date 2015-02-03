@@ -45,79 +45,78 @@
       }
     }
   }
-}
+  /* Tier 2 */
 
-/* Tier 2 */
+  .menu-item-has-children,
+  .page_item_has_children {
+    position: relative; // keeps the dropdown arrows from showing overtop the content
 
-.menu-item-has-children,
-.page_item_has_children {
-  position: relative; // keeps the dropdown arrows from showing overtop the content
+    button {
+      float: right;
+      height: 32px;
+      width: 32px;
+      margin: 2px 0 0 0;
+      padding: 0;
+      font-size: 1em;
+      line-height: 1;
+      background: none;
+      color: white;
+      border: solid 1px $color-gray-27-blue;
 
-  button {
-    float: right;
-    height: 32px;
-    width: 32px;
-    margin: 2px 0 0 0;
-    padding: 0;
-    font-size: 1em;
-    line-height: 1;
-    background: none;
-    color: white;
-    border: solid 1px $color-gray-27-blue;
-
-    &:focus {
-      outline: none;
-      border-color: $color-gray-60;
-    }
-    &:after {
-      content: '\f107';
-      font-family: 'FontAwesome';
-      transition: all 0.1s ease-in-out;
-    }
-  }
-  ul {
-    max-height: 0;
-    overflow: hidden;
-    margin: 0 0 0 $baseline-height / 2;
-
-    a {
-      color: $color-gray-80;
-
-      &:link,
-      &:visited,
-      &:hover,
-      &:active,
       &:focus {
-        color: $color-gray-80;
+        outline: none;
+        border-color: $color-gray-60;
+      }
+      &:after {
+        content: '\f107';
+        font-family: 'FontAwesome';
+        transition: all 0.1s ease-in-out;
       }
     }
-    // tier 3
     ul {
+      max-height: 0;
+      overflow: hidden;
+      margin: 0 0 0 $baseline-height / 2;
 
       a {
-        color: $color-gray-60;
+        color: $color-gray-80;
 
         &:link,
         &:visited,
         &:hover,
         &:active,
         &:focus {
-          color: $color-gray-60;
+          color: $color-gray-80;
         }
       }
-      button:after {
-        color: $color-gray-80;
+      // tier 3
+      ul {
+
+        a {
+          color: $color-gray-60;
+
+          &:link,
+          &:visited,
+          &:hover,
+          &:active,
+          &:focus {
+            color: $color-gray-60;
+          }
+        }
+        button:after {
+          color: $color-gray-80;
+        }
       }
     }
-  }
-  &.open {
+    &.open {
 
-    > button {
-      transform: rotate(180deg);
-      border-color: $color-gray-60;
-    }
-    > ul {
-      max-height: 9999px;
+      > button {
+        transform: rotate(180deg);
+        border-color: $color-gray-60;
+      }
+      > ul {
+        max-height: 9999px;
+      }
     }
   }
 }
