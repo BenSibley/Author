@@ -83,6 +83,15 @@
       color: $color-gray-60;
     }
   }
+  .widget_search {
+
+    input[type="search"] {
+      background: white !important;
+    }
+    input[type="submit"] {
+      background: $color-gray-27-blue;
+    }
+  }
 }
 // individual widget styles
 .widget_recent_entries {
@@ -177,5 +186,11 @@
   a {
     background: $color-gray-27-blue;
     margin-right: 0px;
+  }
+}
+.widget_search {
+
+  .search-form-container {
+    font-size: 1em;
   }
 }

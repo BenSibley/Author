@@ -6,7 +6,7 @@
 		<div class="post-content">
 			<?php the_content(); ?>
 		</div>
-		<?php get_template_part('content/post-nav-attachment'); ?>
 	</article>
+	<?php get_template_part('content/post-nav-attachment'); ?>
 	<?php comments_template(); ?>
 </div>
