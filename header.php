@@ -10,7 +10,7 @@
 <body id="<?php print get_stylesheet(); ?>" <?php body_class(); ?>>
 <a class="skip-content" href="#main"><?php _e('Skip to content', 'author'); ?></a><!--skip to content link-->
 
-<section id="main-sidebar" class="main-sidebar">
+<div id="main-sidebar" class="main-sidebar">
 	<header class="site-header" id="site-header" role="banner">
 		<div id="title-container" class="title-container">
 			<?php ct_author_output_avatar(); ?>
@@ -26,6 +26,6 @@
 		<?php get_template_part( 'menu', 'primary' ); ?>
 	</header>
 	<?php get_sidebar( 'primary' ); ?>
-</section>
+</div>
 
-<section id="main" class="main" role="main">
+<main id="main" class="main" role="main">

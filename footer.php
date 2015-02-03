@@ -1,4 +1,4 @@
-</section> <!-- .main -->
+</main> <!-- .main -->
 
 <footer class="site-footer" role="contentinfo">
     <h4><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo('title'); ?></a> <?php bloginfo('description'); ?></h4>
