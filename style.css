@@ -59,13 +59,13 @@ textarea, input[type="submit"], .tagline, .post-tags a, .further-reading span, .
 }
 
 .sidebar-primary .widget a {
-  color: #d9d9d9;
+  color: #cccccc;
 }
 .sidebar-primary .widget a:link, .sidebar-primary .widget a:visited {
-  color: #d9d9d9;
+  color: #cccccc;
 }
 .sidebar-primary .widget a:hover, .sidebar-primary .widget a:active, .sidebar-primary .widget a:focus {
-  color: #d9d9d9;
+  color: #cccccc;
 }
 
 /* apply a natural box layout model to all elements */
@@ -1094,4 +1094,45 @@ a img {
 .sidebar-primary .widget {
   color: white;
   border-top: solid 1px #3e4145;
+}
+
+.widget_recent_entries span {
+  display: block;
+  color: #999999;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.widget_recent_comments ul a {
+  text-decoration: underline;
+}
+
+.widget_archive li,
+.widget_categories li {
+  color: #cccccc;
+}
+.widget_archive ul ul,
+.widget_categories ul ul {
+  margin-left: 12px;
+}
+
+.widget_calendar caption {
+  text-align: left;
+  margin-bottom: 1em;
+}
+.widget_calendar #today {
+  background: #3e4145;
+}
+.widget_calendar td {
+  text-align: center;
+}
+.widget_calendar #next,
+.widget_calendar #prev {
+  padding: 0;
+}
+.widget_calendar #next a,
+.widget_calendar #prev a {
+  display: block;
+  text-align: center;
+  padding: 6px 12px;
 }

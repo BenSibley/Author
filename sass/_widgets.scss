@@ -29,7 +29,58 @@
     border-top: solid 1px $color-gray-27-blue;
 
     a {
-      @extend %gray-eight-five-link;
+      @extend %gray-eighty-link;
+    }
+  }
+}
+// individual widget styles
+.widget_recent_entries {
+
+  span {
+    display: block;
+    color: $color-gray-60;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+}
+.widget_recent_comments {
+
+  ul a {
+    text-decoration: underline;
+  }
+}
+.widget_archive,
+.widget_categories {
+
+  // to keep the post count gray
+  li {
+    color: $color-gray-80;
+  }
+  // show hierarchy
+  ul ul {
+    margin-left: 12px;
+  }
+}
+.widget_calendar {
+
+  caption {
+    text-align: left;
+    margin-bottom: 1em;
+  }
+  #today {
+    background: $color-gray-27-blue;
+  }
+  td {
+    text-align: center;
+  }
+  #next,
+  #prev {
+    padding: 0;
+
+    a {
+      display: block;
+      text-align: center;
+      padding: 6px 12px;
     }
   }
 }

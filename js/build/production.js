@@ -138,7 +138,7 @@ jQuery(document).ready(function($){
             } else {
                 var menu = $('#menu-primary-items');
             }
-            var menuHeight = menu.height();
+            var menuHeight = menu.outerHeight();
             var headerHeight = $('#main-sidebar').outerHeight();
 
             // below the header and menu + 24 for margin
