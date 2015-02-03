@@ -1273,11 +1273,11 @@ a img {
 }
 
 @media all and (min-width: 550px) {
-  :not('.widget') .search-form-container input[type="search"] {
+  .main .search-form-container input[type="search"] {
     width: 70% !important;
     margin-bottom: 0;
   }
-  :not('.widget') .search-form-container input[type="submit"] {
+  .main .search-form-container input[type="submit"] {
     width: calc(30% - 6px);
   }
 }

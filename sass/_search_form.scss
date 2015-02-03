@@ -12,8 +12,8 @@
 // 550px
 @media all and (min-width: 550px) {
 
-  // put search and submit inputs side-by-side if not in search widget
-  :not('.widget') {
+  // put search and submit inputs side-by-side (if not in sidebar)
+  .main {
 
     .search-form-container {
 
