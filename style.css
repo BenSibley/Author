@@ -367,6 +367,9 @@ a img {
 @media all and (min-width: 550px) {
   .sidebar-primary {
     position: absolute;
+    width: 320px;
+    left: 0;
+    padding: 0 8.69629%;
   }
 }
 @media all and (min-width: 950px) {
@@ -379,6 +382,8 @@ a img {
   .sidebar-primary {
     position: relative;
     max-height: none;
+    width: auto;
+    padding: 0;
   }
 }
 @media all and (min-width: 1150px) {

@@ -19,6 +19,9 @@
 
   .sidebar-primary {
     position: absolute;
+    width: 320px;
+    left: 0;
+    padding: 0 $column-27 * 2 * 1.174;
   }
 }
 
@@ -33,6 +36,8 @@
   .sidebar-primary {
     position: relative;
     max-height: none; // allow menu items to be seen w/o toggling
+    width: auto;
+    padding: 0;
   }
 }
 
