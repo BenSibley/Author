@@ -98,9 +98,9 @@
     display: block;
   }
 }
-.blog,
-.archive,
-.search {
+.blog:not(.full-post),
+.archive:not(.full-post),
+.search:not(.full-post) {
 
   .entry  {
     text-align: center;
