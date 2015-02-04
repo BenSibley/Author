@@ -257,7 +257,7 @@ function ct_author_social_array(){
 	$social_sites = array(
 		'twitter' => 'author_twitter_profile',
 		'facebook' => 'author_facebook_profile',
-		'googleplus' => 'author_googleplus_profile',
+		'google-plus' => 'author_googleplus_profile',
 		'pinterest' => 'author_pinterest_profile',
 		'linkedin' => 'author_linkedin_profile',
 		'youtube' => 'author_youtube_profile',
