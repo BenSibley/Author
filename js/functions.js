@@ -1,6 +1,5 @@
 jQuery(document).ready(function($){
 
-
     // display the primary menu at mobile widths
     $('#toggle-navigation').on('click', openPrimaryMenu);
 
@@ -77,5 +76,4 @@ jQuery(document).ready(function($){
     $(window).resize(function(){
         positionSidebar();
     });
-
 });

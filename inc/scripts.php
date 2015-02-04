@@ -51,11 +51,26 @@ add_action('admin_enqueue_scripts',	'ct_author_enqueue_admin_styles' );
  */
 function ct_author_enqueue_customizer_scripts(){
 
+	// stylesheet for customizer
+	wp_enqueue_style('ct-author-customizer-styles', get_template_directory_uri() . '/styles/customizer.min.css');
+
 	// JS for hiding/showing Customizer options
 	wp_enqueue_script('ct-author-customizer-js', get_template_directory_uri() . '/js/build/customizer.min.js',array('jquery'),'',true);
 
 }
-add_action('customize_preview_init','ct_author_enqueue_customizer_scripts');
+add_action('customize_controls_enqueue_scripts','ct_author_enqueue_customizer_scripts');
+
+/*
+ * Script for live updating with customizer options. Has to be loaded separately on customize_preview_init hook
+ * transport => postMessage
+ */
+function author_enqueue_customizer_post_message_scripts(){
+
+	// JS for live updating with customizer input
+	wp_enqueue_script('ct-author-customizer-post-message-js', get_template_directory_uri() . '/js/build/postMessage.min.js',array('jquery'),'',true);
+
+}
+add_action('customize_preview_init','author_enqueue_customizer_post_message_scripts');
 
 // load scripts asynchronously
 function ct_author_add_async_script($url) {
