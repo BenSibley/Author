@@ -38,6 +38,20 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		}
 	}
 
+	// number input control
+	class author_number_input_control extends WP_Customize_Control {
+		public $type = 'number';
+
+		public function render_content() {
+			?>
+			<label>
+				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
+				<input type="number" <?php $this->link(); ?> value="<?php echo $this->value(); ?>" />
+			</label>
+		<?php
+		}
+	}
+
 	// create textarea control
 	class author_Textarea_Control extends WP_Customize_Control {
 		public $type = 'textarea';
@@ -124,7 +138,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'ct_author_logo_upload', array(
 		'title'      => __( 'Logo Upload', 'author' ),
-		'priority'   => 20,
+		'priority'   => 25,
 		'capability' => 'edit_theme_options'
 	) );
 	// setting
@@ -154,7 +168,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'ct_author_social_media_icons', array(
 		'title'          => __('Social Media Icons', 'author'),
-		'priority'       => 25,
+		'priority'       => 35,
 	) );
 
 	// create a setting and control for each social site
@@ -195,12 +209,55 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		$priority = $priority + 5;
 	}
 
+	/***** Blog *****/
+
+	// section
+	$wp_customize->add_section( 'author_blog', array(
+		'title'      => __( 'Blog', 'author' ),
+		'priority'   => 45,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'full_post', array(
+		'default'           => 'no',
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'author_sanitize_yes_no_settings',
+	) );
+	// control
+	$wp_customize->add_control( 'full_post', array(
+		'label'          => __( 'Show full posts on blog?', 'author' ),
+		'section'        => 'author_blog',
+		'settings'       => 'full_post',
+		'type'           => 'radio',
+		'choices'        => array(
+			'yes'   => __('Yes', 'author'),
+			'no'  => __('No', 'author'),
+		)
+	) );
+	// setting
+	$wp_customize->add_setting( 'excerpt_length', array(
+		'default'           => '25',
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'absint',
+	) );
+	// control
+	$wp_customize->add_control( new author_number_input_control(
+		$wp_customize, 'excerpt_length', array(
+			'label'          => __( 'Excerpt length', 'author' ),
+			'section'        => 'author_blog',
+			'settings'       => 'excerpt_length',
+			'type'           => 'number',
+		)
+	) );
+
 	/***** Comment Display *****/
 
 	// section
 	$wp_customize->add_section( 'ct_author_comments_display', array(
 		'title'      => __( 'Comment Display', 'author' ),
-		'priority'   => 65,
+		'priority'   => 55,
 		'capability' => 'edit_theme_options'
 	) );
 	// setting
@@ -231,14 +288,14 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'author_custom_css', array(
 		'title'      => __( 'Custom CSS', 'author' ),
-		'priority'   => 80,
+		'priority'   => 65,
 		'capability' => 'edit_theme_options'
 	) );
 	// setting
 	$wp_customize->add_setting( 'custom_css', array(
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'esc_html',
+		'sanitize_callback' => 'esc_textarea',
 	) );
 	// control
 	$wp_customize->add_control( new author_Textarea_Control(
@@ -312,6 +369,21 @@ function ct_author_sanitize_avatar_method($input) {
 	);
 
 	// if returned data is in array use it, else return nothing
+	if ( array_key_exists( $input, $valid ) ) {
+		return $input;
+	} else {
+		return '';
+	}
+}
+
+// sanitize yes/no settings
+function author_sanitize_yes_no_settings($input){
+
+	$valid = array(
+		'yes'   => __('Yes', 'author'),
+		'no'  => __('No', 'author'),
+	);
+
 	if ( array_key_exists( $input, $valid ) ) {
 		return $input;
 	} else {

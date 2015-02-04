@@ -473,3 +473,15 @@ function ct_author_nav_dropdown_buttons( $item_output, $item, $depth, $args ) {
     return $item_output;
 }
 add_filter( 'walker_nav_menu_start_el', 'ct_author_nav_dropdown_buttons', 10, 4 );
+
+// custom css output
+function author_custom_css_output(){
+
+    $custom_css = get_theme_mod('custom_css');
+
+    /* output custom css */
+    if( $custom_css ) {
+        wp_add_inline_style( 'style', $custom_css );
+    }
+}
+add_action('wp_enqueue_scripts', 'author_custom_css_output');
