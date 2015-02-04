@@ -98,7 +98,7 @@ jQuery(document).ready(function($){
             sidebar.removeClass('open');
 
             // close all ULs by removing increased max-height
-            $('#menu-primary, #menu-primary-items ul, .menu-unset ul').removeAttr('style');
+            $('#menu-primary-items ul, .menu-unset ul').removeAttr('style');
 
             // close all ULs and require 2 clicks again when reopened
             $('.menu-item-has-children').each(function(){
@@ -147,7 +147,6 @@ jQuery(document).ready(function($){
             var menuHeight = menu.outerHeight();
             var headerHeight = $('#main-sidebar').outerHeight();
 
-            console.log(socialIconsHeight);
             $('#menu-primary').css('top', headerHeight + socialIconsHeight + 24 + 'px');
             // below the header and menu + 24 for margin
             $('#sidebar-primary').css('top', headerHeight + socialIconsHeight + menuHeight + 48 + 'px');
