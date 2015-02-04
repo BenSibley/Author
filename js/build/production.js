@@ -132,6 +132,12 @@ jQuery(document).ready(function($){
         // if at width when menu is absolutely positioned
         if( windowWidth > 549 && windowWidth < 950 ) {
 
+            var socialIconsHeight = 0;
+
+            if( $('#site-header').find('.social-media-icons').length ) {
+                socialIconsHeight = $('#site-header').find('.social-media-icons').find('ul').outerHeight();
+            }
+
             // get the selector for the primary menu
             if( $('.menu-unset').length ) {
                 var menu = $('.menu-unset');
@@ -141,11 +147,13 @@ jQuery(document).ready(function($){
             var menuHeight = menu.outerHeight();
             var headerHeight = $('#main-sidebar').outerHeight();
 
+            console.log(socialIconsHeight);
+            $('#menu-primary').css('top', headerHeight + socialIconsHeight + 24 + 'px');
             // below the header and menu + 24 for margin
-            $('#sidebar-primary').css('top', headerHeight + menuHeight + 24 + 'px');
+            $('#sidebar-primary').css('top', headerHeight + socialIconsHeight + menuHeight + 48 + 'px');
         }
         else {
-            $('#sidebar-primary').css('top', '');
+            $('#sidebar-primary, #menu-primary').css('top', '');
         }
     }
     positionSidebar();

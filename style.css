@@ -422,6 +422,29 @@ a img {
   display: none;
 }
 
+.social-media-icons {
+  max-height: 0;
+  overflow: hidden;
+}
+.social-media-icons ul {
+  list-style: none;
+  margin: 1.5em 0 0;
+  padding-top: 1.5em;
+  border-top: solid 1px #3e4145;
+}
+.social-media-icons li {
+  display: inline-block;
+  margin-right: 8px;
+}
+.social-media-icons a {
+  color: #cccccc;
+  font-size: 1.5em;
+  line-height: 1;
+}
+.social-media-icons a:link, .social-media-icons a:visited, .social-media-icons a:hover, .social-media-icons a:active, .social-media-icons a:focus {
+  color: #cccccc;
+}
+
 .toggle-navigation {
   float: right;
   height: 36px;
@@ -440,6 +463,9 @@ a img {
   outline: none;
 }
 
+.open .social-media-icons {
+  max-height: 9999px;
+}
 .open .toggle-navigation {
   border-color: #999999;
 }
@@ -455,6 +481,17 @@ a img {
     display: block;
     color: #cccccc;
     margin: 0;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    width: 320px;
+    top: 100%;
+    left: 0;
+    padding: 0 8.69629%;
+  }
+  .social-media-icons ul {
+    margin-top: 0;
   }
 }
 @media all and (min-width: 700px) {
@@ -516,6 +553,19 @@ a img {
 
   .site-title img {
     max-width: 100%;
+  }
+
+  .social-media-icons {
+    position: relative;
+    max-height: none;
+    width: auto;
+    padding: 0;
+    text-align: center;
+  }
+  .social-media-icons ul {
+    border: none;
+    padding: 0;
+    margin-bottom: 1.5em;
   }
 }
 /* Styles for the primary menu */

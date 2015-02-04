@@ -26,6 +26,34 @@
   display: none; // hide for now
   @extend %twelve-pixels;
 }
+.social-media-icons {
+  max-height: 0;
+  overflow: hidden;
+
+  ul {
+    list-style: none;
+    margin: $baseline-height 0 0;
+    padding-top: $baseline-height;
+    border-top: solid 1px $color-gray-27-blue;
+  }
+  li {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  a {
+    color: $color-gray-80;
+    font-size: 1.5em;
+    line-height: 1;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-gray-80;
+    }
+  }
+}
 .toggle-navigation {
   float: right;
   height: 36px;
@@ -47,6 +75,9 @@
 // .open added to .site-header when menu displaying
 .open {
 
+  .social-media-icons {
+    max-height: 9999px;
+  }
   .toggle-navigation {
     border-color: $color-gray-60;
   }
@@ -62,6 +93,17 @@
     display: block;
     color: $color-gray-80;
     margin: 0;
+  }
+  .social-media-icons {
+    position: absolute;
+    width: 320px;
+    top: 100%;
+    left: 0;
+    padding: 0 $column-27 * 2 * 1.174;
+
+    ul {
+      margin-top: 0;
+    }
   }
 }
 
@@ -119,6 +161,19 @@
 
     img {
       max-width: 100%;
+    }
+  }
+  .social-media-icons {
+    position: relative;
+    max-height: none; // allow menu items to be seen w/o toggling
+    width: auto;
+    padding: 0;
+    text-align: center;
+
+    ul {
+      border: none;
+      padding: 0;
+      margin-bottom: $baseline-height;
     }
   }
 }

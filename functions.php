@@ -326,7 +326,7 @@ if( ! function_exists('ct_author_social_icons_output') ) {
         // for each active social site, add it as a list item
         if ( ! empty( $active_sites ) ) {
 
-            echo "<ul class='social-media-icons'>";
+            echo "<div class='social-media-icons'><ul>";
 
             foreach ( $active_sites as $key => $active_site ) {
 
@@ -355,7 +355,7 @@ if( ! function_exists('ct_author_social_icons_output') ) {
                 <?php
                 }
             }
-            echo "</ul>";
+            echo "</div></ul>";
         }
     }
 }
