@@ -18,6 +18,9 @@
     @extend %white-link;
     text-decoration: none;
   }
+  img {
+    max-width: 200px;
+  }
 }
 .tagline {
   display: none; // hide for now
@@ -110,6 +113,12 @@
       top: auto;
       transform: none;
       margin-bottom: $baseline-height / 2;
+    }
+  }
+  .site-title {
+
+    img {
+      max-width: 100%;
     }
   }
 }

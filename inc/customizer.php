@@ -107,7 +107,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	) );
 	// control
 	$wp_customize->add_control( 'avatar_method', array(
-		'label'    => __( 'Where to get Avatar image from:', 'author' ),
+		'label'    => __( 'Avatar image source', 'author' ),
 		'section'  => 'ct_author_avatar',
 		'settings' => 'avatar_method',
 		'type'     => 'radio',

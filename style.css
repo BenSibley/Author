@@ -414,6 +414,9 @@ a img {
 .site-title a {
   text-decoration: none;
 }
+.site-title img {
+  max-width: 200px;
+}
 
 .tagline {
   display: none;
@@ -509,6 +512,10 @@ a img {
     -ms-transform: none;
     transform: none;
     margin-bottom: 0.75em;
+  }
+
+  .site-title img {
+    max-width: 100%;
   }
 }
 /* Styles for the primary menu */
