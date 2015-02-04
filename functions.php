@@ -208,7 +208,15 @@ add_filter('the_excerpt', 'ct_author_excerpt_read_more_link');
 
 // change the length of the excerpts
 function ct_author_custom_excerpt_length( $length ) {
-    return 25;
+
+    $new_excerpt_length = get_theme_mod('excerpt_length');
+
+    // if there is a new length set and it's not 15, change it
+    if( ! empty( $new_excerpt_length ) && $new_excerpt_length != 25 ){
+        return $new_excerpt_length;
+    } else {
+        return 25;
+    }
 }
 add_filter( 'excerpt_length', 'ct_author_custom_excerpt_length', 99 );
 
