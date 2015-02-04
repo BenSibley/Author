@@ -5,6 +5,16 @@ add_action( 'customize_register', 'ct_author_add_customizer_content' );
 
 function ct_author_add_customizer_content( $wp_customize ) {
 
+
+	/***** Reorder default sections *****/
+
+	$wp_customize->get_section('title_tagline')->priority     = 1;
+	$wp_customize->get_section('static_front_page')->priority = 5;
+	$wp_customize->get_section('static_front_page')->title = __('Front Page', 'author');
+	$wp_customize->get_section('nav')->priority = 10;
+	$wp_customize->get_section('nav')->title = __('Menus', 'author');
+	
+	
 	/***** Add PostMessage Support *****/
 	
 	// Add postMessage support for site title and description.
@@ -23,6 +33,20 @@ function ct_author_add_customizer_content( $wp_customize ) {
 			<label>
 				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
 				<input type="url" <?php $this->link(); ?> value="<?php echo esc_url_raw( $this->value() ); ?>" />
+			</label>
+		<?php
+		}
+	}
+
+	// create textarea control
+	class author_Textarea_Control extends WP_Customize_Control {
+		public $type = 'textarea';
+
+		public function render_content() {
+			?>
+			<label>
+				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
+				<textarea rows="8" style="width:100%;" <?php $this->link(); ?>><?php echo esc_textarea( $this->value() ); ?></textarea>
 			</label>
 		<?php
 		}
@@ -56,7 +80,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'ct_author_avatar', array(
 		'title'      => __( 'Avatar', 'author' ),
-		'priority'   => 30,
+		'priority'   => 15,
 		'capability' => 'edit_theme_options'
 	) );
 	// setting
@@ -100,7 +124,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'ct_author_logo_upload', array(
 		'title'      => __( 'Logo Upload', 'author' ),
-		'priority'   => 35,
+		'priority'   => 20,
 		'capability' => 'edit_theme_options'
 	) );
 	// setting
@@ -171,33 +195,6 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		$priority = $priority + 5;
 	}
 
-	/***** Search Bar *****/
-
-	// section
-	$wp_customize->add_section( 'ct_author_search_bar', array(
-		'title'      => __( 'Search Bar', 'author' ),
-		'priority'   => 40,
-		'capability' => 'edit_theme_options'
-	) );
-	// setting
-	$wp_customize->add_setting( 'search_bar', array(
-		'default'           => 'show',
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'ct_author_sanitize_all_show_hide_settings'
-	) );
-	// control
-	$wp_customize->add_control( 'search_bar', array(
-		'type' => 'radio',
-		'label' => __('Show search bar at top of site?', 'author'),
-		'section' => 'ct_author_search_bar',
-		'setting' => 'search_bar',
-		'choices' => array(
-			'show' => __('Show', 'author'),
-			'hide' => __('Hide', 'author')
-		),
-	) );
-
 	/***** Comment Display *****/
 
 	// section
@@ -226,6 +223,29 @@ function ct_author_add_customizer_content( $wp_customize ) {
 				'attachment'  => __('Attachments', 'author'),
 				'none'  => __('Do not show', 'author')
 			)
+		)
+	) );
+
+	/***** Custom CSS *****/
+
+	// section
+	$wp_customize->add_section( 'author_custom_css', array(
+		'title'      => __( 'Custom CSS', 'author' ),
+		'priority'   => 80,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'custom_css', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'esc_html',
+	) );
+	// control
+	$wp_customize->add_control( new author_Textarea_Control(
+		$wp_customize, 'custom_css', array(
+			'label'          => __( 'Add Custom CSS Here:', 'author' ),
+			'section'        => 'author_custom_css',
+			'settings'       => 'custom_css',
 		)
 	) );
 }
