@@ -5,7 +5,8 @@
   }
 }
 .title-container {
-  display: inline-block; // so toggle-navigation can be on same line
+//  display: inline-block; // so toggle-navigation can be on same line
+  float: left;
 }
 .site-avatar {
   display: none;
@@ -138,6 +139,10 @@
 
 @media all and (min-width: 950px) {
 
+  .toggle-navigation {
+    display: none;
+//    float: none;
+  }
   .site-avatar {
     float: none;
     height: 96px;
@@ -145,7 +150,7 @@
     margin: 0 auto $baseline-height / 2;
   }
   .title-container {
-    display: block;
+    float: none;
     height: auto;
     text-align: center;
     padding-bottom: $baseline-height / 2;

@@ -4,6 +4,7 @@
 .menu-primary {
   max-height: 0;
   overflow: hidden;
+  clear: both;
 
   a {
     @extend %white-link;
@@ -153,9 +154,6 @@
 /* 950px */
 @media all and (min-width: 950px) {
 
-  .toggle-navigation {
-    display: none;
-  }
   .menu-primary {
     position: relative;
     max-height: none; // allow menu items to be seen w/o toggling

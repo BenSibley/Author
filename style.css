@@ -408,7 +408,7 @@ a img {
 }
 
 .title-container {
-  display: inline-block;
+  float: left;
 }
 
 .site-avatar {
@@ -536,6 +536,10 @@ a img {
   }
 }
 @media all and (min-width: 950px) {
+  .toggle-navigation {
+    display: none;
+  }
+
   .site-avatar {
     float: none;
     height: 96px;
@@ -544,7 +548,7 @@ a img {
   }
 
   .title-container {
-    display: block;
+    float: none;
     height: auto;
     text-align: center;
     padding-bottom: 0.75em;
@@ -579,6 +583,7 @@ a img {
 .menu-primary {
   max-height: 0;
   overflow: hidden;
+  clear: both;
 }
 .menu-primary a {
   text-decoration: none;
@@ -751,10 +756,6 @@ a img {
 }
 /* 950px */
 @media all and (min-width: 950px) {
-  .toggle-navigation {
-    display: none;
-  }
-
   .menu-primary {
     position: relative;
     max-height: none;
