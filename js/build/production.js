@@ -156,6 +156,7 @@ jQuery(document).ready(function($){
             var headerHeight = $('#main-sidebar').outerHeight();
 
             $('#menu-primary').css('top', headerHeight + socialIconsHeight + 24 + 'px');
+
             // below the header and menu + 24 for margin
             $('#sidebar-primary').css('top', headerHeight + socialIconsHeight + menuHeight + 48 + 'px');
         }
@@ -165,12 +166,6 @@ jQuery(document).ready(function($){
     }
 
     function adjustSidebarPosition() {
-
-        /*
-         When .toggle-dropdown is clicked, get the adjacent ul.sub-menu and get the height of
-         it's child li elements combined (X).
-         Increase the top value for the sidebar by X
-         */
 
         // get the current window width
         var windowWidth = $(window).width();
@@ -195,8 +190,17 @@ jQuery(document).ready(function($){
             // remove 'px' so addition is possible
             sidebarTop = parseInt(sidebarTop);
 
-            // set the new top value for the sidebar
-            $('#sidebar-primary').css('top', sidebarTop + listHeight + 'px');
+            // get the li containing the toggle button
+            var menuItem = $(this).parent();
+
+            // dropdown is being opened (increase sidebar top value)
+            if( menuItem.hasClass('open') ) {
+                $('#sidebar-primary').css('top', sidebarTop + listHeight + 'px');
+            }
+            // dropdown is being closed (decrease sidebar top value)
+            else {
+                $('#sidebar-primary').css('top', sidebarTop - listHeight + 'px');
+            }
         }
     }
 
