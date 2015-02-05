@@ -87,6 +87,7 @@ jQuery(document).ready(function($){
 
     $(window).resize(function(){
         positionSidebar();
+        closeMainSidebar();
     });
 
     // display the primary menu at mobile widths
@@ -201,6 +202,19 @@ jQuery(document).ready(function($){
             else {
                 $('#sidebar-primary').css('top', sidebarTop - listHeight + 'px');
             }
+        }
+    }
+
+    // if sidebar open and resized over 950px, automatically close it
+    function closeMainSidebar() {
+
+        // get the current window width
+        var windowWidth = $(window).width();
+
+        // if at width when menu is absolutely positioned
+        if( windowWidth > 949 && $('#main-sidebar').hasClass('open') ) {
+            // run function to close sidebar and all menus
+            openPrimaryMenu();
         }
     }
 
