@@ -22,6 +22,12 @@ body {
   -moz-hyphens: auto;
   hyphens: auto;
 }
+.overflow-container {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  min-height: 100%;
+}
 .main {
   margin: 0 auto;
   background: $color-gray-95-blue;

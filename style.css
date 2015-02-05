@@ -95,6 +95,13 @@ body {
   hyphens: auto;
 }
 
+.overflow-container {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  min-height: 100%;
+}
+
 .main {
   margin: 0 auto;
   background: #f0f1f2;

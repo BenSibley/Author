@@ -13,6 +13,8 @@
     </div>
 </footer>
 
+</div><!-- .overflow-container -->
+
 <?php wp_footer(); ?>
 </body>
 </html>
