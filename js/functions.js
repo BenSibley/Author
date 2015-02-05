@@ -1,7 +1,19 @@
 jQuery(document).ready(function($){
 
+    positionSidebar();
+
+    $(window).resize(function(){
+        positionSidebar();
+    });
+
     // display the primary menu at mobile widths
     $('#toggle-navigation').on('click', openPrimaryMenu);
+
+    // display the dropdown menus
+    $('.toggle-dropdown').on('click', openDropdownMenu);
+
+    // push down sidebar when dropdown menu opened
+    $('.toggle-dropdown').on('click', adjustSidebarPosition);
 
     function openPrimaryMenu() {
 
@@ -26,9 +38,6 @@ jQuery(document).ready(function($){
             sidebar.addClass('open');
         }
     }
-
-    // display the dropdown menus
-    $('.toggle-dropdown').on('click', openDropdownMenu);
 
     function openDropdownMenu() {
 
@@ -71,9 +80,41 @@ jQuery(document).ready(function($){
             $('#sidebar-primary, #menu-primary').css('top', '');
         }
     }
-    positionSidebar();
 
-    $(window).resize(function(){
-        positionSidebar();
-    });
+    function adjustSidebarPosition() {
+
+        /*
+         When .toggle-dropdown is clicked, get the adjacent ul.sub-menu and get the height of
+         it's child li elements combined (X).
+         Increase the top value for the sidebar by X
+         */
+
+        // get the current window width
+        var windowWidth = $(window).width();
+
+        // if at width when menu is absolutely positioned
+        if( windowWidth > 549 && windowWidth < 950 ) {
+
+            // get the submenu
+            var list = $(this).next();
+
+            // set the height variable
+            var listHeight = 0;
+
+            // get the height of all the child li elements combined (because ul has max-height: 0)
+            list.children().each(function(){
+                listHeight = listHeight + $(this).height();
+            });
+
+            // get the current top value for the sidebar
+            var sidebarTop = $('#sidebar-primary').css('top');
+
+            // remove 'px' so addition is possible
+            sidebarTop = parseInt(sidebarTop);
+
+            // set the new top value for the sidebar
+            $('#sidebar-primary').css('top', sidebarTop + listHeight + 'px');
+        }
+    }
+
 });
