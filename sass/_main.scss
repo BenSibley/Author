@@ -6,6 +6,17 @@
   }
   .open + .main {
     transform: translateX(320px);
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: $color-gray-17-blue;
+      opacity: 0.3;
+    }
   }
 }
 

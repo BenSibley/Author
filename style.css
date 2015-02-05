@@ -776,6 +776,16 @@ a img {
     -ms-transform: translateX(320px);
     transform: translateX(320px);
   }
+  .open + .main:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #27292b;
+    opacity: 0.3;
+  }
 }
 @media all and (min-width: 950px) {
   .main {
