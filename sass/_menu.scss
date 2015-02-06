@@ -46,12 +46,17 @@
       }
     }
   }
+
   /* Tier 2 */
 
   .menu-item-has-children,
   .page_item_has_children {
     position: relative; // keeps the dropdown arrows from showing overtop the content
 
+    // keep menu name from bumping into dropdown icon
+    > a {
+      max-width: calc(100% - 36px);
+    }
     button {
       float: right;
       height: 32px;

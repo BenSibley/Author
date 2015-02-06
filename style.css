@@ -621,6 +621,12 @@ a img {
 .menu-unset > ul .page_item_has_children {
   position: relative;
 }
+.menu-primary-items .menu-item-has-children > a,
+.menu-primary-items .page_item_has_children > a,
+.menu-unset > ul .menu-item-has-children > a,
+.menu-unset > ul .page_item_has_children > a {
+  max-width: calc(100% - 36px);
+}
 .menu-primary-items .menu-item-has-children button,
 .menu-primary-items .page_item_has_children button,
 .menu-unset > ul .menu-item-has-children button,
