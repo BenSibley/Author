@@ -1,10 +1,12 @@
 jQuery(document).ready(function($){
 
     positionSidebar();
+    mainMinHeight();
 
     $(window).resize(function(){
         positionSidebar();
         closeMainSidebar();
+        mainMinHeight();
     });
 
     // display the primary menu at mobile widths
@@ -137,8 +139,13 @@ jQuery(document).ready(function($){
             // get the current top value for the sidebar
             var sidebarTop = $('#sidebar-primary').css('top');
 
+            var mainHeight = $('#main').css('min-height');
+
             // remove 'px' so addition is possible
             sidebarTop = parseInt(sidebarTop);
+
+            // remove 'px' so addition is possible
+            mainHeight = parseInt(mainHeight);
 
             // get the li containing the toggle button
             var menuItem = $(this).parent();
@@ -146,10 +153,12 @@ jQuery(document).ready(function($){
             // dropdown is being opened (increase sidebar top value)
             if( menuItem.hasClass('open') ) {
                 $('#sidebar-primary').css('top', sidebarTop + listHeight + 'px');
+                $('#main').css('min-height', mainHeight + listHeight + 'px');
             }
             // dropdown is being closed (decrease sidebar top value)
             else {
                 $('#sidebar-primary').css('top', sidebarTop - listHeight + 'px');
+                $('#main').css('min-height', mainHeight - listHeight + 'px');
             }
         }
     }
@@ -157,19 +166,20 @@ jQuery(document).ready(function($){
     // if sidebar open and resized over 950px, automatically close it
     function closeMainSidebar() {
 
-        // get the current window width
-        var windowWidth = $(window).width();
-
-        // if at width when menu is absolutely positioned
-        if( windowWidth > 949 && $('#main-sidebar').hasClass('open') ) {
+        // if no longer at width when menu is absolutely positioned
+        if( $(window).width() > 949 && $('#main-sidebar').hasClass('open') ) {
             // run function to close sidebar and all menus
             openPrimaryMenu();
         }
     }
 
+    // keep light gray background all the way to footer
     function mainMinHeight() {
 
-        $('#main').css('min-height', $('#overflow-container').height() + 'px');
+        if( $(window).width() > 949 ) {
+            $('#main').css('min-height', $('#overflow-container').height() + 'px');
+        } else {
+            $('#main').css('min-height', '');
+        }
     }
-    //mainMinHeight();
 });
