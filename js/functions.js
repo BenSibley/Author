@@ -35,8 +35,36 @@ jQuery(document).ready(function($){
                     $(this).removeClass('open');
                 }
             });
+            $('#main').css('min-height', '');
+
         } else {
             sidebar.addClass('open');
+
+            var windowWidth = $(window).width();
+
+            // if at width when menu is absolutely positioned
+            if( windowWidth > 549 && windowWidth < 950 ) {
+
+                var socialIconsHeight = 0;
+
+                if( $('#site-header').find('.social-media-icons').length ) {
+                    socialIconsHeight = $('#site-header').find('.social-media-icons').find('ul').outerHeight();
+                }
+
+                // get the selector for the primary menu
+                if( $('.menu-unset').length ) {
+                    var menu = $('.menu-unset');
+                } else {
+                    var menu = $('#menu-primary-items');
+                }
+                var menuHeight = menu.outerHeight();
+
+                var headerHeight = $('#main-sidebar').outerHeight();
+
+                var sidebarPrimaryHeight = $('#sidebar-primary').height();
+
+                $('#main').css('min-height', sidebarPrimaryHeight + headerHeight + socialIconsHeight + menuHeight + 'px' );
+            }
         }
     }
 
@@ -51,6 +79,7 @@ jQuery(document).ready(function($){
         }
     }
 
+    // absolutely position the sidebar
     function positionSidebar() {
 
         var windowWidth = $(window).width();
@@ -75,14 +104,17 @@ jQuery(document).ready(function($){
 
             $('#menu-primary').css('top', headerHeight + socialIconsHeight + 24 + 'px');
 
+            var sidebarPrimary = $('#sidebar-primary');
+
             // below the header and menu + 24 for margin
-            $('#sidebar-primary').css('top', headerHeight + socialIconsHeight + menuHeight + 48 + 'px');
+            sidebarPrimary.css('top', headerHeight + socialIconsHeight + menuHeight + 48 + 'px');
         }
         else {
             $('#sidebar-primary, #menu-primary').css('top', '');
         }
     }
 
+    // move sidebar when dropdown menu items opened
     function adjustSidebarPosition() {
 
         // get the current window width
@@ -135,4 +167,9 @@ jQuery(document).ready(function($){
         }
     }
 
+    function mainMinHeight() {
+
+        $('#main').css('min-height', $('#overflow-container').height() + 'px');
+    }
+    //mainMinHeight();
 });
