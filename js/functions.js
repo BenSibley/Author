@@ -182,4 +182,90 @@ jQuery(document).ready(function($){
             $('#main').css('min-height', '');
         }
     }
+
+    // Sidebar scrolling.
+    function resize() {
+        var sidebar       = $('#main-sidebar');
+
+        if ( 950 > $(window).width() ) {
+            var top, bottom = false;
+            sidebar.removeAttr( 'style' );
+        }
+    }
+
+    var lastWindowPos = 0;
+    var top, bottom = false;
+    var topOffset = 0;
+    function scroll() {
+        var body = $('#overflow-container');
+        var windowWidth   = $(window).width();
+        var windowHeight  = $(window).height();
+        var bodyHeight    = body.height();
+        var sidebar       = $('#main-sidebar');
+        var sidebarHeight = sidebar.outerHeight();
+        var windowPos = $(window).scrollTop();
+        var adminbarOffset = $('body').hasClass( 'admin-bar' ) ? $( '#wpadminbar' ).height() : 0;
+
+        if ( 950 > windowWidth ) {
+            return;
+        }
+
+        // if the sidebar height + admin bar is greater than the window height
+        if ( sidebarHeight + adminbarOffset > windowHeight ) {
+            // if the window has been scrolled down
+            if ( windowPos > lastWindowPos ) {
+                if ( top ) {
+                    top = false;
+                    topOffset = ( sidebar.offset().top > 0 ) ? sidebar.offset().top - adminbarOffset : 0;
+                    sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
+                } else if ( ! bottom && windowPos + windowHeight > sidebarHeight + sidebar.offset().top && sidebarHeight + adminbarOffset < bodyHeight ) {
+                    bottom = true;
+                    sidebar.attr( 'style', 'position: fixed; bottom: 0;' );
+                }
+            }
+            // if the window has been scrolled up
+            else if ( windowPos < lastWindowPos ) {
+                if ( bottom ) {
+                    bottom = false;
+                    topOffset = ( sidebar.offset().top > 0 ) ? sidebar.offset().top - adminbarOffset : 0;
+                    sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
+                } else if ( ! top && windowPos > 0 && windowPos + adminbarOffset < sidebar.offset().top ) {
+                    top = true;
+                    sidebar.attr( 'style', 'position: fixed;' );
+                }
+            }
+            // if the window has not been previously scrolled
+            else {
+                top = bottom = false;
+                //topOffset = ( sidebar.offset().top > 0 ) ? sidebar.offset().top - adminbarOffset : 0;
+                //sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
+            }
+        } else if ( ! top ) {
+            top = true;
+            sidebar.attr( 'style', 'position: fixed;' );
+        }
+
+        lastWindowPos = windowPos;
+    }
+
+    function resizeAndScroll() {
+        resize();
+        scroll();
+    }
+
+    var resizeTimer;
+
+    $(window)
+        .on( 'scroll', scroll )
+        .on( 'resize', function() {
+            clearTimeout( resizeTimer );
+            resizeTimer = setTimeout( resizeAndScroll, 500 );
+        } );
+    $('#main-sidebar').on( 'click keydown', 'button', resizeAndScroll );
+
+    resizeAndScroll();
+
+    for ( var i = 1; i < 6; i++ ) {
+        setTimeout( resizeAndScroll, 100 * i );
+    }
 });
