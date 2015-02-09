@@ -15,7 +15,7 @@ function ct_author_options_content(){
             <h3><?php _e('Customization', 'author'); ?></h3>
             <p><?php _e('Click the "Customize" link in your menu, or use the button below to get started customizing author', 'author'); ?>.</p>
             <p>
-                <a class="button-primary" href="customize.php"><?php _e('Use Customizer', 'author') ?></a>
+                <a class="button-primary" href="<?php echo admin_url('customize.php'); ?>"><?php _e('Use Customizer', 'author') ?></a>
             </p>
         </div>
         <div class="content content-support">
@@ -26,16 +26,10 @@ function ct_author_options_content(){
             </p>
         </div>
         <div class="content content-premium-upgrade">
-            <h3><?php _e('Upgrade to author Plus ($29)', 'author'); ?></h3>
-            <p><?php _e('author Plus is the premium version of author. By upgrading to author Plus, you get:', 'author'); ?></p>
-            <ul>
-                <li><?php _e('Custom colors', 'author'); ?></li>
-                <li><?php _e('Background images & textures', 'author'); ?></li>
-                <li><?php _e('New layouts', 'author'); ?></li>
-                <li><?php _e('and much more&#8230;', 'author'); ?></li>
-            </ul>
+            <h3><?php _e('Upgrade to Author Pro', 'author'); ?></h3>
+            <p><?php _e('Author Pro is the premium upgrade for Author. It has custom colors, new layouts, background images, and more', 'author'); ?>...</p>
             <p>
-                <a target="_blank" class="button-primary" href="https://www.competethemes.com/author-plus/"><?php _e('See Full Feature List', 'author'); ?></a>
+                <a target="_blank" class="button-primary" href="https://www.competethemes.com/author-pro/"><?php _e('See Full Feature List', 'author'); ?></a>
             </p>
         </div>
     </div>
