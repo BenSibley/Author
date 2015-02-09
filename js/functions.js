@@ -221,6 +221,10 @@ jQuery(document).ready(function($){
                 } else if ( ! bottom && windowPos + windowHeight > sidebarHeight + sidebar.offset().top && sidebarHeight + adminbarOffset < bodyHeight ) {
                     bottom = true;
                     sidebar.attr( 'style', 'position: fixed; bottom: 0;' );
+                } else if ( sidebarHeight > windowHeight ) {
+                    bottom = false;
+                    topOffset = ( sidebar.offset().top > 0 ) ? sidebar.offset().top - adminbarOffset : 0;
+                    sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
                 }
             }
             // if the window has been scrolled up
