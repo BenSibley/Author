@@ -92,6 +92,8 @@ jQuery(document).ready(function($){
         mainMinHeight();
     });
 
+    $('.post-content').fitVids();
+
     // display the primary menu at mobile widths
     $('#toggle-navigation').on('click', openPrimaryMenu);
 
