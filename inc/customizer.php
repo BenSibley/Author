@@ -102,8 +102,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		'default'           => 'none',
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'ct_author_sanitize_avatar_method',
-//		'transport'         => 'postMessage'
+		'sanitize_callback' => 'ct_author_sanitize_avatar_method'
 	) );
 	// control
 	$wp_customize->add_control( 'avatar_method', array(
@@ -121,8 +120,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	$wp_customize->add_setting( 'avatar', array(
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'esc_url_raw',
-//		'transport'         => 'postMessage'
+		'sanitize_callback' => 'esc_url_raw'
 	) );
 	// control
 	$wp_customize->add_control( new WP_Customize_Image_Control(
@@ -145,8 +143,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	$wp_customize->add_setting( 'logo_upload', array(
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'esc_url_raw',
-		'transport'         => 'postMessage'
+		'sanitize_callback' => 'esc_url_raw'
 	) );
 	// control
 	$wp_customize->add_control( new WP_Customize_Image_Control(
@@ -179,8 +176,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 			$wp_customize->add_setting( "$social_site", array(
 				'type'              => 'theme_mod',
 				'capability'        => 'edit_theme_options',
-				'sanitize_callback' => 'ct_author_sanitize_email',
-				'transport'         => 'postMessage'
+				'sanitize_callback' => 'ct_author_sanitize_email'
 			) );
 			// control
 			$wp_customize->add_control( $social_site, array(
@@ -193,8 +189,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 			$wp_customize->add_setting( $social_site, array(
 				'type'              => 'theme_mod',
 				'capability'        => 'edit_theme_options',
-				'sanitize_callback' => 'esc_url_raw',
-				'transport'         => 'postMessage'
+				'sanitize_callback' => 'esc_url_raw'
 			) );
 			// control
 			$wp_customize->add_control( new ct_author_url_input_control(
