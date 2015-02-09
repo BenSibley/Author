@@ -115,6 +115,14 @@
     }
   }
 }
+// password protected post
+.entry.protected {
+
+  input[type='password'] {
+    display: block;
+    margin: 6px 0 10px;
+  }
+}
 
 // 550px
 @media all and (min-width: 550px) {

@@ -919,6 +919,11 @@ a img {
   border-top: solid 1px #d9d9d9;
 }
 
+.entry.protected input[type='password'] {
+  display: block;
+  margin: 6px 0 10px;
+}
+
 @media all and (min-width: 550px) {
   .entry article {
     box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1);
