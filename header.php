@@ -15,7 +15,11 @@
 		<div id="main-sidebar" class="main-sidebar">
 			<header class="site-header" id="site-header" role="banner">
 				<div id="title-container" class="title-container">
-					<?php ct_author_output_avatar(); ?>
+					<?php
+					$avatar_method = get_theme_mod('avatar_method');
+					if( $avatar_method == 'gravatar' || $avatar_method == 'upload' ) { ?>
+						<div id="site-avatar" class="site-avatar" style="background-image: url('<?php echo ct_author_output_avatar(); ?>')"></div>
+					<?php } ?>
 					<div class="container">
 						<?php get_template_part('logo')  ?>
 						<p class="tagline"><?php bloginfo('description'); ?></p>

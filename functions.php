@@ -468,14 +468,22 @@ function ct_author_output_avatar() {
     // get method for displaying avatar
     $avatar_method = get_theme_mod('avatar_method');
 
+    // if neither gravatar, nor upload used
+    $avatar = '';
+
+    // if using gravatar
     if( $avatar_method == 'gravatar' ){
+        // get the avatar from the admin email
         $avatar = get_avatar( get_option('admin_email'));
+        // use regex to grab source from <img /> markup
         $avatar = ct_author_get_avatar_url($avatar);
-        echo '<div id="site-avatar" class="site-avatar" style="background-image: url(' . $avatar .')"></div>';
-    } elseif( $avatar_method == 'upload') {
-        $avatar = get_theme_mod('avatar');
-        echo '<div id="site-avatar" class="site-avatar" style="background-image: url(' . $avatar .')"></div>';
     }
+    // if using an upload
+    elseif( $avatar_method == 'upload') {
+        // get the uploaded image
+        $avatar = get_theme_mod('avatar');
+    }
+    return $avatar;
 }
 
 function ct_author_get_avatar_url($get_avatar){
