@@ -404,7 +404,7 @@ function ct_author_get_image_id($url) {
     $attachment = $wpdb->get_col( $wpdb->prepare( "SELECT ID FROM {$wpdb->prefix}posts WHERE guid RLIKE %s;", $parsed_url[1] ) );
 
     // Returns null if no attachment is found
-    return $attachment[0];
+    return absint($attachment[0]);
 }
 
 function ct_author_profile_image_output(){
