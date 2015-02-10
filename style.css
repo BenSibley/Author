@@ -1031,6 +1031,8 @@ a img {
   float: left;
   margin-right: 8px;
   border-radius: 50%;
+  width: 48px;
+  height: 48px;
 }
 .comment-author .author-name {
   line-height: 48px;

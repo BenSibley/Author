@@ -62,15 +62,14 @@ add_action('widgets_init','ct_author_register_widget_areas');
 /* added to customize the comments. Same as default except -> added use of gravatar images for comment authors */
 function ct_author_customize_comments( $comment, $args, $depth ) {
     $GLOBALS['comment'] = $comment;
-    global $post;
     ?>
     <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
         <article id="comment-<?php comment_ID(); ?>" class="comment">
             <div class="comment-author">
                 <?php
-                // if is post author
-                if( $comment->user_id === $post->post_author ) {
-                    ct_author_profile_image_output();
+                // if site admin and avatar uploaded
+                if( $comment->comment_author_email === get_option('admin_email') && get_theme_mod('avatar_method') == 'upload' ) {
+                    echo '<img class="avatar avatar-48 photo" src="' . ct_author_output_avatar() . '" height="48" width="48" />';
                 } else {
                     echo get_avatar( get_comment_author_email(), 48 );
                 }
@@ -382,50 +381,6 @@ if( ! function_exists('ct_author_social_icons_output') ) {
     }
 }
 
-// retrieves the attachment ID from the file URL
-function ct_author_get_image_id($url) {
-
-    // Split the $url into two parts with the wp-content directory as the separator
-    $parsed_url  = explode( parse_url( WP_CONTENT_URL, PHP_URL_PATH ), $url );
-
-    // Get the host of the current site and the host of the $url, ignoring www
-    $this_host = str_ireplace( 'www.', '', parse_url( home_url(), PHP_URL_HOST ) );
-    $file_host = str_ireplace( 'www.', '', parse_url( $url, PHP_URL_HOST ) );
-
-    // Return nothing if there aren't any $url parts or if the current host and $url host do not match
-    if ( ! isset( $parsed_url[1] ) || empty( $parsed_url[1] ) || ( $this_host != $file_host ) ) {
-        return;
-    }
-
-    // Now we're going to quickly search the DB for any attachment GUID with a partial path match
-    // Example: /uploads/2013/05/test-image.jpg
-    global $wpdb;
-
-    $attachment = $wpdb->get_col( $wpdb->prepare( "SELECT ID FROM {$wpdb->prefix}posts WHERE guid RLIKE %s;", $parsed_url[1] ) );
-
-    // Returns null if no attachment is found
-    return absint($attachment[0]);
-}
-
-function ct_author_profile_image_output(){
-
-    // use User's profile image, else default to their Gravatar
-    if(get_the_author_meta('author_user_profile_image')){
-
-        // get the id based on the image's URL
-        $image_id = ct_author_get_image_id(get_the_author_meta('author_user_profile_image'));
-
-        // retrieve the thumbnail size of profile image
-        $image_thumb = wp_get_attachment_image($image_id, 'thumbnail');
-
-        // display the image
-        echo $image_thumb;
-
-    } else {
-        echo get_avatar( get_the_author_meta( 'ID' ), 60 );
-    }
-}
-
 /*
  * WP will apply the ".menu-primary-items" class & id to the containing <div> instead of <ul>
  * making styling difficult and confusing. Using this wrapper to add a unique class to make styling easier.
@@ -463,6 +418,7 @@ function ct_author_set_date_format() {
 }
 add_action( 'init', 'ct_author_set_date_format' );
 
+// used in header.php for primary avatar and comments
 function ct_author_output_avatar() {
 
     // get method for displaying avatar
