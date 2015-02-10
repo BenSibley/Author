@@ -32,5 +32,29 @@ function ct_author_options_content(){
                 <a target="_blank" class="button-primary" href="https://www.competethemes.com/author-pro/"><?php _e('See Full Feature List', 'author'); ?></a>
             </p>
         </div>
+        <div class="content content-resources">
+            <h3><?php _e('WordPress Resources', 'author'); ?></h3>
+            <p><?php _e('Save time and money searching for WordPress products by following our recommendations', 'author'); ?>.</p>
+            <p>
+                <a target="_blank" class="button-primary" href="https://www.competethemes.com/wordpress-resources/"><?php _e('View Resources', 'author'); ?></a>
+            </p>
+        </div>
+        <div class="content content-delete-settings">
+            <h3><?php _e('Reset Customizer Settings', 'author'); ?></h3>
+            <p>
+                <?php
+                $url = admin_url('customize.php');
+                $text = sprintf( __( '<strong>Warning:</strong> Clicking this button will erase your current settings in the <a href="%s">Customizer</a>', 'author' ), esc_url( $url ) );
+                echo $text . ".";
+                ?>
+            </p>
+            <form method="post">
+                <input type="hidden" name="author_reset_customizer" value="author_reset_customizer_settings" />
+                <p>
+                    <?php wp_nonce_field( 'author_reset_customizer_nonce', 'author_reset_customizer_nonce' ); ?>
+                    <?php submit_button( __( 'Reset Customizer Settings', 'author' ), 'delete', 'delete', false ); ?>
+                </p>
+            </form>
+        </div>
     </div>
 <?php } ?>

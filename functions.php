@@ -497,7 +497,7 @@ function ct_author_nav_dropdown_buttons( $item_output, $item, $depth, $args ) {
 add_filter( 'walker_nav_menu_start_el', 'ct_author_nav_dropdown_buttons', 10, 4 );
 
 // custom css output
-function author_custom_css_output(){
+function ct_author_custom_css_output(){
 
     $custom_css = get_theme_mod('custom_css');
 
@@ -506,9 +506,9 @@ function author_custom_css_output(){
         wp_add_inline_style( 'style', $custom_css );
     }
 }
-add_action('wp_enqueue_scripts', 'author_custom_css_output');
+add_action('wp_enqueue_scripts', 'ct_author_custom_css_output');
 
-function author_body_class( $classes ) {
+function ct_author_body_class( $classes ) {
 
     /* get full post setting */
     $full_post = get_theme_mod('full_post');
@@ -519,4 +519,41 @@ function author_body_class( $classes ) {
     }
     return $classes;
 }
-add_filter( 'body_class', 'author_body_class' );
+add_filter( 'body_class', 'ct_author_body_class' );
+
+function author_reset_customizer_options() {
+
+    // validate name and value
+    if( empty( $_POST['author_reset_customizer'] ) || 'author_reset_customizer_settings' !== $_POST['author_reset_customizer'] )
+        return;
+
+    // validate nonce
+    if( ! wp_verify_nonce( $_POST['author_reset_customizer_nonce'], 'author_reset_customizer_nonce' ) )
+        return;
+
+    // validate user permissions
+    if( ! current_user_can( 'manage_options' ) )
+        return;
+
+    // delete customizer mods
+    remove_theme_mods();
+
+    $redirect = admin_url( 'themes.php?page=author-options' );
+    $redirect = add_query_arg( 'author_status', 'deleted', $redirect);
+
+    // safely redirect
+    wp_safe_redirect( $redirect ); exit;
+}
+add_action( 'admin_init', 'author_reset_customizer_options' );
+
+function ct_author_delete_settings_notice() {
+
+    if ( isset( $_GET['author_status'] ) ) {
+        ?>
+        <div class="updated">
+            <p><?php _e( 'Customizer settings deleted', 'author' ); ?>.</p>
+        </div>
+    <?php
+    }
+}
+add_action( 'admin_notices', 'ct_author_delete_settings_notice' );
