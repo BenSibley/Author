@@ -1,5 +1,9 @@
 <?php
 
+/*
+ * Prefix: ct_author = Compete Themes Author
+ */
+
 // Load the core theme framework.
 require_once( trailingslashit( get_template_directory() ) . 'library/hybrid.php' );
 new Hybrid();
@@ -524,10 +528,10 @@ function ct_author_delete_settings_notice() {
 add_action( 'admin_notices', 'ct_author_delete_settings_notice' );
 
 if ( ! function_exists( '_wp_render_title_tag' ) ) :
-    function unlimited_add_title_tag() {
+    function ct_author_add_title_tag() {
         ?>
-        <title><?php wp_title( ' | ' ); ?></title>
+        <title><?php wp_title(); ?></title>
     <?php
     }
-    add_action( 'wp_head', 'unlimited_add_title_tag' );
+    add_action( 'wp_head', 'ct_author_add_title_tag' );
 endif;
