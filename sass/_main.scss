@@ -2,7 +2,7 @@
 @media all and (min-width: $five-fifty) {
 
   .main {
-    padding: $baseline-height $column * 2;
+    padding: $baseline-height $column-27 * 2;
   }
   .open + .main {
     transform: translateX(320px);

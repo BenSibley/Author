@@ -3,7 +3,7 @@
   margin-bottom: $baseline-height;
 
   article {
-    padding: $baseline-height $column * 2;
+    padding: $baseline-height $column-27 * 2;
     background: white;
   }
 }
@@ -86,7 +86,7 @@
 .further-reading {
   text-align: center;
   background: $color-gray-85;
-  padding: $baseline-height / 2 $column * 2;
+  padding: $baseline-height / 2 $column-27 * 2;
 
   div {
     margin: $baseline-height 0;
