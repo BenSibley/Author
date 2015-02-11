@@ -1,4 +1,5 @@
 .entry {
+  position: relative; // for sticky status
   margin-bottom: $baseline-height;
 
   article {

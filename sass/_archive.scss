@@ -28,6 +28,23 @@
     left: $column-27 * 2;
   }
 }
+.sticky-status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 6px 20px;
+  background: $color-gray-17-blue;
+  color: white;
+}
+
+// 1150px
+@media all and (max-width: 1150px) {
+
+  .blog .sticky:not(.has-post-thumbnail) article {
+    padding-top: $baseline-height * 2;
+  }
+}
 
 // 550px
 @media all and (min-width: 550px) {

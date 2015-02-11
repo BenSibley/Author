@@ -808,6 +808,7 @@ a img {
   }
 }
 .entry {
+  position: relative;
   margin-bottom: 1.5em;
 }
 .entry article {
@@ -1170,6 +1171,21 @@ a img {
   left: 7.4074%;
 }
 
+.sticky-status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 6px 20px;
+  background: #27292b;
+  color: white;
+}
+
+@media all and (max-width: 1150px) {
+  .blog .sticky:not(.has-post-thumbnail) article {
+    padding-top: 3em;
+  }
+}
 @media all and (min-width: 550px) {
   .archive-header,
   .loop-pagination {
