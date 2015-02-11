@@ -1,28 +1,45 @@
 jQuery(document).ready(function($){
 
+    /* Set variables */
+
+    var toggleDropdown = $('.toggle-dropdown');
+    var sidebar = $('#main-sidebar');
+    var siteHeader = $('#site-header');
+    var main = $('#main');
+    var sidebarPrimary = $('#sidebar-primary');
+
+    // get the selector for the primary menu
+    var menu = $('.menu-unset').length ? $('.menu-unset') : $('#menu-primary-items');
+
+    // for scrolling function
+    var lastWindowPos = 0;
+    var top, bottom = false;
+    var topOffset = 0;
+
+    /* Call functions */
+
     positionSidebar();
-    mainMinHeight();
+    setMainMinHeight();
 
     $(window).resize(function(){
         positionSidebar();
         closeMainSidebar();
-        mainMinHeight();
+        setMainMinHeight();
     });
 
+    // add fitVids to videos in posts
     $('.post-content').fitVids();
 
     // display the primary menu at mobile widths
     $('#toggle-navigation').on('click', openPrimaryMenu);
 
     // display the dropdown menus
-    $('.toggle-dropdown').on('click', openDropdownMenu);
+    toggleDropdown.on('click', openDropdownMenu);
 
-    // push down sidebar when dropdown menu opened
-    $('.toggle-dropdown').on('click', adjustSidebarPosition);
+    // extend sidebar height when dropdown clicked
+    toggleDropdown.on('click', adjustSidebarHeight);
 
     function openPrimaryMenu() {
-
-        var sidebar = $('#main-sidebar');
 
         // if menu open
         if( sidebar.hasClass('open') ) {
@@ -39,7 +56,12 @@ jQuery(document).ready(function($){
                     $(this).removeClass('open');
                 }
             });
-            $('#main').css('min-height', '');
+
+            // set minimum height for main
+            setMainMinHeight();
+
+            // return sidebar to initial top position
+            positionSidebar();
 
         } else {
             sidebar.addClass('open');
@@ -51,23 +73,17 @@ jQuery(document).ready(function($){
 
                 var socialIconsHeight = 0;
 
-                if( $('#site-header').find('.social-media-icons').length ) {
-                    socialIconsHeight = $('#site-header').find('.social-media-icons').find('ul').outerHeight();
+                if( siteHeader.find('.social-media-icons').length ) {
+                    socialIconsHeight = siteHeader.find('.social-media-icons').find('ul').outerHeight();
                 }
 
-                // get the selector for the primary menu
-                if( $('.menu-unset').length ) {
-                    var menu = $('.menu-unset');
-                } else {
-                    var menu = $('#menu-primary-items');
-                }
                 var menuHeight = menu.outerHeight();
 
-                var headerHeight = $('#main-sidebar').outerHeight();
+                var headerHeight = sidebar.outerHeight();
 
-                var sidebarPrimaryHeight = $('#sidebar-primary').height();
+                var sidebarPrimaryHeight = sidebarPrimary.height();
 
-                $('#main').css('min-height', sidebarPrimaryHeight + headerHeight + socialIconsHeight + menuHeight + 'px' );
+                main.css('min-height', sidebarPrimaryHeight + headerHeight + socialIconsHeight + menuHeight + 'px' );
             }
         }
     }
@@ -93,22 +109,14 @@ jQuery(document).ready(function($){
 
             var socialIconsHeight = 0;
 
-            if( $('#site-header').find('.social-media-icons').length ) {
-                socialIconsHeight = $('#site-header').find('.social-media-icons').find('ul').outerHeight();
+            if( siteHeader.find('.social-media-icons').length ) {
+                socialIconsHeight = siteHeader.find('.social-media-icons').find('ul').outerHeight();
             }
 
-            // get the selector for the primary menu
-            if( $('.menu-unset').length ) {
-                var menu = $('.menu-unset');
-            } else {
-                var menu = $('#menu-primary-items');
-            }
             var menuHeight = menu.outerHeight();
-            var headerHeight = $('#main-sidebar').outerHeight();
+            var headerHeight = sidebar.outerHeight();
 
             $('#menu-primary').css('top', headerHeight + socialIconsHeight + 24 + 'px');
-
-            var sidebarPrimary = $('#sidebar-primary');
 
             // below the header and menu + 24 for margin
             sidebarPrimary.css('top', headerHeight + socialIconsHeight + menuHeight + 48 + 'px');
@@ -119,7 +127,7 @@ jQuery(document).ready(function($){
     }
 
     // move sidebar when dropdown menu items opened
-    function adjustSidebarPosition() {
+    function adjustSidebarHeight() {
 
         // get the current window width
         var windowWidth = $(window).width();
@@ -139,9 +147,9 @@ jQuery(document).ready(function($){
             });
 
             // get the current top value for the sidebar
-            var sidebarTop = $('#sidebar-primary').css('top');
+            var sidebarTop = sidebarPrimary.css('top');
 
-            var mainHeight = $('#main').css('min-height');
+            var mainHeight = main.css('min-height');
 
             // remove 'px' so addition is possible
             sidebarTop = parseInt(sidebarTop);
@@ -154,13 +162,13 @@ jQuery(document).ready(function($){
 
             // dropdown is being opened (increase sidebar top value)
             if( menuItem.hasClass('open') ) {
-                $('#sidebar-primary').css('top', sidebarTop + listHeight + 'px');
-                $('#main').css('min-height', mainHeight + listHeight + 'px');
+                sidebarPrimary.css('top', sidebarTop + listHeight + 'px');
+                main.css('min-height', mainHeight + listHeight + 'px');
             }
             // dropdown is being closed (decrease sidebar top value)
             else {
-                $('#sidebar-primary').css('top', sidebarTop - listHeight + 'px');
-                $('#main').css('min-height', mainHeight - listHeight + 'px');
+                sidebarPrimary.css('top', sidebarTop - listHeight + 'px');
+                main.css('min-height', mainHeight - listHeight + 'px');
             }
         }
     }
@@ -169,25 +177,21 @@ jQuery(document).ready(function($){
     function closeMainSidebar() {
 
         // if no longer at width when menu is absolutely positioned
-        if( $(window).width() > 949 && $('#main-sidebar').hasClass('open') ) {
+        if( $(window).width() > 949 && sidebar.hasClass('open') ) {
             // run function to close sidebar and all menus
             openPrimaryMenu();
         }
     }
 
     // keep light gray background all the way to footer
-    function mainMinHeight() {
-
-        if( $(window).width() > 949 ) {
-            $('#main').css('min-height', $('#overflow-container').height() + 'px');
-        } else {
-            $('#main').css('min-height', '');
-        }
+    function setMainMinHeight() {
+        // refresh
+        main.css('min-height', '');
+        main.css('min-height', $('#overflow-container').height() + 'px');
     }
 
     // Sidebar scrolling.
     function resize() {
-        var sidebar       = $('#main-sidebar');
 
         if ( 950 > $(window).width() ) {
             var top, bottom = false;
@@ -195,15 +199,11 @@ jQuery(document).ready(function($){
         }
     }
 
-    var lastWindowPos = 0;
-    var top, bottom = false;
-    var topOffset = 0;
     function scroll() {
         var body = $('#overflow-container');
         var windowWidth   = $(window).width();
         var windowHeight  = $(window).height();
         var bodyHeight    = body.height();
-        var sidebar       = $('#main-sidebar');
         var sidebarHeight = sidebar.outerHeight();
         var windowPos = $(window).scrollTop();
         var adminbarOffset = $('body').hasClass( 'admin-bar' ) ? $( '#wpadminbar' ).height() : 0;
@@ -245,8 +245,6 @@ jQuery(document).ready(function($){
             // if the window has not been previously scrolled
             else {
                 top = bottom = false;
-                //topOffset = ( sidebar.offset().top > 0 ) ? sidebar.offset().top - adminbarOffset : 0;
-                //sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
             }
         } else if ( ! top ) {
             top = true;
@@ -269,7 +267,7 @@ jQuery(document).ready(function($){
             clearTimeout( resizeTimer );
             resizeTimer = setTimeout( resizeAndScroll, 500 );
         } );
-    $('#main-sidebar').on( 'click keydown', 'button', resizeAndScroll );
+    sidebar.on( 'click keydown', 'button', resizeAndScroll );
 
     resizeAndScroll();
 
