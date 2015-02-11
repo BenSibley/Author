@@ -62,12 +62,22 @@ module.exports = function(grunt) {
                 }
             }
         },
+        cssjanus: {
+            dev: {
+                options: {
+                    swapLtrRtlInUrl: false // replace 'ltr' with 'rtl'
+                },
+                src: ['style.css'],
+                dest: 'styles/rtl.css'
+            }
+        },
         cssmin: {
             combine: {
                 files: {
                     'style.min.css': ['style.css'],
                     'styles/customizer.min.css': ['styles/customizer.css'],
-                    'styles/admin.min.css': ['styles/admin.css']
+                    'styles/admin.min.css': ['styles/admin.css'],
+                    'styles/rtl.min.css': ['styles/rtl.css']
                 }
             }
         },
@@ -125,8 +135,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-wp-i18n');
     grunt.loadNpmTasks('grunt-phpcs');
     grunt.loadNpmTasks('grunt-phpunit');
+    grunt.loadNpmTasks('grunt-cssjanus');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass', 'autoprefixer', 'cssmin', 'compress', 'makepot', 'phpcs', 'phpunit']);
+    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass', 'autoprefixer', 'cssmin', 'compress', 'makepot', 'phpcs', 'phpunit', 'cssjanus']);
 
 };
