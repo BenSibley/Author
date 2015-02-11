@@ -371,7 +371,7 @@ a img {
   max-height: 9999px;
 }
 
-@media all and (min-width: 550px) {
+@media all and (min-width: 34.375em) {
   .sidebar-primary {
     position: absolute;
     width: 320px;
@@ -379,7 +379,7 @@ a img {
     padding: 0 8.69629%;
   }
 }
-@media all and (min-width: 950px) {
+@media all and (min-width: 59.375em) {
   .main-sidebar {
     float: right;
     width: 27.775%;
@@ -393,7 +393,7 @@ a img {
     padding: 0;
   }
 }
-@media all and (min-width: 1150px) {
+@media all and (min-width: 71.875em) {
   .main-sidebar {
     width: 22.22%;
   }
@@ -477,7 +477,7 @@ a img {
   border-color: #999999;
 }
 
-@media all and (min-width: 550px) {
+@media all and (min-width: 34.375em) {
   .site-title {
     font-size: 1.75em;
     /* 28px / 16px */
@@ -501,7 +501,7 @@ a img {
     margin-top: 0;
   }
 }
-@media all and (min-width: 700px) {
+@media all and (min-width: 43.75em) {
   .site-avatar {
     display: block;
     float: right;
@@ -535,7 +535,7 @@ a img {
     height: 0;
   }
 }
-@media all and (min-width: 950px) {
+@media all and (min-width: 59.375em) {
   .toggle-navigation {
     display: none;
   }
@@ -746,7 +746,7 @@ a img {
   text-decoration: underline;
 }
 
-@media all and (min-width: 550px) {
+@media all and (min-width: 34.375em) {
   .menu-primary {
     position: absolute;
     width: 320px;
@@ -761,7 +761,7 @@ a img {
   }
 }
 /* 950px */
-@media all and (min-width: 950px) {
+@media all and (min-width: 59.375em) {
   .menu-primary {
     position: relative;
     max-height: none;
@@ -773,7 +773,7 @@ a img {
     border-color: #999999;
   }
 }
-@media all and (min-width: 550px) {
+@media all and (min-width: 34.375em) {
   .main {
     padding: 1.5em 7.4074%;
   }
@@ -794,14 +794,14 @@ a img {
     opacity: 0.3;
   }
 }
-@media all and (min-width: 950px) {
+@media all and (min-width: 59.375em) {
   .main {
     float: left;
     padding: 3em 5.555%;
     width: 72.215%;
   }
 }
-@media all and (min-width: 1150px) {
+@media all and (min-width: 71.875em) {
   .main {
     width: 77.77%;
     padding: 3em 5.555% 3em 16.665%;
@@ -925,7 +925,7 @@ a img {
   margin: 6px 0 10px;
 }
 
-@media all and (min-width: 550px) {
+@media all and (min-width: 34.375em) {
   .entry article {
     box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1);
   }
@@ -957,7 +957,7 @@ a img {
     float: left;
   }
 }
-@media all and (min-width: 950px) {
+@media all and (min-width: 59.375em) {
   .entry {
     padding: 0;
   }
@@ -966,7 +966,7 @@ a img {
     padding: 1.5em 13.63197%;
   }
 }
-@media all and (min-width: 1150px) {
+@media all and (min-width: 71.875em) {
   .entry article,
   .entry .further-reading {
     padding: 1.5em 9.999%;
@@ -1102,14 +1102,14 @@ a img {
   float: left;
 }
 
-@media all and (min-width: 550px) {
+@media all and (min-width: 34.375em) {
   .comment-respond,
   .comments-closed,
   .comment-pagination {
     box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1);
   }
 }
-@media all and (min-width: 700px) {
+@media all and (min-width: 43.75em) {
   .comments-number h3,
   .comment-respond h3 {
     font-size: 2.3125em;
@@ -1121,7 +1121,7 @@ a img {
     padding-right: 3em;
   }
 }
-@media all and (min-width: 950px) {
+@media all and (min-width: 59.375em) {
   .comment-respond {
     padding: 3em 13.63197% 1.5em;
   }
@@ -1131,7 +1131,7 @@ a img {
     padding: 1.5em 13.63197%;
   }
 }
-@media all and (min-width: 1150px) {
+@media all and (min-width: 71.875em) {
   .comment-respond {
     padding: 3em 9.999% 1.5em;
   }
@@ -1181,18 +1181,18 @@ a img {
   color: white;
 }
 
-@media all and (max-width: 1150px) {
+@media all and (max-width: 71.875em) {
   .blog .sticky:not(.has-post-thumbnail) article {
     padding-top: 3em;
   }
 }
-@media all and (min-width: 550px) {
+@media all and (min-width: 34.375em) {
   .archive-header,
   .loop-pagination {
     box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1);
   }
 }
-@media all and (min-width: 950px) {
+@media all and (min-width: 59.375em) {
   .archive-header,
   .loop-pagination {
     padding: 1.5em 13.63197%;
@@ -1205,7 +1205,7 @@ a img {
     right: 13.63197%;
   }
 }
-@media all and (min-width: 1150px) {
+@media all and (min-width: 71.875em) {
   .archive-header,
   .loop-pagination {
     padding: 1.5em 9.999%;
@@ -1380,13 +1380,13 @@ a img {
   color: #3e4145;
 }
 
-@media all and (min-width: 950px) {
+@media all and (min-width: 59.375em) {
   .site-footer {
     float: left;
     width: 72.215%;
   }
 }
-@media all and (min-width: 1150px) {
+@media all and (min-width: 71.875em) {
   .site-footer {
     width: 77.77%;
   }
@@ -1403,7 +1403,7 @@ a img {
   max-width: none;
 }
 
-@media all and (min-width: 550px) {
+@media all and (min-width: 34.375em) {
   .main .search-form-container input[type="search"] {
     width: 70% !important;
     margin-bottom: 0;

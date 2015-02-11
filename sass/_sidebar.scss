@@ -15,7 +15,7 @@
 }
 
 // 550px
-@media all and (min-width: 550px) {
+@media all and (min-width: $five-fifty) {
 
   .sidebar-primary {
     position: absolute;
@@ -26,7 +26,7 @@
 }
 
 // 950px
-@media all and (min-width: 950px) {
+@media all and (min-width: $nine-fifty) {
 
   .main-sidebar {
     float: left;
@@ -42,7 +42,7 @@
 }
 
 // 1150px
-@media all and (min-width: 1150px) {
+@media all and (min-width: $eleven-fifty) {
 
   .main-sidebar {
     width: $column-9 * 2;

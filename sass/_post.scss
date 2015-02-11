@@ -126,7 +126,7 @@
 }
 
 // 550px
-@media all and (min-width: 550px) {
+@media all and (min-width: $five-fifty) {
 
   .entry {
 
@@ -163,7 +163,7 @@
 }
 
 // 950px
-@media all and (min-width: 950px) {
+@media all and (min-width: $nine-fifty) {
 
   .entry {
     padding: 0;
@@ -176,7 +176,7 @@
 }
 
 // 1150px
-@media all and (min-width: 1150px) {
+@media all and (min-width: $eleven-fifty) {
 
   .entry {
 

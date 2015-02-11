@@ -108,7 +108,7 @@
 }
 
 // 550px
-@media all and (min-width: 550px) {
+@media all and (min-width: $five-fifty) {
 
   .comment-respond,
   .comments-closed,
@@ -118,7 +118,7 @@
 }
 
 // 700px
-@media all and (min-width: 700px) {
+@media all and (min-width: $seven-hundred) {
 
   .comments-number,
   .comment-respond {
@@ -137,7 +137,7 @@
 }
 
 // 950px
-@media all and (min-width: 950px) {
+@media all and (min-width: $nine-fifty) {
 
   .comment-respond {
     padding: $baseline-height * 2 $column-9 * 0.75 * 1.636 $baseline-height;
@@ -149,7 +149,7 @@
 }
 
 // 1150px
-@media all and (min-width: 1150px) {
+@media all and (min-width: $eleven-fifty) {
 
   .comment-respond {
     padding: $baseline-height * 2 $column-9 * 0.5 * 1.8 $baseline-height;

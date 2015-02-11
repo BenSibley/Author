@@ -1,5 +1,5 @@
 // 550px
-@media all and (min-width: 550px) {
+@media all and (min-width: $five-fifty) {
 
   .main {
     padding: $baseline-height $column * 2;
@@ -21,7 +21,7 @@
 }
 
 // 950px
-@media all and (min-width: 950px) {
+@media all and (min-width: $nine-fifty) {
 
   .main {
     float: right;
@@ -30,7 +30,7 @@
   }
 }
 // 1150px
-@media all and (min-width: 1150px) {
+@media all and (min-width: $eleven-fifty) {
 
   .main {
     width: $column-9 * 7;

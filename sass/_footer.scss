@@ -23,7 +23,7 @@
 }
 
 // 950px
-@media all and (min-width: 950px) {
+@media all and (min-width: $nine-fifty) {
 
   .site-footer {
     float: right;
@@ -31,7 +31,7 @@
   }
 }
 // 1150px
-@media all and (min-width: 1150px) {
+@media all and (min-width: $eleven-fifty) {
 
   .site-footer {
     width: $column-9 * 7;

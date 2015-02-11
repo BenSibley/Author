@@ -84,7 +84,7 @@
   }
 }
 
-@media all and (min-width: 550px) {
+@media all and (min-width: $five-fifty) {
 
   .site-title {
     font-size: 1.75em; /* 28px / 16px */
@@ -108,7 +108,7 @@
   }
 }
 
-@media all and (min-width: 700px) {
+@media all and (min-width: $seven-hundred) {
 
   .site-avatar {
     display: block;
@@ -137,7 +137,7 @@
   }
 }
 
-@media all and (min-width: 950px) {
+@media all and (min-width: $nine-fifty) {
 
   .toggle-navigation {
     display: none;
