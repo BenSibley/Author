@@ -4,7 +4,6 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html <?php language_attributes(); ?>> <!--<![endif]-->
 
 <head>
-	<title><?php wp_title( ' | ' ); ?></title>
     <?php wp_head(); ?>
 </head>
 

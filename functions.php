@@ -18,6 +18,7 @@ function ct_author_theme_setup() {
     // add functionality from WordPress core
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'automatic-feed-links' );
+    add_theme_support( 'title-tag' );
 
 	// load theme options page
 	require_once( trailingslashit( get_template_directory() ) . 'theme-options.php' );
@@ -521,3 +522,12 @@ function ct_author_delete_settings_notice() {
     }
 }
 add_action( 'admin_notices', 'ct_author_delete_settings_notice' );
+
+if ( ! function_exists( '_wp_render_title_tag' ) ) :
+    function unlimited_add_title_tag() {
+        ?>
+        <title><?php wp_title( ' | ' ); ?></title>
+    <?php
+    }
+    add_action( 'wp_head', 'unlimited_add_title_tag' );
+endif;
