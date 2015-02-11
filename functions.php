@@ -535,3 +535,11 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) :
     }
     add_action( 'wp_head', 'ct_author_add_title_tag' );
 endif;
+
+function ct_author_sticky_post_marker() {
+
+    if( is_sticky() && !is_archive() ) {
+        echo '<span class="sticky-status">Featured Post</span>';
+    }
+}
+add_action( 'archive_post_before', 'ct_author_sticky_post_marker' );

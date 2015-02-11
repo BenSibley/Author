@@ -1,6 +1,8 @@
+<?php hybrid_do_atomic( 'main_bottom' ); ?>
 </main> <!-- .main -->
 
 <footer class="site-footer" role="contentinfo">
+    <?php hybrid_do_atomic( 'footer_top' ); ?>
     <div class="design-credit">
         <span>
             <?php
@@ -15,5 +17,7 @@
 </div><!-- .overflow-container -->
 
 <?php wp_footer(); ?>
+
+<?php hybrid_do_atomic( 'body_bottom' ); ?>
 </body>
 </html>

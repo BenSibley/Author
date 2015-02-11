@@ -8,10 +8,12 @@
 </head>
 
 <body id="<?php print get_stylesheet(); ?>" <?php body_class(); ?>>
+	<?php hybrid_do_atomic( 'body_top' ); ?>
 	<!--skip to content link-->
 	<a class="skip-content" href="#main"><?php _e('Skip to content', 'author'); ?></a>
 	<div id="overflow-container" class="overflow-container">
 		<div id="main-sidebar" class="main-sidebar">
+			<?php hybrid_do_atomic( 'before_main_sidebar' ); ?>
 			<header class="site-header" id="site-header" role="banner">
 				<div id="title-container" class="title-container">
 					<?php
@@ -30,6 +32,10 @@
 				<?php ct_author_social_icons_output('header'); ?>
 				<?php get_template_part( 'menu', 'primary' ); ?>
 			</header>
+			<?php hybrid_do_atomic( 'after_header' ); ?>
 			<?php get_sidebar( 'primary' ); ?>
+			<?php hybrid_do_atomic( 'after_sidebar' ); ?>
 		</div>
+		<?php hybrid_do_atomic( 'before_main' ); ?>
 		<main id="main" class="main" role="main">
+			<?php hybrid_do_atomic( 'main_top' ); ?>
