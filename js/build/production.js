@@ -98,6 +98,7 @@ jQuery(document).ready(function($){
     var lastWindowPos = 0;
     var top, bottom = false;
     var topOffset = 0;
+    var resizeTimer;
 
     /* Call functions */
 
@@ -167,6 +168,9 @@ jQuery(document).ready(function($){
                 var sidebarPrimaryHeight = sidebarPrimary.height();
 
                 main.css('min-height', sidebarPrimaryHeight + headerHeight + socialIconsHeight + menuHeight + 'px' );
+
+                // close menu automatically if scrolled past
+                $(window).scroll(autoCloseMenu);
             }
         }
     }
@@ -337,13 +341,6 @@ jQuery(document).ready(function($){
         lastWindowPos = windowPos;
     }
 
-    function resizeAndScroll() {
-        resize();
-        scroll();
-    }
-
-    var resizeTimer;
-
     $(window)
         .on( 'scroll', scroll )
         .on( 'resize', function() {
@@ -352,9 +349,28 @@ jQuery(document).ready(function($){
         } );
     sidebar.on( 'click keydown', 'button', resizeAndScroll );
 
+    function resizeAndScroll() {
+        resize();
+        scroll();
+    }
     resizeAndScroll();
 
     for ( var i = 1; i < 6; i++ ) {
         setTimeout( resizeAndScroll, 100 * i );
+    }
+
+    function autoCloseMenu() {
+
+        // get position of the bottom of the sidebar
+        var sidebarPrimaryBottom = sidebarPrimary.offset().top + sidebarPrimary.height();
+
+        // window distance from top
+        var topDistance = $(window).scrollTop();
+
+        // if visitor scrolled 50px past bottom of sidebar, close menu
+        if (topDistance > sidebarPrimaryBottom + 50) {
+            $(window).unbind('scroll');
+            openPrimaryMenu();
+        }
     }
 });
