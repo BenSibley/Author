@@ -369,7 +369,7 @@ jQuery(document).ready(function($){
 
         // if visitor scrolled 50px past bottom of sidebar, close menu
         if (topDistance > sidebarPrimaryBottom + 50) {
-            $(window).unbind('scroll');
+            $(window).unbind('scroll', autoCloseMenu);
             openPrimaryMenu();
         }
     }
