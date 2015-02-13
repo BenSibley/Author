@@ -432,6 +432,7 @@ a img {
 .social-media-icons {
   max-height: 0;
   overflow: hidden;
+  clear: both;
 }
 .social-media-icons ul {
   list-style: none;

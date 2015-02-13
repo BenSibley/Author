@@ -5,7 +5,6 @@
   }
 }
 .title-container {
-//  display: inline-block; // so toggle-navigation can be on same line
   float: left;
 }
 .site-avatar {
@@ -30,6 +29,7 @@
 .social-media-icons {
   max-height: 0;
   overflow: hidden;
+  clear: both;
 
   ul {
     list-style: none;
