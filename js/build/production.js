@@ -312,8 +312,7 @@ jQuery(document).ready(function($){
                     sidebar.attr( 'style', 'position: fixed; bottom: 0;' );
                 }
                 // if sidebar was shorter then menu dropdown made it taller
-                else if ( sidebarHeight > windowHeight ) {
-                    bottom = false;
+                else if ( ( sidebarHeight + adminbarOffset > windowHeight ) && ! bottom  ) {
                     topOffset = ( sidebar.offset().top > 0 ) ? sidebar.offset().top - adminbarOffset : 0;
                     sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
                 }

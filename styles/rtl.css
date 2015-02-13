@@ -100,6 +100,8 @@ body {
   overflow: hidden;
   height: auto;
   min-height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .main {
@@ -396,6 +398,12 @@ a img {
 @media all and (min-width: 71.875em) {
   .main-sidebar {
     width: 22.22%;
+  }
+}
+@media all and (min-width: 87.5em) {
+  .main-sidebar {
+    padding: 3em 26px;
+    max-width: 311px;
   }
 }
 .site-header:after {

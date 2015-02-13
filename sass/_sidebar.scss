@@ -48,3 +48,12 @@
     width: $column-9 * 2;
   }
 }
+
+// 1400px
+@media all and (min-width: $fourteen-hundred) {
+
+  .main-sidebar {
+    padding: 3em 26px;
+    max-width: 311px;
+  }
+}
