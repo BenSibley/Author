@@ -279,3 +279,22 @@ a img {
     -webkit-text-size-adjust: none;   /* none for no scaling */
   }
 }
+
+// 1400px
+@media all and (min-width: $fourteen-hundred) {
+
+  // keep right of main light gray color
+  body {
+
+    &:before {
+      content: '';
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 50%;
+      z-index: 0;
+      background: $color-gray-95-blue;
+    }
+  }
+}

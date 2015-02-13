@@ -357,6 +357,18 @@ a img {
     /* none for no scaling */
   }
 }
+@media all and (min-width: 87.5em) {
+  body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: 0;
+    background: #f0f1f2;
+  }
+}
 .main-sidebar {
   position: relative;
   padding: 1.5em 7.4074%;
