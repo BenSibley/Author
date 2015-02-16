@@ -78,6 +78,19 @@
   padding-left: 6px;
   border-left: solid 1px $color-gray-60;
 }
+.pingback {
+
+  .author-name {
+    line-height: 1.5;
+  }
+  .comment-content {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
 .comment-respond,
 .comments-closed,
 .comment-pagination {
