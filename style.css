@@ -251,6 +251,7 @@ textarea {
   color: #27292b;
   outline: solid 1px #d9d9d9;
   border: none;
+  border-radius: 0;
   font-family: "Lato", sans-serif;
   -webkit-appearance: none;
 }
@@ -272,6 +273,7 @@ input[type="submit"] {
   background: #27292b;
   outline: none;
   border: none;
+  border-radius: 0;
   max-width: 13.875em;
   font-family: "Lato", sans-serif;
   -webkit-appearance: none;

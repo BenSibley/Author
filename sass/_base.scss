@@ -177,6 +177,7 @@ textarea {
   color: $color-gray-17-blue;
   outline: solid 1px $color-gray-85;
   border: none;
+  border-radius: 0;
   font-family: $primary-font-stack;
   -webkit-appearance: none;
 
@@ -196,6 +197,7 @@ input[type="submit"] {
   background: $color-gray-17-blue;
   outline: none;
   border: none;
+  border-radius: 0;
   max-width: $baseline-height * 5 * 1.85;
   font-family: $primary-font-stack;
   -webkit-appearance: none;
