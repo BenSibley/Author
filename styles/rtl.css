@@ -978,6 +978,12 @@ a img {
     float: left;
   }
 }
+@media all and (min-width: 43.75em) {
+  .post-title {
+    font-size: 3.1875em;
+    /* 51px / 16px */
+  }
+}
 @media all and (min-width: 59.375em) {
   .entry {
     padding: 0;
@@ -991,11 +997,6 @@ a img {
   .entry article,
   .entry .further-reading {
     padding: 1.5em 9.999%;
-  }
-
-  .post-title {
-    font-size: 3.1875em;
-    /* 51px / 16px */
   }
 
   .post-header {

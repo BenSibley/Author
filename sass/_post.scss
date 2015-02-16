@@ -162,6 +162,14 @@
   }
 }
 
+// 700px
+@media all and (min-width: $seven-hundred) {
+
+  // increase to 51px while post gets very wide
+  .post-title {
+    font-size: 3.1875em; /* 51px / 16px */
+  }
+}
 // 950px
 @media all and (min-width: $nine-fifty) {
 
@@ -184,9 +192,6 @@
     .further-reading {
       padding: $baseline-height $column-9 * 0.5 * 1.8;
     }
-  }
-  .post-title {
-    font-size: 3.1875em; /* 51px / 16px */
   }
   .post-header {
     margin-top: $baseline-height;
