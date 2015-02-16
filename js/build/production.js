@@ -147,6 +147,9 @@ jQuery(document).ready(function($){
             // return sidebar to initial top position
             positionSidebar();
 
+            // if menu is closed, unbind auto close function
+            $(window).unbind('scroll', autoCloseMenu);
+
         } else {
             sidebar.addClass('open');
 
@@ -368,7 +371,6 @@ jQuery(document).ready(function($){
 
         // if visitor scrolled 50px past bottom of sidebar, close menu
         if (topDistance > sidebarPrimaryBottom + 50) {
-            $(window).unbind('scroll', autoCloseMenu);
             openPrimaryMenu();
         }
     }
