@@ -67,16 +67,20 @@ add_action('widgets_init','ct_author_register_widget_areas');
 /* added to customize the comments. Same as default except -> added use of gravatar images for comment authors */
 function ct_author_customize_comments( $comment, $args, $depth ) {
     $GLOBALS['comment'] = $comment;
+    $comment_type = $comment->comment_type;
     ?>
     <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
         <article id="comment-<?php comment_ID(); ?>" class="comment">
             <div class="comment-author">
                 <?php
-                // if site admin and avatar uploaded
-                if( $comment->comment_author_email === get_option('admin_email') && get_theme_mod('avatar_method') == 'upload' ) {
-                    echo '<img class="avatar avatar-48 photo" src="' . ct_author_output_avatar() . '" height="48" width="48" />';
-                } else {
-                    echo get_avatar( get_comment_author_email(), 48 );
+                // if not a pingback
+                if( $comment_type !== 'pingback' ) {
+                    // if site admin and avatar uploaded
+                    if ( $comment->comment_author_email === get_option( 'admin_email' ) && get_theme_mod( 'avatar_method' ) == 'upload' ) {
+                        echo '<img class="avatar avatar-48 photo" src="' . ct_author_output_avatar() . '" height="48" width="48" />';
+                    } else {
+                        echo get_avatar( get_comment_author_email(), 48 );
+                    }
                 }
                 ?>
                 <span class="author-name"><?php comment_author_link(); ?></span>
@@ -88,11 +92,15 @@ function ct_author_customize_comments( $comment, $args, $depth ) {
                 <?php endif; ?>
                 <?php comment_text(); ?>
             </div>
-            <div class="comment-footer">
-                <span class="comment-date"><?php comment_date('n/j/Y'); ?></span>
-                <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'author' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-                <?php edit_comment_link( 'edit' ); ?>
-            </div>
+            <?php
+            // if not a pingback
+            if( $comment_type !== 'pingback' ) { ?>
+                <div class="comment-footer">
+                    <span class="comment-date"><?php comment_date('n/j/Y'); ?></span>
+                    <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'author' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+                    <?php edit_comment_link( 'edit' ); ?>
+                </div>
+            <?php } ?>
         </article>
     <?php
 }
