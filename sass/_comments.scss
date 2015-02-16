@@ -12,13 +12,14 @@
   margin: $baseline-height 0;
   list-style: none;
 
-  ul {
+  .children {
     list-style: none;
     margin: $baseline-height 0;
     padding-left: $baseline-height;
     border-left: solid 2px $color-gray-85;
   }
-  li {
+  .children > li,
+  > li {
     margin: $baseline-height 0;
 
     .comment-respond {
