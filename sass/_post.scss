@@ -99,9 +99,9 @@
     display: block;
   }
 }
-.blog:not(.full-post),
-.archive:not(.full-post),
-.search:not(.full-post) {
+.blog,
+.archive,
+.search {
 
   .entry  {
     text-align: center;
@@ -116,6 +116,23 @@
     }
   }
 }
+.blog.full-post,
+.archive.full-post,
+.search.full-post {
+
+  .entry  {
+    text-align: left;
+  }
+  .post-content {
+
+    p:last-child {
+      padding-top: 0;
+      margin-bottom: $baseline-height;
+      border-top: none;
+    }
+  }
+}
+
 // password protected post
 .entry.protected {
 

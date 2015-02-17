@@ -925,22 +925,35 @@ a img {
   display: block;
 }
 
-.blog:not(.full-post) .entry,
-.archive:not(.full-post) .entry,
-.search:not(.full-post) .entry {
+.blog .entry,
+.archive .entry,
+.search .entry {
   text-align: center;
 }
-.blog:not(.full-post) .post-content,
-.archive:not(.full-post) .post-content,
-.search:not(.full-post) .post-content {
+.blog .post-content,
+.archive .post-content,
+.search .post-content {
   margin-bottom: 0.75em;
 }
-.blog:not(.full-post) .post-content p:last-child,
-.archive:not(.full-post) .post-content p:last-child,
-.search:not(.full-post) .post-content p:last-child {
+.blog .post-content p:last-child,
+.archive .post-content p:last-child,
+.search .post-content p:last-child {
   padding-top: 1.5em;
   margin-bottom: 0;
   border-top: solid 1px #d9d9d9;
+}
+
+.blog.full-post .entry,
+.archive.full-post .entry,
+.search.full-post .entry {
+  text-align: right;
+}
+.blog.full-post .post-content p:last-child,
+.archive.full-post .post-content p:last-child,
+.search.full-post .post-content p:last-child {
+  padding-top: 0;
+  margin-bottom: 1.5em;
+  border-top: none;
 }
 
 .entry.protected input[type='password'] {
