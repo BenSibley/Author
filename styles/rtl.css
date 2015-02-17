@@ -853,6 +853,7 @@ a img {
   bottom: 0;
   right: 0;
   opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 .post-header {
