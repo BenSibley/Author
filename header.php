@@ -37,5 +37,5 @@
 			<?php hybrid_do_atomic( 'after_sidebar' ); ?>
 		</div>
 		<?php hybrid_do_atomic( 'before_main' ); ?>
-		<main id="main" class="main" role="main">
+		<div id="main" class="main" role="main">
 			<?php hybrid_do_atomic( 'main_top' ); ?>

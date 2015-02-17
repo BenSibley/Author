@@ -1,5 +1,5 @@
 <?php hybrid_do_atomic( 'main_bottom' ); ?>
-</main> <!-- .main -->
+</div> <!-- .main -->
 
 <footer class="site-footer" role="contentinfo">
     <?php hybrid_do_atomic( 'footer_top' ); ?>
