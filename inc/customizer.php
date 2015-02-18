@@ -135,9 +135,10 @@ function ct_author_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'ct_author_logo_upload', array(
-		'title'      => __( 'Logo Upload', 'author' ),
-		'priority'   => 25,
-		'capability' => 'edit_theme_options'
+		'title'       => __( 'Logo', 'author' ),
+		'priority'    => 25,
+		'capability'  => 'edit_theme_options',
+		'description' => __('Use this instead of the avatar if you want a non-rounded logo image.', 'author')
 	) );
 	// setting
 	$wp_customize->add_setting( 'logo_upload', array(
