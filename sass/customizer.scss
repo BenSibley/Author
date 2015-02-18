@@ -1,3 +1,44 @@
+@import "variables";
+
+.upgrades-ad {
+  background: white;
+  padding: $baseline-height / 2 0;
+  text-align: center;
+  border-bottom: solid 1px #eee;
+
+  a {
+    display: inline-block;
+    padding: 9px 0;
+    color: #222;
+    border: solid 1px #222;
+    width: 270px;
+    transition: background 0.15s ease-in-out;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active,
+    &:focus  {
+      color: #222;
+    }
+  }
+  &:hover {
+
+    span {
+      right: -3px;
+    }
+    a {
+      background: #f5f5f5;
+      border-color: #bbb;
+    }
+  }
+  span {
+    position: relative;
+    right: 0;
+    transition: right 0.15s ease-in-out;
+  }
+}
+
 /* Multiple select styles (for comments dropdown */
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
