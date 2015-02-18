@@ -23,7 +23,7 @@ function ct_author_options_content(){
 	        <h3><?php _e('Support', 'author'); ?></h3>
             <p><?php _e("You can find the knowledgebase, changelog, support forum, and more in the Author Support Center", "author"); ?>.</p>
             <p>
-                <a target="_blank" class="button-primary" href="http://www.competethemes.com/documentation/author-support-center/"><?php _e('Visit Support Center', 'author'); ?></a>
+                <a target="_blank" class="button-primary" href="https://www.competethemes.com/documentation/author-support-center/"><?php _e('Visit Support Center', 'author'); ?></a>
             </p>
         </div>
         <div class="content content-premium-upgrade">
