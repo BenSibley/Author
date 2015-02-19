@@ -43,6 +43,18 @@ function ct_author_theme_setup() {
 }
 add_action( 'after_setup_theme', 'ct_author_theme_setup', 10 );
 
+// remove filters adding partial micro-data due to validation issues
+function author_remove_hybrid_filters() {
+    remove_filter( 'the_author_posts_link', 'hybrid_the_author_posts_link', 5 );
+    remove_filter( 'get_comment_author_link', 'hybrid_get_comment_author_link', 5 );
+    remove_filter( 'get_comment_author_url_link', 'hybrid_get_comment_author_url_link', 5 );
+    remove_filter( 'comment_reply_link', 'hybrid_comment_reply_link_filter', 5 );
+    remove_filter( 'get_avatar', 'hybrid_get_avatar', 5 );
+    remove_filter( 'post_thumbnail_html', 'hybrid_post_thumbnail_html', 5 );
+    remove_filter( 'comments_popup_link_attributes', 'hybrid_comments_popup_link_attributes', 5 );
+}
+add_action('after_setup_theme', 'author_remove_hybrid_filters');
+
 // turn off cleaner gallery if Jetpack gallery functions being used
 function ct_author_remove_cleaner_gallery() {
 
