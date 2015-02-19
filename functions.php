@@ -89,9 +89,9 @@ function ct_author_customize_comments( $comment, $args, $depth ) {
                 if( $comment_type !== 'pingback' ) {
                     // if site admin and avatar uploaded
                     if ( $comment->comment_author_email === get_option( 'admin_email' ) && get_theme_mod( 'avatar_method' ) == 'upload' ) {
-                        echo '<img class="avatar avatar-48 photo" src="' . ct_author_output_avatar() . '" height="48" width="48" />';
+                        echo '<img alt="Comment author\'s Gravatar" class="avatar avatar-48 photo" src="' . ct_author_output_avatar() . '" height="48" width="48" />';
                     } else {
-                        echo get_avatar( get_comment_author_email(), 48 );
+                        echo get_avatar( get_comment_author_email(), 48, '', "Comment author's Gravatar" );
                     }
                 }
                 ?>
