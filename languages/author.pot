@@ -1,0 +1,433 @@
+# Copyright (C) 2015 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Author 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2015-02-19 15:34:23+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
+
+#: 404.php:5
+msgid "404: Page Not Found"
+msgstr ""
+
+#: 404.php:8
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+
+#: comments.php:26 comments.php:45 comments.php:66
+msgid "Be First to Comment"
+msgstr ""
+
+#: comments.php:26 comments.php:45 comments.php:66
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:26 comments.php:45 comments.php:66
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:58
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this "
+"post\">trackbacks</a> and pingbacks are open."
+msgstr ""
+
+#: comments.php:79 comments.php:85
+msgid "Comments are closed."
+msgstr ""
+
+#: content/archive-header.php:7
+msgid "Category archive for:"
+msgstr ""
+
+#: content/archive-header.php:18
+msgid "Tag archive for:"
+msgstr ""
+
+#: content/archive-header.php:30
+msgid "Author archive for:"
+msgstr ""
+
+#: content/archive-header.php:41
+msgid "Date archive for:"
+msgstr ""
+
+#: content/post-categories.php:19
+msgid "View all posts in %s"
+msgstr ""
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr ""
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr ""
+
+#: content/post-nav.php:11
+msgid "Previous Post"
+msgstr ""
+
+#: content/post-nav.php:13
+msgid "The Previous Post"
+msgstr ""
+
+#: content/post-nav.php:20
+msgid "No Older Posts"
+msgstr ""
+
+#: content/post-nav.php:22 content/post-nav.php:44
+msgid "Return to Blog"
+msgstr ""
+
+#: content/post-nav.php:33
+msgid "Next Post"
+msgstr ""
+
+#: content/post-nav.php:35
+msgid "The Next Post"
+msgstr ""
+
+#: content/post-nav.php:42
+msgid "No Newer Posts"
+msgstr ""
+
+#: content/post-tags.php:7
+msgid "View all posts tagged %s"
+msgstr ""
+
+#: content-page.php:10 content.php:17
+msgid "Pages:"
+msgstr ""
+
+#: footer.php:10
+msgid ""
+"<a target=\"_blank\" href=\"%s\">Author WordPress Theme</a> by Compete "
+"Themes"
+msgstr ""
+
+#: functions.php:41
+msgid "Primary"
+msgstr ""
+
+#: functions.php:72
+msgid "Primary Sidebar"
+msgstr ""
+
+#: functions.php:74
+msgid "Widgets in this area will be shown in the sidebar"
+msgstr ""
+
+#: functions.php:102
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:112
+msgid "Reply"
+msgstr ""
+
+#: functions.php:134
+msgid "optional"
+msgstr ""
+
+#: functions.php:142
+msgid "Name"
+msgstr ""
+
+#: functions.php:143
+msgid "John Doe"
+msgstr ""
+
+#: functions.php:149
+msgid "Email"
+msgstr ""
+
+#: functions.php:150
+msgid "name@email.com"
+msgstr ""
+
+#: functions.php:156
+msgid "Website"
+msgstr ""
+
+#: functions.php:157
+msgid "http://example.com"
+msgstr ""
+
+#: functions.php:171
+msgid "Comment"
+msgstr ""
+
+#: functions.php:172
+msgid "Enter Your Comment"
+msgstr ""
+
+#: functions.php:217 functions.php:228
+msgid "Continue reading"
+msgstr ""
+
+#: functions.php:543
+msgid "Customizer settings deleted"
+msgstr ""
+
+#: header.php:19
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:13
+msgid "Front Page"
+msgstr ""
+
+#: inc/customizer.php:15
+msgid "Menus"
+msgstr ""
+
+#: inc/customizer.php:96
+msgid "Avatar"
+msgstr ""
+
+#: inc/customizer.php:109
+msgid "Avatar image source"
+msgstr ""
+
+#: inc/customizer.php:114 inc/customizer.php:362
+msgid "Gravatar"
+msgstr ""
+
+#: inc/customizer.php:115 inc/customizer.php:363
+msgid "Upload an image"
+msgstr ""
+
+#: inc/customizer.php:116 inc/customizer.php:364
+msgid "Do not display avatar"
+msgstr ""
+
+#: inc/customizer.php:128
+msgid "Upload your avatar"
+msgstr ""
+
+#: inc/customizer.php:138
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer.php:141
+msgid "Use this instead of the avatar if you want a non-rounded logo image."
+msgstr ""
+
+#: inc/customizer.php:152
+msgid "Upload custom logo."
+msgstr ""
+
+#: inc/customizer.php:168
+msgid "Social Media Icons"
+msgstr ""
+
+#: inc/customizer.php:184
+msgid "address:"
+msgstr ""
+
+#: inc/customizer.php:198
+msgid "url:"
+msgstr ""
+
+#: inc/customizer.php:212
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer.php:225
+msgid "Show full posts on blog?"
+msgstr ""
+
+#: inc/customizer.php:230 inc/customizer.php:379
+msgid "Yes"
+msgstr ""
+
+#: inc/customizer.php:231 inc/customizer.php:380
+msgid "No"
+msgstr ""
+
+#: inc/customizer.php:244
+msgid "Excerpt length"
+msgstr ""
+
+#: inc/customizer.php:255
+msgid "Comment Display"
+msgstr ""
+
+#: inc/customizer.php:269
+msgid "Show comments on:"
+msgstr ""
+
+#: inc/customizer.php:274 inc/customizer.php:340
+msgid "Posts"
+msgstr ""
+
+#: inc/customizer.php:275 inc/customizer.php:341
+msgid "Pages"
+msgstr ""
+
+#: inc/customizer.php:276 inc/customizer.php:342
+msgid "Attachments"
+msgstr ""
+
+#: inc/customizer.php:277 inc/customizer.php:343
+msgid "Do not show"
+msgstr ""
+
+#: inc/customizer.php:286
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer.php:299
+msgid "Add Custom CSS Here:"
+msgstr ""
+
+#: inc/customizer.php:315
+msgid "Show"
+msgstr ""
+
+#: inc/customizer.php:316
+msgid "Hide"
+msgstr ""
+
+#: search.php:10
+msgid "%d search result for \"%s\""
+msgid_plural "%d search results for \"%s\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: search.php:13
+msgid "No search results for \"%s\""
+msgstr ""
+
+#: search.php:39
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search"
+msgstr ""
+
+#: searchform.php:4
+msgid "Search..."
+msgstr ""
+
+#: searchform.php:4
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:5
+msgid "Go"
+msgstr ""
+
+#: theme-options.php:13
+msgid "Author Dashboard"
+msgstr ""
+
+#: theme-options.php:16
+msgid "Customization"
+msgstr ""
+
+#: theme-options.php:17
+msgid ""
+"Click the \"Customize\" link in your menu, or use the button below to get "
+"started customizing Author"
+msgstr ""
+
+#: theme-options.php:19
+msgid "Use Customizer"
+msgstr ""
+
+#: theme-options.php:23
+msgid "Support"
+msgstr ""
+
+#: theme-options.php:24
+msgid ""
+"You can find the knowledgebase, changelog, support forum, and more in the "
+"Author Support Center"
+msgstr ""
+
+#: theme-options.php:26
+msgid "Visit Support Center"
+msgstr ""
+
+#: theme-options.php:30
+msgid "Upgrade to Author Pro"
+msgstr ""
+
+#: theme-options.php:31
+msgid ""
+"Author Pro is the premium upgrade for Author. It has custom colors, new "
+"layouts, background images, and more"
+msgstr ""
+
+#: theme-options.php:33
+msgid "See Full Feature List"
+msgstr ""
+
+#: theme-options.php:37
+msgid "WordPress Resources"
+msgstr ""
+
+#: theme-options.php:38
+msgid ""
+"Save time and money searching for WordPress products by following our "
+"recommendations"
+msgstr ""
+
+#: theme-options.php:40
+msgid "View Resources"
+msgstr ""
+
+#: theme-options.php:44 theme-options.php:56
+msgid "Reset Customizer Settings"
+msgstr ""
+
+#: theme-options.php:48
+msgid ""
+"<strong>Warning:</strong> Clicking this button will erase your current "
+"settings in the <a href=\"%s\">Customizer</a>"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Author"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://www.competethemes.com/author/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Author is designed for publishers who want readers. That's why Author is "
+"fast, responsive, accessibility-ready, and optimally designed for reading. "
+"All scripts and stylesheets are minified, concatenated, and conditionally "
+"loaded to maximize performance. The layout adapts fluidly to all screen "
+"sizes to enhance usability. As one of few accessibility-ready themes, it "
+"performs well for users with wide ranges of disabilities. Lastly, based on "
+"the ancient Van de Graaf canon, Author is optimally designed for reading. "
+"Author is the theme your content deserves."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Compete Themes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.competethemes.com/"
+msgstr ""
+
+#: content-archive.php:14 content.php:12
+msgctxt "This blog post was published by some author on some date"
+msgid "Published by %1$s on %2$s"
+msgstr ""
