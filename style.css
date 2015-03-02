@@ -650,37 +650,6 @@ a img {
 .menu-unset > ul .page_item_has_children > a {
   max-width: calc(100% - 36px);
 }
-.menu-primary-items .menu-item-has-children button,
-.menu-primary-items .page_item_has_children button,
-.menu-unset > ul .menu-item-has-children button,
-.menu-unset > ul .page_item_has_children button {
-  float: right;
-  height: 32px;
-  width: 32px;
-  margin: 2px 0 0 0;
-  padding: 0;
-  font-size: 1em;
-  line-height: 1;
-  background: none;
-  color: white;
-  border: solid 1px #3e4145;
-}
-.menu-primary-items .menu-item-has-children button:focus,
-.menu-primary-items .page_item_has_children button:focus,
-.menu-unset > ul .menu-item-has-children button:focus,
-.menu-unset > ul .page_item_has_children button:focus {
-  outline: none;
-  border-color: #999999;
-}
-.menu-primary-items .menu-item-has-children button:after,
-.menu-primary-items .page_item_has_children button:after,
-.menu-unset > ul .menu-item-has-children button:after,
-.menu-unset > ul .page_item_has_children button:after {
-  content: '\f107';
-  font-family: 'FontAwesome';
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
 .menu-primary-items .menu-item-has-children ul,
 .menu-primary-items .page_item_has_children ul,
 .menu-unset > ul .menu-item-has-children ul,
@@ -737,12 +706,6 @@ a img {
 .menu-unset > ul .page_item_has_children ul ul a:focus {
   color: #999999;
 }
-.menu-primary-items .menu-item-has-children ul ul button:after,
-.menu-primary-items .page_item_has_children ul ul button:after,
-.menu-unset > ul .menu-item-has-children ul ul button:after,
-.menu-unset > ul .page_item_has_children ul ul button:after {
-  color: #cccccc;
-}
 .menu-primary-items .menu-item-has-children.open > button,
 .menu-primary-items .page_item_has_children.open > button,
 .menu-unset > ul .menu-item-has-children.open > button,
@@ -757,6 +720,29 @@ a img {
 .menu-unset > ul .menu-item-has-children.open > ul,
 .menu-unset > ul .page_item_has_children.open > ul {
   max-height: 9999px;
+}
+
+.toggle-dropdown {
+  float: right;
+  height: 32px;
+  width: 32px;
+  margin: 2px 0 0 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1;
+  background: none;
+  color: white;
+  border: solid 1px #3e4145;
+}
+.toggle-dropdown:focus {
+  outline: none;
+  border-color: #999999;
+}
+.toggle-dropdown:after {
+  content: '\f107';
+  font-family: 'FontAwesome';
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .open .menu-primary {

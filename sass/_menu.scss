@@ -57,28 +57,6 @@
     > a {
       max-width: calc(100% - 36px);
     }
-    button {
-      float: right;
-      height: 32px;
-      width: 32px;
-      margin: 2px 0 0 0;
-      padding: 0;
-      font-size: 1em;
-      line-height: 1;
-      background: none;
-      color: white;
-      border: solid 1px $color-gray-27-blue;
-
-      &:focus {
-        outline: none;
-        border-color: $color-gray-60;
-      }
-      &:after {
-        content: '\f107';
-        font-family: 'FontAwesome';
-        transition: all 0.1s ease-in-out;
-      }
-    }
     ul {
       max-height: 0;
       overflow: hidden;
@@ -109,9 +87,6 @@
             color: $color-gray-60;
           }
         }
-        button:after {
-          color: $color-gray-80;
-        }
       }
     }
     &.open {
@@ -124,6 +99,28 @@
         max-height: 9999px;
       }
     }
+  }
+}
+.toggle-dropdown {
+  float: right;
+  height: 32px;
+  width: 32px;
+  margin: 2px 0 0 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1;
+  background: none;
+  color: white;
+  border: solid 1px $color-gray-27-blue;
+
+  &:focus {
+    outline: none;
+    border-color: $color-gray-60;
+  }
+  &:after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+    transition: all 0.1s ease-in-out;
   }
 }
 
