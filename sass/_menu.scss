@@ -161,13 +161,9 @@
     max-height: none; // allow menu items to be seen w/o toggling
     width: auto;
     padding: 0;
-
-    button {
-
-      &:hover {
-        cursor: pointer;
-        border-color: $color-gray-60;
-      }
-    }
+  }
+  .toggle-dropdown:hover {
+    cursor: pointer;
+    border-color: $color-gray-60;
   }
 }

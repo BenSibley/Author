@@ -777,7 +777,8 @@ a img {
     width: auto;
     padding: 0;
   }
-  .menu-primary button:hover {
+
+  .toggle-dropdown:hover {
     cursor: pointer;
     border-color: #999999;
   }
