@@ -14,8 +14,6 @@
     </div>
 </footer>
 
-<?php hybrid_do_atomic( 'overflow_bottom' ); ?>
-
 </div><!-- .overflow-container -->
 
 <?php wp_footer(); ?>
