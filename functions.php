@@ -278,16 +278,19 @@ function ct_author_featured_image() {
 
 		// on posts/pages display the featued image
 		if(is_singular()){
-			echo "<div class='featured-image' style=\"background-image: url('".$image."')\"></div>";
+			$featured_image = "<div class='featured-image' style=\"background-image: url('".$image."')\"></div>";
 		}
 		// on blog/archives display with a link
 		else {
-			echo "
+			$featured_image = "
                 <div class='featured-image' style=\"background-image: url('".$image."')\">
                     <a href='" . get_permalink() ."'>" . get_the_title() . "</a>
                 </div>
                 ";
 		}
+        $featured_image = apply_filters( 'ct_author_featured_image', $featured_image );
+
+        echo $featured_image;
 	}
 }
 
