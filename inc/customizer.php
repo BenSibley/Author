@@ -39,7 +39,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	}
 
 	// number input control
-	class author_number_input_control extends WP_Customize_Control {
+	class ct_author_number_input_control extends WP_Customize_Control {
 		public $type = 'number';
 
 		public function render_content() {
@@ -53,7 +53,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	}
 
 	// create textarea control
-	class author_Textarea_Control extends WP_Customize_Control {
+	class ct_author_textarea_control extends WP_Customize_Control {
 		public $type = 'textarea';
 
 		public function render_content() {
@@ -67,7 +67,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	}
 
 	// create multi-checkbox/select control
-	class ct_author_Multi_Checkbox_Control extends WP_Customize_Control {
+	class ct_author_multi_checkbox_control extends WP_Customize_Control {
 		public $type = 'multi-checkbox';
 
 		public function render_content() {
@@ -239,7 +239,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		'sanitize_callback' => 'absint',
 	) );
 	// control
-	$wp_customize->add_control( new author_number_input_control(
+	$wp_customize->add_control( new ct_author_number_input_control(
 		$wp_customize, 'excerpt_length', array(
 			'label'          => __( 'Excerpt length', 'author' ),
 			'section'        => 'author_blog',
@@ -264,7 +264,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		'sanitize_callback' => 'ct_author_sanitize_comments_setting',
 	) );
 	// control
-	$wp_customize->add_control( new ct_author_Multi_Checkbox_Control(
+	$wp_customize->add_control( new ct_author_multi_checkbox_control(
 		$wp_customize, 'comments_display', array(
 			'label'          => __( 'Show comments on:', 'author' ),
 			'section'        => 'ct_author_comments_display',
@@ -294,7 +294,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		'sanitize_callback' => 'esc_textarea',
 	) );
 	// control
-	$wp_customize->add_control( new author_Textarea_Control(
+	$wp_customize->add_control( new ct_author_textarea_control(
 		$wp_customize, 'custom_css', array(
 			'label'          => __( 'Add Custom CSS Here:', 'author' ),
 			'section'        => 'author_custom_css',
