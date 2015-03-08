@@ -291,7 +291,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	$wp_customize->add_setting( 'custom_css', array(
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'esc_textarea',
+		'sanitize_callback' => 'wp_filter_nohtml_kses',
 	) );
 	// control
 	$wp_customize->add_control( new ct_author_textarea_control(
