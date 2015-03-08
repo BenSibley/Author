@@ -495,7 +495,7 @@ function ct_author_custom_css_output(){
 
     /* output custom css */
     if( $custom_css ) {
-        wp_add_inline_style( 'style', $custom_css );
+        wp_add_inline_style( 'ct-author-style', $custom_css );
     }
 }
 add_action('wp_enqueue_scripts', 'ct_author_custom_css_output');
