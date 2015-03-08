@@ -44,7 +44,7 @@ function ct_author_theme_setup() {
 add_action( 'after_setup_theme', 'ct_author_theme_setup', 10 );
 
 // remove filters adding partial micro-data due to validation issues
-function author_remove_hybrid_filters() {
+function ct_author_remove_hybrid_filters() {
     remove_filter( 'the_author_posts_link', 'hybrid_the_author_posts_link', 5 );
     remove_filter( 'get_comment_author_link', 'hybrid_get_comment_author_link', 5 );
     remove_filter( 'get_comment_author_url_link', 'hybrid_get_comment_author_url_link', 5 );
@@ -53,7 +53,7 @@ function author_remove_hybrid_filters() {
     remove_filter( 'post_thumbnail_html', 'hybrid_post_thumbnail_html', 5 );
     remove_filter( 'comments_popup_link_attributes', 'hybrid_comments_popup_link_attributes', 5 );
 }
-add_action('after_setup_theme', 'author_remove_hybrid_filters');
+add_action('after_setup_theme', 'ct_author_remove_hybrid_filters');
 
 // turn off cleaner gallery if Jetpack gallery functions being used
 function ct_author_remove_cleaner_gallery() {
@@ -118,8 +118,8 @@ function ct_author_customize_comments( $comment, $args, $depth ) {
 }
 
 /* added HTML5 placeholders for each default field and aria-required to required */
-if( ! function_exists( 'author_update_fields' ) ) {
-    function author_update_fields( $fields ) {
+if( ! function_exists( 'ct_author_update_fields' ) ) {
+    function ct_author_update_fields( $fields ) {
 
         // get commenter object
         $commenter = wp_get_current_commenter();
@@ -161,10 +161,10 @@ if( ! function_exists( 'author_update_fields' ) ) {
         return $fields;
     }
 }
-add_filter('comment_form_default_fields','author_update_fields');
+add_filter('comment_form_default_fields','ct_author_update_fields');
 
-if( ! function_exists( 'author_update_comment_field' ) ) {
-    function author_update_comment_field( $comment_field ) {
+if( ! function_exists( 'ct_author_update_comment_field' ) ) {
+    function ct_author_update_comment_field( $comment_field ) {
 
         $comment_field =
             '<p class="comment-form-comment">
@@ -175,7 +175,7 @@ if( ! function_exists( 'author_update_comment_field' ) ) {
         return $comment_field;
     }
 }
-add_filter('comment_form_field_comment','author_update_comment_field');
+add_filter('comment_form_field_comment','ct_author_update_comment_field');
 
 // remove allowed tags text after comment form
 function ct_author_remove_comments_notes_after($defaults){
@@ -513,7 +513,7 @@ function ct_author_body_class( $classes ) {
 }
 add_filter( 'body_class', 'ct_author_body_class' );
 
-function author_reset_customizer_options() {
+function ct_author_reset_customizer_options() {
 
     // validate name and value
     if( empty( $_POST['author_reset_customizer'] ) || 'author_reset_customizer_settings' !== $_POST['author_reset_customizer'] )
@@ -536,7 +536,7 @@ function author_reset_customizer_options() {
     // safely redirect
     wp_safe_redirect( $redirect ); exit;
 }
-add_action( 'admin_init', 'author_reset_customizer_options' );
+add_action( 'admin_init', 'ct_author_reset_customizer_options' );
 
 function ct_author_delete_settings_notice() {
 
