@@ -218,7 +218,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		'default'           => 'no',
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'author_sanitize_yes_no_settings',
+		'sanitize_callback' => 'ct_author_sanitize_yes_no_settings',
 	) );
 	// control
 	$wp_customize->add_control( 'full_post', array(
@@ -373,7 +373,7 @@ function ct_author_sanitize_avatar_method($input) {
 }
 
 // sanitize yes/no settings
-function author_sanitize_yes_no_settings($input){
+function ct_author_sanitize_yes_no_settings($input){
 
 	$valid = array(
 		'yes'   => __('Yes', 'author'),
