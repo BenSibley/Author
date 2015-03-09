@@ -45,7 +45,8 @@
 @media all and (min-width: $eleven-fifty) {
 
   .main-sidebar {
-    width: $column-9 * 2;
+//    width: $column-9 * 2;
+    width: 22.23%; // increased from 22.22% to remove occasional 1px gap between sidebar and main
   }
 }
 
