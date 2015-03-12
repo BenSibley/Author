@@ -27,8 +27,11 @@ body {
   overflow: hidden;
   height: auto;
   min-height: 100%;
+}
+.max-width {
   max-width: 1400px;
   margin: 0 auto;
+  min-height: 100%;
 }
 .main {
   margin: 0 auto;
