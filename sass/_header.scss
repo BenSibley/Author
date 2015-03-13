@@ -17,6 +17,12 @@
   a {
     @extend %white-link;
     text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+    }
   }
   img {
     max-width: 200px;

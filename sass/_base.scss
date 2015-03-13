@@ -43,14 +43,16 @@ p {
 }
 a {
   color: $color-gray-17-blue;
+  transition: color 0.2s ease-in-out;
 
-  &:link {
+  &:link,
+  &:visited {
     color: $color-gray-17-blue;
   }
-  &:visited,
   &:hover,
-  &:active {
-    color: $color-gray-17-blue;
+  &:active,
+  &:focus {
+    color: $color-gray-40-blue;
   }
 }
 

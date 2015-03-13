@@ -32,6 +32,13 @@
 
   a {
     text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-gray-40-blue;
+    }
   }
 }
 .post-content {
