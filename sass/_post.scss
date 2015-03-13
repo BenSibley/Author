@@ -115,25 +115,6 @@
       border-top: solid 1px $color-gray-85;
     }
   }
-  .featured-image {
-
-    a {
-
-      &:focus {
-
-        &:after {
-          content: '';
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          background: white;
-          opacity: 0.5;
-        }
-      }
-    }
-  }
 }
 .blog.full-post,
 .archive.full-post,
