@@ -33,7 +33,8 @@
 							<p class="tagline"><?php bloginfo('description'); ?></p>
 						</div>
 					</div>
-					<button id="toggle-navigation" class="toggle-navigation">
+					<button id="toggle-navigation" class="toggle-navigation" aria-expanded="false">
+						<span class="screen-reader-text">open primary menu</span>
 						<i class="fa fa-bars"></i>
 					</button>
 					<?php ct_author_social_icons_output('header'); ?>

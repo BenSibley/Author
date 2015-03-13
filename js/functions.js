@@ -48,6 +48,10 @@ jQuery(document).ready(function($){
             // remove styling class
             sidebar.removeClass('open');
 
+            // update screen reader text and aria-expanded
+            $(this).children('span').text('open primary menu');
+            $(this).attr('aria-expanded', 'false');
+
             // close all ULs by removing increased max-height
             $('#menu-primary-items ul, .menu-unset ul').removeAttr('style');
 
@@ -69,6 +73,10 @@ jQuery(document).ready(function($){
 
         } else {
             sidebar.addClass('open');
+
+            // update screen reader text and aria-expanded
+            $(this).children('span').text('close primary menu');
+            $(this).attr('aria-expanded', 'true');
 
             var windowWidth = $(window).width();
 
