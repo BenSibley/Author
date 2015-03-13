@@ -119,7 +119,7 @@ function ct_author_customize_comments( $comment, $args, $depth ) {
     <?php
 }
 
-/* added HTML5 placeholders for each default field and aria-required to required */
+// adjustments to default comment form inputs
 if( ! function_exists( 'ct_author_update_fields' ) ) {
     function ct_author_update_fields( $fields ) {
 
@@ -142,21 +142,21 @@ if( ! function_exists( 'ct_author_update_fields' ) ) {
         $fields['author'] =
             '<p class="comment-form-author">
 	            <label>' . __( "Name", "author" ) . $label . '</label>
-	            <input placeholder="' . __( "John Doe", "author" ) . '" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+	            <input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
             '" size="30" ' . $aria_req . ' />
 	        </p>';
 
         $fields['email'] =
             '<p class="comment-form-email">
 	            <label>' . __( "Email", "author" ) . $label . '</label>
-	            <input placeholder="' . __( "name@email.com", "author" ) . '" id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) .
+	            <input id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) .
             '" size="30" ' . $aria_req . ' />
 	        </p>';
 
         $fields['url'] =
             '<p class="comment-form-url">
 	            <label>' . __( "Website", "author" ) . '</label>
-	            <input placeholder="' . __( "http://example.com", "author" ) . '" id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
+	            <input id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
             '" size="30" />
 	            </p>';
 
@@ -171,7 +171,7 @@ if( ! function_exists( 'ct_author_update_comment_field' ) ) {
         $comment_field =
             '<p class="comment-form-comment">
 	            <label>' . __( "Comment", "author" ) . '</label>
-	            <textarea required placeholder="' . __( "Enter Your Comment", "author" ) . '&#8230;" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+	            <textarea required id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
 	        </p>';
 
         return $comment_field;
