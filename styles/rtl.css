@@ -904,6 +904,11 @@ a img {
   background: #27292b;
   border-radius: 24px;
   text-decoration: none;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+.post-tags a:hover, .widget_tag_cloud a:hover, .post-tags a:active, .widget_tag_cloud a:active, .post-tags a:focus, .widget_tag_cloud a:focus {
+  background: #5c6066;
 }
 
 .further-reading {
