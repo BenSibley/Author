@@ -71,7 +71,9 @@ function ct_author_register_widget_areas(){
     hybrid_register_sidebar( array(
         'name'         => __( 'Primary Sidebar', 'author' ),
         'id'           => 'primary',
-        'description'  => __( 'Widgets in this area will be shown in the sidebar', 'author' )
+        'description'  => __( 'Widgets in this area will be shown in the sidebar', 'author' ),
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>'
     ) );
 }
 add_action('widgets_init','ct_author_register_widget_areas');
