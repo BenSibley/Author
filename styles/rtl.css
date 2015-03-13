@@ -842,8 +842,7 @@ a img {
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
+  font-size: 0;
 }
 
 .post-header {
@@ -932,6 +931,18 @@ a img {
   padding-top: 1.5em;
   margin-bottom: 0;
   border-top: solid 1px #d9d9d9;
+}
+.blog .featured-image a:focus:after,
+.archive .featured-image a:focus:after,
+.search .featured-image a:focus:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: white;
+  opacity: 0.5;
 }
 
 .blog.full-post .entry,
