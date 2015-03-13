@@ -90,6 +90,11 @@
     }
     input[type="submit"] {
       background: $color-gray-27-blue;
+
+      &:hover,
+      &:focus {
+        background: $color-gray-40-blue;
+      }
     }
   }
 }

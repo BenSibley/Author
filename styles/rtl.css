@@ -281,17 +281,21 @@ input[type="submit"] {
   max-width: 13.875em;
   font-family: "Lato", sans-serif;
   -webkit-appearance: none;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
 }
 
 input[type="submit"]:hover {
   cursor: pointer;
-  background: #999999;
+  background: #5c6066;
 }
 
 input[type="search"] {
   margin-left: 2px;
   padding-left: 0.375em;
   /* so safari 'x' doesn't get cut off */
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
 }
 
 ::-webkit-input-placeholder {
@@ -1327,6 +1331,9 @@ a img {
 }
 .sidebar-primary .widget_search input[type="submit"] {
   background: #3e4145;
+}
+.sidebar-primary .widget_search input[type="submit"]:hover, .sidebar-primary .widget_search input[type="submit"]:focus {
+  background: #5c6066;
 }
 
 .widget_recent_entries span {

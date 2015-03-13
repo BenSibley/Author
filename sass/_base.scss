@@ -204,14 +204,16 @@ input[type="submit"] {
   max-width: $baseline-height * 5 * 1.85;
   font-family: $primary-font-stack;
   -webkit-appearance: none;
+  transition: background 0.2s ease-in-out;
 }
 input[type="submit"]:hover {
   cursor: pointer;
-  background: $color-gray-60;
+  background: $color-gray-40-blue;
 }
 input[type="search"] {
   margin-right: 2px;
   padding-right: $baseline-height / 4; /* so safari 'x' doesn't get cut off */
+  transition: background 0.2s ease-in-out;
 }
 ::-webkit-input-placeholder {
   color: $color-gray-70;
