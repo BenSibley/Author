@@ -58,8 +58,7 @@
       max-width: calc(100% - 36px);
     }
     ul {
-      max-height: 0;
-      overflow: hidden;
+      display: none;
       margin: 0 0 0 $baseline-height / 2;
 
       a {
@@ -96,7 +95,7 @@
         border-color: $color-gray-60;
       }
       > ul {
-        max-height: 9999px;
+        display: block;
       }
     }
   }

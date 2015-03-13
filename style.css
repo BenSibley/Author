@@ -658,8 +658,7 @@ a img {
 .menu-primary-items .page_item_has_children ul,
 .menu-unset > ul .menu-item-has-children ul,
 .menu-unset > ul .page_item_has_children ul {
-  max-height: 0;
-  overflow: hidden;
+  display: none;
   margin: 0 0 0 0.75em;
 }
 .menu-primary-items .menu-item-has-children ul a,
@@ -723,7 +722,7 @@ a img {
 .menu-primary-items .page_item_has_children.open > ul,
 .menu-unset > ul .menu-item-has-children.open > ul,
 .menu-unset > ul .page_item_has_children.open > ul {
-  max-height: 9999px;
+  display: block;
 }
 
 .toggle-dropdown {
