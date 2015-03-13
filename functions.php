@@ -417,7 +417,8 @@ if( ! function_exists('ct_author_social_icons_output') ) {
  */
 function ct_author_wp_page_menu() {
     wp_page_menu(array(
-            "menu_class" => "menu-unset"
+            "menu_class" => "menu-unset",
+            "depth"      => -1
         )
     );
 }
