@@ -101,8 +101,12 @@ jQuery(document).ready(function($){
 
         if( menuItem.hasClass('open') ) {
             menuItem.removeClass('open');
+            $(this).children('span').text('open child menu');
+            $(this).attr('aria-expanded', 'false');
         } else {
             menuItem.addClass('open');
+            $(this).children('span').text('close child menu');
+            $(this).attr('aria-expanded', 'true');
         }
     }
 
