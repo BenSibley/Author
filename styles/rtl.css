@@ -301,19 +301,19 @@ input[type="search"] {
 }
 
 ::-webkit-input-placeholder {
-  color: #b3b3b3;
+  color: #5c6066;
 }
 
 :-moz-placeholder {
-  color: #b3b3b3;
+  color: #5c6066;
 }
 
 ::-moz-placeholder {
-  color: #b3b3b3;
+  color: #5c6066;
 }
 
 :-ms-input-placeholder {
-  color: #b3b3b3;
+  color: #5c6066;
 }
 
 /* ie image border fix */

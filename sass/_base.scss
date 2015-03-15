@@ -223,16 +223,16 @@ input[type="search"] {
   transition: background 0.2s ease-in-out;
 }
 ::-webkit-input-placeholder {
-  color: $color-gray-70;
+  color: $color-gray-40-blue;
 }
 :-moz-placeholder /* Firefox 18- */ {
-  color: $color-gray-70;
+  color: $color-gray-40-blue;
 }
 ::-moz-placeholder /* Firefox 19+ */ {
-  color: $color-gray-70;
+  color: $color-gray-40-blue;
 }
 :-ms-input-placeholder {
-  color: $color-gray-70;
+  color: $color-gray-40-blue;
 }
 
 /* ie image border fix */
