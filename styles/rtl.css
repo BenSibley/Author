@@ -287,7 +287,7 @@ input[type="submit"] {
   transition: background 0.2s ease-in-out;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
   cursor: pointer;
   background: #5c6066;
 }

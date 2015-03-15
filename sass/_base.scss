@@ -208,9 +208,14 @@ input[type="submit"] {
   -webkit-appearance: none;
   transition: background 0.2s ease-in-out;
 }
-input[type="submit"]:hover {
-  cursor: pointer;
-  background: $color-gray-40-blue;
+input[type="submit"] {
+
+  &:hover,
+  &:active,
+  &:focus {
+    cursor: pointer;
+    background: $color-gray-40-blue;
+  }
 }
 input[type="search"] {
   margin-right: 2px;
