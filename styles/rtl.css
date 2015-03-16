@@ -1294,6 +1294,9 @@ a img {
 .widget ul a {
   text-decoration: none;
 }
+.widget ul a:hover, .widget ul a:active, .widget ul a:focus {
+  text-decoration: underline;
+}
 .widget li {
   margin-bottom: 6px;
 }
