@@ -4,7 +4,7 @@
   .main {
     padding: $baseline-height $column-27 * 2;
   }
-  .open + .main {
+  .open ~ .main {
     transform: translateX(320px);
 
     &:after {

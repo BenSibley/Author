@@ -800,12 +800,12 @@ a img {
     padding: 1.5em 7.4074%;
   }
 
-  .open + .main {
+  .open ~ .main {
     -webkit-transform: translateX(320px);
     -ms-transform: translateX(320px);
     transform: translateX(320px);
   }
-  .open + .main:after {
+  .open ~ .main:after {
     content: '';
     position: absolute;
     top: 0;
