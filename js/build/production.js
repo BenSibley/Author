@@ -128,6 +128,9 @@ jQuery(document).ready(function($){
         // if menu open
         if( sidebar.hasClass('open') ) {
 
+            // trigger event
+            sidebar.trigger('close');
+
             // remove styling class
             sidebar.removeClass('open');
 
@@ -156,6 +159,9 @@ jQuery(document).ready(function($){
 
         } else {
             sidebar.addClass('open');
+
+            // trigger event
+            sidebar.trigger('open');
 
             // update screen reader text and aria-expanded
             $(this).children('span').text('close primary menu');
