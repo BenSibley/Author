@@ -5,7 +5,6 @@ add_action( 'customize_register', 'ct_author_add_customizer_content' );
 
 function ct_author_add_customizer_content( $wp_customize ) {
 
-
 	/***** Reorder default sections *****/
 
 	$wp_customize->get_section('title_tagline')->priority     = 1;
@@ -13,7 +12,6 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	$wp_customize->get_section('static_front_page')->title = __('Front Page', 'author');
 	$wp_customize->get_section('nav')->priority = 10;
 	$wp_customize->get_section('nav')->title = __('Menus', 'author');
-	
 	
 	/***** Add PostMessage Support *****/
 	
