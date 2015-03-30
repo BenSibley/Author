@@ -464,7 +464,7 @@ function ct_author_set_date_format() {
 		add_option('ct_author_date_format_origin', 'updated');
 	}
 }
-add_action( 'init', 'ct_author_set_date_format' );
+add_action( 'after_switch_theme', 'ct_author_set_date_format' );
 
 // used in header.php for primary avatar and comments
 function ct_author_output_avatar() {
