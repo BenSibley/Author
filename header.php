@@ -30,7 +30,10 @@
 						<?php } ?>
 						<div class="container">
 							<?php get_template_part('logo')  ?>
-							<p class="tagline"><?php bloginfo('description'); ?></p>
+							<?php
+							if( get_bloginfo('description') ) {
+								echo '<p class="tagline">' . get_bloginfo("description") . '</p>';
+							} ?>
 						</div>
 					</div>
 					<button id="toggle-navigation" class="toggle-navigation" aria-expanded="false">
