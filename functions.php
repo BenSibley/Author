@@ -9,37 +9,38 @@ require_once( trailingslashit( get_template_directory() ) . 'library/hybrid.php'
 new Hybrid();
 
 // theme setup
-function ct_author_theme_setup() {
-	
-    /* Get action/filter hook prefix. */
-	$prefix = hybrid_get_prefix();
-    
-	// add Hybrid core functionality
-    add_theme_support( 'hybrid-core-template-hierarchy' );
-    add_theme_support( 'loop-pagination' );
-	add_theme_support( 'cleaner-gallery' );
+if( !function_exists('ct_author_theme_setup' ) ) {
+	function ct_author_theme_setup() {
 
-    // add functionality from WordPress core
-    add_theme_support( 'post-thumbnails' );
-    add_theme_support( 'automatic-feed-links' );
-    add_theme_support( 'title-tag' );
+		/* Get action/filter hook prefix. */
+		$prefix = hybrid_get_prefix();
 
-	// load theme options page
-	require_once( trailingslashit( get_template_directory() ) . 'theme-options.php' );
+		// add Hybrid core functionality
+		add_theme_support( 'hybrid-core-template-hierarchy' );
+		add_theme_support( 'loop-pagination' );
+		add_theme_support( 'cleaner-gallery' );
 
-	// add inc folder files
-	foreach (glob(trailingslashit( get_template_directory() ) . 'inc/*') as $filename)
-	{
-		include $filename;
+		// add functionality from WordPress core
+		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'automatic-feed-links' );
+		add_theme_support( 'title-tag' );
+
+		// load theme options page
+		require_once( trailingslashit( get_template_directory() ) . 'theme-options.php' );
+
+		// add inc folder files
+		foreach ( glob( trailingslashit( get_template_directory() ) . 'inc/*' ) as $filename ) {
+			include $filename;
+		}
+
+		// load text domain
+		load_theme_textdomain( 'author', get_template_directory() . '/languages' );
+
+		// register Primary menu
+		register_nav_menus( array(
+			'primary' => __( 'Primary', 'author' )
+		) );
 	}
-
-	// load text domain
-	load_theme_textdomain('author', get_template_directory() . '/languages');
-
-	// register Primary menu
-    register_nav_menus(array(
-        'primary' => __('Primary', 'author')
-    ));
 }
 add_action( 'after_setup_theme', 'ct_author_theme_setup', 10 );
 
@@ -79,44 +80,50 @@ function ct_author_register_widget_areas(){
 add_action('widgets_init','ct_author_register_widget_areas');
 
 /* added to customize the comments. Same as default except -> added use of gravatar images for comment authors */
-function ct_author_customize_comments( $comment, $args, $depth ) {
-    $GLOBALS['comment'] = $comment;
-    $comment_type = $comment->comment_type;
-    ?>
-    <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-        <article id="comment-<?php comment_ID(); ?>" class="comment">
-            <div class="comment-author">
-                <?php
-                // if not a pingback
-                if( $comment_type !== 'pingback' ) {
-                    // if site admin and avatar uploaded
-                    if ( $comment->comment_author_email === get_option( 'admin_email' ) && get_theme_mod( 'avatar_method' ) == 'upload' ) {
-                        echo '<img alt="Comment author\'s Gravatar" class="avatar avatar-48 photo" src="' . ct_author_output_avatar() . '" height="48" width="48" />';
-                    } else {
-                        echo get_avatar( get_comment_author_email(), 48, '', "Comment author's Gravatar" );
-                    }
-                }
-                ?>
-                <span class="author-name"><?php comment_author_link(); ?></span>
-            </div>
-            <div class="comment-content">
-                <?php if ($comment->comment_approved == '0') : ?>
-                    <em><?php _e('Your comment is awaiting moderation.', 'author') ?></em>
-                    <br />
-                <?php endif; ?>
-                <?php comment_text(); ?>
-            </div>
-            <?php
-            // if not a pingback
-            if( $comment_type !== 'pingback' ) { ?>
-                <div class="comment-footer">
-                    <span class="comment-date"><?php comment_date('n/j/Y'); ?></span>
-                    <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'author' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-                    <?php edit_comment_link( 'edit' ); ?>
-                </div>
-            <?php } ?>
-        </article>
-    <?php
+if( !function_exists('ct_author_customize_comments' ) ) {
+	function ct_author_customize_comments( $comment, $args, $depth ) {
+		$GLOBALS['comment'] = $comment;
+		$comment_type       = $comment->comment_type;
+		?>
+		<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+		<article id="comment-<?php comment_ID(); ?>" class="comment">
+			<div class="comment-author">
+				<?php
+				// if not a pingback
+				if ( $comment_type !== 'pingback' ) {
+					// if site admin and avatar uploaded
+					if ( $comment->comment_author_email === get_option( 'admin_email' ) && get_theme_mod( 'avatar_method' ) == 'upload' ) {
+						echo '<img alt="Comment author\'s Gravatar" class="avatar avatar-48 photo" src="' . ct_author_output_avatar() . '" height="48" width="48" />';
+					} else {
+						echo get_avatar( get_comment_author_email(), 48, '', "Comment author's Gravatar" );
+					}
+				}
+				?>
+				<span class="author-name"><?php comment_author_link(); ?></span>
+			</div>
+			<div class="comment-content">
+				<?php if ( $comment->comment_approved == '0' ) : ?>
+					<em><?php _e( 'Your comment is awaiting moderation.', 'author' ) ?></em>
+					<br/>
+				<?php endif; ?>
+				<?php comment_text(); ?>
+			</div>
+			<?php
+			// if not a pingback
+			if ( $comment_type !== 'pingback' ) { ?>
+				<div class="comment-footer">
+					<span class="comment-date"><?php comment_date( 'n/j/Y' ); ?></span>
+					<?php comment_reply_link( array_merge( $args, array(
+						'reply_text' => __( 'Reply', 'author' ),
+						'depth'      => $depth,
+						'max_depth'  => $args['max_depth']
+					) ) ); ?>
+					<?php edit_comment_link( 'edit' ); ?>
+				</div>
+			<?php } ?>
+		</article>
+	<?php
+	}
 }
 
 // adjustments to default comment form inputs
@@ -180,12 +187,14 @@ if( ! function_exists( 'ct_author_update_comment_field' ) ) {
 add_filter('comment_form_field_comment','ct_author_update_comment_field');
 
 // remove allowed tags text after comment form
-function ct_author_remove_comments_notes_after($defaults){
+if( !function_exists('ct_author_remove_comments_notes_after' ) ) {
+	function ct_author_remove_comments_notes_after( $defaults ) {
 
-    $defaults['comment_notes_after']='';
-    return $defaults;
+		$defaults['comment_notes_after'] = '';
+
+		return $defaults;
+	}
 }
-
 add_action('comment_form_defaults', 'ct_author_remove_comments_notes_after');
 
 // excerpt handling
@@ -225,11 +234,13 @@ if( ! function_exists( 'ct_author_excerpt' ) ) {
 }
 
 // filter the link on excerpts
-function ct_author_excerpt_read_more_link($output) {
-	global $post;
-	return $output . "<p><a class='more-link' href='". get_permalink() ."'>" . __('Continue reading', 'author') . " <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
-}
+if( !function_exists('ct_author_excerpt_read_more_link' ) ) {
+	function ct_author_excerpt_read_more_link( $output ) {
+		global $post;
 
+		return $output . "<p><a class='more-link' href='" . get_permalink() . "'>" . __( 'Continue reading', 'author' ) . " <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
+	}
+}
 add_filter('the_excerpt', 'ct_author_excerpt_read_more_link');
 
 // change the length of the excerpts
@@ -247,52 +258,58 @@ function ct_author_custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'ct_author_custom_excerpt_length', 99 );
 
 // switch [...] to ellipsis on automatic excerpt
-function ct_author_new_excerpt_more( $more ) {
-	return '&#8230;';
+if( !function_exists('ct_author_new_excerpt_more' ) ) {
+	function ct_author_new_excerpt_more( $more ) {
+		return '&#8230;';
+	}
 }
 add_filter('excerpt_more', 'ct_author_new_excerpt_more');
 
-// turns of the automatic scrolling to the read more link 
-function ct_author_remove_more_link_scroll( $link ) {
-	$link = preg_replace( '|#more-[0-9]+|', '', $link );
-	return $link;
+// turns of the automatic scrolling to the read more link
+if( !function_exists('ct_author_remove_more_link_scroll' ) ) {
+	function ct_author_remove_more_link_scroll( $link ) {
+		$link = preg_replace( '|#more-[0-9]+|', '', $link );
+
+		return $link;
+	}
 }
 add_filter( 'the_content_more_link', 'ct_author_remove_more_link_scroll' );
 
 // for displaying featured images
-function ct_author_featured_image() {
+if( !function_exists('ct_author_featured_image' ) ) {
+	function ct_author_featured_image() {
 
-	// get post object
-	global $post;
+		// get post object
+		global $post;
 
-	// default to no featured image
-	$has_image = false;
+		// default to no featured image
+		$has_image = false;
 
-	// if post has an image
-	if (has_post_thumbnail( $post->ID ) ) {
-		// get the full-size version of the image
-		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-		// set $image = the url
-		$image = $image[0];
-		$has_image = true;
-	}
-	if ($has_image == true) {
-
-		// on posts/pages display the featued image
-		if(is_singular()){
-			$featured_image = "<div class='featured-image' style=\"background-image: url('".$image."')\"></div>";
+		// if post has an image
+		if ( has_post_thumbnail( $post->ID ) ) {
+			// get the full-size version of the image
+			$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+			// set $image = the url
+			$image     = $image[0];
+			$has_image = true;
 		}
-		// on blog/archives display with a link
-		else {
-			$featured_image = "
-                <div class='featured-image' style=\"background-image: url('".$image."')\">
-                    <a href='" . get_permalink() ."'>" . get_the_title() . "</a>
+		if ( $has_image == true ) {
+
+			// on posts/pages display the featued image
+			if ( is_singular() ) {
+				$featured_image = "<div class='featured-image' style=\"background-image: url('" . $image . "')\"></div>";
+			} // on blog/archives display with a link
+			else {
+				$featured_image = "
+                <div class='featured-image' style=\"background-image: url('" . $image . "')\">
+                    <a href='" . get_permalink() . "'>" . get_the_title() . "</a>
                 </div>
                 ";
-		}
-        $featured_image = apply_filters( 'ct_author_featured_image', $featured_image );
+			}
+			$featured_image = apply_filters( 'ct_author_featured_image', $featured_image );
 
-        echo $featured_image;
+			echo $featured_image;
+		}
 	}
 }
 
