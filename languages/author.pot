@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Author 1.03\n"
+"Project-Id-Version: Author 1.05\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-03-13 20:59:41+00:00\n"
+"POT-Creation-Date: 2015-03-31 13:51:20+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -59,6 +59,10 @@ msgstr ""
 
 #: content/archive-header.php:41
 msgid "Date archive for:"
+msgstr ""
+
+#: content/post-categories.php:16
+msgid "Published in"
 msgstr ""
 
 #: content/post-categories.php:19
@@ -117,47 +121,47 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#: functions.php:72
+#: functions.php:73
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:74
+#: functions.php:75
 msgid "Widgets in this area will be shown in the sidebar"
 msgstr ""
 
-#: functions.php:104
+#: functions.php:106
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:114
+#: functions.php:117
 msgid "Reply"
 msgstr ""
 
-#: functions.php:136
+#: functions.php:143
 msgid "optional"
 msgstr ""
 
-#: functions.php:144
+#: functions.php:151
 msgid "Name"
 msgstr ""
 
-#: functions.php:151
+#: functions.php:158
 msgid "Email"
 msgstr ""
 
-#: functions.php:158
+#: functions.php:165
 msgid "Website"
 msgstr ""
 
-#: functions.php:173
+#: functions.php:180
 msgid "Comment"
 msgstr ""
 
-#: functions.php:219 functions.php:230
+#: functions.php:228 functions.php:241
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:550
+#: functions.php:567
 msgid "Customizer settings deleted"
 msgstr ""
 
@@ -165,119 +169,119 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: inc/customizer.php:13
+#: inc/customizer.php:12
 msgid "Front Page"
 msgstr ""
 
-#: inc/customizer.php:15
+#: inc/customizer.php:14
 msgid "Menus"
 msgstr ""
 
-#: inc/customizer.php:96
+#: inc/customizer.php:94
 msgid "Avatar"
 msgstr ""
 
-#: inc/customizer.php:109
+#: inc/customizer.php:107
 msgid "Avatar image source"
 msgstr ""
 
-#: inc/customizer.php:114 inc/customizer.php:362
+#: inc/customizer.php:112 inc/customizer.php:360
 msgid "Gravatar"
 msgstr ""
 
-#: inc/customizer.php:115 inc/customizer.php:363
+#: inc/customizer.php:113 inc/customizer.php:361
 msgid "Upload an image"
 msgstr ""
 
-#: inc/customizer.php:116 inc/customizer.php:364
+#: inc/customizer.php:114 inc/customizer.php:362
 msgid "Do not display avatar"
 msgstr ""
 
-#: inc/customizer.php:128
+#: inc/customizer.php:126
 msgid "Upload your avatar"
 msgstr ""
 
-#: inc/customizer.php:138
+#: inc/customizer.php:136
 msgid "Logo"
 msgstr ""
 
-#: inc/customizer.php:141
+#: inc/customizer.php:139
 msgid "Use this instead of the avatar if you want a non-rounded logo image."
 msgstr ""
 
-#: inc/customizer.php:152
+#: inc/customizer.php:150
 msgid "Upload custom logo."
 msgstr ""
 
-#: inc/customizer.php:168
+#: inc/customizer.php:166
 msgid "Social Media Icons"
 msgstr ""
 
-#: inc/customizer.php:184
+#: inc/customizer.php:182
 msgid "address:"
 msgstr ""
 
-#: inc/customizer.php:198
+#: inc/customizer.php:196
 msgid "url:"
 msgstr ""
 
-#: inc/customizer.php:212
+#: inc/customizer.php:210
 msgid "Blog"
 msgstr ""
 
-#: inc/customizer.php:225
+#: inc/customizer.php:223
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:230 inc/customizer.php:379
+#: inc/customizer.php:228 inc/customizer.php:377
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:231 inc/customizer.php:380
+#: inc/customizer.php:229 inc/customizer.php:378
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:244
+#: inc/customizer.php:242
 msgid "Excerpt length"
 msgstr ""
 
-#: inc/customizer.php:255
+#: inc/customizer.php:253
 msgid "Comment Display"
 msgstr ""
 
-#: inc/customizer.php:269
+#: inc/customizer.php:267
 msgid "Show comments on:"
 msgstr ""
 
-#: inc/customizer.php:274 inc/customizer.php:340
+#: inc/customizer.php:272 inc/customizer.php:338
 msgid "Posts"
 msgstr ""
 
-#: inc/customizer.php:275 inc/customizer.php:341
+#: inc/customizer.php:273 inc/customizer.php:339
 msgid "Pages"
 msgstr ""
 
-#: inc/customizer.php:276 inc/customizer.php:342
+#: inc/customizer.php:274 inc/customizer.php:340
 msgid "Attachments"
 msgstr ""
 
-#: inc/customizer.php:277 inc/customizer.php:343
+#: inc/customizer.php:275 inc/customizer.php:341
 msgid "Do not show"
 msgstr ""
 
-#: inc/customizer.php:286
+#: inc/customizer.php:284
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:299
+#: inc/customizer.php:297
 msgid "Add Custom CSS Here:"
 msgstr ""
 
-#: inc/customizer.php:315
+#: inc/customizer.php:313
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:316
+#: inc/customizer.php:314
 msgid "Hide"
 msgstr ""
 
@@ -402,7 +406,7 @@ msgid "Compete Themes"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://www.competethemes.com/"
+msgid "https://www.competethemes.com"
 msgstr ""
 
 #: content-archive.php:14 content.php:12
