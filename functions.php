@@ -285,6 +285,8 @@ if( !function_exists('ct_author_featured_image' ) ) {
 		// default to no featured image
 		$has_image = false;
 
+		$featured_image = '';
+
 		// if post has an image
 		if ( has_post_thumbnail( $post->ID ) ) {
 			// get the full-size version of the image
@@ -306,8 +308,12 @@ if( !function_exists('ct_author_featured_image' ) ) {
                 </div>
                 ";
 			}
-			$featured_image = apply_filters( 'ct_author_featured_image', $featured_image );
+		}
 
+		// allow videos to be added
+		$featured_image = apply_filters( 'ct_author_featured_image', $featured_image );
+
+		if( $featured_image ) {
 			echo $featured_image;
 		}
 	}
