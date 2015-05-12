@@ -569,7 +569,7 @@ endif;
 function ct_author_sticky_post_marker() {
 
     if( is_sticky() && !is_archive() ) {
-        echo '<span class="sticky-status">Featured Post</span>';
+        echo '<span class="sticky-status">' . __("Featured Post", "author") . '</span>';
     }
 }
 add_action( 'archive_post_before', 'ct_author_sticky_post_marker' );
