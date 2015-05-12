@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
 
     // for scrolling function
     var lastWindowPos = 0;
-    var top, bottom = false;
+    var top, bottom, short = false;
     var topOffset = 0;
     var resizeTimer;
 
@@ -238,7 +238,7 @@ jQuery(document).ready(function($){
         }
 
         // if the sidebar height + admin bar is greater than the window height
-        if ( sidebarHeight + adminbarOffset > windowHeight ) {
+        if ( ( sidebarHeight + adminbarOffset > windowHeight ) && short != true ) {
             // if the window has been scrolled down
             if ( windowPos > lastWindowPos ) {
                 if ( top ) {
@@ -272,6 +272,7 @@ jQuery(document).ready(function($){
             }
         } else if ( ! top ) {
             top = true;
+            short = true;
             sidebar.attr( 'style', 'position: fixed;' );
         }
 
@@ -308,6 +309,11 @@ jQuery(document).ready(function($){
         if (topDistance > sidebarPrimaryBottom + 50) {
             openPrimaryMenu();
         }
+    }
+
+    // if sidebar height is less than window height, needs help to keep from flickering
+    function sidebarMinHeight() {
+
     }
 });
 
