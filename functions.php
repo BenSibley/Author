@@ -455,23 +455,6 @@ function ct_author_wp_backwards_compatibility() {
 }
 add_action('init', 'ct_author_wp_backwards_compatibility');
 
-/*
- * Set the date format for new users.
- * Needs to be done this way so that the date defaults to the right format, but can
- * still be changed from the Settings menu
- */
-function ct_author_set_date_format() {
-
-	// if the date format has never been set by Unlimited, set it
-	if( get_option('ct_author_date_format_origin') != 'updated' ) {
-		update_option('date_format', 'F j, Y');
-
-		// add option so never updates date format again. Allows users to change format.
-		add_option('ct_author_date_format_origin', 'updated');
-	}
-}
-add_action( 'after_switch_theme', 'ct_author_set_date_format' );
-
 // used in header.php for primary avatar and comments
 function ct_author_output_avatar() {
 
