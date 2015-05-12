@@ -1458,6 +1458,20 @@ a img {
     width: 77.77%;
   }
 }
+@media all and (min-width: 87.5em) {
+  .site-footer {
+    position: relative;
+  }
+  .site-footer:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -999px;
+    bottom: 0;
+    left: 100%;
+    background: #d9d9d9;
+  }
+}
 .error-404 .entry article {
   padding-bottom: 3em;
 }
