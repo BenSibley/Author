@@ -410,6 +410,7 @@ a img {
     float: right;
     width: 27.775%;
     padding: 3em 1.85185%;
+    min-height: 100%;
   }
 
   .sidebar-primary {

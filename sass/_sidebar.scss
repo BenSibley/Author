@@ -32,6 +32,7 @@
     float: left;
     width: $column-9 * 2.5;
     padding: $baseline-height * 2 $column-27 / 2;
+    min-height: 100%;
   }
   .sidebar-primary {
     position: relative;
