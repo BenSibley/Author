@@ -9,6 +9,12 @@ function ct_author_load_scripts_styles() {
 
 	// main JS file
 	wp_enqueue_script('ct-author-js', get_template_directory_uri() . '/js/build/production.min.js', array('jquery'),'', true);
+	wp_localize_script( 'ct-author-js', 'objectL10n', array(
+		'openPrimaryMenu'  => __( 'open primary menu', 'author' ),
+		'closePrimaryMenu' => __( 'close primary menu', 'author' ),
+		'openChildMenu'    => __( 'open child menu', 'author' ),
+		'closeChildMenu'   => __( 'close child menu', 'author' )
+	) );
 
 	// Google Fonts
 	wp_enqueue_style('ct-author-google-fonts');

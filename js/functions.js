@@ -52,7 +52,7 @@ jQuery(document).ready(function($){
             sidebar.removeClass('open');
 
             // update screen reader text and aria-expanded
-            $(this).children('span').text('open primary menu');
+            $(this).children('span').text(objectL10n.openPrimaryMenu);
             $(this).attr('aria-expanded', 'false');
 
             // close all ULs by removing increased max-height
@@ -81,7 +81,7 @@ jQuery(document).ready(function($){
             sidebar.trigger('open');
 
             // update screen reader text and aria-expanded
-            $(this).children('span').text('close primary menu');
+            $(this).children('span').text(objectL10n.closePrimaryMenu);
             $(this).attr('aria-expanded', 'true');
 
             var windowWidth = $(window).width();
@@ -115,11 +115,11 @@ jQuery(document).ready(function($){
 
         if( menuItem.hasClass('open') ) {
             menuItem.removeClass('open');
-            $(this).children('span').text('open child menu');
+            $(this).children('span').text(objectL10n.openChildMenu);
             $(this).attr('aria-expanded', 'false');
         } else {
             menuItem.addClass('open');
-            $(this).children('span').text('close child menu');
+            $(this).children('span').text(objectL10n.closeChildMenu);
             $(this).attr('aria-expanded', 'true');
         }
     }
