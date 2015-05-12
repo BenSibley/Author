@@ -87,6 +87,50 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		<?php }
 	}
 
+	// create ad controls
+	class author_description_color_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/author-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> to change your colors.', 'author'), $link ) . "</p>";
+		}
+	}
+	class author_description_header_image_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/author-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> to add a header image.', 'author'), $link ) . "</p>";
+		}
+	}
+	class author_description_background_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/author-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> to add background images and textures.', 'author'), $link ) . "</p>";
+		}
+	}
+	class author_description_font_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/author-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> to change your font.', 'author'), $link ) . "</p>";
+		}
+	}
+	class author_description_display_control_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/author-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> to get hide/show controls.', 'author'), $link ) . "</p>";
+		}
+	}
+	class author_description_footer_text_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/author-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> to customize the footer text.', 'author'), $link ) . "</p>";
+		}
+	}
+
 	/***** Avatar *****/
 
 	// section
@@ -297,6 +341,143 @@ function ct_author_add_customizer_content( $wp_customize ) {
 			'label'          => __( 'Add Custom CSS Here:', 'author' ),
 			'section'        => 'author_custom_css',
 			'settings'       => 'custom_css',
+		)
+	) );
+
+
+	/*
+	 * PRO only sections
+	 */
+
+	/***** Header Image *****/
+
+	// section
+	$wp_customize->add_section( 'author_header_image', array(
+		'title'      => __( 'Header Image', 'author' ),
+		'priority'   => 35,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'header_image_ad', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'absint',
+	) );
+	// control
+	$wp_customize->add_control( new author_description_header_image_control(
+		$wp_customize, 'header_image_ad', array(
+			'section'        => 'author_header_image',
+			'settings'       => 'header_image_ad'
+		)
+	) );
+
+	/***** Colors *****/
+
+	// section
+	$wp_customize->add_section( 'author_colors', array(
+		'title'      => __( 'Colors', 'author' ),
+		'priority'   => 50,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'colors_ad', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'absint',
+	) );
+	// control
+	$wp_customize->add_control( new author_description_color_control(
+		$wp_customize, 'colors_ad', array(
+			'section'        => 'author_colors',
+			'settings'       => 'colors_ad'
+		)
+	) );
+
+	/***** Background *****/
+
+	// section
+	$wp_customize->add_section( 'author_background', array(
+		'title'      => __( 'Background', 'author' ),
+		'priority'   => 55,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'background_ad', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'absint',
+	) );
+	// control
+	$wp_customize->add_control( new author_description_background_control(
+		$wp_customize, 'background_ad', array(
+			'section'        => 'author_background',
+			'settings'       => 'background_ad'
+		)
+	) );
+
+	/***** Fonts *****/
+
+	// section
+	$wp_customize->add_section( 'author_font', array(
+		'title'      => __( 'Font', 'author' ),
+		'priority'   => 40,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'font_ad', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'absint',
+	) );
+	// control
+	$wp_customize->add_control( new author_description_font_control(
+		$wp_customize, 'font_ad', array(
+			'section'        => 'author_font',
+			'settings'       => 'font_ad'
+		)
+	) );
+
+	/***** Display Control *****/
+
+	// section
+	$wp_customize->add_section( 'author_display_control', array(
+		'title'      => __( 'Display Controls', 'author' ),
+		'priority'   => 70,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'display_control_ad', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'absint',
+	) );
+	// control
+	$wp_customize->add_control( new author_description_display_control_control(
+		$wp_customize, 'display_control_ad', array(
+			'section'        => 'author_display_control',
+			'settings'       => 'display_control_ad'
+		)
+	) );
+
+	/***** Footer Text *****/
+
+	// section
+	$wp_customize->add_section( 'author_footer_text', array(
+		'title'      => __( 'Footer Text', 'author' ),
+		'priority'   => 85,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'footer_text_ad', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'absint',
+	) );
+	// control
+	$wp_customize->add_control( new author_description_footer_text_control(
+		$wp_customize, 'footer_text_ad', array(
+			'section'        => 'author_footer_text',
+			'settings'       => 'footer_text_ad'
 		)
 	) );
 }
