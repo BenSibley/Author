@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Author 1.05\n"
+"Project-Id-Version: Author 1.07\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-03-31 13:51:20+00:00\n"
+"POT-Creation-Date: 2015-05-12 14:38:35+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -161,12 +161,28 @@ msgstr ""
 msgid "Continue reading"
 msgstr ""
 
+#: functions.php:425
+msgid "email icon"
+msgstr ""
+
+#: functions.php:431 functions.php:437
+msgid "%s icon"
+msgstr ""
+
 #: functions.php:567
 msgid "Customizer settings deleted"
 msgstr ""
 
+#: functions.php:586
+msgid "Featured Post"
+msgstr ""
+
 #: header.php:19
 msgid "Skip to content"
+msgstr ""
+
+#: header.php:40 inc/scripts.php:13
+msgid "open primary menu"
 msgstr ""
 
 #: inc/customizer.php:12
@@ -177,112 +193,184 @@ msgstr ""
 msgid "Menus"
 msgstr ""
 
-#: inc/customizer.php:94
+#: inc/customizer.php:95
+msgid ""
+"Activate <a target=\"_blank\" href=\"%s\">Author Pro</a> to change your "
+"colors."
+msgstr ""
+
+#: inc/customizer.php:102
+msgid ""
+"Activate <a target=\"_blank\" href=\"%s\">Author Pro</a> to add a header "
+"image."
+msgstr ""
+
+#: inc/customizer.php:109
+msgid ""
+"Activate <a target=\"_blank\" href=\"%s\">Author Pro</a> to add background "
+"images and textures."
+msgstr ""
+
+#: inc/customizer.php:116
+msgid ""
+"Activate <a target=\"_blank\" href=\"%s\">Author Pro</a> to change your "
+"font."
+msgstr ""
+
+#: inc/customizer.php:123
+msgid ""
+"Activate <a target=\"_blank\" href=\"%s\">Author Pro</a> to get hide/show "
+"controls."
+msgstr ""
+
+#: inc/customizer.php:130
+msgid ""
+"Activate <a target=\"_blank\" href=\"%s\">Author Pro</a> to customize the "
+"footer text."
+msgstr ""
+
+#: inc/customizer.php:138
 msgid "Avatar"
 msgstr ""
 
-#: inc/customizer.php:107
+#: inc/customizer.php:151
 msgid "Avatar image source"
 msgstr ""
 
-#: inc/customizer.php:112 inc/customizer.php:360
+#: inc/customizer.php:156 inc/customizer.php:541
 msgid "Gravatar"
 msgstr ""
 
-#: inc/customizer.php:113 inc/customizer.php:361
+#: inc/customizer.php:157 inc/customizer.php:542
 msgid "Upload an image"
 msgstr ""
 
-#: inc/customizer.php:114 inc/customizer.php:362
+#: inc/customizer.php:158 inc/customizer.php:543
 msgid "Do not display avatar"
 msgstr ""
 
-#: inc/customizer.php:126
+#: inc/customizer.php:170
 msgid "Upload your avatar"
 msgstr ""
 
-#: inc/customizer.php:136
+#: inc/customizer.php:180
 msgid "Logo"
 msgstr ""
 
-#: inc/customizer.php:139
+#: inc/customizer.php:183
 msgid "Use this instead of the avatar if you want a non-rounded logo image."
 msgstr ""
 
-#: inc/customizer.php:150
+#: inc/customizer.php:194
 msgid "Upload custom logo."
 msgstr ""
 
-#: inc/customizer.php:166
+#: inc/customizer.php:210
 msgid "Social Media Icons"
 msgstr ""
 
-#: inc/customizer.php:182
+#: inc/customizer.php:226
 msgid "address:"
 msgstr ""
 
-#: inc/customizer.php:196
+#: inc/customizer.php:240
 msgid "url:"
 msgstr ""
 
-#: inc/customizer.php:210
+#: inc/customizer.php:254
 msgid "Blog"
 msgstr ""
 
-#: inc/customizer.php:223
+#: inc/customizer.php:267
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:228 inc/customizer.php:377
+#: inc/customizer.php:272 inc/customizer.php:558
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:229 inc/customizer.php:378
+#: inc/customizer.php:273 inc/customizer.php:559
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:242
+#: inc/customizer.php:286
 msgid "Excerpt length"
 msgstr ""
 
-#: inc/customizer.php:253
+#: inc/customizer.php:297
 msgid "Comment Display"
 msgstr ""
 
-#: inc/customizer.php:267
+#: inc/customizer.php:311
 msgid "Show comments on:"
 msgstr ""
 
-#: inc/customizer.php:272 inc/customizer.php:338
+#: inc/customizer.php:316 inc/customizer.php:519
 msgid "Posts"
 msgstr ""
 
-#: inc/customizer.php:273 inc/customizer.php:339
+#: inc/customizer.php:317 inc/customizer.php:520
 msgid "Pages"
 msgstr ""
 
-#: inc/customizer.php:274 inc/customizer.php:340
+#: inc/customizer.php:318 inc/customizer.php:521
 msgid "Attachments"
 msgstr ""
 
-#: inc/customizer.php:275 inc/customizer.php:341
+#: inc/customizer.php:319 inc/customizer.php:522
 msgid "Do not show"
 msgstr ""
 
-#: inc/customizer.php:284
+#: inc/customizer.php:328
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:297
+#: inc/customizer.php:341
 msgid "Add Custom CSS Here:"
 msgstr ""
 
-#: inc/customizer.php:313
+#: inc/customizer.php:356
+msgid "Header Image"
+msgstr ""
+
+#: inc/customizer.php:378
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer.php:400
+msgid "Background"
+msgstr ""
+
+#: inc/customizer.php:422
+msgid "Font"
+msgstr ""
+
+#: inc/customizer.php:444
+msgid "Display Controls"
+msgstr ""
+
+#: inc/customizer.php:466
+msgid "Footer Text"
+msgstr ""
+
+#: inc/customizer.php:494
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:314
+#: inc/customizer.php:495
 msgid "Hide"
+msgstr ""
+
+#: inc/scripts.php:14
+msgid "close primary menu"
+msgstr ""
+
+#: inc/scripts.php:15
+msgid "open child menu"
+msgstr ""
+
+#: inc/scripts.php:16
+msgid "close child menu"
 msgstr ""
 
 #: search.php:10
@@ -398,7 +486,8 @@ msgid ""
 "sizes to enhance usability. As one of few accessibility-ready themes, it "
 "performs well for users with wide ranges of disabilities. Lastly, based on "
 "the ancient Van de Graaf canon, Author is optimally designed for reading. "
-"Author is the theme your content deserves."
+"Author is the theme your content deserves. See our fully setup live demo "
+"here: https://www.competethemes.com/author-live-demo/"
 msgstr ""
 
 #. Author of the plugin/theme
