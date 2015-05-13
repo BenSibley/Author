@@ -204,6 +204,7 @@ jQuery(document).ready(function($){
             menuItem.addClass('open');
             $(this).children('span').text(objectL10n.closeChildMenu);
             $(this).attr('aria-expanded', 'true');
+            short = false; // return to false to be measured again (may not be shorter than window now)
         }
     }
 
