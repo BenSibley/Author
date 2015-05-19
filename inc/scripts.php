@@ -24,9 +24,9 @@ function ct_author_load_scripts_styles() {
 
 	// load primary stylesheet
 	if( is_rtl() ) {
-		wp_enqueue_style('ct-author-style-rtl', get_template_directory_uri() . '/styles/rtl.min.css');
+		wp_enqueue_style('ct-author-style-rtl', get_styleshee_uri() . '/styles/rtl.min.css');
 	} else {
-		wp_enqueue_style('ct-author-style', get_template_directory_uri() . '/style.min.css');
+		wp_enqueue_style('ct-author-style', get_stylesheet_uri() . '/style.min.css');
 	}
 
 	// enqueue comment-reply script only on posts & pages with comments open ( included in WP core )
