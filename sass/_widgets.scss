@@ -33,6 +33,7 @@
   .widget {
     color: $color-gray-80;
     border-top: solid 1px $color-gray-27-blue;
+    padding: $baseline-height 1px; // add 1px so sides of inputs aren't cutoff
 
     a {
       @extend %gray-eighty-link;

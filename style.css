@@ -1305,6 +1305,7 @@ a img {
 .sidebar-primary .widget {
   color: #cccccc;
   border-top: solid 1px #3e4145;
+  padding: 1.5em 1px;
 }
 .sidebar-primary .widget-title {
   color: white;
