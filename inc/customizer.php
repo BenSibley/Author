@@ -99,7 +99,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/author-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> to add a header image.', 'author'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> for advanced header image functionality.', 'author'), $link ) . "</p>";
 		}
 	}
 	class author_description_background_control extends WP_Customize_Control {
