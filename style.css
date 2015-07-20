@@ -165,6 +165,7 @@ li li {
 /* Markup styles */
 pre {
   word-wrap: break-word;
+  white-space: pre-wrap;
   background: #f0f1f2;
   padding: 0.75em;
 }
