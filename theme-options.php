@@ -8,6 +8,14 @@ add_action( 'admin_menu', 'ct_author_register_theme_page' );
 
 /* callback used to add content to options page */
 function ct_author_options_content(){
+
+    $customizer_url = add_query_arg(
+        array(
+            'url'    => site_url(),
+            'return' => admin_url('themes.php?page=author-options')
+        ),
+        admin_url('customize.php')
+    );
     ?>
     <div id="author-dashboard-wrap" class="wrap">
         <h2><?php _e('Author Dashboard', 'author'); ?></h2>
@@ -16,7 +24,7 @@ function ct_author_options_content(){
             <h3><?php _e('Customization', 'author'); ?></h3>
             <p><?php _e('Click the "Customize" link in your menu, or use the button below to get started customizing Author', 'author'); ?>.</p>
             <p>
-                <a class="button-primary" href="<?php echo admin_url('customize.php'); ?>"><?php _e('Use Customizer', 'author') ?></a>
+                <a class="button-primary" href="<?php echo esc_url( $customizer_url); ?>"><?php _e('Use Customizer', 'author') ?></a>
             </p>
         </div>
         <div class="content content-support">
@@ -43,11 +51,7 @@ function ct_author_options_content(){
         <div class="content content-delete-settings">
             <h3><?php _e('Reset Customizer Settings', 'author'); ?></h3>
             <p>
-                <?php
-                $url = admin_url('customize.php');
-                $text = sprintf( __( '<strong>Warning:</strong> Clicking this button will erase your current settings in the <a href="%s">Customizer</a>', 'author' ), esc_url( $url ) );
-                echo $text . ".";
-                ?>
+                <?php printf( __( '<strong>Warning:</strong> Clicking this button will erase your current settings in the <a href="%s">Customizer</a>', 'author' ), esc_url( $customizer_url ) ); ?>
             </p>
             <form method="post">
                 <input type="hidden" name="author_reset_customizer" value="author_reset_customizer_settings" />
