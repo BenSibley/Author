@@ -16,7 +16,11 @@
     // Tagline
     wp.customize( 'blogdescription', function( value ) {
         value.bind( function( to ) {
-            $( '.tagline' ).text( to );
+            var tagline = $('.tagline');
+            if ( tagline.length == 0 ) {
+                $('#title-container').find('.container').append('<p class="tagline"></p>');
+            }
+            tagline.text( to );
         } );
     } );
 
