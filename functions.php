@@ -112,7 +112,7 @@ if( !function_exists('ct_author_customize_comments' ) ) {
 			// if not a pingback
 			if ( $comment_type !== 'pingback' ) { ?>
 				<div class="comment-footer">
-					<span class="comment-date"><?php comment_date( 'n/j/Y' ); ?></span>
+					<span class="comment-date"><?php comment_date(); ?></span>
 					<?php comment_reply_link( array_merge( $args, array(
 						'reply_text' => __( 'Reply', 'author' ),
 						'depth'      => $depth,
