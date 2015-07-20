@@ -118,7 +118,7 @@ if( !function_exists('ct_author_customize_comments' ) ) {
 						'depth'      => $depth,
 						'max_depth'  => $args['max_depth']
 					) ) ); ?>
-					<?php edit_comment_link( 'edit' ); ?>
+					<?php edit_comment_link( __('Edit', 'author') ); ?>
 				</div>
 			<?php } ?>
 		</article>
