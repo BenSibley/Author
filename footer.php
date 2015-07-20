@@ -19,10 +19,6 @@
 
 <?php wp_footer(); ?>
 
-<!--[if IE 8 ]>
-<script src="<?php echo trailingslashit( get_template_directory_uri() ) . 'js/build/respond.min.js'; ?>"></script>
-<![endif]-->
-
 <?php hybrid_do_atomic( 'body_bottom' ); ?>
 </body>
 </html>
