@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
-<!--[if IE 8 ]><html class="ie8" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 9 ]><html class="ie9" <?php language_attributes(); ?>> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html <?php language_attributes(); ?>> <!--<![endif]-->
+<html <?php language_attributes(); ?>>
 
 <head>
     <?php wp_head(); ?>
