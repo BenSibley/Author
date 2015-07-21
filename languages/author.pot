@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Author 1.07.1\n"
+"Project-Id-Version: Author 1.08\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-05-19 12:23:28+00:00\n"
+"POT-Creation-Date: 2015-07-21 13:29:10+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -137,6 +137,10 @@ msgstr ""
 msgid "Reply"
 msgstr ""
 
+#: functions.php:121
+msgid "Edit"
+msgstr ""
+
 #: functions.php:143
 msgid "optional"
 msgstr ""
@@ -157,31 +161,31 @@ msgstr ""
 msgid "Comment"
 msgstr ""
 
-#: functions.php:228 functions.php:241
+#: functions.php:218 functions.php:225 functions.php:238
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:425
+#: functions.php:422
 msgid "email icon"
 msgstr ""
 
-#: functions.php:431 functions.php:437
+#: functions.php:428 functions.php:434
 msgid "%s icon"
 msgstr ""
 
-#: functions.php:567
+#: functions.php:564
 msgid "Customizer settings deleted"
 msgstr ""
 
-#: functions.php:586
+#: functions.php:583
 msgid "Featured Post"
 msgstr ""
 
-#: header.php:19
+#: header.php:12
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:40 inc/scripts.php:13
+#: header.php:33 inc/scripts.php:13
 msgid "open primary menu"
 msgstr ""
 
@@ -399,71 +403,71 @@ msgstr ""
 msgid "Go"
 msgstr ""
 
-#: theme-options.php:13
+#: theme-options.php:21
 msgid "Author Dashboard"
 msgstr ""
 
-#: theme-options.php:16
+#: theme-options.php:24
 msgid "Customization"
 msgstr ""
 
-#: theme-options.php:17
+#: theme-options.php:25
 msgid ""
 "Click the \"Customize\" link in your menu, or use the button below to get "
 "started customizing Author"
 msgstr ""
 
-#: theme-options.php:19
+#: theme-options.php:27
 msgid "Use Customizer"
 msgstr ""
 
-#: theme-options.php:23
+#: theme-options.php:31
 msgid "Support"
 msgstr ""
 
-#: theme-options.php:24
+#: theme-options.php:32
 msgid ""
 "You can find the knowledgebase, changelog, support forum, and more in the "
 "Author Support Center"
 msgstr ""
 
-#: theme-options.php:26
+#: theme-options.php:34
 msgid "Visit Support Center"
 msgstr ""
 
-#: theme-options.php:30
+#: theme-options.php:38
 msgid "Upgrade to Author Pro"
 msgstr ""
 
-#: theme-options.php:31
+#: theme-options.php:39
 msgid ""
 "Author Pro is the premium upgrade for Author. It has custom colors, new "
 "layouts, background images, and more"
 msgstr ""
 
-#: theme-options.php:33
+#: theme-options.php:41
 msgid "See Full Feature List"
 msgstr ""
 
-#: theme-options.php:37
+#: theme-options.php:45
 msgid "WordPress Resources"
 msgstr ""
 
-#: theme-options.php:38
+#: theme-options.php:46
 msgid ""
 "Save time and money searching for WordPress products by following our "
 "recommendations"
 msgstr ""
 
-#: theme-options.php:40
+#: theme-options.php:48
 msgid "View Resources"
 msgstr ""
 
-#: theme-options.php:44 theme-options.php:56
+#: theme-options.php:52 theme-options.php:60
 msgid "Reset Customizer Settings"
 msgstr ""
 
-#: theme-options.php:48
+#: theme-options.php:54
 msgid ""
 "<strong>Warning:</strong> Clicking this button will erase your current "
 "settings in the <a href=\"%s\">Customizer</a>"
