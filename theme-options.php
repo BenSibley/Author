@@ -35,8 +35,8 @@ function ct_author_options_content(){
             </p>
         </div>
         <div class="content content-premium-upgrade">
-            <h3><?php _e('Upgrade to Author Pro', 'author'); ?></h3>
-            <p><?php _e('Author Pro is the premium upgrade for Author. It has custom colors, new layouts, background images, and more', 'author'); ?>...</p>
+            <h3><?php _e('Get More Features & Flexibility', 'author'); ?></h3>
+            <p><?php _e('Download the Author Pro plugin and unlock custom colors, featured videos, background images, and more', 'author'); ?>...</p>
             <p>
                 <a target="_blank" class="button-primary" href="https://www.competethemes.com/author-pro/"><?php _e('See Full Feature List', 'author'); ?></a>
             </p>

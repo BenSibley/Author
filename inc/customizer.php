@@ -92,42 +92,42 @@ function ct_author_add_customizer_content( $wp_customize ) {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/author-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> to change your colors.', 'author'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Author Pro Plugin</a> to change your colors.', 'author'), $link ) . "</p>";
 		}
 	}
 	class author_description_header_image_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/author-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> for advanced header image functionality.', 'author'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Author Pro Plugin</a> for advanced header image functionality.', 'author'), $link ) . "</p>";
 		}
 	}
 	class author_description_background_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/author-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> for advanced background image and texture functionality.', 'author'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Author Pro Plugin</a> for advanced background image and texture functionality.', 'author'), $link ) . "</p>";
 		}
 	}
 	class author_description_font_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/author-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> to change your font.', 'author'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Author Pro Plugin</a> to change your font.', 'author'), $link ) . "</p>";
 		}
 	}
 	class author_description_display_control_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/author-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> to get hide/show controls.', 'author'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Author Pro Plugin</a> to get hide/show controls.', 'author'), $link ) . "</p>";
 		}
 	}
 	class author_description_footer_text_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/author-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Author Pro</a> to customize the footer text.', 'author'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Author Pro Plugin</a> to customize the footer text.', 'author'), $link ) . "</p>";
 		}
 	}
 
@@ -568,7 +568,7 @@ function ct_author_sanitize_yes_no_settings($input){
 
 function ct_author_customize_preview_js() {
 
-	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/author-pro/\" target=\"_blank\">View the Author Pro Upgrade <span>&rarr;</span></a></div>')</script>";
+	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/author-pro/\" target=\"_blank\">View the Author Pro Plugin <span>&rarr;</span></a></div>')</script>";
 	echo apply_filters('ct_author_customizer_ad', $content);
 }
 add_action('customize_controls_print_footer_scripts', 'ct_author_customize_preview_js');
