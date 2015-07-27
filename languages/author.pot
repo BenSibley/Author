@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Author 1.08\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-07-21 13:29:10+00:00\n"
+"POT-Creation-Date: 2015-07-27 12:49:49+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -199,38 +199,38 @@ msgstr ""
 
 #: inc/customizer.php:95
 msgid ""
-"Activate <a target=\"_blank\" href=\"%s\">Author Pro</a> to change your "
-"colors."
+"Activate the <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> to "
+"change your colors."
 msgstr ""
 
 #: inc/customizer.php:102
 msgid ""
-"Activate <a target=\"_blank\" href=\"%s\">Author Pro</a> for advanced "
-"header image functionality."
+"Activate the <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> for "
+"advanced header image functionality."
 msgstr ""
 
 #: inc/customizer.php:109
 msgid ""
-"Activate <a target=\"_blank\" href=\"%s\">Author Pro</a> for advanced "
-"background image and texture functionality."
+"Activate the <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> for "
+"advanced background image and texture functionality."
 msgstr ""
 
 #: inc/customizer.php:116
 msgid ""
-"Activate <a target=\"_blank\" href=\"%s\">Author Pro</a> to change your "
-"font."
+"Activate the <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> to "
+"change your font."
 msgstr ""
 
 #: inc/customizer.php:123
 msgid ""
-"Activate <a target=\"_blank\" href=\"%s\">Author Pro</a> to get hide/show "
-"controls."
+"Activate the <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> to get "
+"hide/show controls."
 msgstr ""
 
 #: inc/customizer.php:130
 msgid ""
-"Activate <a target=\"_blank\" href=\"%s\">Author Pro</a> to customize the "
-"footer text."
+"Activate the <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> to "
+"customize the footer text."
 msgstr ""
 
 #: inc/customizer.php:138
@@ -436,13 +436,13 @@ msgid "Visit Support Center"
 msgstr ""
 
 #: theme-options.php:38
-msgid "Upgrade to Author Pro"
+msgid "Get More Features & Flexibility"
 msgstr ""
 
 #: theme-options.php:39
 msgid ""
-"Author Pro is the premium upgrade for Author. It has custom colors, new "
-"layouts, background images, and more"
+"Download the Author Pro plugin and unlock custom colors, featured videos, "
+"background images, and more"
 msgstr ""
 
 #: theme-options.php:41
