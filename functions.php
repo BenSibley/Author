@@ -373,7 +373,7 @@ if( !function_exists( 'ct_author_social_array' ) ) {
 			'email'         => 'author_email_profile'
 		);
 
-		return $social_sites;
+		return apply_filters( 'ct_author_social_array_filter', $social_sites );
 	}
 }
 
