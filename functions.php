@@ -337,41 +337,44 @@ if ( function_exists( 'dsq_options' ) ) {
 }
 
 // associative array of social media sites
-function ct_author_social_array(){
+if( !function_exists( 'ct_author_social_array' ) ) {
+	function ct_author_social_array() {
 
-	$social_sites = array(
-		'twitter' => 'author_twitter_profile',
-		'facebook' => 'author_facebook_profile',
-		'google-plus' => 'author_googleplus_profile',
-		'pinterest' => 'author_pinterest_profile',
-		'linkedin' => 'author_linkedin_profile',
-		'youtube' => 'author_youtube_profile',
-		'vimeo' => 'author_vimeo_profile',
-		'tumblr' => 'author_tumblr_profile',
-		'instagram' => 'author_instagram_profile',
-		'flickr' => 'author_flickr_profile',
-		'dribbble' => 'author_dribbble_profile',
-		'rss' => 'author_rss_profile',
-		'reddit' => 'author_reddit_profile',
-		'soundcloud' => 'author_soundcloud_profile',
-		'spotify' => 'author_spotify_profile',
-		'vine' => 'author_vine_profile',
-		'yahoo' => 'author_yahoo_profile',
-		'behance' => 'author_behance_profile',
-		'codepen' => 'author_codepen_profile',
-		'delicious' => 'author_delicious_profile',
-		'stumbleupon' => 'author_stumbleupon_profile',
-		'deviantart' => 'author_deviantart_profile',
-		'digg' => 'author_digg_profile',
-		'git' => 'author_git_profile',
-		'hacker-news' => 'author_hacker-news_profile',
-		'steam' => 'author_steam_profile',
-		'vk' => 'author_vk_profile',
-		'weibo' => 'author_weibo_profile',
-		'tencent-weibo' => 'author_tencent_weibo_profile',
-		'email' => 'author_email_profile'
-	);
-	return $social_sites;
+		$social_sites = array(
+			'twitter'       => 'author_twitter_profile',
+			'facebook'      => 'author_facebook_profile',
+			'google-plus'   => 'author_googleplus_profile',
+			'pinterest'     => 'author_pinterest_profile',
+			'linkedin'      => 'author_linkedin_profile',
+			'youtube'       => 'author_youtube_profile',
+			'vimeo'         => 'author_vimeo_profile',
+			'tumblr'        => 'author_tumblr_profile',
+			'instagram'     => 'author_instagram_profile',
+			'flickr'        => 'author_flickr_profile',
+			'dribbble'      => 'author_dribbble_profile',
+			'rss'           => 'author_rss_profile',
+			'reddit'        => 'author_reddit_profile',
+			'soundcloud'    => 'author_soundcloud_profile',
+			'spotify'       => 'author_spotify_profile',
+			'vine'          => 'author_vine_profile',
+			'yahoo'         => 'author_yahoo_profile',
+			'behance'       => 'author_behance_profile',
+			'codepen'       => 'author_codepen_profile',
+			'delicious'     => 'author_delicious_profile',
+			'stumbleupon'   => 'author_stumbleupon_profile',
+			'deviantart'    => 'author_deviantart_profile',
+			'digg'          => 'author_digg_profile',
+			'git'           => 'author_git_profile',
+			'hacker-news'   => 'author_hacker-news_profile',
+			'steam'         => 'author_steam_profile',
+			'vk'            => 'author_vk_profile',
+			'weibo'         => 'author_weibo_profile',
+			'tencent-weibo' => 'author_tencent_weibo_profile',
+			'email'         => 'author_email_profile'
+		);
+
+		return $social_sites;
+	}
 }
 
 // used in ct_author_social_icons_output to return urls
