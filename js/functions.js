@@ -20,7 +20,11 @@ jQuery(document).ready(function($){
     /* Call functions */
 
     positionSidebar();
-    setMainMinHeight();
+
+    // delay until everything loaded to avoid inaccuracy due to other JS changing element heights
+    $(window).bind("load", function() {
+        setMainMinHeight();
+    });
 
     $(window).resize(function(){
         positionSidebar();
