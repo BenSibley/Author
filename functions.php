@@ -248,7 +248,12 @@ function ct_author_custom_excerpt_length( $length ) {
     // if there is a new length set and it's not 15, change it
     if( ! empty( $new_excerpt_length ) && $new_excerpt_length != 25 ){
         return $new_excerpt_length;
-    } else {
+    }
+    // allow 0 to be an option if user wants to remove the excerpt entirely
+    elseif( $new_excerpt_length === 0 ) {
+	    return 0;
+    }
+	else {
         return 25;
     }
 }
@@ -257,7 +262,16 @@ add_filter( 'excerpt_length', 'ct_author_custom_excerpt_length', 99 );
 // switch [...] to ellipsis on automatic excerpt
 if( !function_exists('ct_author_new_excerpt_more' ) ) {
 	function ct_author_new_excerpt_more( $more ) {
-		return '&#8230;';
+
+		// get user set excerpt length
+		$new_excerpt_length = get_theme_mod('excerpt_length');
+
+		// don't return trailing ellipsis if user removed excerpt
+		if( $new_excerpt_length === 0 ) {
+			return '';
+		} else {
+			return '&#8230;';
+		}
 	}
 }
 add_filter('excerpt_more', 'ct_author_new_excerpt_more');
