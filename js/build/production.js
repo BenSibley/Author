@@ -116,7 +116,9 @@ jQuery(document).ready(function($){
     });
 
     // add fitVids to videos in posts
-    $('.post-content').fitVids();
+    $('.post-content').fitVids({
+        customSelector: 'iframe[src*="dailymotion.com"], iframe[src*="slideshare.net"], iframe[src*="animoto.com"], iframe[src*="blip.tv"], iframe[src*="funnyordie.com"], iframe[src*="hulu.com"], iframe[src*="ted.com"], iframe[src*="wordpress.tv"]'
+    });
 
     // display the primary menu at mobile widths
     $('#toggle-navigation').on('click', openPrimaryMenu);
