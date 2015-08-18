@@ -127,6 +127,7 @@ jQuery(document).ready(function($){
             $(this).attr('aria-expanded', 'true');
             short = false; // return to false to be measured again (may not be shorter than window now)
         }
+        setMainMinHeight();
     }
 
     // open the menu to display the current page if inside a dropdown menu
