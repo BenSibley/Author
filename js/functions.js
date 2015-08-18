@@ -125,6 +125,9 @@ jQuery(document).ready(function($){
         }
     }
 
+    // open the menu to display the current page if inside a dropdown menu
+    $( '.current-menu-ancestor').addClass('open');
+
     // absolutely position the sidebar
     function positionSidebar() {
 
