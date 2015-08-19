@@ -54,6 +54,11 @@
   }
 }
 
+// hide any controls with .hide class
+.customize-control.hide {
+  display: none !important;
+}
+
 /* Multiple select styles (for comments dropdown */
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
