@@ -1,5 +1,10 @@
 <?php
 
+// set the content width
+if ( ! isset( $content_width ) ) {
+	$content_width = 622;
+}
+
 /*
  * Prefix: ct_author = Compete Themes Author
  */
