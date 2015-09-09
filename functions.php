@@ -637,3 +637,43 @@ function ct_author_sticky_post_marker() {
     }
 }
 add_action( 'archive_post_before', 'ct_author_sticky_post_marker' );
+
+function ct_author_loop_pagination(){
+
+	/* Set up some default arguments for the paginate_links() function. */
+	$defaults = array(
+		'base'         => add_query_arg( 'paged', '%#%' ),
+		'format'       => '',
+		'mid_size'     => 1
+	);
+
+	$loop_pagination = '<nav class="pagination loop-pagination">';
+	$loop_pagination .= paginate_links( $defaults );
+	$loop_pagination .= '</nav>';
+
+	return $loop_pagination;
+}
+
+// Adds useful meta tags
+function ct_author_add_meta_elements() {
+
+	$meta_elements = '';
+
+	/* Charset */
+	$meta_elements .= sprintf( '<meta charset="%s" />' . "\n", get_bloginfo( 'charset' ) );
+
+	/* Viewport */
+	$meta_elements .= '<meta name="viewport" content="width=device-width, initial-scale=1" />' . "\n";
+
+	/* Theme name and current version */
+	$theme    = wp_get_theme( get_template() );
+	$template = sprintf( '<meta name="template" content="%s %s" />' . "\n", esc_attr( $theme->get( 'Name' ) ), esc_attr( $theme->get( 'Version' ) ) );
+	$meta_elements .= $template;
+
+	echo $meta_elements;
+}
+add_action( 'wp_head', 'ct_author_add_meta_elements', 1 );
+
+/* Move the WordPress generator to a better priority. */
+remove_action( 'wp_head', 'wp_generator' );
+add_action( 'wp_head', 'wp_generator', 1 );
