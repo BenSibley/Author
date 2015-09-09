@@ -1302,6 +1302,9 @@ a img {
 .widget ul a:hover, .widget ul a:active, .widget ul a:focus {
   text-decoration: underline;
 }
+.widget ul ul {
+  margin: 6px 0 6px 12px;
+}
 .widget li {
   margin-bottom: 6px;
 }
