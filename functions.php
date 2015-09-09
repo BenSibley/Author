@@ -315,7 +315,7 @@ if( !function_exists('ct_author_featured_image' ) ) {
 			$image = $image[0];
 
 			// if alt text is empty, nothing else equal to title string
-			$title = empty($image_alt_text) ? '' : "title='$image_alt_text'";
+			$title = empty($image_alt_text) ? '' : "title='" . esc_attr( $image_alt_text ) . "'";
 
 			// set to true
 			$has_image = true;
@@ -324,11 +324,11 @@ if( !function_exists('ct_author_featured_image' ) ) {
 
 			// on posts/pages display the featured image
 			if ( is_singular() ) {
-				$featured_image = "<div class='featured-image' style=\"background-image: url('" . $image . "')\" $title></div>";
+				$featured_image = "<div class='featured-image' style=\"background-image: url('" . esc_url( $image ) . "')\" $title></div>";
 			} // on blog/archives display with a link
 			else {
 				$featured_image = "
-                <div class='featured-image' style=\"background-image: url('" . $image . "')\" $title>
+                <div class='featured-image' style=\"background-image: url('" . esc_url( $image ) . "')\" $title>
                     <a href='" . get_permalink() . "'>" . get_the_title() . "</a>
                 </div>
                 ";
