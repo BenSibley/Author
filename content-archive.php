@@ -1,5 +1,5 @@
 <div <?php post_class(); ?>>
-	<?php hybrid_do_atomic( 'archive_post_before' ); ?>
+	<?php do_action( 'archive_post_before' ); ?>
 	<?php ct_author_featured_image(); ?>
 	<article>
 		<div class='post-header'>
@@ -18,5 +18,5 @@
 			<?php ct_author_excerpt(); ?>
 		</div>
 	</article>
-	<?php hybrid_do_atomic( 'archive_post_after' ); ?>
+	<?php do_action( 'archive_post_after' ); ?>
 </div>

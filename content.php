@@ -1,5 +1,5 @@
 <div <?php post_class(); ?>>
-	<?php hybrid_do_atomic( 'post_before' ); ?>
+	<?php do_action( 'post_before' ); ?>
 	<?php ct_author_featured_image(); ?>
 	<article>
 		<div class='post-header'>
@@ -19,7 +19,7 @@
 		<?php get_template_part('content/post-categories'); ?>
 		<?php get_template_part('content/post-tags'); ?>
 	</article>
-	<?php hybrid_do_atomic( 'post_after' ); ?>
+	<?php do_action( 'post_after' ); ?>
 	<?php get_template_part('content/post-nav'); ?>
 	<?php comments_template(); ?>
 </div>
