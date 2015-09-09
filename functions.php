@@ -540,6 +540,8 @@ add_action('wp_enqueue_scripts', 'ct_author_custom_css_output', 20);
 
 function ct_author_body_class( $classes ) {
 
+	global $post;
+
     /* get full post setting */
     $full_post = get_theme_mod('full_post');
 
@@ -547,9 +549,32 @@ function ct_author_body_class( $classes ) {
     if( $full_post == 'yes' ) {
         $classes[] = 'full-post';
     }
+
+	if ( is_singular() ) {
+		$classes[] = 'singular';
+		if ( is_singular('page') ) {
+			$classes[] = 'singular-page';
+			$classes[] = 'singular-page-' . $post->ID;
+		} elseif ( is_singular('post') ) {
+			$classes[] = 'singular-post';
+			$classes[] = 'singular-post-' . $post->ID;
+		} elseif ( is_singular('attachment') ) {
+			$classes[] = 'singular-attachment';
+			$classes[] = 'singular-attachment-' . $post->ID;
+		}
+	}
+
     return $classes;
 }
 add_filter( 'body_class', 'ct_author_body_class' );
+
+function ct_author_post_class( $classes ) {
+
+	$classes[] = 'entry';
+
+	return $classes;
+}
+add_filter( 'post_class', 'ct_author_post_class' );
 
 function ct_author_reset_customizer_options() {
 
