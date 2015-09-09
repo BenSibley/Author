@@ -847,7 +847,7 @@ a img {
   background-size: cover;
   background-position: 50%;
 }
-.featured-image a {
+.featured-image > a {
   position: absolute;
   top: 0;
   right: 0;
