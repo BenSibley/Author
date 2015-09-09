@@ -59,6 +59,11 @@
   display: none !important;
 }
 
+// hide empty color section being in WP 4.3
+#accordion-section-colors {
+  display: none !important;
+}
+
 /* Multiple select styles (for comments dropdown */
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>

@@ -66,6 +66,10 @@
   display: none !important;
 }
 
+#accordion-section-colors {
+  display: none !important;
+}
+
 /* Multiple select styles (for comments dropdown */
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
