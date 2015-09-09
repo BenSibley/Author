@@ -1681,3 +1681,16 @@ a img {
 .gallery-col-30 .gallery-item {
   width: 3.33%;
 }
+
+/*
+
+ATTENTION:
+
+CSS edits made here won't have any effect. Author doesn't load the style.css file because
+it loads a minified version of the stylesheet instead (style.min.css) to make your site faster.
+
+If you want to make CSS edits to your site, use the "Custom CSS" section in the Customizer.
+
+If you want more information about customizing Author with CSS, check out this guide: https://www.competethemes.com/help/custom-css-author/
+
+*/
