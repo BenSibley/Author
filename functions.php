@@ -25,6 +25,14 @@ if( !function_exists('ct_author_theme_setup' ) ) {
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 
+		/*
+		 * Switch default core markup for search form, comment form, and comments
+		 * to output valid HTML5.
+		 */
+		add_theme_support( 'html5', array(
+			'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
+		) );
+
 		// load theme options page
 		require_once( trailingslashit( get_template_directory() ) . 'theme-options.php' );
 
