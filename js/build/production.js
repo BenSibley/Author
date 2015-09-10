@@ -90,6 +90,8 @@ jQuery(document).ready(function($){
     var siteHeader = $('#site-header');
     var main = $('#main');
     var sidebarPrimary = $('#sidebar-primary');
+    var overflowContainer = $('#overflow-container');
+    var headerImage = $('#header-image');
 
     // get the selector for the primary menu
     var menu = $('.menu-unset').length ? $('.menu-unset') : $('#menu-primary-items');
@@ -306,7 +308,16 @@ jQuery(document).ready(function($){
     function setMainMinHeight() {
         // refresh
         main.css('min-height', '');
-        main.css('min-height', $('#overflow-container').height() + 'px');
+        // height is equal to overflow container's height
+        var height = overflowContainer.height();
+        // if header image, subtract its height b/c its in
+        // .overflow-container, but not in .main
+        if ( headerImage.length > 0 ) {
+            // header image technically uses padding-bottom not height, so use 'a' element
+            height = height - headerImage.children('a').height();
+        }
+        // add the new minimum height
+        main.css('min-height', height + 'px');
     }
 
     // Sidebar scrolling.
