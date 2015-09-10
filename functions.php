@@ -597,6 +597,13 @@ add_action( 'archive_post_before', 'ct_author_sticky_post_marker' );
 
 function ct_author_loop_pagination(){
 
+	global $wp_query;
+
+	// If there's not more than one page, return nothing.
+	if ( 1 >= $wp_query->max_num_pages ) {
+		return;
+	}
+
 	/* Set up some default arguments for the paginate_links() function. */
 	$defaults = array(
 		'base'         => add_query_arg( 'paged', '%#%' ),
