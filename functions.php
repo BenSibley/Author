@@ -1,29 +1,17 @@
 <?php
 
+/*
+ * Prefix: ct_author = Compete Themes Author
+ */
+
 // set the content width
 if ( ! isset( $content_width ) ) {
 	$content_width = 622;
 }
 
-/*
- * Prefix: ct_author = Compete Themes Author
- */
-
-// Load the core theme framework.
-//require_once( trailingslashit( get_template_directory() ) . 'library/hybrid.php' );
-//new Hybrid();
-
 // theme setup
 if( !function_exists('ct_author_theme_setup' ) ) {
 	function ct_author_theme_setup() {
-
-		/* Get action/filter hook prefix. */
-//		$prefix = hybrid_get_prefix();
-
-		// add Hybrid core functionality
-//		add_theme_support( 'hybrid-core-template-hierarchy' );
-//		add_theme_support( 'loop-pagination' );
-//		add_theme_support( 'cleaner-gallery' );
 
 		// add functionality from WordPress core
 		add_theme_support( 'post-thumbnails' );
@@ -56,27 +44,6 @@ if( !function_exists('ct_author_theme_setup' ) ) {
 	}
 }
 add_action( 'after_setup_theme', 'ct_author_theme_setup', 10 );
-
-// remove filters adding partial micro-data due to validation issues
-//function ct_author_remove_hybrid_filters() {
-//    remove_filter( 'the_author_posts_link', 'hybrid_the_author_posts_link', 5 );
-//    remove_filter( 'get_comment_author_link', 'hybrid_get_comment_author_link', 5 );
-//    remove_filter( 'get_comment_author_url_link', 'hybrid_get_comment_author_url_link', 5 );
-//    remove_filter( 'comment_reply_link', 'hybrid_comment_reply_link_filter', 5 );
-//    remove_filter( 'get_avatar', 'hybrid_get_avatar', 5 );
-//    remove_filter( 'post_thumbnail_html', 'hybrid_post_thumbnail_html', 5 );
-//    remove_filter( 'comments_popup_link_attributes', 'hybrid_comments_popup_link_attributes', 5 );
-//}
-////add_action('after_setup_theme', 'ct_author_remove_hybrid_filters');
-
-// turn off cleaner gallery if Jetpack gallery functions being used
-//function ct_author_remove_cleaner_gallery() {
-//
-//	if( class_exists( 'Jetpack' ) && ( Jetpack::is_module_active( 'carousel' ) || Jetpack::is_module_active( 'tiled-gallery' ) ) ) {
-//		remove_theme_support( 'cleaner-gallery' );
-//	}
-//}
-//add_action( 'after_setup_theme', 'ct_author_remove_cleaner_gallery', 11 );
 
 // register widget areas
 function ct_author_register_widget_areas(){
@@ -359,12 +326,6 @@ if( !function_exists('ct_author_featured_image' ) ) {
 	}
 }
 
-// fix for bug with Disqus saying comments are closed
-//if ( function_exists( 'dsq_options' ) ) {
-//    remove_filter( 'comments_template', 'dsq_comments_template' );
-//    add_filter( 'comments_template', 'dsq_comments_template', 99 ); // You can use any priority higher than '10'
-//}
-
 // associative array of social media sites
 if( !function_exists( 'ct_author_social_array' ) ) {
 	function ct_author_social_array() {
@@ -485,15 +446,6 @@ function ct_author_wp_page_menu() {
         )
     );
 }
-
-//function ct_author_wp_backwards_compatibility() {
-//
-//	// not using this function, simply remove it so use of "has_image_size" doesn't break < 3.9
-//	if( version_compare( get_bloginfo('version'), '3.9', '<') ) {
-//		remove_filter( 'image_size_names_choose', 'hybrid_image_size_names_choose' );
-//	}
-//}
-//add_action('init', 'ct_author_wp_backwards_compatibility');
 
 // used in header.php for primary avatar and comments
 function ct_author_output_avatar() {
