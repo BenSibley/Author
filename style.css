@@ -109,6 +109,7 @@ body {
 }
 
 .main {
+  position: relative;
   margin: 0 auto;
   background: #f0f1f2;
   padding: 1.5em 0;
@@ -1440,6 +1441,7 @@ a img {
 }
 
 .site-footer {
+  position: relative;
   clear: both;
 }
 .site-footer .design-credit {
