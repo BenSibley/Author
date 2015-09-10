@@ -9,7 +9,7 @@
                 $site_url = 'https://www.competethemes.com/author/';
                 $footer_text = sprintf( __( '<a href="%s">Author WordPress Theme</a> by Compete Themes', 'author' ), esc_url( $site_url ) );
                 $footer_text = apply_filters( 'ct_author_footer_text', $footer_text );
-                echo $footer_text;
+                echo wp_kses_post( $footer_text );
             ?>
         </span>
     </div>
