@@ -15,6 +15,7 @@
     </div>
 </footer>
 </div><!-- .max-width -->
+<?php do_action( 'overflow_bottom' ); ?>
 </div><!-- .overflow-container -->
 
 <?php wp_footer(); ?>
