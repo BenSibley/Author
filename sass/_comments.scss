@@ -64,6 +64,20 @@
     list-style: disc;
   }
 }
+.bypostauthor {
+
+  .author-name {
+
+    &:after {
+      content: ' (author)';
+      @extend %twelve-pixels;
+      text-transform: none;
+      font-weight: 400;
+      letter-spacing: 0;
+      margin-left: 2px;
+    }
+  }
+}
 .comment-footer {
   margin-top: $baseline-height;
 
