@@ -64,7 +64,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Author also uses:
 
-* Hybrid Core by Justin Tadlock, http://themehybrid.com/hybrid-core, licensed under the GPL license.
 * Fitvids, by Chris Coyier & Dave Ruper, https://github.com/davatron5000/FitVids.js/, licensed under the WTFPL license.
 * Google Fonts, http://google.com/fonts, licensed under open source licenses, see: https://developers.google.com/fonts/faq#Any_Page_OK.
 * Font Awesome by Dave Gandy, licensed under open source licenses, see: http://fortawesome.github.io/Font-Awesome/license/.
