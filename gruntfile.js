@@ -129,12 +129,12 @@ module.exports = function(grunt) {
             zip: {
                 command: [
                     // delete existing copies on Desktop (if they exist)
-                    'rm -R /Users/bensibley/Desktop/author || true',
-                    'rm -R /Users/bensibley/Desktop/author.zip || true',
+                    'rm -R /Users/bensibley/Documents/compete-themes/dist/author || true',
+                    'rm -R /Users/bensibley/Documents/compete-themes/dist/author.zip || true',
                     // copy plugin folder to desktop without any project/meta files
-                    'rsync -r /Applications/MAMP/htdocs/wordpress/wp-content/themes/author /Users/bensibley/Desktop/ <%= excludeFiles %>',
+                    'rsync -r /Applications/MAMP/htdocs/wordpress/wp-content/themes/author /Users/bensibley/Documents/compete-themes/dist/ <%= excludeFiles %>',
                     // open desktop
-                    'cd /Users/bensibley/Desktop/',
+                    'cd /Users/bensibley/Documents/compete-themes/dist/',
                     // zip the author folder on desktop
                     'zip -r author.zip author'
                 ].join('&&')
