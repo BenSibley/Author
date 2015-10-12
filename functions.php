@@ -462,6 +462,7 @@ function ct_author_output_avatar() {
         $avatar = get_avatar( get_option('admin_email'));
         // use regex to grab source from <img /> markup
         $avatar = ct_author_get_avatar_url($avatar);
+//	    echo $avatar;
     }
     // if using an upload
     elseif( $avatar_method == 'upload') {
@@ -472,7 +473,12 @@ function ct_author_output_avatar() {
 }
 
 function ct_author_get_avatar_url($get_avatar){
-    preg_match("/src='(.*?)'/i", $get_avatar, $matches);
+	// WP User Avatar switches the use of quotes
+	if ( class_exists( 'WP_User_Avatar' ) ) {
+		preg_match('/src="([^"]*)"/i', $get_avatar, $matches);
+	} else {
+		preg_match("/src='([^']*)'/i", $get_avatar, $matches);
+	}
     return $matches[1];
 }
 
