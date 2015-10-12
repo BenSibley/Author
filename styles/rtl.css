@@ -85,10 +85,6 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
 }
 
 .overflow-container {
@@ -1612,5 +1608,3 @@ If you want to make CSS edits to your site, use the "Custom CSS" section in the 
 If you want more information about customizing Author with CSS, check out this guide: https://www.competethemes.com/help/custom-css-author/
 
 */
-
-/*# sourceMappingURL=style.css.map */
