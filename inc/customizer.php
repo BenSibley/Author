@@ -146,14 +146,15 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	) );
 	// control
 	$wp_customize->add_control( 'avatar_method', array(
-		'label'    => __( 'Avatar image source', 'author' ),
-		'section'  => 'ct_author_avatar',
-		'settings' => 'avatar_method',
-		'type'     => 'radio',
-		'choices'  => array(
-			'gravatar'  => __('Gravatar', 'author'),
-			'upload'  => __('Upload an image', 'author'),
-			'none'  => __('Do not display avatar', 'author')
+		'label'       => __( 'Avatar image source', 'author' ),
+		'section'     => 'ct_author_avatar',
+		'settings'    => 'avatar_method',
+		'type'        => 'radio',
+		'description' => __( 'Gravatar uses the admin email address.', 'author' ),
+		'choices'     => array(
+			'gravatar' => __( 'Gravatar', 'author' ),
+			'upload'   => __( 'Upload an image', 'author' ),
+			'none'     => __( 'Do not display avatar', 'author' )
 		)
 	) );
 	// setting
