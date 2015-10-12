@@ -21,7 +21,11 @@ else {
 	// set the title to return to the blog
 	$previous_title = __('Return to Blog', 'author');
 	// link to blog
-	$previous_link = home_url();
+	if( get_option( 'show_on_front' ) == 'page' ) {
+		$previous_link = get_permalink( get_option('page_for_posts' ) );
+	} else  {
+		$previous_link = get_home_url();
+	}
 }
 
 // gets the next post if it exists
@@ -43,7 +47,11 @@ else {
 	// set the title to return to the blog
 	$next_title = __('Return to Blog', 'author');
 	// link to blog
-	$next_link = home_url();
+	if( get_option( 'show_on_front' ) == 'page' ) {
+		$next_link = get_permalink( get_option('page_for_posts' ) );
+	} else  {
+		$next_link = get_home_url();
+	}
 }
 
 ?>
