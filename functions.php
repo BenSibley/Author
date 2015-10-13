@@ -441,7 +441,7 @@ if( ! function_exists('ct_author_social_icons_output') ) {
                 <?php
                 }
             }
-            echo "</div></ul>";
+            echo "</ul></div>";
         }
     }
 }
