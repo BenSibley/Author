@@ -240,7 +240,7 @@ jQuery(document).ready(function($){
     // Sidebar scrolling.
     function resize() {
 
-        if ( 950 > $(window).width() ) {
+        if ( $(window).width() < 950 ) {
             var top, bottom = false;
             sidebar.removeAttr( 'style' );
         }
@@ -292,7 +292,9 @@ jQuery(document).ready(function($){
             else {
                 top = bottom = false;
             }
-        } else if ( ! top ) {
+        }
+        // sidebar is shorter than window
+        else {
             top = true;
             short = true;
             sidebar.attr( 'style', 'position: fixed;' );
@@ -310,14 +312,15 @@ jQuery(document).ready(function($){
     sidebar.on( 'click keydown', 'button', resizeAndScroll );
 
     function resizeAndScroll() {
+        console.log('resizeAndScroll');
         resize();
         scroll();
     }
     resizeAndScroll();
 
-    for ( var i = 1; i < 6; i++ ) {
-        setTimeout( resizeAndScroll, 100 * i );
-    }
+    //for ( var i = 1; i < 6; i++ ) {
+    //    setTimeout( resizeAndScroll, 100 * i );
+    //}
 
     function autoCloseMenu() {
 
