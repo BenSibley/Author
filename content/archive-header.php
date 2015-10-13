@@ -7,6 +7,7 @@ if( is_category() ){ ?>
 			<?php _e('Category archive for:', 'author'); ?>
 			<?php single_cat_title(); ?>
 		</h2>
+		<?php if ( category_description() ) echo category_description(); ?>
 	</div>
 <?php
 }
@@ -18,18 +19,19 @@ elseif( is_tag() ){ ?>
 			<?php _e('Tag archive for:', 'author'); ?>
 			<?php single_tag_title(); ?>
 		</h2>
+		<?php if ( tag_description() ) echo tag_description(); ?>
 	</div>
 <?php
 }
 /* Author header */
-elseif( is_author() ){
-	$author = get_userdata(get_query_var('author')); ?>
+elseif( is_author() ){ ?>
 	<div class='archive-header'>
 		<i class="fa fa-user"></i>
 		<h2>
 			<?php _e('Author archive for:', 'author'); ?>
-			<?php echo $author->nickname; ?>
+			<?php the_author_meta( 'display_name' ); ?>
 		</h2>
+		<?php if ( get_the_author_meta( 'description' ) ) echo '<p>' . get_the_author_meta( 'description' ) . '</p>'; ?>
 	</div>
 <?php
 }

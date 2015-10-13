@@ -1220,6 +1220,10 @@ a img {
   margin-left: 6px;
 }
 
+.archive-header p {
+  margin: 0.75em 0 0;
+}
+
 .loop-pagination {
   position: relative;
   margin: 1.5em 0;
