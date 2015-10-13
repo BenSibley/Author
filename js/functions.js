@@ -312,15 +312,10 @@ jQuery(document).ready(function($){
     sidebar.on( 'click keydown', 'button', resizeAndScroll );
 
     function resizeAndScroll() {
-        console.log('resizeAndScroll');
         resize();
         scroll();
     }
     resizeAndScroll();
-
-    //for ( var i = 1; i < 6; i++ ) {
-    //    setTimeout( resizeAndScroll, 100 * i );
-    //}
 
     function autoCloseMenu() {
 
