@@ -330,11 +330,6 @@ jQuery(document).ready(function($){
             openPrimaryMenu();
         }
     }
-
-    // if sidebar height is less than window height, needs help to keep from flickering
-    function sidebarMinHeight() {
-
-    }
 });
 
 /* fix for skip-to-content link bug in Chrome & IE9 */
