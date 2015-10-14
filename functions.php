@@ -480,7 +480,6 @@ function ct_author_output_avatar() {
         $avatar = get_avatar( get_option('admin_email'));
         // use regex to grab source from <img /> markup
         $avatar = ct_author_get_avatar_url($avatar);
-//	    echo $avatar;
     }
     // if using an upload
     elseif( $avatar_method == 'upload') {
