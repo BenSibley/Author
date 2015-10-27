@@ -24,11 +24,9 @@
   > img,
   > a > img {
     position: absolute;
-    top: 50%;
-    right: 50%;
-    min-height: 100%;
-    min-width: 100%;
-    transform: translateX(50%) translateY(-50%);
+    left: 0;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 
     &.no-object-fit {
@@ -38,6 +36,12 @@
       max-height: 100%;
       height: auto;
       width: auto;
+
+      // positioning
+      top: 50%;
+      right: 50%;
+      left: auto;
+      transform: translateX(50%) translateY(-50%);
     }
   }
 }
