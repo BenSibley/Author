@@ -857,8 +857,7 @@ a img {
   position: relative;
   height: 0;
   padding-bottom: 50%;
-  background-size: cover;
-  background-position: 50%;
+  overflow: hidden;
 }
 .featured-image > a {
   position: absolute;
@@ -867,6 +866,18 @@ a img {
   bottom: 0;
   left: 0;
   font-size: 0;
+}
+.featured-image > img,
+.featured-image > a > img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
 }
 
 .post-header {

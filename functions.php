@@ -282,45 +282,16 @@ if( !function_exists('ct_author_featured_image' ) ) {
 		// get post object
 		global $post;
 
-		// default to no featured image
-		$has_image = false;
-
 		// establish featured image var
 		$featured_image = '';
 
 		// if post has an image
 		if ( has_post_thumbnail( $post->ID ) ) {
 
-			// get the featured image ID
-			$image_id = get_post_thumbnail_id( $post->ID );
-
-			// get the image's alt text
-			$image_alt_text = get_post_meta($image_id, '_wp_attachment_image_alt', true);
-
-			// get the full-size version of the image
-			$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-
-			// set $image = the url
-			$image = $image[0];
-
-			// if alt text is empty, nothing else equal to title string
-			$title = empty($image_alt_text) ? '' : "title='" . esc_attr( $image_alt_text ) . "'";
-
-			// set to true
-			$has_image = true;
-		}
-		if ( $has_image == true ) {
-
-			// on posts/pages display the featured image
 			if ( is_singular() ) {
-				$featured_image = "<div class='featured-image' style=\"background-image: url('" . esc_url( $image ) . "')\" $title></div>";
-			} // on blog/archives display with a link
-			else {
-				$featured_image = "
-                <div class='featured-image' style=\"background-image: url('" . esc_url( $image ) . "')\" $title>
-                    <a href='" . get_permalink() . "'>" . get_the_title() . "</a>
-                </div>
-                ";
+				$featured_image = '<div class="featured-image">' . get_the_post_thumbnail( $post->ID, 'full' ) . '</div>';
+			} else {
+				$featured_image = '<div class="featured-image"><a href="' . get_permalink() . '">' . get_the_title() . get_the_post_thumbnail( $post->ID, 'full' ) . '</a></div>';
 			}
 		}
 

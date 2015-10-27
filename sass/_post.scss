@@ -11,8 +11,7 @@
   position: relative;
   height: 0;
   padding-bottom: 50%;
-  background-size: cover;
-  background-position: 50%;
+  overflow: hidden;
 
   > a {
     position: absolute;
@@ -21,6 +20,16 @@
     bottom: 0;
     left: 0;
     font-size: 0;
+  }
+  > img,
+  > a > img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    min-height: 100%; // stretch if it doesn't fill the area
+    min-width: 100%;
+    object-fit: cover;
   }
 }
 .post-header {
