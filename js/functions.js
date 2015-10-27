@@ -352,14 +352,7 @@ jQuery(document).ready(function($){
 
             $('.featured-image').each(function () {
 
-                $(this).find('img').css({
-                    'min-width': '0',
-                    'min-height': '0',
-                    'max-width': '100%',
-                    'max-height': '100%',
-                    'height': 'auto',
-                    'width': 'auto'
-                });
+                $(this).find('img').addClass('no-object-fit');
 
                 // if the image is not tall enough to fill the space
                 if ($(this).find('img').outerHeight() < $(this).outerHeight()) {

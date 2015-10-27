@@ -879,6 +879,15 @@ a img {
   transform: translateX(50%) translateY(-50%);
   object-fit: cover;
 }
+.featured-image > img.no-object-fit,
+.featured-image > a > img.no-object-fit {
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+}
 
 .post-header {
   text-align: center;
