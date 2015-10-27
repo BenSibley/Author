@@ -105,8 +105,28 @@ body {
   margin: 0 auto;
   background: #F0F1F2;
   padding: 1.5em 0;
+  min-height: 100vh;
+  min-height: calc(100vh - 120px);
 }
 
+.admin-bar .main {
+  min-height: calc(100vh - 166px);
+}
+
+@media all and (min-width: 782px) {
+  .admin-bar .main {
+    min-height: calc(100vh - 152px);
+  }
+}
+@media all and (min-width: 59.375em) {
+  .main {
+    min-height: calc(100vh - 36px);
+  }
+
+  .admin-bar .main {
+    min-height: calc(100vh - 68px);
+  }
+}
 p {
   margin: 1.5em 0;
 }

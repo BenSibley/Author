@@ -32,7 +32,42 @@ body {
   margin: 0 auto;
   background: $color-gray-95-blue;
   padding: $baseline-height 0;
+  min-height: 100vh;
+  // 36px footer + 84px sidebar up top
+  min-height: calc(100vh - 120px);
 }
+.admin-bar {
+
+  .main {
+    // 36px footer + 46px admin bar + 84px sidebar up top
+    min-height: calc(100vh - 166px);
+  }
+}
+@media all and (min-width: 782px) {
+
+  .admin-bar {
+
+    .main {
+      // 36px footer + 32px admin bar + 84px sidebar up top
+      min-height: calc(100vh - 152px);
+    }
+  }
+}
+@media all and (min-width: $nine-fifty) {
+
+  .main {
+    // just the footer
+    min-height: calc(100vh - 36px);
+  }
+  .admin-bar {
+
+    .main {
+      // 36px footer + 32px admin bar
+      min-height: calc(100vh - 68px);
+    }
+  }
+}
+
 p {
   margin: $baseline-height 0;
 }

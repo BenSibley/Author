@@ -192,7 +192,11 @@ jQuery(document).ready(function($){
 
                 var sidebarPrimaryHeight = sidebarPrimary.height();
 
-                main.css('min-height', sidebarPrimaryHeight + headerHeight + socialIconsHeight + menuHeight + 'px' );
+                var minHeight = sidebarPrimaryHeight + headerHeight + socialIconsHeight + menuHeight;
+
+                if ( minHeight > window.innerHeight ) {
+                    main.css('min-height', minHeight + 'px' );
+                }
 
                 // close menu automatically if scrolled past
                 $(window).scroll(autoCloseMenu);
@@ -304,7 +308,7 @@ jQuery(document).ready(function($){
         }
     }
 
-    // keep light gray background all the way to footer
+    // increase main height when needed so fixed sidebar can be scrollable
     function setMainMinHeight() {
         // refresh
         main.css('min-height', '');
@@ -317,7 +321,9 @@ jQuery(document).ready(function($){
             height = height - headerImage.children('a').height();
         }
         // add the new minimum height
-        main.css('min-height', height + 'px');
+        if ( height > window.innerHeight ) {
+            main.css('min-height', height + 'px');
+        }
     }
 
     // Sidebar scrolling.
