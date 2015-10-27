@@ -5,7 +5,7 @@
  */
 function ct_author_load_scripts_styles() {
 
-	wp_register_style( 'ct-author-google-fonts', '//fonts.googleapis.com/css?family=Rokkitt:400|Lato:400');
+	wp_register_style( 'ct-author-google-fonts', '//fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,700');
 
 	// main JS file
 	wp_enqueue_script('ct-author-js', get_template_directory_uri() . '/js/build/production.min.js', array('jquery'),'', true);
