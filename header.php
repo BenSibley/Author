@@ -18,7 +18,8 @@
 					<div id="title-container" class="title-container">
 						<?php
 						$avatar_method = get_theme_mod('avatar_method');
-						if( $avatar_method == 'gravatar' || $avatar_method == 'upload' ) { ?>
+						$avatar = get_theme_mod('avatar');
+						if( $avatar_method == 'gravatar' || ( $avatar_method == 'upload' && !empty( $avatar ) ) ) { ?>
 							<div id="site-avatar" class="site-avatar" style="background-image: url('<?php echo esc_url( ct_author_output_avatar() ); ?>')" title="<?php echo get_bloginfo('title') . ' avatar'; ?>"></div>
 						<?php } ?>
 						<div class="container">
