@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Author 1.11\n"
+"Project-Id-Version: Author 1.12\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-10-14 18:53:09+00:00\n"
+"POT-Creation-Date: 2015-10-27 18:52:13+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -165,19 +165,19 @@ msgstr ""
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:439
+#: functions.php:394
 msgid "email icon"
 msgstr ""
 
-#: functions.php:445
+#: functions.php:400
 msgid "%s icon"
 msgstr ""
 
-#: functions.php:597
+#: functions.php:552
 msgid "Customizer settings deleted"
 msgstr ""
 
-#: functions.php:616
+#: functions.php:571
 msgid "Featured Post"
 msgstr ""
 
@@ -185,7 +185,7 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:33 inc/scripts.php:13
+#: header.php:34 inc/scripts.php:13
 msgid "open primary menu"
 msgstr ""
 
@@ -241,15 +241,15 @@ msgstr ""
 msgid "Gravatar uses the admin email address."
 msgstr ""
 
-#: inc/customizer.php:155 inc/customizer.php:572
+#: inc/customizer.php:155 inc/customizer.php:574
 msgid "Gravatar"
 msgstr ""
 
-#: inc/customizer.php:156 inc/customizer.php:573
+#: inc/customizer.php:156 inc/customizer.php:575
 msgid "Upload an image"
 msgstr ""
 
-#: inc/customizer.php:157 inc/customizer.php:574
+#: inc/customizer.php:157 inc/customizer.php:576
 msgid "Do not display avatar"
 msgstr ""
 
@@ -281,87 +281,87 @@ msgstr ""
 msgid "Email Address:"
 msgstr ""
 
-#: inc/customizer.php:285
+#: inc/customizer.php:287
 msgid "Blog"
 msgstr ""
 
-#: inc/customizer.php:298
+#: inc/customizer.php:300
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:303 inc/customizer.php:589
+#: inc/customizer.php:305 inc/customizer.php:591
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:304 inc/customizer.php:590
+#: inc/customizer.php:306 inc/customizer.php:592
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:317
+#: inc/customizer.php:319
 msgid "Excerpt length"
 msgstr ""
 
-#: inc/customizer.php:328
+#: inc/customizer.php:330
 msgid "Comment Display"
 msgstr ""
 
-#: inc/customizer.php:342
+#: inc/customizer.php:344
 msgid "Show comments on:"
 msgstr ""
 
-#: inc/customizer.php:347 inc/customizer.php:550
+#: inc/customizer.php:349 inc/customizer.php:552
 msgid "Posts"
 msgstr ""
 
-#: inc/customizer.php:348 inc/customizer.php:551
+#: inc/customizer.php:350 inc/customizer.php:553
 msgid "Pages"
 msgstr ""
 
-#: inc/customizer.php:349 inc/customizer.php:552
+#: inc/customizer.php:351 inc/customizer.php:554
 msgid "Attachments"
 msgstr ""
 
-#: inc/customizer.php:350 inc/customizer.php:553
+#: inc/customizer.php:352 inc/customizer.php:555
 msgid "Do not show"
 msgstr ""
 
-#: inc/customizer.php:359
+#: inc/customizer.php:361
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:372
+#: inc/customizer.php:374
 msgid "Add Custom CSS Here:"
 msgstr ""
 
-#: inc/customizer.php:387
+#: inc/customizer.php:389
 msgid "Header Image"
 msgstr ""
 
-#: inc/customizer.php:409
+#: inc/customizer.php:411
 msgid "Colors"
 msgstr ""
 
-#: inc/customizer.php:431
+#: inc/customizer.php:433
 msgid "Background"
 msgstr ""
 
-#: inc/customizer.php:453
+#: inc/customizer.php:455
 msgid "Font"
 msgstr ""
 
-#: inc/customizer.php:475
+#: inc/customizer.php:477
 msgid "Display Controls"
 msgstr ""
 
-#: inc/customizer.php:497
+#: inc/customizer.php:499
 msgid "Footer Text"
 msgstr ""
 
-#: inc/customizer.php:525
+#: inc/customizer.php:527
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:526
+#: inc/customizer.php:528
 msgid "Hide"
 msgstr ""
 
@@ -387,7 +387,7 @@ msgstr[1] ""
 msgid "No search results for \"%s\""
 msgstr ""
 
-#: search.php:39
+#: search.php:41
 msgid "Can't find what you're looking for?  Try refining your search:"
 msgstr ""
 
