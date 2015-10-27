@@ -8,5 +8,9 @@
   }
   .search-bottom {
     padding-bottom: $baseline-height * 2;
+
+    p {
+      margin-bottom: $baseline-height;
+    }
   }
 }

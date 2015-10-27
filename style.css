@@ -1555,6 +1555,9 @@ a img {
 .search .search-bottom {
   padding-bottom: 3em;
 }
+.search .search-bottom p {
+  margin-bottom: 1.5em;
+}
 
 .singular-attachment .entry .attachment {
   text-align: center;
