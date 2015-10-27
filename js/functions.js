@@ -352,30 +352,32 @@ jQuery(document).ready(function($){
 
             $('.featured-image').each(function () {
 
-                $(this).find('img').addClass('no-object-fit');
+                var image = $(this).children('img').add( $(this).children('a').children('img') );
+
+                image.addClass('no-object-fit');
 
                 // if the image is not tall enough to fill the space
-                if ($(this).find('img').outerHeight() < $(this).outerHeight()) {
+                if ( image.outerHeight() < $(this).outerHeight()) {
 
                     // is it also not wide enough?
-                    if ($(this).find('img').outerWidth() < $(this).outerWidth()) {
-                        $(this).find('img').css({
+                    if ( image.outerWidth() < $(this).outerWidth()) {
+                        image.css({
                             'min-width': '100%',
                             'min-height': '100%',
                             'max-width': 'none',
                             'max-height': 'none'
                         });
                     } else {
-                        $(this).find('img').css({
+                        image.css({
                             'height': '100%',
                             'max-width': 'none'
                         });
                     }
                 }
                 // if the image is not wide enough to fill the space
-                else if ($(this).find('img').outerWidth() < $(this).outerWidth()) {
+                else if ( image.outerWidth() < $(this).outerWidth()) {
 
-                    $(this).find('img').css({
+                    image.css({
                         'width': '100%',
                         'max-height': 'none'
                     });
