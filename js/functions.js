@@ -359,7 +359,6 @@ jQuery(document).ready(function($){
 
                     // is it also not wide enough?
                     if ($(this).find('img').outerWidth() < $(this).outerWidth()) {
-                        //$(this).find('img').attr('style', '');
                         $(this).find('img').css({
                             'min-width': '100%',
                             'min-height': '100%',
@@ -367,7 +366,6 @@ jQuery(document).ready(function($){
                             'max-height': 'none'
                         });
                     } else {
-                        //$(this).find('img').attr('style', '');
                         $(this).find('img').css({
                             'height': '100%',
                             'max-width': 'none'
@@ -377,7 +375,6 @@ jQuery(document).ready(function($){
                 // if the image is not wide enough to fill the space
                 else if ($(this).find('img').outerWidth() < $(this).outerWidth()) {
 
-                    //$(this).find('img').attr('style', '');
                     $(this).find('img').css({
                         'width': '100%',
                         'max-height': 'none'
