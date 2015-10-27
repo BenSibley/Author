@@ -257,6 +257,8 @@ function ct_author_add_customizer_content( $wp_customize ) {
 				$label = 'WeChat';
 			} elseif ( $social_site == 'tencent-weibo' ) {
 				$label = 'Tencent Weibo';
+			} elseif ( $social_site == 'paypal' ) {
+				$label = 'PayPal';
 			}
 
 			// setting
