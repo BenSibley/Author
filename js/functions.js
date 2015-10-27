@@ -22,6 +22,7 @@ jQuery(document).ready(function($){
     /* Call functions */
 
     positionSidebar();
+    objectFitAdjustment();
 
     // delay until everything loaded to avoid inaccuracy due to other JS changing element heights
     $(window).bind("load", function() {
@@ -32,12 +33,18 @@ jQuery(document).ready(function($){
         positionSidebar();
         closeMainSidebar();
         setMainMinHeight();
+        objectFitAdjustment();
     });
 
     // add fitVids to videos in posts
     $('.post-content').fitVids({
         customSelector: 'iframe[src*="dailymotion.com"], iframe[src*="slideshare.net"], iframe[src*="animoto.com"], iframe[src*="blip.tv"], iframe[src*="funnyordie.com"], iframe[src*="hulu.com"], iframe[src*="ted.com"], iframe[src*="wordpress.tv"]'
     });
+
+    // Jetpack infinite scroll event that reloads posts.
+    $( document.body ).on( 'post-load', function () {
+        objectFitAdjustment();
+    } );
 
     // display the primary menu at mobile widths
     $('#toggle-navigation').on('click', openPrimaryMenu);
@@ -334,6 +341,56 @@ jQuery(document).ready(function($){
         // if visitor scrolled 50px past bottom of sidebar, close menu
         if (topDistance > sidebarPrimaryBottom + 50) {
             openPrimaryMenu();
+        }
+    }
+
+    // mimic cover positioning without using cover
+    function objectFitAdjustment() {
+
+        // if the object-fit property is not supported
+        if( !('object-fit' in document.body.style) ) {
+
+            $('.featured-image').each(function () {
+
+                $(this).find('img').css({
+                    'min-width': '0',
+                    'min-height': '0',
+                    'max-width': '100%',
+                    'max-height': '100%',
+                    'height': 'auto',
+                    'width': 'auto'
+                });
+
+                // if the image is not tall enough to fill the space
+                if ($(this).find('img').outerHeight() < $(this).outerHeight()) {
+
+                    // is it also not wide enough?
+                    if ($(this).find('img').outerWidth() < $(this).outerWidth()) {
+                        //$(this).find('img').attr('style', '');
+                        $(this).find('img').css({
+                            'min-width': '100%',
+                            'min-height': '100%',
+                            'max-width': 'none',
+                            'max-height': 'none'
+                        });
+                    } else {
+                        //$(this).find('img').attr('style', '');
+                        $(this).find('img').css({
+                            'height': '100%',
+                            'max-width': 'none'
+                        });
+                    }
+                }
+                // if the image is not wide enough to fill the space
+                else if ($(this).find('img').outerWidth() < $(this).outerWidth()) {
+
+                    //$(this).find('img').attr('style', '');
+                    $(this).find('img').css({
+                        'width': '100%',
+                        'max-height': 'none'
+                    });
+                }
+            });
         }
     }
 });

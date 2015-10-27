@@ -26,10 +26,9 @@
     position: absolute;
     top: 50%;
     right: 50%;
-    max-width: 120%;
-    transform: translateX(50%) translateY(-50%);
-    min-height: 100%; // stretch if it doesn't fill the area
+    min-height: 100%;
     min-width: 100%;
+    transform: translateX(50%) translateY(-50%);
     object-fit: cover;
   }
 }
