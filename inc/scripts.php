@@ -5,7 +5,7 @@
  */
 function ct_author_load_scripts_styles() {
 
-	wp_register_style( 'ct-author-google-fonts', '//fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,700');
+	wp_register_style( 'ct-author-google-fonts', '//fonts.googleapis.com/css?family=Rokkitt:400|Lato:400');
 
 	// main JS file
 	wp_enqueue_script('ct-author-js', get_template_directory_uri() . '/js/build/production.min.js', array('jquery'),'', true);
@@ -42,9 +42,6 @@ function ct_author_load_scripts_styles() {
 	// respond.js - media query support
 	wp_enqueue_script('ct-author-respond', get_template_directory_uri() . '/js/build/respond.min.js', '', '', true);
 
-	// object-fit support
-	wp_enqueue_script('ct-author-object-fit', get_template_directory_uri() . '/js/build/polyfill.object-fit.min.js', '', '', true);
-	wp_enqueue_style('ct-author-style-object-fit', get_template_directory_uri() . '/styles/polyfill.object-fit.min.css');
 
 	// prevent fatal error on < WP 4.2 (load files unconditionally instead)
 	if ( function_exists( 'wp_script_add_data' ) ) {

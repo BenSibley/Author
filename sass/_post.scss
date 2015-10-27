@@ -25,8 +25,9 @@
   > a > img {
     position: absolute;
     top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    right: 50%;
+    max-width: 120%;
+    transform: translateX(50%) translateY(-50%);
     min-height: 100%; // stretch if it doesn't fill the area
     min-width: 100%;
     object-fit: cover;
