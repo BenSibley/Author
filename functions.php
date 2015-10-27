@@ -137,21 +137,21 @@ if( ! function_exists( 'ct_author_update_fields' ) ) {
 
         $fields['author'] =
             '<p class="comment-form-author">
-	            <label>' . __( "Name", "author" ) . $label . '</label>
+	            <label for="author">' . __( "Name", "author" ) . $label . '</label>
 	            <input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
             '" size="30" ' . $aria_req . ' />
 	        </p>';
 
         $fields['email'] =
             '<p class="comment-form-email">
-	            <label>' . __( "Email", "author" ) . $label . '</label>
+	            <label for="email">' . __( "Email", "author" ) . $label . '</label>
 	            <input id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) .
             '" size="30" ' . $aria_req . ' />
 	        </p>';
 
         $fields['url'] =
             '<p class="comment-form-url">
-	            <label>' . __( "Website", "author" ) . '</label>
+	            <label for="url">' . __( "Website", "author" ) . '</label>
 	            <input id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
             '" size="30" />
 	            </p>';
@@ -166,7 +166,7 @@ if( ! function_exists( 'ct_author_update_comment_field' ) ) {
 
         $comment_field =
             '<p class="comment-form-comment">
-	            <label>' . __( "Comment", "author" ) . '</label>
+	            <label for="comment">' . __( "Comment", "author" ) . '</label>
 	            <textarea required id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
 	        </p>';
 
