@@ -18,6 +18,7 @@
         </div>
     </div>
 
+<div id="loop-container" class="loop-container">
     <?php
     // The loop
     if ( have_posts() ) :
@@ -27,6 +28,7 @@
         endwhile;
     endif;
     ?>
+</div>
 
 <?php echo ct_author_loop_pagination(); ?>
 
