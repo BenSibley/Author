@@ -206,9 +206,9 @@ function ct_author_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'ct_author_social_media_icons', array(
-		'title'          => __('Social Media Icons', 'author'),
-		'priority'       => 35,
-		'description' => __('Add the URL for each of your social profiles.', 'author')
+		'title'       => __( 'Social Media Icons', 'author' ),
+		'priority'    => 35,
+		'description' => __( 'Add the URL for each of your social profiles.', 'author' )
 	) );
 
 	// create a setting and control for each social site
@@ -216,7 +216,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		// if email icon
 		if( $social_site == 'email' ) {
 			// setting
-			$wp_customize->add_setting( "$social_site", array(
+			$wp_customize->add_setting( $social_site, array(
 				'type'              => 'theme_mod',
 				'capability'        => 'edit_theme_options',
 				'sanitize_callback' => 'ct_author_sanitize_email'
