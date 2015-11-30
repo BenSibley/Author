@@ -7,10 +7,14 @@ function ct_author_add_customizer_content( $wp_customize ) {
 
 	/***** Reorder default sections *****/
 
-	$wp_customize->get_section('title_tagline')->priority     = 1;
-	$wp_customize->get_section('static_front_page')->priority = 5;
-	$wp_customize->get_section('static_front_page')->title    = __('Front Page', 'author');
-	
+	$wp_customize->get_section('title_tagline')->priority = 1;
+
+	// check if exists in case user has no pages
+	if ( is_object( $wp_customize->get_section('static_front_page') ) ) {
+		$wp_customize->get_section('static_front_page')->priority = 5;
+		$wp_customize->get_section('static_front_page')->title    = __('Front Page', 'author');
+	}
+
 	/***** Add PostMessage Support *****/
 	
 	// Add postMessage support for site title and description.
