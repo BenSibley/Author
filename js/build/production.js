@@ -126,7 +126,10 @@ jQuery(document).ready(function($){
 
     // Jetpack infinite scroll event that reloads posts.
     $( document.body ).on( 'post-load', function () {
-        objectFitAdjustment();
+
+        $.when(moveInfinitePosts()).then(function(){
+            objectFitAdjustment();
+        });
     } );
 
     // display the primary menu at mobile widths
@@ -468,6 +471,12 @@ jQuery(document).ready(function($){
                 }
             });
         }
+    }
+
+    function moveInfinitePosts(){
+        // move any posts in infinite wrap to loop-container
+        $('.infinite-wrap').children('.entry').detach().appendTo( loop );
+        $('.infinite-wrap, .infinite-loader').remove();
     }
 });
 
