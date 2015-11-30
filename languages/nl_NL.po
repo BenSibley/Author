@@ -1,0 +1,543 @@
+# Copyright (C) 2015 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Author 1.09\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2015-08-26 13:15+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-10-25 09:59+0100\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.4\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: da\n"
+
+#: 404.php:5
+msgid "404: Page Not Found"
+msgstr "404: Pagina Niet Gevonden"
+
+#: 404.php:8
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+"Het lijkt erop dat er voor deze url niets gevonden is. Controleer de url "
+"of gebruik het zoekformulier om te vinden wat je zoekt."
+
+#: comments.php:26 comments.php:45 comments.php:66
+msgid "Be First to Comment"
+msgstr "Laat als eerste een reactie achter"
+
+#: comments.php:26 comments.php:45 comments.php:66
+msgid "One Comment"
+msgstr "Eén reactie"
+
+#: comments.php:26 comments.php:45 comments.php:66
+msgid "% Comments"
+msgstr "% Reacties"
+
+#: comments.php:58
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+"Reacties zijn gesloten, maar <a href=\"%s\" title=\"Trackback URL voor dit "
+"bericht\">trackbacks</a> en pingbacks zijn mogelijk."
+
+#: comments.php:79 comments.php:85
+msgid "Comments are closed."
+msgstr "Reacties zijn gesloten."
+
+#: content/archive-header.php:7
+msgid "Category archive for:"
+msgstr "Categoriearchief voor:"
+
+#: content/archive-header.php:18
+msgid "Tag archive for:"
+msgstr "Tagarchief voor:"
+
+#: content/archive-header.php:30
+msgid "Author archive for:"
+msgstr "Auteurarchief voor:"
+
+#: content/archive-header.php:41
+msgid "Date archive for:"
+msgstr "Datumarchief voor:"
+
+#: content/post-categories.php:16
+msgid "Published in"
+msgstr "Gepubliceerd in"
+
+#: content/post-categories.php:19
+msgid "View all posts in %s"
+msgstr "Bekijk alle berichten in %s"
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr "Vorige Afbeelding"
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr "Volgende Afbeelding"
+
+#: content/post-nav.php:11
+msgid "Previous Post"
+msgstr "Vorig Bericht"
+
+#: content/post-nav.php:13
+msgid "The Previous Post"
+msgstr "Het Vorige Bericht"
+
+#: content/post-nav.php:20
+msgid "No Older Posts"
+msgstr "Geen Oudere Berichten"
+
+#: content/post-nav.php:22 content/post-nav.php:44
+msgid "Return to Blog"
+msgstr "Keer terug naar Blog"
+
+#: content/post-nav.php:33
+msgid "Next Post"
+msgstr "Volgende Bericht"
+
+#: content/post-nav.php:35
+msgid "The Next Post"
+msgstr "Het Volgende Bericht"
+
+#: content/post-nav.php:42
+msgid "No Newer Posts"
+msgstr "Geen Nieuwere Berichten"
+
+#: content/post-tags.php:7
+msgid "View all posts tagged %s"
+msgstr "Bekijk alle berichten getagged met %s"
+
+#: content-page.php:10 content.php:17
+msgid "Pages:"
+msgstr "Pagina's:"
+
+#: footer.php:10
+msgid "<a href=\"%s\">Author WordPress Theme</a> by Compete Themes"
+msgstr "<a href=\"%s\">Author WordPress Thema</a> door Compete Themes"
+
+#: functions.php:41
+msgid "Primary"
+msgstr "Primaire"
+
+#: functions.php:73
+msgid "Primary Sidebar"
+msgstr "Primaire Zijbalk"
+
+#: functions.php:75
+msgid "Widgets in this area will be shown in the sidebar"
+msgstr "Widgets in dit gebied worden getoond in de zijbalk"
+
+#: functions.php:106
+msgid "Your comment is awaiting moderation."
+msgstr "Jouw reactie wacht op goedkeuring."
+
+#: functions.php:117
+msgid "Reply"
+msgstr "Reageer"
+
+#: functions.php:121
+msgid "Edit"
+msgstr "Bewerk"
+
+#: functions.php:143
+msgid "optional"
+msgstr "optioneel"
+
+#: functions.php:151
+msgid "Name"
+msgstr "Naam"
+
+#: functions.php:158
+msgid "Email"
+msgstr "Email"
+
+#: functions.php:165
+msgid "Website"
+msgstr "Website"
+
+#: functions.php:180
+msgid "Comment"
+msgstr "Reactie"
+
+#: functions.php:218 functions.php:225 functions.php:238
+msgid "Continue reading"
+msgstr "Lees verder"
+
+#: functions.php:439
+msgid "email icon"
+msgstr "email icoon"
+
+#: functions.php:445 functions.php:451
+msgid "%s icon"
+msgstr "$s icoon"
+
+#: functions.php:581
+msgid "Customizer settings deleted"
+msgstr "Customizerinstellingen verwijderd"
+
+#: functions.php:600
+msgid "Featured Post"
+msgstr "Uitgelicht Bericht"
+
+#: header.php:12
+msgid "Skip to content"
+msgstr "Sla over naar de inhoud"
+
+#: header.php:33 inc/scripts.php:13
+msgid "open primary menu"
+msgstr "open primair menu"
+
+#: inc/customizer.php:12
+msgid "Front Page"
+msgstr "Voorpagina"
+
+#: inc/customizer.php:93
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> to "
+"change your colors."
+msgstr ""
+"Activeer de <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> om je "
+"kleuren aan te passen."
+
+#: inc/customizer.php:100
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> for "
+"advanced header image functionality."
+msgstr ""
+"Activeer de <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> voor "
+"geavanceerde kopafbeeldingsfunctionaliteit."
+
+#: inc/customizer.php:107
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> for "
+"advanced background image and texture functionality."
+msgstr ""
+"Activeer de <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> voor "
+"geavanceerde achtergrondafbeelding- en textuurfunctionaliteit."
+
+#: inc/customizer.php:114
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> to "
+"change your font."
+msgstr ""
+"Activeer de  <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> om je "
+"lettertype aan te passen."
+
+#: inc/customizer.php:121
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> to get "
+"hide/show controls."
+msgstr ""
+"Activeer de <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> om "
+"besturing te verbergen/tonen."
+
+#: inc/customizer.php:128
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> to "
+"customize the footer text."
+msgstr ""
+"Activeer de <a target=\"_blank\" href=\"%s\">Author Pro Plugin</a> om de "
+"voetnoottekst te bewerken."
+
+#: inc/customizer.php:136
+msgid "Avatar"
+msgstr "Avatar"
+
+#: inc/customizer.php:149
+msgid "Avatar image source"
+msgstr "Avatar afbeeldingsbron"
+
+#: inc/customizer.php:154 inc/customizer.php:539
+msgid "Gravatar"
+msgstr "Gravatar"
+
+#: inc/customizer.php:155 inc/customizer.php:540
+msgid "Upload an image"
+msgstr "Upload een afbeelding"
+
+#: inc/customizer.php:156 inc/customizer.php:541
+msgid "Do not display avatar"
+msgstr "Geen avatar tonen"
+
+#: inc/customizer.php:168
+msgid "Upload your avatar"
+msgstr "Upload jouw avatar"
+
+#: inc/customizer.php:178
+msgid "Logo"
+msgstr "Logo"
+
+#: inc/customizer.php:181
+msgid "Use this instead of the avatar if you want a non-rounded logo image."
+msgstr ""
+"Gebruik dit in plaats van de avatar als je een niet rond logo-afbeelding "
+"wil."
+
+#: inc/customizer.php:192
+msgid "Upload custom logo."
+msgstr "Upload eigen logo."
+
+#: inc/customizer.php:208
+msgid "Social Media Icons"
+msgstr "Social Media Iconen"
+
+#: inc/customizer.php:224
+msgid "address:"
+msgstr "adres:"
+
+#: inc/customizer.php:238
+msgid "url:"
+msgstr "url:"
+
+#: inc/customizer.php:252
+msgid "Blog"
+msgstr "Blog"
+
+#: inc/customizer.php:265
+msgid "Show full posts on blog?"
+msgstr "Volledige berichten tonen in blog?"
+
+#: inc/customizer.php:270 inc/customizer.php:556
+msgid "Yes"
+msgstr "Ja"
+
+#: inc/customizer.php:271 inc/customizer.php:557
+msgid "No"
+msgstr "Nee"
+
+#: inc/customizer.php:284
+msgid "Excerpt length"
+msgstr "Samenvattingslengte"
+
+#: inc/customizer.php:295
+msgid "Comment Display"
+msgstr "Reactietoning"
+
+#: inc/customizer.php:309
+msgid "Show comments on:"
+msgstr "Toon reacties op:"
+
+#: inc/customizer.php:314 inc/customizer.php:517
+msgid "Posts"
+msgstr "Berichten"
+
+#: inc/customizer.php:315 inc/customizer.php:518
+msgid "Pages"
+msgstr "Pagina's"
+
+#: inc/customizer.php:316 inc/customizer.php:519
+msgid "Attachments"
+msgstr "Bijlagen"
+
+#: inc/customizer.php:317 inc/customizer.php:520
+msgid "Do not show"
+msgstr "Niet tonen"
+
+#: inc/customizer.php:326
+msgid "Custom CSS"
+msgstr "Eigen CSS"
+
+#: inc/customizer.php:339
+msgid "Add Custom CSS Here:"
+msgstr "Voeg hier eigen CSS toe:"
+
+#: inc/customizer.php:354
+msgid "Header Image"
+msgstr "Kopafbeelding"
+
+#: inc/customizer.php:376
+msgid "Colors"
+msgstr "Kleuren"
+
+#: inc/customizer.php:398
+msgid "Background"
+msgstr "Achtergrond"
+
+#: inc/customizer.php:420
+msgid "Font"
+msgstr "Lettertype"
+
+#: inc/customizer.php:442
+msgid "Display Controls"
+msgstr "Toon Besturing"
+
+#: inc/customizer.php:464
+msgid "Footer Text"
+msgstr "Voetnoottekst"
+
+#: inc/customizer.php:492
+msgid "Show"
+msgstr "Tonen"
+
+#: inc/customizer.php:493
+msgid "Hide"
+msgstr "Verbergen"
+
+#: inc/scripts.php:14
+msgid "close primary menu"
+msgstr "sluit primair menu"
+
+#: inc/scripts.php:15
+msgid "open child menu"
+msgstr "open kindmenu"
+
+#: inc/scripts.php:16
+msgid "close child menu"
+msgstr "sluit kindmenu"
+
+#: search.php:10
+msgid "%d search result for \"%s\""
+msgid_plural "%d search results for \"%s\""
+msgstr[0] "%d zoekresultaat voor \"%s\""
+msgstr[1] "%d zoekresultaten voor \"%s\""
+
+#: search.php:12
+msgid "No search results for \"%s\""
+msgstr "Geen zoekresultaten voor \"%s\""
+
+#: search.php:38
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr "Niet gevonden wat je zocht? Probeer je zoekopdracht te verfijnen:"
+
+#: searchform.php:3
+msgid "Search"
+msgstr "Zoeken"
+
+#: searchform.php:4
+msgid "Search for:"
+msgstr "Zoeken naar:"
+
+#: searchform.php:5
+msgid "Go"
+msgstr "Gaan"
+
+#: theme-options.php:21
+msgid "Author Dashboard"
+msgstr "Author Dashboard"
+
+#: theme-options.php:24
+msgid "Customization"
+msgstr "Bewerking"
+
+#: theme-options.php:25
+msgid ""
+"Click the \"Customize\" link in your menu, or use the button below to get "
+"started customizing Author"
+msgstr ""
+"Klik op de \"Bewerk\" link in je menu, of gebruik de onderstaande knop om "
+"te beginnen met het bewerken van Author"
+
+#: theme-options.php:27
+msgid "Use Customizer"
+msgstr "Gebruik Customizer"
+
+#: theme-options.php:31
+msgid "Support"
+msgstr "Ondersteuning"
+
+#: theme-options.php:32
+msgid ""
+"You can find the knowledgebase, changelog, support forum, and more in the "
+"Author Support Center"
+msgstr ""
+"Je kan ondersteunende documentatie, wijzigingen, het ondersteuningsforum "
+"en meer vinden in het Author Ondersteuningscentrum"
+
+#: theme-options.php:34
+msgid "Visit Support Center"
+msgstr "Bezoek Ondersteuningscentrum"
+
+#: theme-options.php:38
+msgid "Get More Features & Flexibility"
+msgstr "Verkrijg Meer Mogelijkheden & Flexibiliteit"
+
+#: theme-options.php:39
+msgid ""
+"Download the Author Pro plugin and unlock custom colors, featured videos, "
+"background images, and more"
+msgstr ""
+"Download de Author Pro plugin en krijg toegang tot meer kleuren, "
+"uitgelichte video's, achtergrondafbeeldingen en meer"
+
+#: theme-options.php:41
+msgid "See Full Feature List"
+msgstr "Bekijk volledige lijst van mogelijkheden"
+
+#: theme-options.php:45
+msgid "WordPress Resources"
+msgstr "Wordpress Bronnen"
+
+#: theme-options.php:46
+msgid ""
+"Save time and money searching for WordPress products by following our "
+"recommendations"
+msgstr ""
+"Bespaar tijd en geld op het zoeken naar Wordpressproducten door onze "
+"aanbevelingen te volgen"
+
+#: theme-options.php:48
+msgid "View Resources"
+msgstr "Bekijk Bronnen"
+
+#: theme-options.php:52 theme-options.php:60
+msgid "Reset Customizer Settings"
+msgstr "Herstel Customizerinstellingen"
+
+#: theme-options.php:54
+msgid ""
+"<strong>Warning:</strong> Clicking this button will erase your current "
+"settings in the <a href=\"%s\">Customizer</a>"
+msgstr ""
+"<strong>Waarschuwing:</strong> Deze knop verwijderd al je huidige "
+"instellingen in de <a href=\"%s\">Customizer</a>"
+
+#. Theme Name of the plugin/theme
+msgid "Author"
+msgstr "Author"
+
+#. Theme URI of the plugin/theme
+msgid "https://www.competethemes.com/author/"
+msgstr "https://www.competethemes.com/author/"
+
+#. Description of the plugin/theme
+msgid ""
+"Author is designed for publishers who want readers. That's why Author is "
+"fast, responsive, accessibility-ready, and optimally designed for reading. "
+"All scripts and stylesheets are minified, concatenated, and conditionally "
+"loaded to maximize performance. The layout adapts fluidly to all screen "
+"sizes to enhance usability. As one of few accessibility-ready themes, it "
+"performs well for users with wide ranges of disabilities. Lastly, based on "
+"the ancient Van de Graaf canon, Author is optimally designed for reading. "
+"Author is the theme your content deserves. See our fully setup live demo "
+"here: https://www.competethemes.com/author-live-demo/"
+msgstr ""
+"Author is designed for publishers who want readers. That's why Author is "
+"fast, responsive, accessibility-ready, and optimally designed for reading. "
+"All scripts and stylesheets are minified, concatenated, and conditionally "
+"loaded to maximize performance. The layout adapts fluidly to all screen "
+"sizes to enhance usability. As one of few accessibility-ready themes, it "
+"performs well for users with wide ranges of disabilities. Lastly, based on "
+"the ancient Van de Graaf canon, Author is optimally designed for reading. "
+"Author is the theme your content deserves. See our fully setup live demo "
+"here: https://www.competethemes.com/author-live-demo/"
+
+#. Author of the plugin/theme
+msgid "Compete Themes"
+msgstr "Compete Themes"
+
+#. Author URI of the plugin/theme
+msgid "https://www.competethemes.com"
+msgstr "https://www.competethemes.com"
+
+#: content-archive.php:14 content.php:12
+msgctxt "This blog post was published by some author on some date"
+msgid "Published by %1$s on %2$s"
+msgstr "Gepubliceerd door %1$s op %2$s"
