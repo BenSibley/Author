@@ -391,7 +391,7 @@ if( ! function_exists('ct_author_social_icons_output') ) {
                     ?>
                     <li>
                         <a class="email" target="_blank" href="mailto:<?php echo antispambot( is_email( get_theme_mod( $active_site ) ) ); ?>">
-                            <i class="fa fa-envelope" title="<?php _e('email icon', 'author'); ?>"></i>
+                            <i class="fa fa-envelope" title="<?php esc_attr( _e('email', 'author') ); ?>"></i>
                         </a>
                     </li>
                 <?php } else { ?>
