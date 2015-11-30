@@ -8,6 +8,7 @@ jQuery(document).ready(function($){
     var main = $('#main');
     var sidebarPrimary = $('#sidebar-primary');
     var overflowContainer = $('#overflow-container');
+    var loopContainer = $('#loop-container');
     var headerImage = $('#header-image');
 
     // get the selector for the primary menu
@@ -392,7 +393,7 @@ jQuery(document).ready(function($){
 
     function moveInfinitePosts(){
         // move any posts in infinite wrap to loop-container
-        $('.infinite-wrap').children('.entry').detach().appendTo( loop );
+        $('.infinite-wrap').children('.entry').detach().appendTo( loopContainer );
         $('.infinite-wrap, .infinite-loader').remove();
     }
 });
