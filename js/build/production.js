@@ -439,36 +439,39 @@ jQuery(document).ready(function($){
 
             $('.featured-image').each(function () {
 
-                var image = $(this).children('img').add( $(this).children('a').children('img') );
+                if ( !$(this).parent('.post').hasClass('ratio-natural') ) {
 
-                // don't process images twice (relevant when using infinite scroll)
-                if (image.hasClass('no-object-fit')) return;
+                    var image = $(this).children('img').add($(this).children('a').children('img'));
 
-                image.addClass('no-object-fit');
+                    // don't process images twice (relevant when using infinite scroll)
+                    if (image.hasClass('no-object-fit')) return;
 
-                // if the image is not wide enough to fill the space
-                if (image.outerWidth() < $(this).outerWidth()) {
+                    image.addClass('no-object-fit');
 
-                    image.css({
-                        'width': '100%',
-                        'min-width': '100%',
-                        'max-width': '100%',
-                        'height': 'auto',
-                        'min-height': '100%',
-                        'max-height': 'none'
-                    });
-                }
-                // if the image is not tall enough to fill the space
-                if (image.outerHeight() < $(this).outerHeight()) {
+                    // if the image is not wide enough to fill the space
+                    if (image.outerWidth() < $(this).outerWidth()) {
 
-                    image.css({
-                        'height': '100%',
-                        'min-height': '100%',
-                        'max-height': '100%',
-                        'width': 'auto',
-                        'min-width': '100%',
-                        'max-width': 'none'
-                    });
+                        image.css({
+                            'width': '100%',
+                            'min-width': '100%',
+                            'max-width': '100%',
+                            'height': 'auto',
+                            'min-height': '100%',
+                            'max-height': 'none'
+                        });
+                    }
+                    // if the image is not tall enough to fill the space
+                    if (image.outerHeight() < $(this).outerHeight()) {
+
+                        image.css({
+                            'height': '100%',
+                            'min-height': '100%',
+                            'max-height': '100%',
+                            'width': 'auto',
+                            'min-width': '100%',
+                            'max-width': 'none'
+                        });
+                    }
                 }
             });
         }
