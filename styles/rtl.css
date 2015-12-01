@@ -740,7 +740,6 @@ a img {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
-  border-color: #999999;
 }
 .menu-primary-items .menu-item-has-children.open > ul,
 .menu-primary-items .page_item_has_children.open > ul,
@@ -761,7 +760,7 @@ a img {
   color: white;
   border: solid 1px #3E4145;
 }
-.toggle-dropdown:focus {
+.toggle-dropdown:hover, .toggle-dropdown:active, .toggle-dropdown:focus {
   outline: none;
   border-color: #999999;
 }
@@ -807,7 +806,6 @@ a img {
 
   .toggle-dropdown:hover {
     cursor: pointer;
-    border-color: #999999;
   }
 }
 @media all and (min-width: 34.375em) {
