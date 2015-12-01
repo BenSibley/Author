@@ -297,7 +297,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		'default'           => 'no',
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'ct_author_sanitize_yes_no_settings',
+		'sanitize_callback' => 'ct_author_sanitize_yes_no_settings'
 	) );
 	// control
 	$wp_customize->add_control( 'full_post', array(
@@ -307,7 +307,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		'type'           => 'radio',
 		'choices'        => array(
 			'yes'   => __('Yes', 'author'),
-			'no'  => __('No', 'author'),
+			'no'  => __('No', 'author')
 		)
 	) );
 	// setting
@@ -315,16 +315,30 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		'default'           => '25',
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new ct_author_number_input_control(
 		$wp_customize, 'excerpt_length', array(
-			'label'          => __( 'Excerpt length', 'author' ),
+			'label'          => __( 'Excerpt word count', 'author' ),
 			'section'        => 'author_blog',
 			'settings'       => 'excerpt_length',
-			'type'           => 'number',
+			'type'           => 'number'
 		)
+	) );
+	// Read More text - setting
+	$wp_customize->add_setting( 'read_more_text', array(
+		'default'           => __('Continue reading', 'author'),
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'ct_author_sanitize_text'
+	) );
+	// Read More text - control
+	$wp_customize->add_control( 'read_more_text', array(
+			'label'          => __( 'Read More link text', 'author' ),
+			'section'        => 'author_blog',
+			'settings'       => 'read_more_text',
+			'type'           => 'text'
 	) );
 
 	/***** Comment Display *****/
