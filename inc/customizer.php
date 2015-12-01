@@ -607,7 +607,7 @@ function ct_author_sanitize_avatar_method($input) {
 function ct_author_sanitize_yes_no_settings($input){
 
 	$valid = array(
-		'yes'   => __('Yes', 'author'),
+		'yes' => __('Yes', 'author'),
 		'no'  => __('No', 'author'),
 	);
 
@@ -616,6 +616,10 @@ function ct_author_sanitize_yes_no_settings($input){
 	} else {
 		return '';
 	}
+}
+
+function ct_author_sanitize_text( $input ) {
+	return wp_kses_post( force_balance_tags( $input ) );
 }
 
 function ct_author_customize_preview_js() {
