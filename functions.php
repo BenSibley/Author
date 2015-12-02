@@ -211,14 +211,14 @@ if( ! function_exists( 'ct_author_excerpt' ) ) {
 
 	        // use the read more link if present
 	        if ( $ismore ) {
-		        the_content( $read_more_text . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
+		        the_content( wp_kses_post( $read_more_text ) . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
 	        } else {
 		        the_content();
 	        }
         }
         // use the read more link if present
         elseif ( $ismore ) {
-            the_content( $read_more_text . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
+            the_content( wp_kses_post( $read_more_text ) . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
         } // otherwise the excerpt is automatic, so output it
         else {
             the_excerpt();
@@ -239,7 +239,7 @@ if( !function_exists('ct_author_excerpt_read_more_link' ) ) {
 		if ( empty( $read_more_text ) )
 			$read_more_text = __( 'Continue reading', 'author' );
 
-		return $output . "<p><a class='more-link' href='" . get_permalink() . "'>" . $read_more_text . " <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
+		return $output . "<p><a class='more-link' href='" . get_permalink() . "'>" . wp_kses_post( $read_more_text ) . " <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
 	}
 }
 add_filter('the_excerpt', 'ct_author_excerpt_read_more_link');
