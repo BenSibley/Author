@@ -138,14 +138,11 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'ct_author_avatar', array(
 		'title'      => __( 'Avatar', 'author' ),
-		'priority'   => 15,
-		'capability' => 'edit_theme_options'
+		'priority'   => 15
 	) );
 	// setting
 	$wp_customize->add_setting( 'avatar_method', array(
 		'default'           => 'none',
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'ct_author_sanitize_avatar_method'
 	) );
 	// control
@@ -163,8 +160,6 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	) );
 	// setting
 	$wp_customize->add_setting( 'avatar', array(
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'esc_url_raw'
 	) );
 	// control
@@ -172,7 +167,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		$wp_customize, 'avatar', array(
 			'label'    => __( 'Upload your avatar', 'author' ),
 			'section'  => 'ct_author_avatar',
-			'settings' => 'avatar',
+			'settings' => 'avatar'
 		)
 	) );
 
@@ -182,13 +177,10 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	$wp_customize->add_section( 'ct_author_logo_upload', array(
 		'title'       => __( 'Logo', 'author' ),
 		'priority'    => 25,
-		'capability'  => 'edit_theme_options',
 		'description' => __('Use this instead of the avatar if you want a non-rounded logo image.', 'author')
 	) );
 	// setting
 	$wp_customize->add_setting( 'logo_upload', array(
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'esc_url_raw'
 	) );
 	// control
@@ -196,7 +188,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		$wp_customize, 'logo_image', array(
 			'label'    => __( 'Upload custom logo.', 'author' ),
 			'section'  => 'ct_author_logo_upload',
-			'settings' => 'logo_upload',
+			'settings' => 'logo_upload'
 		)
 	) );
 
@@ -221,8 +213,6 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		if( $social_site == 'email' ) {
 			// setting
 			$wp_customize->add_setting( $social_site, array(
-				'type'              => 'theme_mod',
-				'capability'        => 'edit_theme_options',
 				'sanitize_callback' => 'ct_author_sanitize_email'
 			) );
 			// control
@@ -267,8 +257,6 @@ function ct_author_add_customizer_content( $wp_customize ) {
 
 			// setting
 			$wp_customize->add_setting( $social_site, array(
-				'type'              => 'theme_mod',
-				'capability'        => 'edit_theme_options',
 				'sanitize_callback' => 'esc_url_raw'
 			) );
 			// control
@@ -276,7 +264,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 				$wp_customize, $social_site, array(
 					'label'    => $label,
 					'section'  => 'ct_author_social_media_icons',
-					'priority' => $priority,
+					'priority' => $priority
 				)
 			) );
 		}
@@ -289,14 +277,11 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'author_blog', array(
 		'title'      => __( 'Blog', 'author' ),
-		'priority'   => 45,
-		'capability' => 'edit_theme_options'
+		'priority'   => 45
 	) );
 	// setting
 	$wp_customize->add_setting( 'full_post', array(
 		'default'           => 'no',
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'ct_author_sanitize_yes_no_settings'
 	) );
 	// control
@@ -313,8 +298,6 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// setting
 	$wp_customize->add_setting( 'excerpt_length', array(
 		'default'           => '25',
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'absint'
 	) );
 	// control
@@ -329,8 +312,6 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// Read More text - setting
 	$wp_customize->add_setting( 'read_more_text', array(
 		'default'           => __('Continue reading', 'author'),
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'ct_author_sanitize_text'
 	) );
 	// Read More text - control
@@ -346,15 +327,12 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'ct_author_comments_display', array(
 		'title'      => __( 'Comment Display', 'author' ),
-		'priority'   => 55,
-		'capability' => 'edit_theme_options'
+		'priority'   => 55
 	) );
 	// setting
 	$wp_customize->add_setting( 'comments_display', array(
 		'default'           => array('post','page','attachment','none'),
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'ct_author_sanitize_comments_setting',
+		'sanitize_callback' => 'ct_author_sanitize_comments_setting'
 	) );
 	// control
 	$wp_customize->add_control( new ct_author_multi_checkbox_control(
@@ -377,13 +355,10 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'author_custom_css', array(
 		'title'      => __( 'Custom CSS', 'author' ),
-		'priority'   => 65,
-		'capability' => 'edit_theme_options'
+		'priority'   => 65
 	) );
 	// setting
 	$wp_customize->add_setting( 'custom_css', array(
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'wp_filter_nohtml_kses',
 		'transport'         => 'postMessage'
 	) );
@@ -392,7 +367,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		$wp_customize, 'custom_css', array(
 			'label'          => __( 'Add Custom CSS Here:', 'author' ),
 			'section'        => 'author_custom_css',
-			'settings'       => 'custom_css',
+			'settings'       => 'custom_css'
 		)
 	) );
 
@@ -406,14 +381,11 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'author_header_image', array(
 		'title'      => __( 'Header Image', 'author' ),
-		'priority'   => 35,
-		'capability' => 'edit_theme_options'
+		'priority'   => 35
 	) );
 	// setting
 	$wp_customize->add_setting( 'header_image_ad', array(
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new author_description_header_image_control(
@@ -428,14 +400,11 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'author_colors', array(
 		'title'      => __( 'Colors', 'author' ),
-		'priority'   => 50,
-		'capability' => 'edit_theme_options'
+		'priority'   => 50
 	) );
 	// setting
 	$wp_customize->add_setting( 'colors_ad', array(
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new author_description_color_control(
@@ -450,14 +419,11 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'author_background', array(
 		'title'      => __( 'Background', 'author' ),
-		'priority'   => 55,
-		'capability' => 'edit_theme_options'
+		'priority'   => 55
 	) );
 	// setting
 	$wp_customize->add_setting( 'background_ad', array(
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new author_description_background_control(
@@ -472,14 +438,11 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'author_font', array(
 		'title'      => __( 'Font', 'author' ),
-		'priority'   => 40,
-		'capability' => 'edit_theme_options'
+		'priority'   => 40
 	) );
 	// setting
 	$wp_customize->add_setting( 'font_ad', array(
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new author_description_font_control(
@@ -494,14 +457,11 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'author_display_control', array(
 		'title'      => __( 'Display Controls', 'author' ),
-		'priority'   => 70,
-		'capability' => 'edit_theme_options'
+		'priority'   => 70
 	) );
 	// setting
 	$wp_customize->add_setting( 'display_control_ad', array(
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new author_description_display_control_control(
@@ -516,14 +476,11 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'author_footer_text', array(
 		'title'      => __( 'Footer Text', 'author' ),
-		'priority'   => 85,
-		'capability' => 'edit_theme_options'
+		'priority'   => 85
 	) );
 	// setting
 	$wp_customize->add_setting( 'footer_text_ad', array(
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new author_description_footer_text_control(
