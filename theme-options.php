@@ -1,12 +1,10 @@
 <?php
 
-/* create theme options page */
 function ct_author_register_theme_page(){
-add_theme_page( 'Author Dashboard', 'Author Dashboard', 'edit_theme_options', 'author-options', 'ct_author_options_content', 'ct_author_options_content');
+add_theme_page( __( 'Author Dashboard', 'author' ), __( 'Author Dashboard', 'author' ), 'edit_theme_options', 'author-options', 'ct_author_options_content', 'ct_author_options_content');
 }
 add_action( 'admin_menu', 'ct_author_register_theme_page' );
 
-/* callback used to add content to options page */
 function ct_author_options_content(){
 
     $customizer_url = add_query_arg(
