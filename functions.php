@@ -645,3 +645,31 @@ function ct_author_infinite_scroll_render(){
 		get_template_part( 'content', 'archive' );
 	}
 }
+
+function ct_author_get_content_template() {
+
+	/* Blog */
+	if( is_home() ) {
+		get_template_part( 'content', 'archive' );
+	}
+	/* Post */
+	elseif( is_singular( 'post' ) ) {
+		get_template_part( 'content' );
+	}
+	/* Page */
+	elseif( is_page() ) {
+		get_template_part( 'content', 'page' );
+	}
+	/* Attachment */
+	elseif( is_attachment() ) {
+		get_template_part( 'content', 'attachment' );
+	}
+	/* Archive */
+	elseif( is_archive() ) {
+		get_template_part( 'content', 'archive' );
+	}
+	/* Custom Post Type */
+	else {
+		get_template_part( 'content' );
+	}
+}
