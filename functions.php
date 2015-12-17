@@ -239,7 +239,7 @@ if( !function_exists('ct_author_excerpt_read_more_link' ) ) {
 		if ( empty( $read_more_text ) )
 			$read_more_text = __( 'Continue reading', 'author' );
 
-		return $output . "<p><a class='more-link' href='" . get_permalink() . "'>" . wp_kses_post( $read_more_text ) . " <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
+		return $output . "<p><a class='more-link' href='" . esc_url( get_permalink() ) . "'>" . wp_kses_post( $read_more_text ) . " <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
 	}
 }
 add_filter('the_excerpt', 'ct_author_excerpt_read_more_link');
@@ -306,7 +306,7 @@ if( !function_exists('ct_author_featured_image' ) ) {
 			if ( is_singular() ) {
 				$featured_image = '<div class="featured-image">' . get_the_post_thumbnail( $post->ID, 'full' ) . '</div>';
 			} else {
-				$featured_image = '<div class="featured-image"><a href="' . get_permalink() . '">' . get_the_title() . get_the_post_thumbnail( $post->ID, 'full' ) . '</a></div>';
+				$featured_image = '<div class="featured-image"><a href="' . esc_url( get_permalink() ) . '">' . get_the_title() . get_the_post_thumbnail( $post->ID, 'full' ) . '</a></div>';
 			}
 		}
 
