@@ -624,7 +624,7 @@ function ct_author_sanitize_text( $input ) {
 
 function ct_author_customize_preview_js() {
 
-	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/author-pro/\" target=\"_blank\">View the Author Pro Plugin <span>&rarr;</span></a></div>')</script>";
+	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/author-pro/\" target=\"_blank\">" . __('View the Author Pro Plugin', 'author') . " <span>&rarr;</span></a></div>')</script>";
 	echo apply_filters('ct_author_customizer_ad', $content);
 }
 add_action('customize_controls_print_footer_scripts', 'ct_author_customize_preview_js');
