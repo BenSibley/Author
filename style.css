@@ -371,6 +371,24 @@ a img {
   top: 32px;
 }
 
+#breadcrumbs {
+  margin-top: 0;
+  padding: 0 7.4074%;
+}
+
+.singular #breadcrumbs {
+  margin-bottom: 3em;
+}
+
+@media all and (min-width: 34.375em) {
+  #breadcrumbs {
+    padding: 0;
+  }
+
+  .singular #breadcrumbs {
+    margin-bottom: 1.5em;
+  }
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
   html {
     -webkit-text-size-adjust: none;
