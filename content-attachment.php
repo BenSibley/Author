@@ -9,6 +9,6 @@
 		</div>
 	</article>
 	<?php do_action( 'attachment_after' ); ?>
-	<?php get_template_part('content/post-nav-attachment'); ?>
+	<?php get_template_part( 'content/post-nav-attachment' ); ?>
 	<?php comments_template(); ?>
 </div>

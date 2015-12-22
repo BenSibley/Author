@@ -17,6 +17,7 @@ if ( is_tag() ) {
 
 <div class='archive-header'>
 	<i class="fa fa-<?php echo $icon_class; ?>"></i>
+
 	<h2>
 		<?php the_archive_title(); ?>
 	</h2>

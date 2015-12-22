@@ -7,7 +7,10 @@
 		</div>
 		<div class="post-content">
 			<?php the_content(); ?>
-			<?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Pages:','author'), 'after' => '</p>', ) ); ?>
+			<?php wp_link_pages( array(
+				'before' => '<p class="singular-pagination">' . __( 'Pages:', 'author' ),
+				'after'  => '</p>',
+			) ); ?>
 		</div>
 	</article>
 	<?php do_action( 'page_after' ); ?>

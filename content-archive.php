@@ -6,7 +6,7 @@
 			<h1 class='post-title'>
 				<a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a>
 			</h1>
-			<?php get_template_part('content/post-meta'); ?>
+			<?php get_template_part( 'content/post-meta' ); ?>
 		</div>
 		<div class="post-content">
 			<?php ct_author_excerpt(); ?>

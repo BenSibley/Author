@@ -5,13 +5,13 @@
  */
 
 // Simplified version that simply calls do_action instead
-if ( !function_exists('hybrid_do_atomic') ) {
-	function hybrid_do_atomic($hook) {
-		do_action($hook);
+if ( ! function_exists( 'hybrid_do_atomic' ) ) {
+	function hybrid_do_atomic( $hook ) {
+		do_action( $hook );
 	}
 }
 
-if ( !function_exists('hybrid_register_sidebar') ) {
+if ( ! function_exists( 'hybrid_register_sidebar' ) ) {
 
 	function hybrid_register_sidebar( $args ) {
 

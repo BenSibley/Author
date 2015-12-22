@@ -1,9 +1,9 @@
 <?php if ( is_active_sidebar( 'primary' ) ) : ?>
 
-    <aside class="sidebar sidebar-primary" id="sidebar-primary" role="complementary">
+	<aside class="sidebar sidebar-primary" id="sidebar-primary" role="complementary">
 
-        <?php dynamic_sidebar( 'primary' ); ?>
+		<?php dynamic_sidebar( 'primary' ); ?>
 
-    </aside><!-- #sidebar-primary -->
+	</aside><!-- #sidebar-primary -->
 
 <?php endif; ?>
