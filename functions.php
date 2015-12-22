@@ -536,20 +536,38 @@ add_filter( 'post_class', 'ct_author_post_class' );
 
 function ct_author_reset_customizer_options() {
 
-    // validate name and value
     if( empty( $_POST['author_reset_customizer'] ) || 'author_reset_customizer_settings' !== $_POST['author_reset_customizer'] )
         return;
 
-    // validate nonce
     if( ! wp_verify_nonce( $_POST['author_reset_customizer_nonce'], 'author_reset_customizer_nonce' ) )
         return;
 
-    // validate user permissions
     if( ! current_user_can( 'edit_theme_options' ) )
         return;
 
-    // delete customizer mods
-    remove_theme_mods();
+	$mods_array = array(
+		'avatar_method',
+		'avatar',
+		'logo_upload',
+		'full_post',
+		'excerpt_length',
+		'read_more_text',
+		'comments_display',
+		'custom_css'
+	);
+
+	$social_sites = ct_author_social_array();
+
+	// add social site settings to mods array
+	foreach ( $social_sites as $social_site => $value ) {
+		$mods_array[] = $social_site;
+	}
+
+	$mods_array = apply_filters( 'ct_author_mods_to_remove', $mods_array );
+
+	foreach ( $mods_array as $theme_mod ) {
+		remove_theme_mod( $theme_mod );
+	}
 
     $redirect = admin_url( 'themes.php?page=author-options' );
     $redirect = add_query_arg( 'author_status', 'deleted', $redirect);

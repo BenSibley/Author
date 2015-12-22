@@ -49,7 +49,7 @@ function ct_author_options_content(){
         <div class="content content-delete-settings">
             <h3><?php _e('Reset Customizer Settings', 'author'); ?></h3>
             <p>
-                <?php printf( __( '<strong>Warning:</strong> Clicking this button will erase your current settings in the <a href="%s">Customizer</a>', 'author' ), esc_url( $customizer_url ) ); ?>
+                <?php printf( __( "<strong>Warning:</strong> Clicking this button will erase the Author theme's current settings in the <a href='%s'>Customizer</a>", 'author' ), esc_url( $customizer_url ) ); ?>
             </p>
             <form method="post">
                 <input type="hidden" name="author_reset_customizer" value="author_reset_customizer_settings" />
@@ -61,4 +61,4 @@ function ct_author_options_content(){
         </div>
         <?php do_action( 'theme_options_after' ); ?>
     </div>
-<?php } ?>
+<?php }
