@@ -10,8 +10,6 @@ jQuery(document).ready(function($){
     var overflowContainer = $('#overflow-container');
     var loopContainer = $('#loop-container');
     var headerImage = $('#header-image');
-
-    // get the selector for the primary menu
     var menu = $('.menu-unset').length ? $('.menu-unset') : $('#menu-primary-items');
 
     // for scrolling function
@@ -25,7 +23,10 @@ jQuery(document).ready(function($){
     positionSidebar();
     objectFitAdjustment();
 
-    // delay until everything loaded to avoid inaccuracy due to other JS changing element heights
+    $('#toggle-navigation').on('click', openPrimaryMenu);
+    toggleDropdown.on('click', openDropdownMenu);
+    toggleDropdown.on('click', adjustSidebarHeight);
+
     $(window).bind("load", function() {
         setMainMinHeight();
     });
@@ -37,11 +38,6 @@ jQuery(document).ready(function($){
         objectFitAdjustment();
     });
 
-    // add fitVids to videos in posts
-    $('.post-content').fitVids({
-        customSelector: 'iframe[src*="dailymotion.com"], iframe[src*="slideshare.net"], iframe[src*="animoto.com"], iframe[src*="blip.tv"], iframe[src*="funnyordie.com"], iframe[src*="hulu.com"], iframe[src*="ted.com"], iframe[src*="wordpress.tv"]'
-    });
-
     // Jetpack infinite scroll event that reloads posts.
     $( document.body ).on( 'post-load', function () {
 
@@ -50,24 +46,15 @@ jQuery(document).ready(function($){
         });
     } );
 
-    // display the primary menu at mobile widths
-    $('#toggle-navigation').on('click', openPrimaryMenu);
-
-    // display the dropdown menus
-    toggleDropdown.on('click', openDropdownMenu);
-
-    // extend sidebar height when dropdown clicked
-    toggleDropdown.on('click', adjustSidebarHeight);
+    $('.post-content').fitVids({
+        customSelector: 'iframe[src*="dailymotion.com"], iframe[src*="slideshare.net"], iframe[src*="animoto.com"], iframe[src*="blip.tv"], iframe[src*="funnyordie.com"], iframe[src*="hulu.com"], iframe[src*="ted.com"], iframe[src*="wordpress.tv"]'
+    });
 
     function openPrimaryMenu() {
 
-        // if menu open
         if( sidebar.hasClass('open') ) {
 
-            // trigger event
             sidebar.trigger('close');
-
-            // remove styling class
             sidebar.removeClass('open');
 
             // update screen reader text and aria-expanded
@@ -94,9 +81,8 @@ jQuery(document).ready(function($){
             $(window).unbind('scroll', autoCloseMenu);
 
         } else {
-            sidebar.addClass('open');
 
-            // trigger event
+            sidebar.addClass('open');
             sidebar.trigger('open');
 
             // update screen reader text and aria-expanded
@@ -114,10 +100,8 @@ jQuery(document).ready(function($){
                     socialIconsHeight = siteHeader.find('.social-media-icons').find('ul').outerHeight();
                 }
 
-                var menuHeight = menu.outerHeight();
-
-                var headerHeight = sidebar.outerHeight();
-
+                var menuHeight           = menu.outerHeight();
+                var headerHeight         = sidebar.outerHeight();
                 var sidebarPrimaryHeight = sidebarPrimary.height();
 
                 var minHeight = sidebarPrimaryHeight + headerHeight + socialIconsHeight + menuHeight;
@@ -182,16 +166,13 @@ jQuery(document).ready(function($){
     // move sidebar when dropdown menu items opened
     function adjustSidebarHeight() {
 
-        // get the current window width
         var windowWidth = window.innerWidth;
 
         // if at width when menu is absolutely positioned
         if( windowWidth > 549 && windowWidth < 950 ) {
 
             // get the submenu
-            var list = $(this).next();
-
-            // set the height variable
+            var list       = $(this).next();
             var listHeight = 0;
 
             // get the height of all the child li elements combined (because ul has max-height: 0)
