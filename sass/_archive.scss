@@ -1,5 +1,5 @@
 .archive-header,
-.loop-pagination {
+.pagination {
   padding: $baseline-height $column-27 * 2;
   margin-bottom: $baseline-height;
   background: white;
@@ -17,7 +17,7 @@
     margin: $baseline-height / 2 0 0;
   }
 }
-.loop-pagination {
+.pagination {
   position: relative;
   margin: $baseline-height 0;
 
@@ -56,7 +56,7 @@
 @media all and (min-width: $five-fifty) {
 
   .archive-header,
-  .loop-pagination  {
+  .pagination  {
     box-shadow: $box-shadow;
   }
 }
@@ -65,10 +65,10 @@
 @media all and (min-width: $nine-fifty) {
 
   .archive-header,
-  .loop-pagination  {
+  .pagination  {
     padding: $baseline-height $column-9 * 0.75 * 1.636;
   }
-  .loop-pagination {
+  .pagination {
 
     .next {
       right: $column-9 * 0.75 * 1.636;
@@ -83,10 +83,10 @@
 @media all and (min-width: $eleven-fifty) {
 
   .archive-header,
-  .loop-pagination  {
+  .pagination  {
     padding: $baseline-height $column-9 * 0.5 * 1.8;
   }
-  .loop-pagination {
+  .pagination {
 
     .next {
       right: $column-9 * 0.5 * 1.8;

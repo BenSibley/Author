@@ -32,7 +32,7 @@ h2 {
 }
 
 h3, .site-title, .archive-header h2,
-.loop-pagination h2 {
+.pagination h2 {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
@@ -1266,14 +1266,14 @@ a img {
   }
 }
 .archive-header,
-.loop-pagination {
+.pagination {
   padding: 1.5em 7.4074%;
   margin-bottom: 1.5em;
   background: white;
   text-align: center;
 }
 .archive-header h2,
-.loop-pagination h2 {
+.pagination h2 {
   display: inline-block;
   margin-left: 6px;
 }
@@ -1282,19 +1282,19 @@ a img {
   margin: 0.75em 0 0;
 }
 
-.loop-pagination {
+.pagination {
   position: relative;
   margin: 1.5em 0;
 }
-.loop-pagination a,
-.loop-pagination span {
+.pagination a,
+.pagination span {
   margin: 0 4px;
 }
-.loop-pagination .next {
+.pagination .next {
   position: absolute;
   right: 7.4074%;
 }
-.loop-pagination .prev {
+.pagination .prev {
   position: absolute;
   left: 7.4074%;
 }
@@ -1316,33 +1316,33 @@ a img {
 }
 @media all and (min-width: 34.375em) {
   .archive-header,
-  .loop-pagination {
+  .pagination {
     box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1);
   }
 }
 @media all and (min-width: 59.375em) {
   .archive-header,
-  .loop-pagination {
+  .pagination {
     padding: 1.5em 13.63197%;
   }
 
-  .loop-pagination .next {
+  .pagination .next {
     right: 13.63197%;
   }
-  .loop-pagination .prev {
+  .pagination .prev {
     left: 13.63197%;
   }
 }
 @media all and (min-width: 71.875em) {
   .archive-header,
-  .loop-pagination {
+  .pagination {
     padding: 1.5em 9.999%;
   }
 
-  .loop-pagination .next {
+  .pagination .next {
     right: 9.999%;
   }
-  .loop-pagination .prev {
+  .pagination .prev {
     left: 9.999%;
   }
 }
