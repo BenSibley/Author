@@ -19,7 +19,7 @@
 						$avatar_method = get_theme_mod( 'avatar_method' );
 						$avatar        = get_theme_mod( 'avatar' );
 						if( $avatar_method == 'gravatar' || ( $avatar_method == 'upload' && !empty( $avatar ) ) ) { ?>
-							<div id="site-avatar" class="site-avatar" style="background-image: url('<?php echo esc_url( ct_author_output_avatar() ); ?>')" title="<?php echo get_bloginfo('title') . ' avatar'; ?>"></div>
+							<div id="site-avatar" class="site-avatar" style="background-image: url('<?php echo esc_url( ct_author_output_avatar() ); ?>')" title="<?php echo get_bloginfo('title') . ' ' . __('avatar', 'author'); ?>"></div>
 						<?php } ?>
 						<div class="container">
 							<?php get_template_part('logo')  ?>
