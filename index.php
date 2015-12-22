@@ -3,20 +3,18 @@
 get_template_part('content/archive-header');
 
 ?>
-
 <div id="loop-container" class="loop-container">
-
     <?php
-    // The loop
     if ( have_posts() ) :
         while (have_posts() ) :
             the_post();
             ct_author_get_content_template();
         endwhile;
-    endif; ?>
-
+    endif;
+    ?>
 </div>
+<?php
 
-<?php the_posts_pagination(); ?>
+the_posts_pagination();
 
-<?php get_footer(); ?>
+get_footer();
