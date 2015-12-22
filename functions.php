@@ -545,7 +545,7 @@ function ct_author_reset_customizer_options() {
         return;
 
     // validate user permissions
-    if( ! current_user_can( 'manage_options' ) )
+    if( ! current_user_can( 'edit_theme_options' ) )
         return;
 
     // delete customizer mods
