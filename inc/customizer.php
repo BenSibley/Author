@@ -421,17 +421,13 @@ function ct_author_add_customizer_content( $wp_customize ) {
  * Used in: search bar
  */
 function ct_author_sanitize_all_show_hide_settings($input){
-	// create array of valid values
+
 	$valid = array(
 		'show' => __('Show', 'author'),
 		'hide' => __('Hide', 'author')
 	);
-	// if returned data is in array use it, else return nothing
-	if ( array_key_exists( $input, $valid ) ) {
-		return $input;
-	} else {
-		return '';
-	}
+
+	return array_key_exists( $input, $valid ) ? $input : '';
 }
 
 /*
@@ -439,14 +435,11 @@ function ct_author_sanitize_all_show_hide_settings($input){
  * Used in: Social Media Icons
  */
 function ct_author_sanitize_email( $input ) {
-
 	return sanitize_email( $input );
 }
 
-// sanitize comment display multi-check
 function ct_author_sanitize_comments_setting($input){
 
-	// valid data
 	$valid = array(
 		'post'   => __('Posts', 'author'),
 		'page'  => __('Pages', 'author'),
@@ -454,36 +447,22 @@ function ct_author_sanitize_comments_setting($input){
 		'none'  => __('Do not show', 'author')
 	);
 
-	// loop through array
 	foreach( $input as $selection ) {
-
-		// if it's in the valid data, return it
-		if ( array_key_exists( $selection, $valid ) ) {
-			return $input;
-		} else {
-			return '';
-		}
+		return array_key_exists( $selection, $valid ) ? $input : '';
 	}
 }
 
 function ct_author_sanitize_avatar_method($input) {
 
-	// valid data
 	$valid = array(
 		'gravatar'  => __('Gravatar', 'author'),
 		'upload'  => __('Upload an image', 'author'),
 		'none'  => __('Do not display avatar', 'author')
 	);
 
-	// if returned data is in array use it, else return nothing
-	if ( array_key_exists( $input, $valid ) ) {
-		return $input;
-	} else {
-		return '';
-	}
+	return array_key_exists( $input, $valid ) ? $input : '';
 }
 
-// sanitize yes/no settings
 function ct_author_sanitize_yes_no_settings($input){
 
 	$valid = array(
@@ -491,11 +470,7 @@ function ct_author_sanitize_yes_no_settings($input){
 		'no'  => __('No', 'author'),
 	);
 
-	if ( array_key_exists( $input, $valid ) ) {
-		return $input;
-	} else {
-		return '';
-	}
+	return array_key_exists( $input, $valid ) ? $input : '';
 }
 
 function ct_author_sanitize_text( $input ) {
