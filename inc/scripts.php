@@ -1,13 +1,10 @@
 <?php
 
-/*
- * Front-end scripts
- */
+// Front-end scripts
 function ct_author_load_scripts_styles() {
 
 	wp_enqueue_style( 'ct-author-google-fonts', '//fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,700' );
 
-	// main JS file
 	wp_enqueue_script( 'ct-author-js', get_template_directory_uri() . '/js/build/production.min.js', array( 'jquery' ), '', true );
 	wp_localize_script( 'ct-author-js', 'objectL10n', array(
 		'openPrimaryMenu'  => __( 'open primary menu', 'author' ),
@@ -16,7 +13,6 @@ function ct_author_load_scripts_styles() {
 		'closeChildMenu'   => __( 'close child menu', 'author' )
 	) );
 
-	// Font Awesome
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css' );
 
 	wp_enqueue_style( 'ct-author-style', get_stylesheet_uri() );
@@ -28,12 +24,9 @@ function ct_author_load_scripts_styles() {
 
 	/* Load Polyfills */
 
-	// HTML5 shiv
 	wp_enqueue_script( 'ct-author-html5-shiv', get_template_directory_uri() . '/js/build/html5shiv.min.js' );
 
-	// respond.js - media query support
 	wp_enqueue_script( 'ct-author-respond', get_template_directory_uri() . '/js/build/respond.min.js', '', '', true );
-
 
 	// prevent fatal error on < WP 4.2 (load files unconditionally instead)
 	if ( function_exists( 'wp_script_add_data' ) ) {
@@ -41,37 +34,23 @@ function ct_author_load_scripts_styles() {
 		wp_script_add_data( 'ct-author-respond', 'conditional', 'IE 8' );
 	}
 }
-
 add_action( 'wp_enqueue_scripts', 'ct_author_load_scripts_styles' );
 
-/*
- * Back-end scripts
- */
+// Back-end scripts
 function ct_author_enqueue_admin_styles( $hook ) {
 
-	// if theme options page
-	if ( 'appearance_page_author-options' == $hook ) {
-
-		// Admin styles
+	if ( $hook == 'appearance_page_author-options' ) {
 		wp_enqueue_style( 'ct-author-admin-styles', get_template_directory_uri() . '/styles/admin.min.css' );
 	}
 }
-
 add_action( 'admin_enqueue_scripts', 'ct_author_enqueue_admin_styles' );
 
-/*
- * Customizer scripts
- */
+// Customizer scripts
 function ct_author_enqueue_customizer_scripts() {
 
-	// stylesheet for customizer
 	wp_enqueue_style( 'ct-author-customizer-styles', get_template_directory_uri() . '/styles/customizer.min.css' );
-
-	// JS for hiding/showing Customizer options
 	wp_enqueue_script( 'ct-author-customizer-js', get_template_directory_uri() . '/js/build/customizer.min.js', array( 'jquery' ), '', true );
-
 }
-
 add_action( 'customize_controls_enqueue_scripts', 'ct_author_enqueue_customizer_scripts' );
 
 /*
@@ -79,12 +58,8 @@ add_action( 'customize_controls_enqueue_scripts', 'ct_author_enqueue_customizer_
  * transport => postMessage
  */
 function ct_author_enqueue_customizer_post_message_scripts() {
-
-	// JS for live updating with customizer input
 	wp_enqueue_script( 'ct-author-customizer-post-message-js', get_template_directory_uri() . '/js/build/postMessage.min.js', array( 'jquery' ), '', true );
-
 }
-
 add_action( 'customize_preview_init', 'ct_author_enqueue_customizer_post_message_scripts' );
 
 // load scripts asynchronously
@@ -98,5 +73,4 @@ function ct_author_add_async_script( $url ) {
 	// if async parameter present, add async attribute
 	return str_replace( '#ct_author_asyncload', '', $url ) . "' async='async";
 }
-
 add_filter( 'clean_url', 'ct_author_add_async_script', 11, 1 );

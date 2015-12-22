@@ -1,6 +1,5 @@
 <?php
 
-/* Add customizer panels, sections, settings, and controls */
 add_action( 'customize_register', 'ct_author_add_customizer_content' );
 
 function ct_author_add_customizer_content( $wp_customize ) {
@@ -482,5 +481,4 @@ function ct_author_customize_preview_js() {
 	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/author-pro/\" target=\"_blank\">" . __( 'View the Author Pro Plugin', 'author' ) . " <span>&rarr;</span></a></div>')</script>";
 	echo apply_filters( 'ct_author_customizer_ad', $content );
 }
-
 add_action( 'customize_controls_print_footer_scripts', 'ct_author_customize_preview_js' );
