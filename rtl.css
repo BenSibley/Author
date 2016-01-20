@@ -1299,6 +1299,10 @@ a img {
   right: 7.4074%;
 }
 
+.infinite-scroll .pagination {
+  display: none;
+}
+
 .sticky-status {
   position: absolute;
   top: 0;

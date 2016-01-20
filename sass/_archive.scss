@@ -34,6 +34,9 @@
     left: $column-27 * 2;
   }
 }
+.infinite-scroll .pagination {
+  display: none;
+}
 .sticky-status {
   position: absolute;
   top: 0;
