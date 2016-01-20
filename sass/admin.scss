@@ -2,62 +2,71 @@
 
 /* styles for theme options page */
 
-#author-dashboard-wrap h2 {
-  margin-bottom: 24px;
-}
-.content {
-  margin-top: 12px;
-  padding: 12px 24px 24px;
-  border: solid 1px #e5e5e5;
-  background: white;
+#author-dashboard-wrap {
 
-  .button-primary {
-    margin: 12px 0;
+  h2 {
+    margin-bottom: 24px;
   }
-  ul {
-    list-style: disc;
-    margin-left: 36px;
+  .content {
+    margin-top: 12px;
+    padding: 12px 24px 24px;
+    border: solid 1px #e5e5e5;
+    background: white;
+
+    .button-primary {
+      margin: 12px 0;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 36px;
+    }
   }
 }
 
 /* 600px */
 @media all and (min-width: 37.5em) {
 
-  .content {
-    width: 39%;
-    float: left;
+  #author-dashboard-wrap {
 
-    p {
-      min-height: 57px;
-    }
-  }
-  .content-premium-upgrade {
+    .content {
+      width: 39%;
+      float: left;
 
-    p {
-      min-height: 0px;
+      p {
+        min-height: 57px;
+      }
     }
-  }
-  .content-customization,
-  .content-premium-upgrade {
-    margin-right: 2%;
+    .content-premium-upgrade {
+
+      p {
+        min-height: 0;
+      }
+    }
+    .content-customization,
+    .content-premium-upgrade {
+      margin-right: 2%;
+    }
   }
 }
 
 /* 1100px */
 @media all and (min-width: 68.75em) {
 
-  .content {
-    width: 27%;
-  }
-  .content-resources {
-    clear: left;
-  }
-  .content-customization,
-  .content-support,
-  .content-resources {
-    margin-right: 1%;
-  }
-  .content-premium-upgrade {
-    margin-right: 0;
+  #author-dashboard-wrap {
+
+    .content {
+      width: 27%;
+    }
+    .content-resources {
+      clear: left;
+    }
+    .content-customization,
+    .content-support,
+    .content-resources {
+      margin-right: 1%;
+    }
+    .content-premium-upgrade {
+      margin-right: 0;
+    }
   }
 }
