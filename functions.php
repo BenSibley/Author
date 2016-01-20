@@ -433,7 +433,7 @@ function ct_author_custom_css_output() {
 	$custom_css = get_theme_mod( 'custom_css' );
 
 	if ( $custom_css ) {
-		$custom_css = wp_filter_nohtml_kses( $custom_css );
+		$custom_css = ct_author_sanitize_css( $custom_css );
 		wp_add_inline_style( 'ct-author-style', $custom_css );
 		wp_add_inline_style( 'ct-author-style-rtl', $custom_css );
 	}
