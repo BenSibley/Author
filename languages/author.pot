@@ -2,16 +2,16 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Author 1.15\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-01-21 13:48:08+00:00\n"
+"Project-Id-Version: Author 1.16\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2016-01-25 21:50:00+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.4.9\n"
+"X-Generator: grunt-wp-i18n 0.5.3\n"
 
 #: 404.php:5
 msgid "404: Page Not Found"
@@ -465,14 +465,6 @@ msgid ""
 "theme's current settings in the <a href='%s'>Customizer</a>."
 msgstr ""
 
-#. Theme Name of the plugin/theme
-msgid "Author"
-msgstr ""
-
-#. Theme URI of the plugin/theme
-msgid "https://www.competethemes.com/author/"
-msgstr ""
-
 #. Description of the plugin/theme
 msgid ""
 "Author is designed for publishers who want readers. That's why Author is "
@@ -484,14 +476,6 @@ msgid ""
 "the ancient Van de Graaf canon, Author is optimally designed for reading. "
 "Author is the theme your content deserves. See our fully setup live demo "
 "here: https://www.competethemes.com/author-live-demo/"
-msgstr ""
-
-#. Author of the plugin/theme
-msgid "Compete Themes"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://www.competethemes.com"
 msgstr ""
 
 #: content/post-meta.php:6
