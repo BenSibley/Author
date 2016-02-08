@@ -29,8 +29,12 @@
   #author-dashboard-wrap .content-premium-upgrade p {
     min-height: 0;
   }
+  #author-dashboard-wrap .content-review p {
+    min-height: 75px;
+  }
   #author-dashboard-wrap .content-customization,
-  #author-dashboard-wrap .content-premium-upgrade {
+  #author-dashboard-wrap .content-premium-upgrade,
+  #author-dashboard-wrap .content-review {
     margin-right: 2%;
   }
 }
@@ -44,7 +48,8 @@
   }
   #author-dashboard-wrap .content-customization,
   #author-dashboard-wrap .content-support,
-  #author-dashboard-wrap .content-resources {
+  #author-dashboard-wrap .content-resources,
+  #author-dashboard-wrap .content-review {
     margin-right: 1%;
   }
   #author-dashboard-wrap .content-premium-upgrade {
