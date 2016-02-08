@@ -303,7 +303,8 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'vk'            => 'author_vk_profile',
 			'weibo'         => 'author_weibo_profile',
 			'tencent-weibo' => 'author_tencent_weibo_profile',
-			'email'         => 'author_email_profile'
+			'email'         => 'author_email_profile',
+			'email-form'    => 'author_email_form_profile'
 		);
 
 		return apply_filters( 'ct_author_social_array_filter', $social_sites );
@@ -356,6 +357,14 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 							<a class="email" target="_blank"
 							   href="mailto:<?php echo antispambot( is_email( get_theme_mod( $active_site ) ) ); ?>">
 								<i class="fa fa-envelope" title="<?php esc_attr_e( 'email', 'author' ); ?>"></i>
+							</a>
+						</li>
+					<?php } elseif ( $active_site == 'email-form' ) { ?>
+						<li>
+							<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
+							   href="<?php echo esc_url( get_theme_mod( $active_site ) ); ?>">
+								<i class="fa fa-envelope-o"
+								   title="<?php echo esc_attr( $active_site ); ?>"></i>
 							</a>
 						</li>
 					<?php } elseif ( $active_site == 'skype' ) { ?>
