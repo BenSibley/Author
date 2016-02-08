@@ -31,37 +31,6 @@
   transition: right 0.15s ease-in-out;
 }
 
-#accordion-section-author_colors .accordion-section-title,
-#accordion-section-author_colors .accordion-section-title:hover,
-#accordion-section-author_header_image .accordion-section-title,
-#accordion-section-author_header_image .accordion-section-title:hover,
-#accordion-section-author_background .accordion-section-title,
-#accordion-section-author_background .accordion-section-title:hover,
-#accordion-section-author_font .accordion-section-title,
-#accordion-section-author_font .accordion-section-title:hover,
-#accordion-section-author_display_control .accordion-section-title,
-#accordion-section-author_display_control .accordion-section-title:hover,
-#accordion-section-author_footer_text .accordion-section-title,
-#accordion-section-author_footer_text .accordion-section-title:hover {
-  background-image: url("../assets/images/gray-lines.png");
-  background-size: 100%;
-}
-#accordion-section-author_colors .accordion-section-title:after,
-#accordion-section-author_colors .accordion-section-title:hover:after,
-#accordion-section-author_header_image .accordion-section-title:after,
-#accordion-section-author_header_image .accordion-section-title:hover:after,
-#accordion-section-author_background .accordion-section-title:after,
-#accordion-section-author_background .accordion-section-title:hover:after,
-#accordion-section-author_font .accordion-section-title:after,
-#accordion-section-author_font .accordion-section-title:hover:after,
-#accordion-section-author_display_control .accordion-section-title:after,
-#accordion-section-author_display_control .accordion-section-title:hover:after,
-#accordion-section-author_footer_text .accordion-section-title:after,
-#accordion-section-author_footer_text .accordion-section-title:hover:after {
-  content: '\f023';
-  font-family: 'FontAwesome';
-}
-
 .customize-control.hide {
   display: none !important;
 }
