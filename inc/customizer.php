@@ -129,7 +129,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 			) );
 			// control
 			$wp_customize->add_control( $social_site, array(
-				'label'    => __( 'Email Address:', 'author' ),
+				'label'    => __( 'Email Address', 'author' ),
 				'section'  => 'ct_author_social_media_icons',
 				'priority' => $priority,
 			) );
