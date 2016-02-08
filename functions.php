@@ -598,3 +598,10 @@ function ct_author_get_content_template() {
 		get_template_part( 'content' );
 	}
 }
+
+// allow skype URIs to be used
+function ct_author_allow_skype_protocol( $protocols ){
+	$protocols[] = 'skype';
+	return $protocols;
+}
+add_filter( 'kses_allowed_protocols' , 'ct_author_allow_skype_protocol' );
