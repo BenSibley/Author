@@ -152,6 +152,15 @@
   .menu-unset > ul {
     margin-top: 0;
   }
+  .rtl {
+
+    .menu-primary,
+    .social-media-icons,
+    .sidebar-primary {
+      right: 0;
+      left: auto;
+    }
+  }
 }
 /* 950px */
 @media all and (min-width: $nine-fifty) {

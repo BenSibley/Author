@@ -174,19 +174,27 @@ function ct_author_add_customizer_content( $wp_customize ) {
 				$wp_customize->add_setting( $social_site, array(
 					'sanitize_callback' => 'ct_author_sanitize_skype'
 				) );
+				// control
+				$wp_customize->add_control( $social_site, array(
+					'type'        => 'url',
+					'label'       => $label,
+					'description' => sprintf( __( 'Accepts Skype link protocol (<a href="%s" target="_blank">learn more</a>)', 'author' ), 'https://www.competethemes.com/blog/skype-links-wordpress/' ),
+					'section'     => 'ct_author_social_media_icons',
+					'priority'    => $priority
+				) );
 			} else {
 				// setting
 				$wp_customize->add_setting( $social_site, array(
 					'sanitize_callback' => 'esc_url_raw'
 				) );
+				// control
+				$wp_customize->add_control( $social_site, array(
+					'type'     => 'url',
+					'label'    => $label,
+					'section'  => 'ct_author_social_media_icons',
+					'priority' => $priority
+				) );
 			}
-			// control
-			$wp_customize->add_control( $social_site, array(
-				'type'     => 'url',
-				'label'    => $label,
-				'section'  => 'ct_author_social_media_icons',
-				'priority' => $priority
-			) );
 		}
 		// increment the priority for next site
 		$priority = $priority + 5;
