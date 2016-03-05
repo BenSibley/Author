@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Author 1.16\n"
+"Project-Id-Version: Author 1.17\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-02-09 13:55:18+00:00\n"
+"POT-Creation-Date: 2016-03-05 15:24:27+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -145,7 +145,7 @@ msgstr ""
 msgid "Comment"
 msgstr ""
 
-#: functions.php:175 functions.php:184 functions.php:201 inc/customizer.php:232
+#: functions.php:175 functions.php:184 functions.php:201 inc/customizer.php:240
 msgid "Continue reading"
 msgstr ""
 
@@ -189,15 +189,15 @@ msgstr ""
 msgid "Gravatar uses the admin email address."
 msgstr ""
 
-#: inc/customizer.php:68 inc/customizer.php:334
+#: inc/customizer.php:68 inc/customizer.php:342
 msgid "Gravatar"
 msgstr ""
 
-#: inc/customizer.php:69 inc/customizer.php:335
+#: inc/customizer.php:69 inc/customizer.php:343
 msgid "Upload an image"
 msgstr ""
 
-#: inc/customizer.php:70 inc/customizer.php:336
+#: inc/customizer.php:70 inc/customizer.php:344
 msgid "Do not display avatar"
 msgstr ""
 
@@ -229,71 +229,77 @@ msgstr ""
 msgid "Email Address"
 msgstr ""
 
-#: inc/customizer.php:199
+#: inc/customizer.php:181
+msgid ""
+"Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn "
+"more</a>)"
+msgstr ""
+
+#: inc/customizer.php:207
 msgid "Blog"
 msgstr ""
 
-#: inc/customizer.php:209
+#: inc/customizer.php:217
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:214 inc/customizer.php:345
+#: inc/customizer.php:222 inc/customizer.php:353
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:215 inc/customizer.php:346
+#: inc/customizer.php:223 inc/customizer.php:354
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:225
+#: inc/customizer.php:233
 msgid "Excerpt word count"
 msgstr ""
 
-#: inc/customizer.php:237
+#: inc/customizer.php:245
 msgid "Read More link text"
 msgstr ""
 
-#: inc/customizer.php:247
+#: inc/customizer.php:255
 msgid "Comment Display"
 msgstr ""
 
-#: inc/customizer.php:258
+#: inc/customizer.php:266
 msgid "Show comments on:"
 msgstr ""
 
-#: inc/customizer.php:263 inc/customizer.php:320
+#: inc/customizer.php:271 inc/customizer.php:328
 msgid "Posts"
 msgstr ""
 
-#: inc/customizer.php:264 inc/customizer.php:321
+#: inc/customizer.php:272 inc/customizer.php:329
 msgid "Pages"
 msgstr ""
 
-#: inc/customizer.php:265 inc/customizer.php:322
+#: inc/customizer.php:273 inc/customizer.php:330
 msgid "Attachments"
 msgstr ""
 
-#: inc/customizer.php:266 inc/customizer.php:323
+#: inc/customizer.php:274 inc/customizer.php:331
 msgid "Do not show"
 msgstr ""
 
-#: inc/customizer.php:275
+#: inc/customizer.php:283
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:286
+#: inc/customizer.php:294
 msgid "Add Custom CSS Here:"
 msgstr ""
 
-#: inc/customizer.php:302
+#: inc/customizer.php:310
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:303
+#: inc/customizer.php:311
 msgid "Hide"
 msgstr ""
 
-#: inc/customizer.php:369
+#: inc/customizer.php:377
 msgid "View the Author Pro Plugin"
 msgstr ""
 
