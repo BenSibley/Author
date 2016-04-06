@@ -44,6 +44,15 @@
       transform: translateX(50%) translateY(-50%);
     }
   }
+  .ccfic {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    color: #eeeeee;
+    padding: 4px;
+    font-size: 13px;
+  }
 }
 .post-header {
   text-align: center;
