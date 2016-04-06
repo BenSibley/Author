@@ -15,6 +15,9 @@ get_template_part( 'content/archive-header' );
 	</div>
 <?php
 
-the_posts_pagination();
+the_posts_pagination( array(
+	'prev_text' => __( 'Previous', 'author' ),
+    'next_text' => __( 'Next', 'author' )
+) );
 
 get_footer();
