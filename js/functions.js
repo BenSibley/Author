@@ -17,6 +17,11 @@ jQuery(document).ready(function($){
     var top, bottom, short = false;
     var topOffset = 0;
     var resizeTimer;
+    var windowWidth   = window.innerWidth;
+    var windowHeight  = $(window).height();
+    var adminbarOffset = $('body').hasClass( 'admin-bar' ) ? $( '#wpadminbar' ).height() : 0;
+    var bodyHeight    = overflowContainer.height();
+    var sidebarHeight = sidebar.outerHeight();
 
     /* Call functions */
 
@@ -238,6 +243,12 @@ jQuery(document).ready(function($){
     // Sidebar scrolling.
     function resize() {
 
+        windowWidth   = window.innerWidth;
+        windowHeight  = $(window).height();
+        adminbarOffset = $('body').hasClass( 'admin-bar' ) ? $( '#wpadminbar' ).height() : 0;
+        bodyHeight    = overflowContainer.height();
+        sidebarHeight = sidebar.outerHeight();
+
         if ( window.innerWidth < 950 ) {
             var top, bottom = false;
             sidebar.removeAttr( 'style' );
@@ -245,17 +256,12 @@ jQuery(document).ready(function($){
     }
 
     function scroll() {
-        var body = $('#overflow-container');
-        var windowWidth   = window.innerWidth;
-        var windowHeight  = $(window).height();
-        var bodyHeight    = body.height();
-        var sidebarHeight = sidebar.outerHeight();
-        var windowPos = $(window).scrollTop();
-        var adminbarOffset = $('body').hasClass( 'admin-bar' ) ? $( '#wpadminbar' ).height() : 0;
 
         if ( 950 > windowWidth ) {
             return;
         }
+
+        var windowPos = $(window).scrollTop();
 
         // if the sidebar height + admin bar is greater than the window height
         if ( ( sidebarHeight + adminbarOffset > windowHeight ) && short != true ) {
@@ -265,7 +271,7 @@ jQuery(document).ready(function($){
                     top = false;
                     topOffset = ( sidebar.offset().top > 0 ) ? sidebar.offset().top - adminbarOffset : 0;
                     sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
-                } else if ( ! bottom && windowPos + windowHeight > sidebarHeight + sidebar.offset().top && sidebarHeight + adminbarOffset < bodyHeight ) {
+                } else if ( ! bottom && windowPos + windowHeight >= sidebarHeight + sidebar.offset().top && sidebarHeight + adminbarOffset <= bodyHeight ) {
                     bottom = true;
                     sidebar.attr( 'style', 'position: fixed; bottom: 0;' );
                 }
@@ -281,7 +287,7 @@ jQuery(document).ready(function($){
                     bottom = false;
                     topOffset = ( sidebar.offset().top > 0 ) ? sidebar.offset().top - adminbarOffset : 0;
                     sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
-                } else if ( ! top && windowPos > 0 && windowPos + adminbarOffset < sidebar.offset().top ) {
+                } else if ( ! top && windowPos >= 0 && windowPos + adminbarOffset <= sidebar.offset().top ) {
                     top = true;
                     sidebar.attr( 'style', 'position: fixed;' );
                 }
