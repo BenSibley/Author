@@ -481,6 +481,7 @@ a img {
 }
 
 .site-title {
+  font-family: "Rokkitt", sans-serif;
   line-height: 36px;
 }
 .site-title a {
@@ -1250,7 +1251,9 @@ a img {
   }
 }
 @media all and (min-width: 43.75em) {
+  .comments-number h2,
   .comments-number h3,
+  .comment-respond h2,
   .comment-respond h3 {
     font-size: 2.3125em;
     /* 37px / 16px */

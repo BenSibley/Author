@@ -12,6 +12,7 @@
 }
 .site-title {
   @extend %twenty-one-pixels;
+  font-family: $secondary-font-stack;
   line-height: 36px; // to vertically center with toggle button
 
   a {
