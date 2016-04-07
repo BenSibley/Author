@@ -360,25 +360,25 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 							<a class="email" target="_blank"
 							   href="mailto:<?php echo antispambot( is_email( get_theme_mod( $active_site ) ) ); ?>">
 								<i class="fa fa-envelope" title="<?php esc_attr_e( 'email', 'author' ); ?>"></i>
-								<span class="screen-reader-text"><?php _e('email', 'author'); ?></span>
+								<span class="screen-reader-text"><?php esc_attr_e('email', 'author'); ?></span>
 							</a>
 						</li>
 					<?php } elseif ( $active_site == 'skype' ) { ?>
 						<li>
-							<a class="<?php esc_attr_e( $active_site ); ?>" target="_blank"
+							<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
 							   href="<?php echo esc_url( get_theme_mod( $active_site ), array( 'http', 'https', 'skype' ) ); ?>">
-								<i class="<?php esc_attr_e( $class ); ?>"
-								   title="<?php esc_attr_e( $active_site ); ?>"></i>
+								<i class="<?php echo esc_attr( $class ); ?>"
+								   title="<?php echo esc_attr( $active_site ); ?>"></i>
 								<span class="screen-reader-text"><?php echo esc_attr( $active_site );  ?></span>
 							</a>
 						</li>
 					<?php } else { ?>
 						<li>
-							<a class="<?php esc_attr_e( $active_site ); ?>" target="_blank"
+							<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
 							   href="<?php echo esc_url( get_theme_mod( $active_site ) ); ?>">
-								<i class="<?php esc_attr_e( $class ); ?>"
-								   title="<?php esc_attr_e( $active_site ); ?>"></i>
-								<span class="screen-reader-text"><?php esc_attr_e( $active_site );  ?></span>
+								<i class="<?php echo esc_attr( $class ); ?>"
+								   title="<?php echo esc_attr( $active_site ); ?>"></i>
+								<span class="screen-reader-text"><?php echo esc_attr( $active_site );  ?></span>
 							</a>
 						</li>
 						<?php
