@@ -13,7 +13,7 @@ if ( $image ) {
 }
 
 $output = "<h1 id='site-title' class='site-title'>";
-$output .= "<a href='" . esc_url( home_url() ) . "' title='" . esc_attr( get_bloginfo( 'name' ) ) . "'>";
+$output .= "<a href='" . esc_url( home_url() ) . "'>";
 $output .= $logo;
 $output .= "</a>";
 $output .= "</h1>";
