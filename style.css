@@ -31,8 +31,8 @@ h2 {
   /* 37px */
 }
 
-h3, .site-title, .archive-header h2,
-.pagination h2 {
+h3, .site-title, .archive-header h1,
+.pagination h1 {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
@@ -1291,8 +1291,8 @@ a img {
   background: white;
   text-align: center;
 }
-.archive-header h2,
-.pagination h2 {
+.archive-header h1,
+.pagination h1 {
   display: inline-block;
   margin-left: 6px;
 }

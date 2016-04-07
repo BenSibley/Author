@@ -1,5 +1,9 @@
 <?php
 
+if ( is_home() ) {
+	echo '<h1 class="screen-reader-text">' . get_bloginfo("name") . ' ' . __('Posts', 'author') . '</h1>';
+}
+
 if ( ! is_archive() ) {
 	return;
 }
@@ -17,8 +21,8 @@ if ( is_tag() ) {
 
 <div class='archive-header'>
 	<i class="fa fa-<?php echo $icon_class; ?>"></i>
-	<h2>
+	<h1>
 		<?php the_archive_title(); ?>
-	</h2>
+	</h1>
 	<?php the_archive_description(); ?>
 </div>
