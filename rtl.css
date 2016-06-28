@@ -1315,10 +1315,12 @@ a img {
 .pagination .next {
   position: absolute;
   left: 7.4074%;
+  right: auto;
 }
 .pagination .prev {
   position: absolute;
   right: 7.4074%;
+  left: auto;
 }
 
 .infinite-scroll .pagination {

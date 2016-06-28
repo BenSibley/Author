@@ -28,10 +28,12 @@
   .next {
     position: absolute;
     right: $column-27 * 2;
+    left: auto;
   }
   .prev {
     position: absolute;
     left: $column-27 * 2;
+    right: auto;
   }
 }
 .infinite-scroll .pagination {
