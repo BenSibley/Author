@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Author 1.18\n"
+"Project-Id-Version: Author 1.19.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-04-07 12:43:35+00:00\n"
+"POT-Creation-Date: 2016-06-30 12:28:54+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -65,31 +65,23 @@ msgstr ""
 msgid "Next Image"
 msgstr ""
 
-#: content/post-nav.php:9
+#: content/post-nav.php:6
 msgid "Previous Post"
 msgstr ""
 
-#: content/post-nav.php:10
-msgid "The Previous Post"
-msgstr ""
-
-#: content/post-nav.php:13
+#: content/post-nav.php:9
 msgid "No Older Posts"
 msgstr ""
 
-#: content/post-nav.php:14 content/post-nav.php:28
+#: content/post-nav.php:15 content/post-nav.php:28
 msgid "Return to Blog"
 msgstr ""
 
-#: content/post-nav.php:23
+#: content/post-nav.php:19
 msgid "Next Post"
 msgstr ""
 
-#: content/post-nav.php:24
-msgid "The Next Post"
-msgstr ""
-
-#: content/post-nav.php:27
+#: content/post-nav.php:22
 msgid "No Newer Posts"
 msgstr ""
 
