@@ -426,7 +426,7 @@ jQuery(document).ready(function($){
 
             $('.featured-image').each(function () {
 
-                if ( !$(this).parent('.post').hasClass('ratio-natural') ) {
+                if ( !$(this).parent('.entry').hasClass('ratio-natural') ) {
 
                     var image = $(this).children('img').add($(this).children('a').children('img'));
 
