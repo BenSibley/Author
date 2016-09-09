@@ -1,40 +1,5 @@
 @import "variables";
 
-.upgrades-ad {
-  text-align: center;
-  border-bottom: solid 1px #eee;
-
-  a {
-    display: block;
-    padding: 9px 0;
-    color: white;
-    background: #000;
-    transition: background 0.15s ease-in-out;
-
-    &:link,
-    &:visited,
-    &:hover,
-    &:active,
-    &:focus  {
-      color: white;
-    }
-    &:hover,
-    &:active,
-    &:focus {
-      background: #3ea5b3;
-
-      span {
-        right: -3px;
-      }
-    }
-  }
-  span {
-    position: relative;
-    right: 0;
-    transition: right 0.15s ease-in-out;
-  }
-}
-
 // hide any controls with .hide class
 .customize-control.hide {
   display: none !important;
@@ -43,6 +8,60 @@
 // hide empty color section being in WP 4.3
 #accordion-section-colors {
   display: none !important;
+}
+
+// Author Pro section
+#accordion-section-ct_author_pro {
+
+  .accordion-section-title {
+    color: #fff;
+    background: #43b3c4;
+
+    &:after {
+      color: #fff;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      background: #3EA7B8 !important;
+      color: #fff !important;
+
+      &:after {
+        color: #fff !important;
+      }
+    }
+  }
+}
+#customize-control-author_pro {
+
+  ul {
+    list-style: disc;
+    padding-left: 15px;
+  }
+  .bold {
+    font-weight: 600;
+  }
+  .button-wrapper {
+    text-align: center;
+  }
+  .author-pro-button {
+    display: inline-block;
+    font-size: 14px;
+    padding: 12px 24px;
+    background: #F4923A;
+    color: #fff;
+    border-radius: 3px;
+    border-left: solid 2px #CC8437;
+    border-right: solid 2px #CC8437;
+    border-bottom: solid 4px #CC8437;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: #ff9233;
+    }
+  }
 }
 
 /* Multiple select styles (for comments dropdown */

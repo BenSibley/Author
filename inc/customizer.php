@@ -6,7 +6,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 
 	/***** Reorder default sections *****/
 
-	$wp_customize->get_section( 'title_tagline' )->priority = 1;
+	$wp_customize->get_section( 'title_tagline' )->priority = 2;
 
 	// check if exists in case user has no pages
 	if ( is_object( $wp_customize->get_section( 'static_front_page' ) ) ) {
@@ -43,6 +43,45 @@ function ct_author_add_customizer_content( $wp_customize ) {
 				</select>
 			</label>
 		<?php }
+	}
+
+	/***** Author Pro Control *****/
+
+	class ct_author_pro_ad extends WP_Customize_Control {
+		public function render_content() {
+			$link = 'https://www.competethemes.com/author-pro/';
+			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%s">Author Pro</a> is the plugin that makes advanced customization simple - and fun too.', 'author'), $link) . "</p>";
+			echo "<ul>
+					<li>" . __('Custom Colors', 'author') . "</li>
+					<li>" . __('Background Images', 'author') . "</li>
+					<li>" . __('New Fonts', 'author') . "</li>
+					<li>" . __('+ 9 more features', 'author') . "</li>
+				  </ul>";
+			echo "<p>" . __('Download the Author Pro Plugin to get started now.', 'author') . "</p>";
+			echo "<p class='button-wrapper'><a target=\"_blank\" class='author-pro-button' href='" . $link . "'>" . __('Get Author Pro', 'author') . "</a></p>";
+		}
+	}
+
+	/***** Author Pro Section *****/
+
+	// don't add if Author Pro is active
+	if ( !function_exists( 'ct_author_pro_init' ) ) {
+		// section
+		$wp_customize->add_section( 'ct_author_pro', array(
+			'title'    => __( 'Author Pro', 'author' ),
+			'priority' => 1
+		) );
+		// Upload - setting
+		$wp_customize->add_setting( 'author_pro', array(
+			'sanitize_callback' => 'absint'
+		) );
+		// Upload - control
+		$wp_customize->add_control( new ct_author_pro_ad(
+			$wp_customize, 'author_pro', array(
+				'section'  => 'ct_author_pro',
+				'settings' => 'author_pro'
+			)
+		) );
 	}
 
 	/***** Avatar *****/
@@ -371,10 +410,3 @@ function ct_author_sanitize_css( $css ) {
 
 	return $css;
 }
-
-function ct_author_customize_preview_js() {
-
-	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/author-pro/\" target=\"_blank\">" . __( 'View the Author Pro Plugin', 'author' ) . " <span>&rarr;</span></a></div>')</script>";
-	echo apply_filters( 'ct_author_customizer_ad', $content );
-}
-add_action( 'customize_controls_print_footer_scripts', 'ct_author_customize_preview_js' );
