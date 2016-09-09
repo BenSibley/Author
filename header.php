@@ -21,13 +21,13 @@
 							if ( $avatar_method == 'gravatar' || ( $avatar_method == 'upload' && ! empty( $avatar ) ) ) { ?>
 								<div id="site-avatar" class="site-avatar"
 								     style="background-image: url('<?php echo esc_url( ct_author_output_avatar() ); ?>')"
-								     title="<?php echo get_bloginfo( 'title' ) . ' ' . __( 'avatar', 'author' ); ?>"></div>
+								     title="<?php echo esc_html( get_bloginfo( 'title' ) ) . ' ' . __( 'avatar', 'author' ); ?>"></div>
 							<?php } ?>
 							<div class="container">
 								<?php get_template_part( 'logo' ) ?>
 								<?php
 								if ( get_bloginfo( 'description' ) ) {
-									echo '<p class="tagline">' . get_bloginfo( "description" ) . '</p>';
+									echo '<p class="tagline">' . esc_html( get_bloginfo( "description" ) ) . '</p>';
 								} ?>
 							</div>
 						</div>
