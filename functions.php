@@ -548,15 +548,6 @@ function ct_author_delete_settings_notice() {
 }
 add_action( 'admin_notices', 'ct_author_delete_settings_notice' );
 
-if ( ! function_exists( '_wp_render_title_tag' ) ) :
-	function ct_author_add_title_tag() {
-		?>
-		<title><?php wp_title(); ?></title>
-		<?php
-	}
-	add_action( 'wp_head', 'ct_author_add_title_tag' );
-endif;
-
 function ct_author_sticky_post_marker() {
 
 	if ( is_sticky() && ! is_archive() ) {
