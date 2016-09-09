@@ -1,12 +1,13 @@
 <?php
 
-/*
- * Prefix: ct_author = Compete Themes Author
- */
-
-if ( ! isset( $content_width ) ) {
-	$content_width = 622;
+if ( ! function_exists( ( 'ct_author_set_content_width' ) ) ) {
+	function ct_author_set_content_width() {
+		if ( ! isset( $content_width ) ) {
+			$content_width = 622;
+		}
+	}
 }
+add_action( 'after_setup_theme', 'ct_author_set_content_width', 0 );
 
 if ( ! function_exists( 'ct_author_theme_setup' ) ) {
 	function ct_author_theme_setup() {
