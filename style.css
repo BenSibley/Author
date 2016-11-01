@@ -1598,6 +1598,9 @@ a img {
 .search .search-bottom p {
   margin-bottom: 1.5em;
 }
+.search .sticky-status {
+  display: none;
+}
 
 .singular-attachment .entry .attachment {
   text-align: center;
