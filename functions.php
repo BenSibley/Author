@@ -645,3 +645,16 @@ if ( ! function_exists( ( 'ct_author_allow_skype_protocol' ) ) ) {
 	}
 }
 add_filter( 'kses_allowed_protocols' , 'ct_author_allow_skype_protocol' );
+
+// trigger theme switch on link click and send to Appearance menu
+function ct_author_welcome_redirect() {
+
+	$welcome_url = add_query_arg(
+		array(
+			'page' => 'author-options'
+		),
+		admin_url( 'themes.php' )
+	);
+	wp_redirect( esc_url( $welcome_url ) );
+}
+add_action( 'after_switch_theme', 'ct_author_welcome_redirect' );

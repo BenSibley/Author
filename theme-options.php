@@ -18,8 +18,13 @@ function ct_author_options_content() {
 	<div id="author-dashboard-wrap" class="wrap">
 		<h2><?php _e( 'Author Dashboard', 'author' ); ?></h2>
 		<?php do_action( 'theme_options_before' ); ?>
+		<div class="welcome">
+			<h3>Thanks for Choosing Author!</h3>
+			<p>If you need help getting started, there are detailed tutorials in the <a href="https://www.competethemes.com/documentation/author-support-center/">Author Support Center</a>.
+				Otherwise, you can dive right in with the <a href="<?php echo esc_url( $customizer_url ); ?>">Customizer</a>.</p>
+		</div>
 		<div class="content content-customization">
-			<h3><?php _e( 'Customization', 'author' ); ?></h3>
+			<h3><?php _e( 'Customize', 'author' ); ?></h3>
 			<p><?php _e( 'Click the "Customize" link in your menu, or use the button below to get started customizing Author', 'author' ); ?>.</p>
 			<p>
 				<a class="button-primary"
@@ -27,7 +32,7 @@ function ct_author_options_content() {
 			</p>
 		</div>
 		<div class="content content-support">
-			<h3><?php _e( 'Support', 'author' ); ?></h3>
+			<h3><?php _e( 'Get Help', 'author' ); ?></h3>
 			<p><?php _e( "You can find the knowledgebase, changelog, support forum, and more in the Author Support Center", "author" ); ?>.</p>
 			<p>
 				<a target="_blank" class="button-primary"
