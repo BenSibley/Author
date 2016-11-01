@@ -50,15 +50,15 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	class ct_author_pro_ad extends WP_Customize_Control {
 		public function render_content() {
 			$link = 'https://www.competethemes.com/author-pro/';
-			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%s">Author Pro</a> is the plugin that makes advanced customization simple - and fun too.', 'author'), $link) . "</p>";
+			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%s">Author Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'author'), $link) . "</p>";
 			echo "<ul>
 					<li>" . __('Custom Colors', 'author') . "</li>
 					<li>" . __('Background Images', 'author') . "</li>
 					<li>" . __('New Fonts', 'author') . "</li>
 					<li>" . __('+ 9 more features', 'author') . "</li>
 				  </ul>";
-			echo "<p>" . __('Download the Author Pro Plugin to get started now.', 'author') . "</p>";
-			echo "<p class='button-wrapper'><a target=\"_blank\" class='author-pro-button' href='" . $link . "'>" . __('Get Author Pro', 'author') . "</a></p>";
+			echo "<p>" . __('View our gallery of screenshots and videos now to see if Author Pro is right for your site.', 'author') . "</p>";
+			echo "<p class='button-wrapper'><a target=\"_blank\" class='author-pro-button' href='" . $link . "'>" . __('View Author Pro', 'author') . "</a></p>";
 		}
 	}
 

@@ -5,11 +5,6 @@
   display: none !important;
 }
 
-// hide empty color section being in WP 4.3
-#accordion-section-colors {
-  display: none !important;
-}
-
 // Author Pro section
 #accordion-section-ct_author_pro {
 
@@ -20,6 +15,7 @@
     &:after {
       color: #fff;
     }
+
     &:hover,
     &:active,
     &:focus {
@@ -33,6 +29,10 @@
   }
 }
 #customize-control-author_pro {
+  background: white;
+  border: solid 1px $color-gray-85;
+  padding: 6px 24px;
+  box-sizing: border-box;
 
   ul {
     list-style: disc;
@@ -48,6 +48,7 @@
     display: inline-block;
     font-size: 14px;
     padding: 12px 24px;
+    margin: 12px auto;
     background: #F4923A;
     color: #fff;
     border-radius: 3px;
