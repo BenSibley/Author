@@ -14,14 +14,17 @@ function ct_author_options_content() {
 		),
 		admin_url( 'customize.php' )
 	);
+	$support_url = 'https://www.competethemes.com/documentation/author-support-center/';
 	?>
 	<div id="author-dashboard-wrap" class="wrap">
 		<h2><?php _e( 'Author Dashboard', 'author' ); ?></h2>
 		<?php do_action( 'theme_options_before' ); ?>
 		<div class="welcome">
-			<h3>Thanks for Choosing Author!</h3>
-			<p>If you need help getting started, there are detailed tutorials in the <a href="https://www.competethemes.com/documentation/author-support-center/">Author Support Center</a>.
-				Otherwise, you can dive right in with the <a href="<?php echo esc_url( $customizer_url ); ?>">Customizer</a>.</p>
+			<h3><?php _e( 'Thanks for Choosing Author!', 'author' ); ?></h3>
+			<p>
+				<?php printf( __( 'If you need help getting started, there are detailed tutorials in the <a href="%s">Author Support Center</a>.', 'author' ), $support_url ); ?>
+				<?php printf( __( 'Otherwise, you can dive right in with the <a href="%s">Customizer</a>.', 'author' ), esc_url($customizer_url) ); ?>
+			</p>
 		</div>
 		<div class="content content-customization">
 			<h3><?php _e( 'Customize', 'author' ); ?></h3>
