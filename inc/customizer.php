@@ -405,7 +405,7 @@ function ct_author_sanitize_skype( $input ) {
 }
 
 function ct_author_sanitize_css( $css ) {
-	$css = wp_filter_nohtml_kses( $css, array( '\'', '\"' ) );
+	$css = wp_kses( $css, array( '\'', '\"' ) );
 	$css = str_replace( '&gt;', '>', $css );
 
 	return $css;
