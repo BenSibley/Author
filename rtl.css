@@ -1602,6 +1602,14 @@ a img {
   display: none;
 }
 
+@media all and (min-width: 34.375em) {
+  .search .archive-header h1 {
+    font-size: 1.75em;
+    /* 28px / 16px */
+    line-height: 1.321;
+    /* 37px */
+  }
+}
 .singular-attachment .entry .attachment {
   text-align: center;
 }
