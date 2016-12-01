@@ -670,3 +670,8 @@ function ct_author_welcome_redirect() {
 	wp_redirect( esc_url( $welcome_url ) );
 }
 add_action( 'after_switch_theme', 'ct_author_welcome_redirect' );
+
+if ( function_exists( 'ct_author_pro_plugin_updater' ) ) {
+	remove_action( 'admin_init', 'ct_author_pro_plugin_updater', 0 );
+	add_action( 'admin_init', 'ct_author_pro_plugin_updater', 0 );
+}
