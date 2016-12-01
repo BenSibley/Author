@@ -47,7 +47,7 @@
         setting = 'custom_css[author]';
     }
     // Custom CSS
-    wp.customize( 'custom_css', function( value ) {
+    wp.customize( setting, function( value ) {
         value.bind( function( to ) {
             $('#style-inline-custom-css').remove();
             if ( to != '' ) {
