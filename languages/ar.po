@@ -1,0 +1,514 @@
+# Copyright (C) 2016 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Author 1.23\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2016-11-20 08:13+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-11-30 21:50+0300\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.11\n"
+"Last-Translator: Mohammad Alhobayyeb <malhobayyeb@gmail.com>\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Language: ar\n"
+
+#: 404.php:5
+msgid "404: Page Not Found"
+msgstr "404: الصفحة المطلوبة غير موجودة"
+
+#: 404.php:8
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+"لا يوجد شيئ هنا. تأكد من الرابط المدخل أو استخدم نموذج البحث لتجد ما تبحث "
+"عنه."
+
+#: comments.php:21 comments.php:41 comments.php:63
+msgid "Be First to Comment"
+msgstr "كن أول من يرسل تعليقه"
+
+#: comments.php:21 comments.php:41 comments.php:63
+msgid "One Comment"
+msgstr "تعليق واحد"
+
+#: comments.php:21 comments.php:41 comments.php:63
+msgid "% Comments"
+msgstr "% تعليق/تعليقات"
+
+#: comments.php:55
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+"التعليقات معطلة لكن <a href=\"%s\" title=\"رابط التعقيبات لهذه المقالة"
+"\">التعقيبات</a> و التنبيهات مفعلة."
+
+#: comments.php:77 comments.php:84
+msgid "Comments are closed."
+msgstr "التعليقات مغلقة."
+
+#: content/archive-header.php:4 inc/customizer.php:310 inc/customizer.php:367
+msgid "Posts"
+msgstr "المقالات"
+
+#: content/post-categories.php:9
+msgid "Published in"
+msgstr "نشرت في"
+
+#: content/post-categories.php:12
+msgid "View all posts in %s"
+msgstr "اعرض كل المقالات في %s"
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr "الصورة السابقة"
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr "الصورة التالية"
+
+#: content/post-nav.php:6
+msgid "Previous Post"
+msgstr "المقالة السابقة"
+
+#: content/post-nav.php:9
+msgid "No Older Posts"
+msgstr "لا يوجد مقالات أقدم"
+
+#: content/post-nav.php:15 content/post-nav.php:28
+msgid "Return to Blog"
+msgstr "العودة للمدونة"
+
+#: content/post-nav.php:19
+msgid "Next Post"
+msgstr "المقالة التالية"
+
+#: content/post-nav.php:22
+msgid "No Newer Posts"
+msgstr "لا يوجد مقالات أحدث"
+
+#: content/post-tags.php:8
+msgid "View all posts tagged %s"
+msgstr "عرض كافة مقالات الوسم %s"
+
+#: content-page.php:11 content.php:12
+msgid "Pages:"
+msgstr "الصفحات:"
+
+#: footer.php:8
+msgid "<a href=\"%s\">Author WordPress Theme</a> by Compete Themes"
+msgstr "‫<a href=\"%s\">ثيم المؤلف لوورد برس</a> من تصميم Compete Themes"
+
+#: functions.php:39
+msgid "Primary"
+msgstr "أساسي"
+
+#: functions.php:50
+msgid "Primary Sidebar"
+msgstr "الشريط الجانبي الأساسي"
+
+#: functions.php:52
+msgid "Widgets in this area will be shown in the sidebar"
+msgstr "الودجات في هذه المساحة ستظهر في الشريط الجانبي"
+
+#: functions.php:85
+msgid "Your comment is awaiting moderation."
+msgstr "تعليقك ينتظر الموافقة."
+
+#: functions.php:96
+msgid "Reply"
+msgstr "رد"
+
+#: functions.php:100
+msgid "Edit"
+msgstr "تحرير"
+
+#: functions.php:113
+msgid "(optional)"
+msgstr "(اختياري)"
+
+#: functions.php:118
+msgid "Name"
+msgstr "الاسم"
+
+#: functions.php:125
+msgid "Email"
+msgstr "الإيميل"
+
+#: functions.php:132
+msgid "Website"
+msgstr "الموقع"
+
+#: functions.php:147
+msgid "Comment"
+msgstr "تعليق"
+
+#: functions.php:178 functions.php:187 functions.php:204 inc/customizer.php:279
+msgid "Continue reading"
+msgstr "قراءة المزيد"
+
+#: functions.php:367 functions.php:368
+msgid "email"
+msgstr "الإيميل"
+
+#: functions.php:566
+msgid "Customizer settings deleted"
+msgstr "تم حذف إعدادات المخصص"
+
+#: functions.php:578
+msgid "Featured Post"
+msgstr "مقالة مميزة"
+
+#: header.php:11
+msgid "Skip to content"
+msgstr "تجاوز المحتوى"
+
+#: header.php:24
+msgid "avatar"
+msgstr "الصورة الرمزية"
+
+#: header.php:35 inc/scripts.php:16
+msgid "open primary menu"
+msgstr "افتح القائمة الأساسية"
+
+#: inc/customizer.php:14
+msgid "Front Page"
+msgstr "الصفحة الرئيسية"
+
+#: inc/customizer.php:53
+msgid ""
+"<a target=\"_blank\" href=\"%s\">Author Pro</a> is the plugin that makes "
+"advanced customization simple - and fun too!"
+msgstr ""
+"‫<a target=\"_blank\" href=\"%s\">Author Pro</a> هو إضافة تسهل عملية التخصيص!"
+
+#: inc/customizer.php:55
+msgid "Custom Colors"
+msgstr "ألوان مخصصة"
+
+#: inc/customizer.php:56
+msgid "Background Images"
+msgstr "صور الخلفية"
+
+#: inc/customizer.php:57
+msgid "New Fonts"
+msgstr "خطوط جديدة"
+
+#: inc/customizer.php:58
+msgid "+ 9 more features"
+msgstr "وأكثر من ٩ مميزات أخرى"
+
+#: inc/customizer.php:60
+msgid ""
+"View our gallery of screenshots and videos now to see if Author Pro is right "
+"for your site."
+msgstr "شاهد معرض لقطات الشاشة و الفيديوهات لتقرر هل Author Pro مناسب لموقعك."
+
+#: inc/customizer.php:61
+msgid "View Author Pro"
+msgstr "عرض Author Pro"
+
+#: inc/customizer.php:71
+msgid "Author Pro"
+msgstr "‫Author Pro"
+
+#: inc/customizer.php:91
+msgid "Avatar"
+msgstr "الصورة الرمزية"
+
+#: inc/customizer.php:101
+msgid "Avatar image source"
+msgstr "مصدر الصورة الشخصية"
+
+#: inc/customizer.php:105
+msgid "Gravatar uses the admin email address."
+msgstr "خدمة Gravatar تستخدم العنوان البريدي لمشرف الموقع."
+
+#: inc/customizer.php:107 inc/customizer.php:381
+msgid "Gravatar"
+msgstr "خدمة Gravatar"
+
+#: inc/customizer.php:108 inc/customizer.php:382
+msgid "Upload an image"
+msgstr "رفع صورة"
+
+#: inc/customizer.php:109 inc/customizer.php:383
+msgid "Do not display avatar"
+msgstr "لا تعرض صورة شخصية"
+
+#: inc/customizer.php:119
+msgid "Upload your avatar"
+msgstr "إرفع صورتك الشخصية"
+
+#: inc/customizer.php:129
+msgid "Logo"
+msgstr "الشعار"
+
+#: inc/customizer.php:131
+msgid "Use this instead of the avatar if you want a non-rounded logo image."
+msgstr ""
+"استخدم هذا الشعار بدلا من الصورة الشخصية إذا كنت تريد شعار غير دائري الحواف."
+
+#: inc/customizer.php:140
+msgid "Upload custom logo."
+msgstr "إرفع شعار خاص"
+
+#: inc/customizer.php:156
+msgid "Social Media Icons"
+msgstr "أيقونات الشبكات الإجتماعية"
+
+#: inc/customizer.php:158
+msgid "Add the URL for each of your social profiles."
+msgstr "ضع رابط ملفك الشخصي لكل من الشبكات المذكورة."
+
+#: inc/customizer.php:171
+msgid "Email Address"
+msgstr "العنوان البريدي"
+
+#: inc/customizer.php:220
+msgid ""
+"Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn more</a>)"
+msgstr "يقبل روابط سكايب الخاصة (<a href=\"%s\" target=\"_blank\">المزيد</a>)"
+
+#: inc/customizer.php:246
+msgid "Blog"
+msgstr "المدونة"
+
+#: inc/customizer.php:256
+msgid "Show full posts on blog?"
+msgstr "هل تريد عرض كامل المقالات في رئيسية المدونة؟"
+
+#: inc/customizer.php:261 inc/customizer.php:392
+msgid "Yes"
+msgstr "نعم"
+
+#: inc/customizer.php:262 inc/customizer.php:393
+msgid "No"
+msgstr "لا"
+
+#: inc/customizer.php:272
+msgid "Excerpt word count"
+msgstr "عدد كلمات ملخص المقالة"
+
+#: inc/customizer.php:284
+msgid "Read More link text"
+msgstr "نص رابط قراءة المزيد"
+
+#: inc/customizer.php:294
+msgid "Comment Display"
+msgstr "عرض التعليقات"
+
+#: inc/customizer.php:305
+msgid "Show comments on:"
+msgstr "اعرض التعليقات في:"
+
+#: inc/customizer.php:311 inc/customizer.php:368
+msgid "Pages"
+msgstr "الصفحات"
+
+#: inc/customizer.php:312 inc/customizer.php:369
+msgid "Attachments"
+msgstr "المرفقات"
+
+#: inc/customizer.php:313 inc/customizer.php:370
+msgid "Do not show"
+msgstr "لا تعرض"
+
+#: inc/customizer.php:322
+msgid "Custom CSS"
+msgstr "‫CSS مخصص"
+
+#: inc/customizer.php:333
+msgid "Add Custom CSS Here:"
+msgstr "اضف CSS الخاص بك هنا:"
+
+#: inc/customizer.php:349
+msgid "Show"
+msgstr "عرض"
+
+#: inc/customizer.php:350
+msgid "Hide"
+msgstr "اخفاء"
+
+#: inc/scripts.php:17
+msgid "close primary menu"
+msgstr "اغلق القائمة الرئيسية"
+
+#: inc/scripts.php:18
+msgid "open child menu"
+msgstr "افتح القائمة الفرعية"
+
+#: inc/scripts.php:19
+msgid "close child menu"
+msgstr "اغلق القائمة الفرعية"
+
+#: index.php:19
+msgid "Previous"
+msgstr "السابق"
+
+#: index.php:20
+msgid "Next"
+msgstr "التالي"
+
+#: search.php:10
+msgid "%1$d search result for \"%2$s\""
+msgid_plural "%1$d search results for \"%2$s\""
+msgstr[0] "‫%1$d نتائج البحث لـ \"%2$s\""
+msgstr[1] "‫%1$d نتائج البحث لـ \"%2$s\""
+msgstr[2] "‫%1$d نتائج البحث لـ \"%2$s\""
+msgstr[3] "‫%1$d نتائج البحث لـ \"%2$s\""
+msgstr[4] "‫%1$d نتائج البحث لـ \"%2$s\""
+msgstr[5] "‫%1$d نتائج البحث لـ \"%2$s\""
+
+#: search.php:12
+msgid "No search results for \"%s\""
+msgstr "لا يوجد نتائج لبحثك عن \"%s\""
+
+#: search.php:37
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr "لم تجد ما تبحث عنه؟ حاول تنقيح بحثك:"
+
+#: searchform.php:3
+msgid "Search"
+msgstr "بحث"
+
+#: searchform.php:5
+msgid "Search for:"
+msgstr "ابحث عن:"
+
+#: searchform.php:6
+msgid "Go"
+msgstr "اذهب"
+
+#: theme-options.php:4 theme-options.php:20
+msgid "Author Dashboard"
+msgstr "لوحة تحكم قالب Author"
+
+#: theme-options.php:23
+msgid "Thanks for Choosing Author!"
+msgstr "شكراً لاختيارك قالب Author!"
+
+#: theme-options.php:25
+msgid ""
+"If you need help getting started, there are detailed tutorials in the <a "
+"href=\"%s\">Author Support Center</a>."
+msgstr ""
+"اذا احتجت المساعدة في البدء فيوجد درس تفصيلي في <a href=\"%s\">مركز دعم قالب "
+"Author</a>."
+
+#: theme-options.php:26
+msgid ""
+"Otherwise, you can dive right in with the <a href=\"%s\">Customizer</a>."
+msgstr "أو يمكنك البدء في <a href=\"%s\">المخصص</a>."
+
+#: theme-options.php:30
+msgid "Customize"
+msgstr "تخصيص"
+
+#: theme-options.php:31
+msgid ""
+"Click the \"Customize\" link in your menu, or use the button below to get "
+"started customizing Author"
+msgstr ""
+"أنقر رابط الـ \"تخصيص\" في القائمة أو استخدم الزر في الأسفل لتخصيص قالب "
+"Author"
+
+#: theme-options.php:34
+msgid "Use Customizer"
+msgstr "استخدام المخصص"
+
+#: theme-options.php:38
+msgid "Get Help"
+msgstr "احصل على المساعدة"
+
+#: theme-options.php:39
+msgid ""
+"You can find the knowledgebase, changelog, support forum, and more in the "
+"Author Support Center"
+msgstr ""
+"ستجد قاعدة المعلومات و سجل التغيير و منتديات الدعم و المزيد في مركز دعم قالب "
+"Author"
+
+#: theme-options.php:42
+msgid "Visit Support Center"
+msgstr "قم بزيارة مركز الدعم"
+
+#: theme-options.php:46
+msgid "Author Pro Plugin"
+msgstr "إضافة قالب Author Pro"
+
+#: theme-options.php:47
+msgid ""
+"Download the Author Pro plugin and unlock custom colors, featured videos, "
+"background images, and more"
+msgstr ""
+"حمل إضافة قالب Author Pro لتفعيل خاصية تخصيص الألوان وتمييز الفيديوهات و صور "
+"الخلفيات و المزيد"
+
+#: theme-options.php:50
+msgid "See Full Feature List"
+msgstr "شاهد قائمة المميزات"
+
+#: theme-options.php:54
+msgid "WordPress Resources"
+msgstr "مصادر وورد برس"
+
+#: theme-options.php:55
+msgid ""
+"Save time and money searching for WordPress products by following our "
+"recommendations"
+msgstr "وفر الوقت و المال بحثاً عن منتجات وورد برس، فقط تابع نصائحنا"
+
+#: theme-options.php:58
+msgid "View Resources"
+msgstr "شاهد المصادر"
+
+#: theme-options.php:62 theme-options.php:64
+msgid "Leave a Review"
+msgstr "اترك تعليقا"
+
+#: theme-options.php:63
+msgid "Help others find Author by leaving a review on wordpress.org."
+msgstr ""
+"ساعد الآخرين ليجدوا قالب Author وذلك عند كتابتك تعليقا في موقع Wordpress.org."
+
+#: theme-options.php:67 theme-options.php:75
+msgid "Reset Customizer Settings"
+msgstr "إعادة ضبط إعدادات المخصص"
+
+#: theme-options.php:69
+msgid ""
+"<strong>Warning:</strong> Clicking this button will erase the Author theme's "
+"current settings in the <a href='%s'>Customizer</a>."
+msgstr ""
+"‫<strong>تحذير:</strong> النقر على هذا الزر سيمسح الإعدادات الحالية لقالب "
+"Author في <a href='%s'>المخصص</a>."
+
+#. Description of the plugin/theme
+msgid ""
+"Author is designed for publishers who want readers. That's why Author is "
+"fast, responsive, accessibility-ready, and optimally designed for reading. "
+"All scripts and stylesheets are minified, concatenated, and conditionally "
+"loaded to maximize performance. The layout adapts fluidly to all screen "
+"sizes to enhance usability. As one of few accessibility-ready themes, it "
+"performs well for users with wide ranges of disabilities. Lastly, based on "
+"the ancient Van de Graaf canon, Author is optimally designed for reading. "
+"Author is the theme your content deserves. See our fully setup live demo "
+"here: https://www.competethemes.com/author-live-demo/"
+msgstr ""
+"تم تصميم قالب Author للناشرين الذين يبحثون عن قراء. لهذا فإن هذا القالب سريع "
+"و متجاوب ومجهز بميزات إمكانية الوصول وصمم خصيصا للقراءة. كافة السكربتات و "
+"ملفات CSS مصغرة ومسلسلة و يتم تحميلها بشكل مشروط وذلك لزيادة الأداء. العرض "
+"يتأقلم مع كافة الشاشات لتسهيل القراءة. يناسب هذا القالب شريحة واسعة من "
+"المستخدمين ذوي الإعاقات. شاهد مثال على هذا القالب: https://www.competethemes."
+"com/author-live-demo/"
+
+#: content/post-meta.php:6
+msgctxt "This blog post was published by some author on some date"
+msgid "Published by %1$s on %2$s"
+msgstr "تم النشر من قبل %1$ في %2$"
