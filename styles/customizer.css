@@ -9,13 +9,15 @@
 
 #accordion-section-ct_author_pro .accordion-section-title {
   color: #fff;
-  background: #43b3c4;
+  background: #05B0E7;
+  -webkit-transition: background 0.2s;
+          transition: background 0.2s;
 }
 #accordion-section-ct_author_pro .accordion-section-title:after {
   color: #fff;
 }
 #accordion-section-ct_author_pro .accordion-section-title:hover, #accordion-section-ct_author_pro .accordion-section-title:active, #accordion-section-ct_author_pro .accordion-section-title:focus {
-  background: #3EA7B8 !important;
+  background: #3A96B5 !important;
   color: #fff !important;
 }
 #accordion-section-ct_author_pro .accordion-section-title:hover:after, #accordion-section-ct_author_pro .accordion-section-title:active:after, #accordion-section-ct_author_pro .accordion-section-title:focus:after {
@@ -32,27 +34,41 @@
   list-style: disc;
   padding-left: 15px;
 }
+#customize-control-author_pro img {
+  position: relative;
+  max-width: none;
+  width: 273px;
+  top: -6px;
+  left: -24px;
+  border-bottom: solid 1px #D9D9D9;
+}
 #customize-control-author_pro .bold {
   font-weight: 600;
+  font-size: 16px;
 }
 #customize-control-author_pro .button-wrapper {
   text-align: center;
 }
 #customize-control-author_pro .author-pro-button {
   display: inline-block;
-  font-size: 14px;
-  padding: 12px 24px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 15px 24px;
   margin: 12px auto;
-  background: #F4923A;
+  background: #FF931E;
   color: #fff;
-  border-radius: 3px;
-  border-left: solid 2px #CC8437;
-  border-right: solid 2px #CC8437;
-  border-bottom: solid 4px #CC8437;
   text-decoration: none;
+  -webkit-transition: background 0.2s;
+          transition: background 0.2s;
+}
+#customize-control-author_pro .author-pro-button:before {
+  content: '\f06e';
+  font-family: 'FontAwesome';
+  margin-right: 6px;
 }
 #customize-control-author_pro .author-pro-button:hover, #customize-control-author_pro .author-pro-button:active, #customize-control-author_pro .author-pro-button:focus {
-  background: #ff9233;
+  background: #FF8A23;
 }
 
 /* Multiple select styles (for comments dropdown */
