@@ -466,7 +466,11 @@ add_filter( 'walker_nav_menu_start_el', 'ct_author_nav_dropdown_buttons', 10, 4 
 if ( ! function_exists( ( 'ct_author_custom_css_output' ) ) ) {
 	function ct_author_custom_css_output() {
 
-		$custom_css = get_theme_mod( 'custom_css' );
+		if ( function_exists( 'wp_get_custom_css' ) ) {
+			$custom_css = wp_get_custom_css();
+		} else {
+			$custom_css = get_theme_mod( 'custom_css' );
+		}
 
 		if ( $custom_css ) {
 			$custom_css = ct_author_sanitize_css( $custom_css );
