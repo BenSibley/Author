@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Author 1.23\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-11-02 13:00:13+00:00\n"
+"POT-Creation-Date: 2016-12-05 13:30:41+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -45,7 +45,7 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: content/archive-header.php:4 inc/customizer.php:310 inc/customizer.php:367
+#: content/archive-header.php:4 inc/customizer.php:311 inc/customizer.php:380
 msgid "Posts"
 msgstr ""
 
@@ -141,19 +141,23 @@ msgstr ""
 msgid "Comment"
 msgstr ""
 
-#: functions.php:178 functions.php:187 functions.php:204 inc/customizer.php:279
+#: functions.php:178 functions.php:187 functions.php:204 inc/customizer.php:280
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:367 functions.php:368
+#: functions.php:375 functions.php:376
 msgid "email"
 msgstr ""
 
-#: functions.php:566
-msgid "Customizer settings deleted"
+#: functions.php:580
+msgid "Customizer settings deleted."
 msgstr ""
 
-#: functions.php:578
+#: functions.php:586
+msgid "Author successfully activated!"
+msgstr ""
+
+#: functions.php:599
 msgid "Featured Post"
 msgstr ""
 
@@ -173,157 +177,155 @@ msgstr ""
 msgid "Front Page"
 msgstr ""
 
-#: inc/customizer.php:53
+#: inc/customizer.php:54
 msgid ""
 "<a target=\"_blank\" href=\"%s\">Author Pro</a> is the plugin that makes "
 "advanced customization simple - and fun too!"
 msgstr ""
 
 #: inc/customizer.php:55
-msgid "Custom Colors"
-msgstr ""
-
-#: inc/customizer.php:56
-msgid "Background Images"
+msgid "Author Pro adds the following features to Author:"
 msgstr ""
 
 #: inc/customizer.php:57
-msgid "New Fonts"
+msgid "Custom colors"
 msgstr ""
 
 #: inc/customizer.php:58
-msgid "+ 9 more features"
+msgid "New fonts"
+msgstr ""
+
+#: inc/customizer.php:59
+msgid "Flexible header image"
 msgstr ""
 
 #: inc/customizer.php:60
-msgid ""
-"View our gallery of screenshots and videos now to see if Author Pro is "
-"right for your site."
+msgid "+ 9 more features"
 msgstr ""
 
-#: inc/customizer.php:61
+#: inc/customizer.php:62
 msgid "View Author Pro"
 msgstr ""
 
-#: inc/customizer.php:71
+#: inc/customizer.php:72
 msgid "Author Pro"
 msgstr ""
 
-#: inc/customizer.php:91
+#: inc/customizer.php:92
 msgid "Avatar"
 msgstr ""
 
-#: inc/customizer.php:101
+#: inc/customizer.php:102
 msgid "Avatar image source"
 msgstr ""
 
-#: inc/customizer.php:105
+#: inc/customizer.php:106
 msgid "Gravatar uses the admin email address."
 msgstr ""
 
-#: inc/customizer.php:107 inc/customizer.php:381
+#: inc/customizer.php:108 inc/customizer.php:394
 msgid "Gravatar"
 msgstr ""
 
-#: inc/customizer.php:108 inc/customizer.php:382
+#: inc/customizer.php:109 inc/customizer.php:395
 msgid "Upload an image"
 msgstr ""
 
-#: inc/customizer.php:109 inc/customizer.php:383
+#: inc/customizer.php:110 inc/customizer.php:396
 msgid "Do not display avatar"
 msgstr ""
 
-#: inc/customizer.php:119
+#: inc/customizer.php:120
 msgid "Upload your avatar"
 msgstr ""
 
-#: inc/customizer.php:129
+#: inc/customizer.php:130
 msgid "Logo"
 msgstr ""
 
-#: inc/customizer.php:131
+#: inc/customizer.php:132
 msgid "Use this instead of the avatar if you want a non-rounded logo image."
 msgstr ""
 
-#: inc/customizer.php:140
+#: inc/customizer.php:141
 msgid "Upload custom logo."
 msgstr ""
 
-#: inc/customizer.php:156
+#: inc/customizer.php:157
 msgid "Social Media Icons"
 msgstr ""
 
-#: inc/customizer.php:158
+#: inc/customizer.php:159
 msgid "Add the URL for each of your social profiles."
 msgstr ""
 
-#: inc/customizer.php:171
+#: inc/customizer.php:172
 msgid "Email Address"
 msgstr ""
 
-#: inc/customizer.php:220
+#: inc/customizer.php:221
 msgid ""
 "Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn "
 "more</a>)"
 msgstr ""
 
-#: inc/customizer.php:246
+#: inc/customizer.php:247
 msgid "Blog"
 msgstr ""
 
-#: inc/customizer.php:256
+#: inc/customizer.php:257
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:261 inc/customizer.php:392
+#: inc/customizer.php:262 inc/customizer.php:405
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:262 inc/customizer.php:393
+#: inc/customizer.php:263 inc/customizer.php:406
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:272
+#: inc/customizer.php:273
 msgid "Excerpt word count"
 msgstr ""
 
-#: inc/customizer.php:284
+#: inc/customizer.php:285
 msgid "Read More link text"
 msgstr ""
 
-#: inc/customizer.php:294
+#: inc/customizer.php:295
 msgid "Comment Display"
 msgstr ""
 
-#: inc/customizer.php:305
+#: inc/customizer.php:306
 msgid "Show comments on:"
 msgstr ""
 
-#: inc/customizer.php:311 inc/customizer.php:368
+#: inc/customizer.php:312 inc/customizer.php:381
 msgid "Pages"
 msgstr ""
 
-#: inc/customizer.php:312 inc/customizer.php:369
+#: inc/customizer.php:313 inc/customizer.php:382
 msgid "Attachments"
 msgstr ""
 
-#: inc/customizer.php:313 inc/customizer.php:370
+#: inc/customizer.php:314 inc/customizer.php:383
 msgid "Do not show"
 msgstr ""
 
-#: inc/customizer.php:322
+#: inc/customizer.php:335
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:333
+#: inc/customizer.php:346
 msgid "Add Custom CSS Here:"
 msgstr ""
 
-#: inc/customizer.php:349
+#: inc/customizer.php:362
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:350
+#: inc/customizer.php:363
 msgid "Hide"
 msgstr ""
 
@@ -373,93 +375,55 @@ msgstr ""
 msgid "Go"
 msgstr ""
 
+#: sidebar-primary.php:3
+msgid "Sidebar"
+msgstr ""
+
 #: theme-options.php:4 theme-options.php:20
 msgid "Author Dashboard"
 msgstr ""
 
-#: theme-options.php:23
-msgid "Thanks for Choosing Author!"
+#: theme-options.php:24
+msgid "Get Started"
 msgstr ""
 
 #: theme-options.php:25
 msgid ""
-"If you need help getting started, there are detailed tutorials in the <a "
-"href=\"%s\">Author Support Center</a>."
+"Not sure where to start? The <strong>Author Getting Started Guide</strong> "
+"will take you step-by-step through every feature in Author."
 msgstr ""
 
-#: theme-options.php:26
-msgid "Otherwise, you can dive right in with the <a href=\"%s\">Customizer</a>."
+#: theme-options.php:28
+msgid "View Guide"
 msgstr ""
 
-#: theme-options.php:30
-msgid "Customize"
-msgstr ""
-
-#: theme-options.php:31
-msgid ""
-"Click the \"Customize\" link in your menu, or use the button below to get "
-"started customizing Author"
-msgstr ""
-
-#: theme-options.php:34
-msgid "Use Customizer"
-msgstr ""
-
-#: theme-options.php:38
-msgid "Get Help"
-msgstr ""
-
-#: theme-options.php:39
-msgid ""
-"You can find the knowledgebase, changelog, support forum, and more in the "
-"Author Support Center"
-msgstr ""
-
-#: theme-options.php:42
-msgid "Visit Support Center"
-msgstr ""
-
-#: theme-options.php:46
+#: theme-options.php:33
 msgid "Author Pro Plugin"
 msgstr ""
 
-#: theme-options.php:47
+#: theme-options.php:34
 msgid ""
 "Download the Author Pro plugin and unlock custom colors, featured videos, "
 "background images, and more"
 msgstr ""
 
-#: theme-options.php:50
+#: theme-options.php:37
 msgid "See Full Feature List"
 msgstr ""
 
-#: theme-options.php:54
-msgid "WordPress Resources"
-msgstr ""
-
-#: theme-options.php:55
-msgid ""
-"Save time and money searching for WordPress products by following our "
-"recommendations"
-msgstr ""
-
-#: theme-options.php:58
-msgid "View Resources"
-msgstr ""
-
-#: theme-options.php:62 theme-options.php:64
+#: theme-options.php:42 theme-options.php:44
 msgid "Leave a Review"
 msgstr ""
 
-#: theme-options.php:63
+#: theme-options.php:43
 msgid "Help others find Author by leaving a review on wordpress.org."
 msgstr ""
 
-#: theme-options.php:67 theme-options.php:75
+#: theme-options.php:47 theme-options.php:55
 msgid "Reset Customizer Settings"
 msgstr ""
 
-#: theme-options.php:69
+#: theme-options.php:49
 msgid ""
 "<strong>Warning:</strong> Clicking this button will erase the Author "
 "theme's current settings in the <a href='%s'>Customizer</a>."
@@ -474,8 +438,9 @@ msgid ""
 "sizes to enhance usability. As one of few accessibility-ready themes, it "
 "performs well for users with wide ranges of disabilities. Lastly, based on "
 "the ancient Van de Graaf canon, Author is optimally designed for reading. "
-"Author is the theme your content deserves. See our fully setup live demo "
-"here: https://www.competethemes.com/author-live-demo/"
+"Author is the theme your content deserves. Preview on desktop, tablets, and "
+"mobile with our interactive live demo: "
+"https://www.competethemes.com/demos/?theme=author"
 msgstr ""
 
 #: content/post-meta.php:6
