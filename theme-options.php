@@ -41,7 +41,7 @@ function ct_author_options_content() {
 			<div class="content content-review">
 				<h3><?php _e( 'Leave a Review', 'author' ); ?></h3>
 				<p><?php _e( 'Help others find Author by leaving a review on wordpress.org.', 'author' ); ?></p>
-				<a target="_blank" class="button-primary" href="https://wordpress.org/support/view/theme-reviews/author"><?php _e( 'Leave a Review', 'author' ); ?></a>
+				<a target="_blank" class="button-primary" href="https://wordpress.org/support/theme/author/reviews/"><?php _e( 'Leave a Review', 'author' ); ?></a>
 			</div>
 			<div class="content content-delete-settings">
 				<h3><?php _e( 'Reset Customizer Settings', 'author' ); ?></h3>
