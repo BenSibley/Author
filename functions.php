@@ -573,11 +573,20 @@ if ( ! function_exists( ( 'ct_author_delete_settings_notice' ) ) ) {
 	function ct_author_delete_settings_notice() {
 
 		if ( isset( $_GET['author_status'] ) ) {
-			?>
-			<div class="updated">
-				<p><?php _e( 'Customizer settings deleted', 'author' ); ?>.</p>
-			</div>
-			<?php
+			
+			if ( $_GET['author_status'] == 'deleted' ) {
+				?>
+				<div class="updated">
+					<p><?php _e( 'Customizer settings deleted.', 'author' ); ?></p>
+				</div>
+				<?php
+			} else if ( $_GET['author_status'] == 'activated' ) {
+				?>
+				<div class="updated">
+					<p><?php _e( 'Author successfully activated!', 'author' ); ?></p>
+				</div>
+				<?php
+			}
 		}
 	}
 }
@@ -663,11 +672,12 @@ function ct_author_welcome_redirect() {
 
 	$welcome_url = add_query_arg(
 		array(
-			'page' => 'author-options'
+			'page'          => 'author-options',
+			'author_status' => 'activated'
 		),
 		admin_url( 'themes.php' )
 	);
-	wp_redirect( esc_url( $welcome_url ) );
+	wp_safe_redirect( esc_url_raw( $welcome_url ) );
 }
 add_action( 'after_switch_theme', 'ct_author_welcome_redirect' );
 
