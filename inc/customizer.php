@@ -263,6 +263,22 @@ function ct_author_add_customizer_content( $wp_customize ) {
 			'no'  => __( 'No', 'author' )
 		)
 	) );
+	// setting - comments link
+	$wp_customize->add_setting( 'comments_link', array(
+		'default'           => 'no',
+		'sanitize_callback' => 'ct_author_sanitize_yes_no_settings'
+	) );
+	// control - comments link
+	$wp_customize->add_control( 'comments_link', array(
+		'label'    => __( 'Show link to comments after posts?', 'author' ),
+		'section'  => 'author_blog',
+		'settings' => 'comments_link',
+		'type'     => 'radio',
+		'choices'  => array(
+			'yes' => __( 'Yes', 'author' ),
+			'no'  => __( 'No', 'author' )
+		)
+	) );
 	// setting
 	$wp_customize->add_setting( 'excerpt_length', array(
 		'default'           => '25',

@@ -1304,6 +1304,20 @@ a img {
   text-align: center;
 }
 
+.comments-link {
+  display: block;
+  text-align: center;
+  margin-top: 1.5em;
+}
+.comments-link i {
+  padding-right: 6px;
+}
+.comments-link a {
+  padding: 8px 16px;
+  border: solid 1px #202224;
+  text-decoration: none;
+}
+
 .pagination {
   position: relative;
   margin: 1.5em 0;

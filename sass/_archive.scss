@@ -20,6 +20,21 @@
 .more-link-wrapper {
   text-align: center;
 }
+.comments-link {
+  display: block;
+  text-align: center;
+  margin-top: $baseline-height;
+
+  i {
+    padding-right: 6px;
+  }
+  a {
+    padding: 8px 16px;
+    border: solid 1px $color-gray-14-blue;
+
+    text-decoration: none;
+  }
+}
 .pagination {
   position: relative;
   margin: $baseline-height 0;
