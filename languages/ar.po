@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-11-30 21:50+0300\n"
+"PO-Revision-Date: 2016-12-01 15:59+0300\n"
 "Language-Team: \n"
 "X-Generator: Poedit 1.8.11\n"
 "Last-Translator: Mohammad Alhobayyeb <malhobayyeb@gmail.com>\n"
@@ -30,7 +30,7 @@ msgstr ""
 
 #: comments.php:21 comments.php:41 comments.php:63
 msgid "Be First to Comment"
-msgstr "كن أول من يرسل تعليقه"
+msgstr "كن أول من ‫يعلق على المقالة"
 
 #: comments.php:21 comments.php:41 comments.php:63
 msgid "One Comment"
@@ -146,7 +146,7 @@ msgstr "الموقع"
 
 #: functions.php:147
 msgid "Comment"
-msgstr "تعليق"
+msgstr "نص التعليق"
 
 #: functions.php:178 functions.php:187 functions.php:204 inc/customizer.php:279
 msgid "Continue reading"
@@ -358,12 +358,12 @@ msgstr "التالي"
 #: search.php:10
 msgid "%1$d search result for \"%2$s\""
 msgid_plural "%1$d search results for \"%2$s\""
-msgstr[0] "‫%1$d نتائج البحث لـ \"%2$s\""
-msgstr[1] "‫%1$d نتائج البحث لـ \"%2$s\""
-msgstr[2] "‫%1$d نتائج البحث لـ \"%2$s\""
-msgstr[3] "‫%1$d نتائج البحث لـ \"%2$s\""
-msgstr[4] "‫%1$d نتائج البحث لـ \"%2$s\""
-msgstr[5] "‫%1$d نتائج البحث لـ \"%2$s\""
+msgstr[0] "عثر على ‫%1$d نتائج البحث لـ \"%2$s\""
+msgstr[1] "عثر على %1$d نتائج البحث لـ \"%2$s\""
+msgstr[2] "عثر على %1$d نتائج البحث لـ \"%2$s\""
+msgstr[3] "عثر على %1$d نتائج البحث لـ \"%2$s\""
+msgstr[4] "عثر على %1$d نتائج البحث لـ \"%2$s\""
+msgstr[5] "عثر على %1$d نتائج البحث لـ \"%2$s\""
 
 #: search.php:12
 msgid "No search results for \"%s\""
@@ -383,7 +383,7 @@ msgstr "ابحث عن:"
 
 #: searchform.php:6
 msgid "Go"
-msgstr "اذهب"
+msgstr "بحث"
 
 #: theme-options.php:4 theme-options.php:20
 msgid "Author Dashboard"
@@ -511,4 +511,4 @@ msgstr ""
 #: content/post-meta.php:6
 msgctxt "This blog post was published by some author on some date"
 msgid "Published by %1$s on %2$s"
-msgstr "تم النشر من قبل %1$ في %2$"
+msgstr "نشرها %1$s في %2$s"
