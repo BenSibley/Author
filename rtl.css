@@ -40,7 +40,7 @@ h3, .site-title, .archive-header h1,
 }
 
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .tagline, .post-tags a, .widget_tag_cloud a, .further-reading span, .bypostauthor .author-name:after, .comment-footer a,
+textarea, input[type="submit"], .tagline, .post-tags a, .widget_tag_cloud a, .further-reading span, .bypostauthor > .comment .author-name:after, .comment-footer a,
 .comment-footer span, .widget > *, .site-footer .design-credit, .singular-attachment .attachment-caption {
   font-size: 0.75em;
   /* 12px / 16px */
@@ -1176,7 +1176,7 @@ a img {
   list-style: disc;
 }
 
-.bypostauthor .author-name:after {
+.bypostauthor > .comment .author-name:after {
   content: ' (author)';
   text-transform: none;
   font-weight: 400;
