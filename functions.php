@@ -577,7 +577,7 @@ if ( ! function_exists( ( 'ct_author_delete_settings_notice' ) ) ) {
 			} else if ( $_GET['author_status'] == 'activated' ) {
 				?>
 				<div class="updated">
-					<p><?php _e( 'Author successfully activated!', 'author' ); ?></p>
+					<p><?php printf( __( '%s successfully activated!', 'author' ), wp_get_theme( get_template() ) ); ?></p>
 				</div>
 				<?php
 			}
