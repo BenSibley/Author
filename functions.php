@@ -310,6 +310,7 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'vk'            => 'author_vk_profile',
 			'weibo'         => 'author_weibo_profile',
 			'tencent-weibo' => 'author_tencent_weibo_profile',
+			'yelp'          => 'author_yelp_profile',
 			'email'         => 'author_email_profile',
 			'email-form'    => 'author_email_form_profile'
 		);
