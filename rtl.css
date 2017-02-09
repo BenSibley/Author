@@ -1300,6 +1300,10 @@ a img {
   margin: 0.75em 0 0;
 }
 
+.more-link-wrapper {
+  text-align: center;
+}
+
 .pagination {
   position: relative;
   margin: 1.5em 0;
