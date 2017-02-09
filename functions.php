@@ -93,11 +93,11 @@ if ( ! function_exists( 'ct_author_customize_comments' ) ) {
 				<div class="comment-footer">
 					<span class="comment-date"><?php comment_date(); ?></span>
 					<?php comment_reply_link( array_merge( $args, array(
-						'reply_text' => __( 'Reply', 'author' ),
+						'reply_text' => _x( 'Reply', 'verb: reply to this comment', 'author' ),
 						'depth'      => $depth,
 						'max_depth'  => $args['max_depth']
 					) ) ); ?>
-					<?php edit_comment_link( __( 'Edit', 'author' ) ); ?>
+					<?php edit_comment_link( _x( 'Edit', 'verb: edit this comment', 'author' ) ); ?>
 				</div>
 			<?php } ?>
 		</article>
@@ -115,14 +115,14 @@ if ( ! function_exists( 'ct_author_update_fields' ) ) {
 
 		$fields['author'] =
 			'<p class="comment-form-author">
-	            <label for="author">' . __( "Name", "author" ) . $label . '</label>
+	            <label for="author">' . _x( "Name", "noun", "author" ) . $label . '</label>
 	            <input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
 			'" size="30" ' . $aria_req . ' />
 	        </p>';
 
 		$fields['email'] =
 			'<p class="comment-form-email">
-	            <label for="email">' . __( "Email", "author" ) . $label . '</label>
+	            <label for="email">' . _x( "Email", "noun", "author" ) . $label . '</label>
 	            <input id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) .
 			'" size="30" ' . $aria_req . ' />
 	        </p>';
@@ -144,7 +144,7 @@ if ( ! function_exists( 'ct_author_update_comment_field' ) ) {
 
 		$comment_field =
 			'<p class="comment-form-comment">
-	            <label for="comment">' . __( "Comment", "author" ) . '</label>
+	            <label for="comment">' . _x( "Comment", "noun", "author" ) . '</label>
 	            <textarea required id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
 	        </p>';
 
@@ -366,8 +366,8 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 						<li>
 							<a class="email" target="_blank"
 							   href="mailto:<?php echo antispambot( is_email( get_theme_mod( $active_site ) ) ); ?>">
-								<i class="fa fa-envelope" title="<?php esc_attr_e( 'email', 'author' ); ?>"></i>
-								<span class="screen-reader-text"><?php esc_html_e('email', 'author'); ?></span>
+								<i class="fa fa-envelope" title="<?php echo esc_attr_x( 'email', 'noun', 'author' ); ?>"></i>
+								<span class="screen-reader-text"><?php echo esc_html_x('email', 'noun', 'author'); ?></span>
 							</a>
 						</li>
 					<?php } elseif ( $active_site == 'skype' ) { ?>

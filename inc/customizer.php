@@ -244,7 +244,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'author_blog', array(
-		'title'    => __( 'Blog', 'author' ),
+		'title'    => _x( 'Blog', 'noun: the blog section',  'author' ),
 		'priority' => 45
 	) );
 	// setting

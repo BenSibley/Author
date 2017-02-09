@@ -18,7 +18,7 @@ if ( comments_open() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
 			<h2>
-				<?php comments_number( __( 'Be First to Comment', 'author' ), __( 'One Comment', 'author' ), __( '% Comments', 'author' ) ); ?>
+				<?php comments_number( __( 'Be First to Comment', 'author' ), __( 'One Comment', 'author' ), _x( '% Comments', 'noun: 5 comments', 'author' ) ); ?>
 			</h2>
 		</div>
 		<ol class="comment-list">
@@ -38,7 +38,7 @@ if ( comments_open() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
 			<h2>
-				<?php comments_number( __( 'Be First to Comment', 'author' ), __( 'One Comment', 'author' ), __( '% Comments', 'author' ) ); ?>
+				<?php comments_number( __( 'Be First to Comment', 'author' ), __( 'One Comment', 'author' ), _x( '% Comments', 'noun: 5 comments', 'author' ) ); ?>
 			</h2>
 		</div>
 		<ol class="comment-list">
@@ -60,7 +60,7 @@ if ( comments_open() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
 			<h2>
-				<?php comments_number( __( 'Be First to Comment', 'author' ), __( 'One Comment', 'author' ), __( '% Comments', 'author' ) ); ?>
+				<?php comments_number( __( 'Be First to Comment', 'author' ), __( 'One Comment', 'author' ), _x( '% Comments', 'noun: 5 comments', 'author' ) ); ?>
 			</h2>
 		</div>
 		<ol class="comment-list">
