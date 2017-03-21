@@ -171,7 +171,7 @@ if ( ! function_exists( 'ct_author_filter_read_more_link' ) ) {
 		$output = '';
 
 		// add ellipsis for automatic excerpts
-		if ( empty( $ismore && $custom !== true ) ) {
+		if ( empty( $ismore ) && $custom !== true ) {
 			$output .= $excerpt_more;
 		}
 		// Because i18n text cannot be stored in a variable
