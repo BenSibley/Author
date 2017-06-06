@@ -4,6 +4,14 @@ require_once( trailingslashit( get_template_directory() ) . 'theme-options.php' 
 foreach ( glob( trailingslashit( get_template_directory() ) . 'inc/*' ) as $filename ) {
 	include $filename;
 }
+require_once( trailingslashit( get_template_directory() ) . 'dnh/handler.php' );
+new WP_Review_Me( array(
+		'days_after' => 14,
+		'type'       => 'theme',
+		'slug'       => 'author',
+		'message'    => __( 'Hey! Sorry to interrupt, but you\'ve been using Author for a little while now. If you\'re happy with this theme, could you take a minute to leave a review? <i>You won\'t see this notice again after closing it.</i>', 'author' )
+	)
+);
 
 if ( ! function_exists( ( 'ct_author_set_content_width' ) ) ) {
 	function ct_author_set_content_width() {
