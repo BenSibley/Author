@@ -41,8 +41,7 @@
   }
   img {
     position: relative;
-    max-width: none;
-    width: 273px;
+    max-width: calc(100% + 48px);
     top: -6px;
     left: -24px;
     border-bottom: solid 1px $color-gray-85;
