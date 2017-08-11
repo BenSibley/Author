@@ -45,7 +45,7 @@ function ct_author_options_content() {
 			</div>
 			<div class="content content-presspad">
 				<h3><?php _e( 'Turn Author into a Mobile App', 'author' ); ?></h3>
-				<p><?php printf( __( '%s can be converted into a mobile app and listed on the App Store with the help of PressPad News. Read our tutorial to learn more.', 'author' ), wp_get_theme( get_template() ) ); ?></p>
+				<p><?php printf( __( '%s can be converted into a mobile app and listed on the App Store and Google Play Store with the help of PressPad News. Read our tutorial to learn more.', 'author' ), wp_get_theme( get_template() ) ); ?></p>
 				<a target="_blank" class="button-primary" href="https://www.competethemes.com/help/convert-mobile-app-author/"><?php _e( 'Read Tutorial', 'author' ); ?></a>
 			</div>
 			<div class="content content-delete-settings">
