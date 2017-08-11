@@ -5,11 +5,11 @@ Requires at least: 4.5
 Tested up to: 4.8
 Stable tag: 1.11
 
-Author is a sophisticated, minimalist theme.
+Author is designed for publishers who want readers.
 
 == Description ==
 
-Author is a sophisticated, minimalist theme. It looks great and performs wonderfully on mobile devices, tablets, laptops, and everything in between. Use it to setup a business blog, newspaper website, fashion magazine, or travel blog. Now with WooCommerce support, you can even setup an eCommerce store with Author. The design of this minimal theme also suits media-rich sites well like food blogs and personal photography portfolios. As a simple, responsive, and SEO optimized theme, you can trust Author to present your best content to the world.
+Author is designed for publishers who want readers. That's why Author is fast, responsive, accessibility-ready, and optimally designed for reading. All scripts and stylesheets are minified, concatenated, and conditionally loaded to maximize performance. The layout adapts fluidly to all screen sizes to enhance usability. As one of few accessibility-ready themes, it performs well for users with wide ranges of disabilities. Based on the ancient Van de Graaf canon, Author features a layout that promotes readability. Use Author to create a simple blog, magazine, or news website. The simple and minimalist design works great for gaming, business, fashion, music, food, travel, and photography niches.
 
 **Live Demo**
 
