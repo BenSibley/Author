@@ -677,3 +677,18 @@ if ( function_exists( 'ct_author_pro_plugin_updater' ) ) {
 	remove_action( 'admin_init', 'ct_author_pro_plugin_updater', 0 );
 	add_action( 'admin_init', 'ct_author_pro_plugin_updater', 0 );
 }
+
+//----------------------------------------------------------------------------------
+// Add paragraph tags for author bio displayed in content/archive-header.php.
+// the_archive_description includes paragraph tags for tag and category descriptions, but not the author bio. 
+//----------------------------------------------------------------------------------
+if ( ! function_exists( 'ct_author_modify_archive_descriptions' ) ) {
+	function ct_author_modify_archive_descriptions( $description ) {
+
+		if ( is_author() ) {
+			$description = wpautop( $description );
+		}
+		return $description;
+	}
+}
+add_filter( 'get_the_archive_description', 'ct_author_modify_archive_descriptions' );
