@@ -613,7 +613,7 @@ add_action( 'admin_notices', 'ct_author_delete_settings_notice' );
 if ( ! function_exists( ( 'ct_author_sticky_post_marker' ) ) ) {
 	function ct_author_sticky_post_marker() {
 
-		if ( is_sticky() && ! is_archive() ) {
+		if ( is_sticky() && !is_archive() && !is_search() ) {
 			echo '<span class="sticky-status">' . __( "Featured Post", "author" ) . '</span>';
 		}
 	}
