@@ -1,75 +1,42 @@
-Thanks for downloading Author!
+=== Author ===
+Contributors: bensibley
+Tags: two-columns, right-sidebar, accessibility-ready, custom-logo, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, news
+Requires at least: 4.5
+Tested up to: 4.8
+Stable tag: 1.11
 
--------------------------------------------------------
-    Support
--------------------------------------------------------
+Author is a sophisticated, minimalist theme.
 
-You can find tutorials and other support resources for Author in the Author Support Center:
-https://www.competethemes.com/documentation/author-support-center/
+== Description ==
 
-Additional support resources:
+Author is a sophisticated, minimalist theme. It looks great and performs wonderfully on mobile devices, tablets, laptops, and everything in between. Use it to setup a business blog, newspaper website, fashion magazine, or travel blog. Now with WooCommerce support, you can even setup an eCommerce store with Author. The design of this minimal theme also suits media-rich sites well like food blogs and personal photography portfolios. As a simple, responsive, and SEO optimized theme, you can trust Author to present your best content to the world.
 
-Support forum: http://wordpress.org/support/theme/author
-Changelog: https://www.competethemes.com/author-changelog/
-Author on Github: https://github.com/BenSibley/author
+**Live Demo**
 
--------------------------------------------------------
-    Features
--------------------------------------------------------
+View a fully-setup live demo of Author here: [Live demo](https://www.competethemes.com/demos/?theme=author)
 
-Author includes the following features:
+**Features**
 
-    * Custom logo
-    * Site Avatar
-    * Social media icons
-    * Comment display controls
-    * Custom excerpt length
-    * Show full posts on Blog
-    * Custom CSS
+Author comes with the following features:
 
-Author also has a premium plugin upgrade called Author Pro that includes the following features:
+* Custom logo
+* Site Avatar
+* Social media icons
+* Comment display controls
+* Custom excerpt length
+* Show full posts on Blog
 
-    * Custom colors
-    * Background images
-    * Background textures
-    * Featured Videos
-    * Flexible header image
-    * Google fonts
-    * More widget areas
-    * Post/Page Background Images
-    * Display controls
-    * Custom footer text
+**Author Pro**
 
-Author Pro: https://www.competethemes.com/author-pro/
+Author also has an upgrade called [Author Pro](https://www.competethemes.com/author-pro/) that comes with the following features:
 
--------------------------------------------------------
-    Additional Info:
--------------------------------------------------------
-
-    * All menus in Author can have 1-3 tiers
-    * Featured Images on Posts and Pages have a 2x1 ratio at all screen sizes
-    * Author is child theme compatible. Download a starter child theme here:
-        https://www.competethemes.com/help/child-theme-author/
-
-
--------------------------------------------------------
-    Licenses:
--------------------------------------------------------
-
-Author WordPress Theme, Copyright 2017 Compete Themes
-Author is distributed under the terms of the GNU GPL
-
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-Author also uses:
-
-* Fitvids, https://github.com/davatron5000/FitVids.js/, Copyright 2011, Chris Coyier & Dave Rupert, WTFPL license, http://www.wtfpl.net/.
-* Google Fonts, http://google.com/fonts, Copyright 2010, Google, open source licenses, see: https://developers.google.com/fonts/faq#Any_Page_OK.
-* Font Awesome, http://fontawesome.io/, Copyright 2011, Dave Gandy, CSS licensed under MIT license, https://opensource.org/licenses/mit-license.html, fonts licensed under SIL license, http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
-* HTML5shiv, https://github.com/aFarkas/html5shiv, Alexander Farkas, Jonathan Neal, Paul Irish, John-David Dalton, and Remy Sharp, MIT/GPL2, https://opensource.org/licenses/mit-license.html
-* Multiple Select, http://wenzhixin.net.cn/p/multiple-select/, zhixin wen, licensed under MIT license, https://opensource.org/licenses/mit-license.html
-* Respond.js, https://github.com/scottjehl/Respond, Scott Jehl, licensed under MIT license, https://opensource.org/licenses/mit-license.html
-* Avatar image in screenshot.png is the theme author's image
-* City image in screenshot.png : CC0 by Israel Sundseth, https://unsplash.com/photos/BYu8ITUWMfc
-* Boardwalk image in screenshot.png : CC0 by Paul Proshin, https://unsplash.com/photos/0jgAnkgYwBE
+* Custom colors
+* Background images
+* Background textures
+* Featured Videos
+* Flexible header image
+* Google fonts
+* More widget areas
+* Post/Page Background Images
+* Display controls
+* Custom footer text
