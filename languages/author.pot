@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Author 1.26\n"
+"Project-Id-Version: Author 1.27\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2017-06-07 15:25:06+00:00\n"
+"POT-Creation-Date: 2017-08-15 18:24:16+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -128,19 +128,19 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: functions.php:187 inc/customizer.php:298
+#: functions.php:187 functions.php:251 inc/customizer.php:298
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:586
+#: functions.php:598
 msgid "Customizer settings deleted."
 msgstr ""
 
-#: functions.php:592
+#: functions.php:604
 msgid "%s successfully activated!"
 msgstr ""
 
-#: functions.php:605
+#: functions.php:617
 msgid "Featured Post"
 msgstr ""
 
@@ -416,8 +416,9 @@ msgstr ""
 
 #: theme-options.php:48
 msgid ""
-"%s can be converted into a mobile app and listed on the App Store with the "
-"help of PressPad News. Read our tutorial to learn more."
+"%s can be converted into a mobile app and listed on the App Store and "
+"Google Play Store with the help of PressPad News. Read our tutorial to "
+"learn more."
 msgstr ""
 
 #: theme-options.php:49
@@ -441,10 +442,12 @@ msgid ""
 "All scripts and stylesheets are minified, concatenated, and conditionally "
 "loaded to maximize performance. The layout adapts fluidly to all screen "
 "sizes to enhance usability. As one of few accessibility-ready themes, it "
-"performs well for users with wide ranges of disabilities. Lastly, based on "
-"the ancient Van de Graaf canon, Author is optimally designed for reading. "
-"Author is the theme your content deserves. Preview on desktop, tablets, and "
-"mobile with our interactive live demo: "
+"performs well for users with wide ranges of disabilities. Based on the "
+"ancient Van de Graaf canon, Author features a layout that promotes "
+"readability. Use Author to create a simple blog, magazine, or news website. "
+"The simple and minimalist design works great for gaming, business, fashion, "
+"music, food, travel, and photography niches. Preview Author now on desktop, "
+"tablets, and mobile devices with the interactive live demo: "
 "https://www.competethemes.com/demos/?theme=author"
 msgstr ""
 
@@ -499,7 +502,7 @@ msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: functions.php:381 functions.php:382
+#: functions.php:393 functions.php:394
 msgctxt "noun"
 msgid "email"
 msgstr ""
