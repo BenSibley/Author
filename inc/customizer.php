@@ -201,6 +201,8 @@ function ct_author_add_customizer_content( $wp_customize ) {
 				$label = __('QQ', 'author');
 			} elseif ( $social_site == 'vk' ) {
 				$label = __('VK', 'author');
+			} elseif ( $social_site == 'ok-ru' ) {
+				$label = __('OK.ru', 'author');
 			} elseif ( $social_site == 'wechat' ) {
 				$label = __('WeChat', 'author');
 			} elseif ( $social_site == 'tencent-weibo' ) {

@@ -331,6 +331,7 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'paypal'        => 'author_paypal_profile',
 			'steam'         => 'author_steam_profile',
 			'vk'            => 'author_vk_profile',
+			'ok-ru'         => 'author_ok_ru_profile',
 			'weibo'         => 'author_weibo_profile',
 			'tencent-weibo' => 'author_tencent_weibo_profile',
 			'yelp'          => 'author_yelp_profile',
@@ -384,6 +385,8 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 					}
 					if ( $active_site == 'email-form' ) {
 						$class = 'fa fa-envelope-o';
+					} elseif ( $active_site == 'ok-ru' ) {
+						$class = 'fa fa-odnoklassniki';
 					}
 
 					if ( $active_site == 'email' ) { ?>
