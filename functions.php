@@ -307,6 +307,7 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'deviantart'    => 'author_deviantart_profile',
 			'digg'          => 'author_digg_profile',
 			'github'        => 'author_github_profile',
+			'bitbucket'     => 'author_bitbucket_profile',
 			'hacker-news'   => 'author_hacker-news_profile',
 			'snapchat'      => 'author_snapchat_profile',
 			'bandcamp'      => 'author_bandcamp_profile',
