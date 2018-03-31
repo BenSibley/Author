@@ -360,6 +360,7 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 			'steam',
 			'xing',
 			'github',
+			'bitbucket',
 			'google-plus',
 			'behance',
 			'facebook'
