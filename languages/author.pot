@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Author 1.28\n"
+"Project-Id-Version: Author 1.29\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2018-02-22 18:59:51+00:00\n"
+"POT-Creation-Date: 2018-06-28 13:16:27+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -132,15 +132,19 @@ msgstr ""
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:602
+#: functions.php:477 inc/scripts.php:18
+msgid "open child menu"
+msgstr ""
+
+#: functions.php:600
 msgid "Customizer settings deleted."
 msgstr ""
 
-#: functions.php:608
+#: functions.php:606
 msgid "%s successfully activated!"
 msgstr ""
 
-#: functions.php:621
+#: functions.php:619
 msgid "Featured Post"
 msgstr ""
 
@@ -392,10 +396,6 @@ msgstr ""
 msgid "close primary menu"
 msgstr ""
 
-#: inc/scripts.php:18
-msgid "open child menu"
-msgstr ""
-
 #: inc/scripts.php:19
 msgid "close child menu"
 msgstr ""
@@ -570,7 +570,7 @@ msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: functions.php:397 functions.php:398
+#: functions.php:398
 msgctxt "noun"
 msgid "email"
 msgstr ""
