@@ -394,7 +394,7 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 						<li>
 							<a class="email" target="_blank"
 							   href="mailto:<?php echo antispambot( is_email( get_theme_mod( $active_site ) ) ); ?>">
-								<i class="fa fa-envelope" title="<?php echo esc_attr_x( 'email', 'noun', 'author' ); ?>"></i>
+								<i class="fa fa-envelope"></i>
 								<span class="screen-reader-text"><?php echo esc_html_x('email', 'noun', 'author'); ?></span>
 							</a>
 						</li>
@@ -402,8 +402,7 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 						<li>
 							<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
 							   href="<?php echo esc_url( get_theme_mod( $active_site ), array( 'http', 'https', 'skype' ) ); ?>">
-								<i class="<?php echo esc_attr( $class ); ?>"
-								   title="<?php echo esc_attr( $active_site ); ?>"></i>
+								<i class="<?php echo esc_attr( $class ); ?>"></i>
 								<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
 							</a>
 						</li>
@@ -411,8 +410,7 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 						<li>
 							<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
 							   href="<?php echo esc_url( get_theme_mod( $active_site ) ); ?>">
-								<i class="<?php echo esc_attr( $class ); ?>"
-								   title="<?php echo esc_attr( $active_site ); ?>"></i>
+								<i class="<?php echo esc_attr( $class ); ?>"></i>
 								<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
 							</a>
 						</li>
