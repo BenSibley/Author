@@ -123,7 +123,7 @@ jQuery(document).ready(function($){
         setMainMinHeight();
     });
 
-    $(window).resize(function(){
+    $(window).on( 'resize', function(){
         positionSidebar();
         closeMainSidebar();
         setMainMinHeight();
