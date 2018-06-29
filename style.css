@@ -588,14 +588,11 @@ a img {
 
   .title-container {
     position: relative;
-    height: 48px;
   }
   .title-container .container {
     position: relative;
     float: left;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
   }
   .title-container:after {
     content: ".";

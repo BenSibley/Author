@@ -130,13 +130,13 @@
   }
   .title-container {
     position: relative;
-    height: 48px;
+    // height: 48px;
 
     .container {
       position: relative;
       float: left;
       top: 50%;
-      transform: translateY(-50%);
+      // transform: translateY(-50%);
     }
     &:after {
       @include clearfix;
