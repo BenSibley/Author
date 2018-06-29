@@ -3,10 +3,10 @@
 global $post;
 
 $previous_post = get_adjacent_post( false, '', true );
-$previous_text = __( 'Previous Post', 'author' );
+$previous_text = esc_html__( 'Previous Post', 'author' );
 
 if ( $previous_post == '' ) {
-	$previous_text  = __( 'No Older Posts', 'author' );
+	$previous_text  = esc_html__( 'No Older Posts', 'author' );
 	if ( get_option( 'show_on_front' ) == 'page' ) {
 		$previous_url = get_permalink( get_option( 'page_for_posts' ) );
 	} else {
@@ -16,10 +16,10 @@ if ( $previous_post == '' ) {
 }
 
 $next_post  = get_adjacent_post( false, '', false );
-$next_text  = __( 'Next Post', 'author' );
+$next_text  = esc_html__( 'Next Post', 'author' );
 
 if ( $next_post == '' ) {
-	$next_text  = __( 'No Newer Posts', 'author' );
+	$next_text  = esc_html__( 'No Newer Posts', 'author' );
 	if ( get_option( 'show_on_front' ) == 'page' ) {
 		$next_url = get_permalink( get_option( 'page_for_posts' ) );
 	} else {

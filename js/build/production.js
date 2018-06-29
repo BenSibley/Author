@@ -473,6 +473,23 @@ jQuery(document).ready(function($){
         $('.infinite-wrap').children('.entry').detach().appendTo( loopContainer );
         $('.infinite-wrap, .infinite-loader').remove();
     }
+
+    // ===== Scroll to Top ==== //
+
+    if ( $('#scroll-to-top').length !== 0 ) {
+        $(window).on( 'scroll', function() {
+            if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                $('#scroll-to-top').addClass('visible');    // Fade in the arrow
+            } else {
+                $('#scroll-to-top').removeClass('visible');   // Else fade out the arrow
+            }
+        });
+        $('#scroll-to-top').click(function(e) {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop : 0                       // Scroll to top of body
+            }, 800);
+        });
+    }
 });
 
 /* fix for skip-to-content link bug in Chrome & IE9 */

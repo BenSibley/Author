@@ -23,7 +23,38 @@
   }
 }
 
-// 950px
+.scroll-to-top {
+  position: fixed;
+  bottom: -45px;
+  right: 0;
+  z-index: 9;
+  background: #000;
+  border: none;
+  color: #fff;
+  padding: 12px 0;
+  width: $column-27;
+  transition: background 0.2s, transform 0.3s;
+
+  &.visible {
+    transform: translateY(-45px);
+  }
+  &:hover {
+    cursor: pointer;
+    background: $color-gray-17-blue;
+
+    i {
+      transform: translateY(-4px);
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+  i {
+    font-size: 21px;
+    transition: transform 0.2s;
+  }
+}
+
 @media all and (min-width: $nine-fifty) {
 
   .site-footer {
@@ -31,7 +62,7 @@
     width: $column-9 * 6.5;
   }
 }
-// 1150px
+
 @media all and (min-width: $eleven-fifty) {
 
   .site-footer {

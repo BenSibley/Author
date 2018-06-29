@@ -1561,6 +1561,40 @@ a img {
   color: #3E4145;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: -45px;
+  left: 0;
+  z-index: 9;
+  background: #000;
+  border: none;
+  color: #fff;
+  padding: 12px 0;
+  width: 3.7037%;
+  -webkit-transition: background 0.2s, -webkit-transform 0.3s;
+          transition: background 0.2s, transform 0.3s;
+}
+.scroll-to-top.visible {
+  -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
+}
+.scroll-to-top:hover {
+  cursor: pointer;
+  background: #27292B;
+}
+.scroll-to-top:hover i {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+.scroll-to-top:focus {
+  outline: none;
+}
+.scroll-to-top i {
+  font-size: 21px;
+  -webkit-transition: -webkit-transform 0.2s;
+          transition: transform 0.2s;
+}
+
 @media all and (min-width: 59.375em) {
   .site-footer {
     float: left;
