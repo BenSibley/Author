@@ -52,14 +52,14 @@ function ct_author_add_customizer_content( $wp_customize ) {
 			$link = 'https://www.competethemes.com/author-pro/';
 			echo "<a href='" . $link . "' target='_blank'><img src='" . get_template_directory_uri() . "/assets/images/author-pro.gif' /></a>";
 			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%1$s">%2$s Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'author'), $link, wp_get_theme( get_template() ) ) . "</p>";
-			echo "<p>" . sprintf( __('%1$s Pro adds the following features to %1$s:', 'author'), wp_get_theme( get_template() ) ) . "</p>";
+			echo "<p>" . sprintf( esc_html__('%1$s Pro adds the following features to %1$s:', 'author'), wp_get_theme( get_template() ) ) . "</p>";
 			echo "<ul>
-					<li>" . __('Custom colors', 'author') . "</li>
-					<li>" . __('New fonts', 'author') . "</li>
-					<li>" . __('Flexible header image', 'author') . "</li>
-					<li>" . __('+ 9 more features', 'author') . "</li>
+					<li>" . esc_html__('Custom colors', 'author') . "</li>
+					<li>" . esc_html__('New fonts', 'author') . "</li>
+					<li>" . esc_html__('Flexible header image', 'author') . "</li>
+					<li>" . esc_html__('+ 9 more features', 'author') . "</li>
 				  </ul>";
-			echo "<p class='button-wrapper'><a target=\"_blank\" class='author-pro-button' href='" . $link . "'>" . sprintf( __( 'View %s Pro', 'author' ), wp_get_theme( get_template() ) ) . "</a></p>";
+			echo "<p class='button-wrapper'><a target=\"_blank\" class='author-pro-button' href='" . $link . "'>" . sprintf( esc_html__( 'View %s Pro', 'author' ), wp_get_theme( get_template() ) ) . "</a></p>";
 		}
 	}
 
@@ -69,7 +69,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	if ( !function_exists( 'ct_author_pro_init' ) ) {
 		// section
 		$wp_customize->add_section( 'ct_author_pro', array(
-			'title'    => sprintf( __( '%s Pro', 'author' ), wp_get_theme( get_template() ) ),
+			'title'    => sprintf( esc_html__( '%s Pro', 'author' ), wp_get_theme( get_template() ) ),
 			'priority' => 1
 		) );
 		// Upload - setting

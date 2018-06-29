@@ -44,7 +44,7 @@ if ( ! function_exists( 'ct_author_theme_setup' ) ) {
 		load_theme_textdomain( 'author', get_template_directory() . '/languages' );
 
 		register_nav_menus( array(
-			'primary' => __( 'Primary', 'author' )
+			'primary' => esc_html__( 'Primary', 'author' )
 		) );
 	}
 }
@@ -118,7 +118,7 @@ if ( ! function_exists( 'ct_author_update_fields' ) ) {
 
 		$commenter = wp_get_current_commenter();
 		$req       = get_option( 'require_name_email' );
-		$label     = $req ? '*' : ' ' . __( '(optional)', 'author' );
+		$label     = $req ? '*' : ' ' . esc_html__( '(optional)', 'author' );
 		$aria_req  = $req ? "aria-required='true'" : '';
 
 		$fields['author'] =
@@ -130,14 +130,14 @@ if ( ! function_exists( 'ct_author_update_fields' ) ) {
 
 		$fields['email'] =
 			'<p class="comment-form-email">
-	            <label for="email">' . _x( "Email", "noun", "author" ) . $label . '</label>
+	            <label for="email">' . esc_html_x( "Email", "noun", "author" ) . $label . '</label>
 	            <input id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) .
 			'" size="30" ' . $aria_req . ' />
 	        </p>';
 
 		$fields['url'] =
 			'<p class="comment-form-url">
-	            <label for="url">' . __( "Website", "author" ) . '</label>
+	            <label for="url">' . esc_html__( "Website", "author" ) . '</label>
 	            <input id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
 			'" size="30" />
 	            </p>';
@@ -184,7 +184,7 @@ if ( ! function_exists( 'ct_author_filter_read_more_link' ) ) {
 		}
 		// Because i18n text cannot be stored in a variable
 		if ( empty( $read_more_text ) ) {
-			$output .= '<div class="more-link-wrapper"><a class="more-link" href="' . esc_url( get_permalink() ) . '">' . __( 'Continue reading', 'author' ) . '<span class="screen-reader-text">' . esc_html( get_the_title() ) . '</span></a></div>';
+			$output .= '<div class="more-link-wrapper"><a class="more-link" href="' . esc_url( get_permalink() ) . '">' . esc_html__( 'Continue reading', 'author' ) . '<span class="screen-reader-text">' . esc_html( get_the_title() ) . '</span></a></div>';
 		} else {
 			$output .= '<div class="more-link-wrapper"><a class="more-link" href="' . esc_url( get_permalink() ) . '">' . esc_html( $read_more_text ) . '<span class="screen-reader-text">' . esc_html( get_the_title() ) . '</span></a></div>';
 		}
@@ -248,7 +248,7 @@ add_filter( 'the_content_more_link', 'ct_author_remove_more_link_scroll' );
 function ct_author_update_yoast_og_description( $ogdesc ) {
 	$read_more_text = get_theme_mod( 'read_more_text' );
 	if ( empty( $read_more_text ) ) {
-		$read_more_text = __( 'Continue reading', 'author' );
+		$read_more_text = esc_html__( 'Continue reading', 'author' );
 	}
 	$ogdesc = substr( $ogdesc, 0, strpos( $ogdesc, $read_more_text ) );
 
@@ -474,7 +474,7 @@ if ( ! function_exists( ( 'ct_author_nav_dropdown_buttons' ) ) ) {
 		if ( $args->theme_location == 'primary' ) {
 
 			if ( in_array( 'menu-item-has-children', $item->classes ) || in_array( 'page_item_has_children', $item->classes ) ) {
-				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false"><span class="screen-reader-text">'. __("open child menu", "author") .'</span></button>', $item_output );
+				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false"><span class="screen-reader-text">'. esc_html__("open child menu", "author") .'</span></button>', $item_output );
 			}
 		}
 
@@ -603,7 +603,7 @@ if ( ! function_exists( ( 'ct_author_delete_settings_notice' ) ) ) {
 			} else if ( $_GET['author_status'] == 'activated' ) {
 				?>
 				<div class="updated">
-					<p><?php printf( __( '%s successfully activated!', 'author' ), wp_get_theme( get_template() ) ); ?></p>
+					<p><?php printf( esc_html__( '%s successfully activated!', 'author' ), wp_get_theme( get_template() ) ); ?></p>
 				</div>
 				<?php
 			}
@@ -616,7 +616,7 @@ if ( ! function_exists( ( 'ct_author_sticky_post_marker' ) ) ) {
 	function ct_author_sticky_post_marker() {
 
 		if ( is_sticky() && !is_archive() && !is_search() ) {
-			echo '<span class="sticky-status">' . __( "Featured Post", "author" ) . '</span>';
+			echo '<span class="sticky-status">' . esc_html__( "Featured Post", "author" ) . '</span>';
 		}
 	}
 }

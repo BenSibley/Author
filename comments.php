@@ -18,7 +18,7 @@ if ( comments_open() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
 			<h2>
-				<?php comments_number( __( 'Be First to Comment', 'author' ), __( 'One Comment', 'author' ), _x( '% Comments', 'noun: 5 comments', 'author' ) ); ?>
+				<?php comments_number( esc_html__( 'Be First to Comment', 'author' ), esc_html__( 'One Comment', 'author' ), esc_html_x( '% Comments', 'noun: 5 comments', 'author' ) ); ?>
 			</h2>
 		</div>
 		<ol class="comment-list">
@@ -38,7 +38,7 @@ if ( comments_open() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
 			<h2>
-				<?php comments_number( __( 'Be First to Comment', 'author' ), __( 'One Comment', 'author' ), _x( '% Comments', 'noun: 5 comments', 'author' ) ); ?>
+				<?php comments_number( esc_html__( 'Be First to Comment', 'author' ), esc_html__( 'One Comment', 'author' ), esc_html_x( '% Comments', 'noun: 5 comments', 'author' ) ); ?>
 			</h2>
 		</div>
 		<ol class="comment-list">
@@ -60,7 +60,7 @@ if ( comments_open() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
 			<h2>
-				<?php comments_number( __( 'Be First to Comment', 'author' ), __( 'One Comment', 'author' ), _x( '% Comments', 'noun: 5 comments', 'author' ) ); ?>
+				<?php comments_number( esc_html__( 'Be First to Comment', 'author' ), esc_html__( 'One Comment', 'author' ), esc_html_x( '% Comments', 'noun: 5 comments', 'author' ) ); ?>
 			</h2>
 		</div>
 		<ol class="comment-list">
@@ -74,14 +74,14 @@ if ( comments_open() ) { ?>
 			</nav>
 		<?php } ?>
 		<p class="comments-closed">
-			<?php _e( 'Comments are closed.', 'author' ); ?>
+			<?php esc_html_e( 'Comments are closed.', 'author' ); ?>
 		</p>
 	</section>
 	<?php
 } else { ?>
 	<section id="comments" class="comments">
 		<p class="comments-closed">
-			<?php _e( 'Comments are closed.', 'author' ); ?>
+			<?php esc_html_e( 'Comments are closed.', 'author' ); ?>
 		</p>
 	</section>
 <?php }

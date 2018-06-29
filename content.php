@@ -9,7 +9,7 @@
 		<div class="post-content">
 			<?php the_content(); ?>
 			<?php wp_link_pages( array(
-				'before' => '<p class="singular-pagination">' . __( 'Pages:', 'author' ),
+				'before' => '<p class="singular-pagination">' . esc_html__( 'Pages:', 'author' ),
 				'after'  => '</p>',
 			) ); ?>
 		</div>
