@@ -1567,7 +1567,7 @@ a img {
   border: none;
   color: #fff;
   padding: 12px 0;
-  width: 3.7037%;
+  width: 7.4074%;
   -webkit-transition: background 0.2s, -webkit-transform 0.3s;
           transition: background 0.2s, transform 0.3s;
 }
@@ -1582,9 +1582,6 @@ a img {
 .scroll-to-top:hover i {
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
-}
-.scroll-to-top:focus {
-  outline: none;
 }
 .scroll-to-top i {
   font-size: 21px;
