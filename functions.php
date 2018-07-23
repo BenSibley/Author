@@ -711,7 +711,7 @@ function ct_author_scroll_to_top_arrow() {
 	$setting = get_theme_mod('scroll_to_top');
 	
 	if ( $setting == 'yes' ) {
-		echo '<button id="scroll-to-top" class="scroll-to-top"><i class="fa fa-arrow-up"></i></button>';
+		echo '<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">'. __('Scroll to the top', 'author') .'</span><i class="fa fa-arrow-up"></i></button>';
 	}
 }
 add_action( 'body_bottom', 'ct_author_scroll_to_top_arrow');
