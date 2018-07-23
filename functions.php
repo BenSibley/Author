@@ -337,7 +337,8 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'tencent-weibo' => 'author_tencent_weibo_profile',
 			'yelp'          => 'author_yelp_profile',
 			'email'         => 'author_email_profile',
-			'email-form'    => 'author_email_form_profile'
+			'email-form'    => 'author_email_form_profile',
+			'phone'    			=> 'author_phone_profile'
 		);
 
 		return apply_filters( 'ct_author_social_array_filter', $social_sites );
@@ -362,7 +363,8 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 			'github',
 			'google-plus',
 			'behance',
-			'facebook'
+			'facebook',
+			'phone'
 		);
 
 		foreach ( $social_sites as $social_site => $profile ) {
@@ -402,6 +404,14 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 						<li>
 							<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
 							   href="<?php echo esc_url( get_theme_mod( $active_site ), array( 'http', 'https', 'skype' ) ); ?>">
+								<i class="<?php echo esc_attr( $class ); ?>"></i>
+								<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
+							</a>
+						</li>
+					<?php } elseif ( $active_site == 'phone' ) { ?>
+						<li>
+							<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
+							   href="<?php echo esc_url( get_theme_mod( $active_site ), array( 'tel' ) ); ?>">
 								<i class="<?php echo esc_attr( $class ); ?>"></i>
 								<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
 							</a>

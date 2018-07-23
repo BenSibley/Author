@@ -226,6 +226,18 @@ function ct_author_add_customizer_content( $wp_customize ) {
 					'section'     => 'ct_author_social_media_icons',
 					'priority'    => $priority
 				) );
+			} else if ( $social_site == 'phone' ) {
+				// setting
+				$wp_customize->add_setting( $social_site, array(
+					'sanitize_callback' => 'ct_author_sanitize_phone'
+				) );
+				// control
+				$wp_customize->add_control( $social_site, array(
+					'type'        => 'text',
+					'label'       => $label,
+					'section'     => 'ct_author_social_media_icons',
+					'priority'    => $priority
+				) );
 			} else {
 				// setting
 				$wp_customize->add_setting( $social_site, array(
@@ -459,6 +471,10 @@ function ct_author_sanitize_text( $input ) {
 
 function ct_author_sanitize_skype( $input ) {
 	return esc_url_raw( $input, array( 'http', 'https', 'skype' ) );
+}
+
+function ct_author_sanitize_phone( $input ) {
+	return esc_url_raw( 'tel:' . $input, array( 'tel' ) );
 }
 
 function ct_author_sanitize_css( $css ) {
