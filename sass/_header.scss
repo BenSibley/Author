@@ -34,6 +34,7 @@
   @extend %twelve-pixels;
 }
 .social-media-icons {
+  display: none;
   max-height: 0;
   overflow: hidden;
   clear: both;
@@ -84,6 +85,7 @@
 .open {
 
   .social-media-icons {
+    display: block;
     max-height: 9999px;
   }
   .toggle-navigation {
@@ -176,6 +178,7 @@
     }
   }
   .social-media-icons {
+    display: block;
     position: relative;
     max-height: none; // allow menu items to be seen w/o toggling
     width: auto;

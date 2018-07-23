@@ -501,6 +501,7 @@ a img {
 }
 
 .social-media-icons {
+  display: none;
   max-height: 0;
   overflow: hidden;
   clear: both;
@@ -543,6 +544,7 @@ a img {
 }
 
 .open .social-media-icons {
+  display: block;
   max-height: 9999px;
 }
 .open .toggle-navigation {
@@ -634,6 +636,7 @@ a img {
   }
 
   .social-media-icons {
+    display: block;
     position: relative;
     max-height: none;
     width: auto;
@@ -651,6 +654,7 @@ a img {
   max-height: 0;
   overflow: hidden;
   clear: both;
+  display: none;
 }
 .menu-primary a {
   text-decoration: none;
@@ -788,6 +792,7 @@ a img {
 
 .open .menu-primary {
   max-height: 9999px;
+  display: block;
 }
 
 /* Current Menu item */
@@ -820,6 +825,7 @@ a img {
 /* 950px */
 @media all and (min-width: 59.375em) {
   .menu-primary {
+    display: block;
     position: relative;
     max-height: none;
     width: auto;
