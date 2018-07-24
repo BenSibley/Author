@@ -501,7 +501,8 @@ a img {
 }
 
 .social-media-icons {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   max-height: 0;
   overflow: hidden;
   clear: both;
@@ -544,7 +545,8 @@ a img {
 }
 
 .open .social-media-icons {
-  display: block;
+  opacity: 1;
+  visibility: visible;
   max-height: 9999px;
 }
 .open .toggle-navigation {
@@ -636,7 +638,8 @@ a img {
   }
 
   .social-media-icons {
-    display: block;
+    opacity: 1;
+    visibility: visible;
     position: relative;
     max-height: none;
     width: auto;
@@ -654,7 +657,8 @@ a img {
   max-height: 0;
   overflow: hidden;
   clear: both;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 .menu-primary a {
   text-decoration: none;
@@ -792,7 +796,8 @@ a img {
 
 .open .menu-primary {
   max-height: 9999px;
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Current Menu item */
@@ -825,7 +830,8 @@ a img {
 /* 950px */
 @media all and (min-width: 59.375em) {
   .menu-primary {
-    display: block;
+    opacity: 1;
+    visibility: visible;
     position: relative;
     max-height: none;
     width: auto;

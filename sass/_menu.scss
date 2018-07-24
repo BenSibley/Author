@@ -5,7 +5,8 @@
   max-height: 0;
   overflow: hidden;
   clear: both;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 
   a {
     @extend %white-link;
@@ -128,7 +129,8 @@
 // menu open
 .open .menu-primary {
   max-height: 9999px;
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Current Menu item */
@@ -168,7 +170,8 @@
 @media all and (min-width: $nine-fifty) {
 
   .menu-primary {
-    display: block;
+    opacity: 1;
+    visibility: visible;
     position: relative;
     max-height: none; // allow menu items to be seen w/o toggling
     width: auto;
