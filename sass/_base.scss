@@ -203,7 +203,13 @@ img,
 
 /* Form styles */
 
-input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
 textarea {
   @extend %twelve-pixels;
   padding: 9px 12px;

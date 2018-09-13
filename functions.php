@@ -46,6 +46,13 @@ if ( ! function_exists( 'ct_author_theme_setup' ) ) {
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'author' )
 		) );
+
+		// Add WooCommerce support
+		add_theme_support( 'woocommerce' );
+		// Add support for WooCommerce image gallery features
+		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-lightbox' );
+		add_theme_support( 'wc-product-gallery-slider' );
 	}
 }
 add_action( 'after_setup_theme', 'ct_author_theme_setup', 10 );
@@ -150,6 +157,13 @@ add_filter( 'comment_form_default_fields', 'ct_author_update_fields' );
 if ( ! function_exists( 'ct_author_update_comment_field' ) ) {
 	function ct_author_update_comment_field( $comment_field ) {
 
+		// don't filter the WooCommerce review form
+		if ( function_exists( 'is_woocommerce' ) ) {
+			if ( is_woocommerce() ) {
+				return $comment_field;
+			}
+		}
+		
 		$comment_field =
 			'<p class="comment-form-comment">
 	            <label for="comment">' . _x( "Comment", "noun", "author" ) . '</label>
