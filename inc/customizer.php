@@ -474,7 +474,7 @@ function ct_author_sanitize_skype( $input ) {
 }
 
 function ct_author_sanitize_phone( $input ) {
-	return esc_url_raw( 'tel:' . $input, array( 'tel' ) );
+	return $input != '' ? esc_url_raw( 'tel:' . $input, array( 'tel' ) ) : '';
 }
 
 function ct_author_sanitize_css( $css ) {
