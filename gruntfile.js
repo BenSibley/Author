@@ -153,7 +153,7 @@ module.exports = function(grunt) {
                     'rm -R /Users/bensibley/Documents/compete-themes/dist/author || true',
                     'rm -R /Users/bensibley/Documents/compete-themes/dist/author.zip || true',
                     // copy plugin folder to desktop without any project/meta files
-                    'rsync -r /Applications/MAMP/htdocs/wordpress/wp-content/themes/author /Users/bensibley/Documents/compete-themes/dist/ <%= excludeFiles %>',
+                    'rsync -r "/Users/bensibley/Local Sites/author/app/public/wp-content/themes/author" /Users/bensibley/Documents/compete-themes/dist/ <%= excludeFiles %>',
                     // open desktop
                     'cd /Users/bensibley/Documents/compete-themes/dist/',
                     // zip the author folder on desktop
