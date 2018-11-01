@@ -388,8 +388,7 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 			'github',
 			'google-plus',
 			'behance',
-			'facebook',
-			'phone'
+			'facebook'
 		);
 
 		foreach ( $social_sites as $social_site => $profile ) {
