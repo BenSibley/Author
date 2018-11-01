@@ -346,6 +346,7 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'snapchat'      => 'author_snapchat_profile',
 			'soundcloud'    => 'author_soundcloud_profile',
 			'spotify'       => 'author_spotify_profile',
+			'stack-overflow' => 'author_stack_overflow_profile',
 			'steam'         => 'author_steam_profile',
 			'stumbleupon'   => 'author_stumbleupon_profile',
 			'telegram'      => 'author_telegram_profile',

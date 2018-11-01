@@ -209,6 +209,8 @@ function ct_author_add_customizer_content( $wp_customize ) {
 				$label = __('Tencent Weibo', 'author');
 			} elseif ( $social_site == 'paypal' ) {
 				$label = __('PayPal', 'author');
+			} elseif ( $social_site == 'stack-overflow' ) {
+				$label = __('Stack Overflow', 'author');
 			} elseif ( $social_site == 'email-form' ) {
 				$label = __('Contact Form', 'author');
 			}
