@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Author 1.31\n"
+"Project-Id-Version: Author 1.32\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2018-09-14 13:17:38+00:00\n"
+"POT-Creation-Date: 2018-11-01 18:52:46+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -97,58 +97,58 @@ msgstr ""
 msgid "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes"
 msgstr ""
 
-#: functions.php:12
+#: functions.php:20
 msgid ""
 "Hey! Sorry to interrupt, but you've been using Author for a little while "
 "now. If you're happy with this theme, could you take a minute to leave a "
 "review? <i>You won't see this notice again after closing it.</i>"
 msgstr ""
 
-#: functions.php:47
+#: functions.php:55
 msgid "Primary"
 msgstr ""
 
-#: functions.php:65
+#: functions.php:73
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:67
+#: functions.php:75
 msgid "Widgets in this area will be shown in the sidebar"
 msgstr ""
 
-#: functions.php:100
+#: functions.php:108
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:128
+#: functions.php:136
 msgid "(optional)"
 msgstr ""
 
-#: functions.php:147
+#: functions.php:155
 msgid "Website"
 msgstr ""
 
-#: functions.php:201 functions.php:265 inc/customizer.php:312
+#: functions.php:209 functions.php:273 inc/customizer.php:314
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:501 inc/scripts.php:18
+#: functions.php:518 inc/scripts.php:18
 msgid "open child menu"
 msgstr ""
 
-#: functions.php:624
+#: functions.php:641
 msgid "Customizer settings deleted."
 msgstr ""
 
-#: functions.php:630
+#: functions.php:647
 msgid "%s successfully activated!"
 msgstr ""
 
-#: functions.php:643
+#: functions.php:660
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:738
+#: functions.php:755
 msgid "Scroll to the top"
 msgstr ""
 
@@ -214,15 +214,15 @@ msgstr ""
 msgid "Gravatar uses the admin email address."
 msgstr ""
 
-#: inc/customizer.php:108 inc/customizer.php:450
+#: inc/customizer.php:108 inc/customizer.php:452
 msgid "Gravatar"
 msgstr ""
 
-#: inc/customizer.php:109 inc/customizer.php:451
+#: inc/customizer.php:109 inc/customizer.php:453
 msgid "Upload an image"
 msgstr ""
 
-#: inc/customizer.php:110 inc/customizer.php:452
+#: inc/customizer.php:110 inc/customizer.php:454
 msgid "Do not display avatar"
 msgstr ""
 
@@ -319,86 +319,90 @@ msgid "PayPal"
 msgstr ""
 
 #: inc/customizer.php:213
+msgid "Stack Overflow"
+msgstr ""
+
+#: inc/customizer.php:215
 msgid "Contact Form"
 msgstr ""
 
-#: inc/customizer.php:225
+#: inc/customizer.php:227
 msgid ""
 "Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn "
 "more</a>)"
 msgstr ""
 
-#: inc/customizer.php:273
+#: inc/customizer.php:275
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:278 inc/customizer.php:294 inc/customizer.php:370
-#: inc/customizer.php:461
+#: inc/customizer.php:280 inc/customizer.php:296 inc/customizer.php:372
+#: inc/customizer.php:463
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:279 inc/customizer.php:295 inc/customizer.php:371
-#: inc/customizer.php:462
+#: inc/customizer.php:281 inc/customizer.php:297 inc/customizer.php:373
+#: inc/customizer.php:464
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:289
+#: inc/customizer.php:291
 msgid "Show link to comments after posts?"
 msgstr ""
 
-#: inc/customizer.php:305
+#: inc/customizer.php:307
 msgid "Excerpt word count"
 msgstr ""
 
-#: inc/customizer.php:317
+#: inc/customizer.php:319
 msgid "Read More link text"
 msgstr ""
 
-#: inc/customizer.php:327
+#: inc/customizer.php:329
 msgid "Comment Display"
 msgstr ""
 
-#: inc/customizer.php:338
+#: inc/customizer.php:340
 msgid "Show comments on:"
 msgstr ""
 
-#: inc/customizer.php:343 inc/customizer.php:436
+#: inc/customizer.php:345 inc/customizer.php:438
 msgid "Posts"
 msgstr ""
 
-#: inc/customizer.php:344 inc/customizer.php:437
+#: inc/customizer.php:346 inc/customizer.php:439
 msgid "Pages"
 msgstr ""
 
-#: inc/customizer.php:345 inc/customizer.php:438
+#: inc/customizer.php:347 inc/customizer.php:440
 msgid "Attachments"
 msgstr ""
 
-#: inc/customizer.php:346 inc/customizer.php:439
+#: inc/customizer.php:348 inc/customizer.php:441
 msgid "Do not show"
 msgstr ""
 
-#: inc/customizer.php:355
+#: inc/customizer.php:357
 msgid "Scroll-to-Top Arrow"
 msgstr ""
 
-#: inc/customizer.php:365
+#: inc/customizer.php:367
 msgid "Display Scroll-to-top arrow?"
 msgstr ""
 
-#: inc/customizer.php:391
+#: inc/customizer.php:393
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:402
+#: inc/customizer.php:404
 msgid "Add Custom CSS Here:"
 msgstr ""
 
-#: inc/customizer.php:418
+#: inc/customizer.php:420
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:419
+#: inc/customizer.php:421
 msgid "Hide"
 msgstr ""
 
@@ -560,37 +564,37 @@ msgctxt "This blog post was published by some author on some date"
 msgid "Published by %1$s on %2$s"
 msgstr ""
 
-#: functions.php:111
+#: functions.php:119
 msgctxt "verb: reply to this comment"
 msgid "Reply"
 msgstr ""
 
-#: functions.php:115
+#: functions.php:123
 msgctxt "verb: edit this comment"
 msgid "Edit"
 msgstr ""
 
-#: functions.php:133
+#: functions.php:141
 msgctxt "noun"
 msgid "Name"
 msgstr ""
 
-#: functions.php:140
+#: functions.php:148
 msgctxt "noun"
 msgid "Email"
 msgstr ""
 
-#: functions.php:169
+#: functions.php:177
 msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: functions.php:414
+#: functions.php:431
 msgctxt "noun"
 msgid "email"
 msgstr ""
 
-#: inc/customizer.php:263
+#: inc/customizer.php:265
 msgctxt "noun: the blog section"
 msgid "Blog"
 msgstr ""
