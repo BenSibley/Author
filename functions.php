@@ -336,6 +336,7 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'meetup'        => 'author_mixcloud_profile',
 			'mixcloud'      => 'author_meetup_profile',			
 			'ok-ru'         => 'author_ok_ru_profile',
+			'patreon'				=> 'author_patreon_profile',
 			'paypal'        => 'author_paypal_profile',
 			'podcast'       => 'author_podcast_profile',
 			'qq'            => 'author_qq_profile',
