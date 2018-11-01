@@ -396,21 +396,21 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 
 					// get the square or plain class
 					if ( in_array( $active_site, $square_icons ) ) {
-						$class = 'fa fa-' . $active_site . '-square';
+						$class = 'fab fa-' . $active_site . '-square';
 					} else {
-						$class = 'fa fa-' . $active_site;
+						$class = 'fab fa-' . $active_site;
 					}
 					if ( $active_site == 'email-form' ) {
-						$class = 'fa fa-envelope-o';
+						$class = 'far fa-envelope';
 					} elseif ( $active_site == 'ok-ru' ) {
-						$class = 'fa fa-odnoklassniki';
+						$class = 'fab fa-odnoklassniki';
 					}
 
 					if ( $active_site == 'email' ) { ?>
 						<li>
 							<a class="email" target="_blank"
 							   href="mailto:<?php echo antispambot( is_email( get_theme_mod( $active_site ) ) ); ?>">
-								<i class="fa fa-envelope"></i>
+								<i class="fas fa-envelope"></i>
 								<span class="screen-reader-text"><?php echo esc_html_x('email', 'noun', 'author'); ?></span>
 							</a>
 						</li>
@@ -735,7 +735,7 @@ function ct_author_scroll_to_top_arrow() {
 	$setting = get_theme_mod('scroll_to_top');
 	
 	if ( $setting == 'yes' ) {
-		echo '<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">'. __('Scroll to the top', 'author') .'</span><i class="fa fa-arrow-up"></i></button>';
+		echo '<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">'. __('Scroll to the top', 'author') .'</span><i class="fas fa-arrow-up"></i></button>';
 	}
 }
 add_action( 'body_bottom', 'ct_author_scroll_to_top_arrow');

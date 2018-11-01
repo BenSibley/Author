@@ -63,7 +63,8 @@
 }
 #customize-control-author_pro .author-pro-button:before {
   content: '\f06e';
-  font-family: 'FontAwesome';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
   margin-right: 6px;
 }
 #customize-control-author_pro .author-pro-button:hover, #customize-control-author_pro .author-pro-button:active, #customize-control-author_pro .author-pro-button:focus {

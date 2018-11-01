@@ -33,7 +33,7 @@
 						</div>
 						<button id="toggle-navigation" class="toggle-navigation" aria-expanded="false">
 							<span class="screen-reader-text"><?php _e( 'open primary menu', 'author' ); ?></span>
-							<i class="fa fa-bars"></i>
+							<i class="fas fa-bars"></i>
 						</button>
 						<?php ct_author_social_icons_output(); ?>
 						<?php get_template_part( 'menu', 'primary' ); ?>
