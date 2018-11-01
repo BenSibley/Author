@@ -3,6 +3,12 @@
 /* Social Media Brand Colors */
 /*===== Mixins =====*/
 /***** Silent Classes *****/
+#sub-accordion-section-ct_author_social_media_icons #customize-control-email-form {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: solid 1px #d5d5d5;
+}
+
 .customize-control.hide {
   display: none !important;
 }
