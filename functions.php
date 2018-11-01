@@ -323,6 +323,7 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'delicious'     => 'author_delicious_profile',
 			'deviantart'    => 'author_deviantart_profile',
 			'digg'          => 'author_digg_profile',
+			'discord'       => 'author_discord_profile',
 			'dribbble'      => 'author_dribbble_profile',
 			'etsy'          => 'author_etsy_profile',
 			'flickr'        => 'author_flickr_profile',
