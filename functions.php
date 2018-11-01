@@ -364,12 +364,10 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 
 		$social_sites = ct_author_social_array();
 		$square_icons = array(
-			'linkedin',
 			'twitter',
 			'vimeo',
 			'youtube',
 			'pinterest',
-			'rss',
 			'reddit',
 			'tumblr',
 			'steam',
@@ -397,13 +395,20 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 					// get the square or plain class
 					if ( in_array( $active_site, $square_icons ) ) {
 						$class = 'fab fa-' . $active_site . '-square';
-					} else {
-						$class = 'fab fa-' . $active_site;
-					}
-					if ( $active_site == 'email-form' ) {
+					} elseif ( $active_site == 'rss' ) {
+						$class = 'fas fa-rss';
+					} elseif ( $active_site == 'email-form' ) {
 						$class = 'far fa-envelope';
+					} elseif ( $active_site == 'podcast' ) {
+						$class = 'fas fa-podcast';
 					} elseif ( $active_site == 'ok-ru' ) {
 						$class = 'fab fa-odnoklassniki';
+					} elseif ( $active_site == 'wechat' ) {
+						$class = 'fab fa-weixin';
+					} elseif ( $active_site == 'phone' ) {
+						$class = 'fas fa-phone';
+					} else {
+						$class = 'fab fa-' . $active_site;
 					}
 
 					if ( $active_site == 'email' ) { ?>
