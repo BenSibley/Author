@@ -13,77 +13,19 @@
   display: none !important;
 }
 
-// Author Pro section
-#accordion-section-ct_author_pro {
-
-  .accordion-section-title {
-    color: #fff;
+.upgrades-ad {
+  
+  a {
+    display: block;
+    padding: 12px 24px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
     background: #05B0E7;
     transition: background 0.2s;
 
-    &:after {
-      color: #fff;
-    }
-
-    &:hover,
-    &:active,
-    &:focus {
-      background: #3A96B5 !important;
-      color: #fff !important;
-
-      &:after {
-        color: #fff !important;
-      }
-    }
-  }
-}
-#customize-control-author_pro {
-  background: white;
-  border: solid 1px $color-gray-85;
-  padding: 6px 24px;
-  box-sizing: border-box;
-
-  ul {
-    list-style: disc;
-    padding-left: 15px;
-  }
-  img {
-    position: relative;
-    max-width: calc(100% + 48px);
-    top: -6px;
-    left: -24px;
-    border-bottom: solid 1px $color-gray-85;
-  }
-  .bold {
-    font-weight: 600;
-    font-size: 16px;
-  }
-  .button-wrapper {
-    text-align: center;
-  }
-  .author-pro-button {
-    display: inline-block;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 15px 24px;
-    margin: 12px auto;
-    background: #FF931E;
-    color: #fff;
-    text-decoration: none;
-    transition: background 0.2s;
-
-    &:before {
-      content: '\f06e';
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      margin-right: 6px;
-    }
-
-    &:hover,
-    &:active,
-    &:focus {
-      background: #FF8A23;
+    &:hover {
+      background: #3FBEE8;  
     }
   }
 }

@@ -45,46 +45,6 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		<?php }
 	}
 
-	/***** Author Pro Control *****/
-
-	class ct_author_pro_ad extends WP_Customize_Control {
-		public function render_content() {
-			$link = 'https://www.competethemes.com/author-pro/';
-			echo "<a href='" . $link . "' target='_blank'><img src='" . get_template_directory_uri() . "/assets/images/author-pro.gif' /></a>";
-			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%1$s">%2$s Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'author'), $link, wp_get_theme( get_template() ) ) . "</p>";
-			echo "<p>" . sprintf( esc_html__('%1$s Pro adds the following features to %1$s:', 'author'), wp_get_theme( get_template() ) ) . "</p>";
-			echo "<ul>
-					<li>" . esc_html__('Custom colors', 'author') . "</li>
-					<li>" . esc_html__('New fonts', 'author') . "</li>
-					<li>" . esc_html__('Flexible header image', 'author') . "</li>
-					<li>" . esc_html__('+ 9 more features', 'author') . "</li>
-				  </ul>";
-			echo "<p class='button-wrapper'><a target=\"_blank\" class='author-pro-button' href='" . $link . "'>" . sprintf( esc_html__( 'View %s Pro', 'author' ), wp_get_theme( get_template() ) ) . "</a></p>";
-		}
-	}
-
-	/***** Author Pro Section *****/
-
-	// don't add if Author Pro is active
-	if ( !function_exists( 'ct_author_pro_init' ) ) {
-		// section
-		$wp_customize->add_section( 'ct_author_pro', array(
-			'title'    => sprintf( esc_html__( '%s Pro', 'author' ), wp_get_theme( get_template() ) ),
-			'priority' => 1
-		) );
-		// Upload - setting
-		$wp_customize->add_setting( 'author_pro', array(
-			'sanitize_callback' => 'absint'
-		) );
-		// Upload - control
-		$wp_customize->add_control( new ct_author_pro_ad(
-			$wp_customize, 'author_pro', array(
-				'section'  => 'ct_author_pro',
-				'settings' => 'author_pro'
-			)
-		) );
-	}
-
 	/***** Avatar *****/
 
 	// section
@@ -481,3 +441,12 @@ function ct_author_sanitize_css( $css ) {
 
 	return $css;
 }
+
+function ct_author_customize_preview_js() {
+	if ( !function_exists( 'ct_author_pro_init' ) ) {
+		$url = 'https://www.competethemes.com/author-pro/?utm_source=wp-dashboard&utm_medium=Customizer&utm_campaign=Author%20Pro%20-%20Customizer';
+		$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"". $url ."\" target=\"_blank\">Customize Colors with Author Pro <span>&rarr;</span></a></div>')</script>";
+		echo apply_filters('ct_author_customizer_ad', $content);
+	}
+}
+add_action('customize_controls_print_footer_scripts', 'ct_author_customize_preview_js');
