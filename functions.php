@@ -65,6 +65,16 @@ if ( ! function_exists( 'ct_author_theme_setup' ) ) {
 }
 add_action( 'after_setup_theme', 'ct_author_theme_setup', 10 );
 
+//-----------------------------------------------------------------------------
+// Load custom stylesheet for the post editor
+//-----------------------------------------------------------------------------
+if ( ! function_exists( 'ct_author_add_editor_styles' ) ) {
+	function ct_author_add_editor_styles() {
+		add_editor_style( 'styles/editor-style.css' );
+	}
+}
+add_action( 'admin_init', 'ct_author_add_editor_styles' );
+
 if ( ! function_exists( ( 'ct_author_register_widget_areas' ) ) ) {
 	function ct_author_register_widget_areas() {
 
