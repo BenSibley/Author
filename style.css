@@ -1150,6 +1150,13 @@ a img {
     left: -18.67%;
     width: 137.34%;
   }
+
+  .wp-block-image.alignwide {
+    position: relative;
+    left: -10%;
+    width: 120%;
+    max-width: none;
+  }
 }
 @media all and (min-width: 71.875em) {
   .entry article,
@@ -1169,6 +1176,11 @@ a img {
   .wp-block-cover {
     left: -12.4%;
     width: 124.8%;
+  }
+
+  .wp-block-image.alignwide {
+    left: -7%;
+    width: 114%;
   }
 }
 .comments {

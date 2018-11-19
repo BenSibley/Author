@@ -272,6 +272,12 @@
     left: -18.67%;
     width: 137.34%;
   }
+  .wp-block-image.alignwide {
+    position: relative;
+    left: -10%;
+    width: 120%;
+    max-width: none;
+  }
 }
 
 // 1150px
@@ -297,5 +303,9 @@
   .wp-block-cover {
     left: -12.4%;
     width: 124.8%;
+  }
+  .wp-block-image.alignwide {
+    left: -7%;
+    width: 114%;
   }
 }
