@@ -56,6 +56,34 @@ if ( ! function_exists( 'ct_author_theme_setup' ) ) {
 		// Gutenberg - add support for editor styles
 		add_theme_support('editor-styles');
 
+		// Gutenberg - modify the font sizes
+		add_theme_support( 'editor-font-sizes', array(
+			array(
+					'name' => __( 'small', 'author' ),
+					'shortName' => __( 'S', 'author' ),
+					'size' => 12,
+					'slug' => 'small'
+			),
+			array(
+					'name' => __( 'regular', 'author' ),
+					'shortName' => __( 'M', 'author' ),
+					'size' => 16,
+					'slug' => 'regular'
+			),
+			array(
+					'name' => __( 'large', 'author' ),
+					'shortName' => __( 'L', 'author' ),
+					'size' => 21,
+					'slug' => 'large'
+			),
+			array(
+					'name' => __( 'larger', 'author' ),
+					'shortName' => __( 'XL', 'author' ),
+					'size' => 37,
+					'slug' => 'larger'
+			)
+	) );
+
 		load_theme_textdomain( 'author', get_template_directory() . '/languages' );
 
 		register_nav_menus( array(

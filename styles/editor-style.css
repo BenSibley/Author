@@ -437,7 +437,7 @@ body:before {
 }
 
 .has-small-font-size {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .has-regular-font-size {
@@ -445,11 +445,11 @@ body:before {
 }
 
 .has-large-font-size {
-  font-size: 24px;
+  font-size: 21px;
 }
 
 .has-extra-large-font-size {
-  font-size: 36px;
+  font-size: 37px;
 }
 
 @media all and (min-width: 1200px) {
