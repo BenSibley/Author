@@ -62,8 +62,7 @@ module.exports = function(grunt) {
                 files: {
                     'style.css': 'style.css',
                     'styles/customizer.css': 'styles/customizer.css',
-                    'styles/admin.css': 'styles/admin.css',
-                    'styles/editor-style.css': 'sass/editor-style.scss'
+                    'styles/admin.css': 'styles/admin.css'
                 }
             }
         },
