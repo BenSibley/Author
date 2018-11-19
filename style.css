@@ -1076,6 +1076,28 @@ a img {
   margin: 6px 0 10px;
 }
 
+.wp-block-image.alignfull,
+.wp-block-cover {
+  position: relative;
+  left: -8.67%;
+  width: 117.52%;
+  max-width: none;
+}
+
+.wp-block-quote.is-large {
+  padding-left: 0;
+  border-left: none;
+  margin: 1.5em;
+}
+
+.wp-block-embed {
+  margin: 1.5em 0;
+}
+
+.wp-block-code code {
+  background: none;
+}
+
 @media all and (min-width: 34.375em) {
   .entry article {
     box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1);
@@ -1122,6 +1144,12 @@ a img {
   .entry .further-reading {
     padding: 1.5em 13.63197%;
   }
+
+  .wp-block-image.alignfull,
+  .wp-block-cover {
+    left: -18.67%;
+    width: 137.34%;
+  }
 }
 @media all and (min-width: 71.875em) {
   .entry article,
@@ -1135,6 +1163,12 @@ a img {
 
   .has-post-thumbnail .post-header {
     margin-top: 0;
+  }
+
+  .wp-block-image.alignfull,
+  .wp-block-cover {
+    left: -12.4%;
+    width: 124.8%;
   }
 }
 .comments {
