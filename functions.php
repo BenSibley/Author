@@ -49,6 +49,13 @@ if ( ! function_exists( 'ct_author_theme_setup' ) ) {
 			'render'    => 'ct_author_infinite_scroll_render'
 		) );
 
+		// Gutenberg - wide & full images
+		add_theme_support( 'align-wide' );
+		add_theme_support( 'align-full' );
+
+		// Gutenberg - add support for editor styles
+		add_theme_support('editor-styles');
+
 		load_theme_textdomain( 'author', get_template_directory() . '/languages' );
 
 		register_nav_menus( array(
