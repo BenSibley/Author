@@ -48,6 +48,16 @@ function ct_author_enqueue_admin_styles( $hook ) {
 	if ( $hook == 'appearance_page_author-options' ) {
 		wp_enqueue_style( 'ct-author-admin-styles', get_template_directory_uri() . '/styles/admin.min.css' );
 	}
+	if ( $hook == 'post.php' || $hook == 'post-new.php' ) {
+
+		$font_args = array(
+			'family' => urlencode( 'Rokkitt:400,700|Lato:400,700' ),
+			'subset' => urlencode( 'latin,latin-ext' )
+		);
+		$fonts_url = add_query_arg( $font_args, '//fonts.googleapis.com/css' );
+	
+		wp_enqueue_style( 'ct-author-google-fonts', $fonts_url );
+	}
 }
 add_action( 'admin_enqueue_scripts', 'ct_author_enqueue_admin_styles' );
 
