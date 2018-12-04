@@ -1,0 +1,531 @@
+# Copyright (C) 2018 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Author 1.33\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2018-11-05 14:23:56+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-11-20 18:38+0300\n"
+"Language-Team: Anatolijs Stepanko <anatolijs969@gmail.com>\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Language: ru\n"
+
+#: 404.php:5
+msgid "404: Page Not Found"
+msgstr "404: Страница не найдена"
+
+#: 404.php:8
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+"Похоже, ничего не было найдено на этом URL.  Дважды проверьте правильность "
+"URL-адреса или воспользуйтесь формой поиска, чтобы найти то, что вы искали."
+
+#: comments.php:21 comments.php:41 comments.php:63
+msgid "Be First to Comment"
+msgstr "Оставьте первый коментарий"
+
+#: comments.php:21 comments.php:41 comments.php:63
+msgid "One Comment"
+msgstr "1 комментарий"
+
+#: comments.php:55
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+"Комментарии закрыты, но <a href=\"%s\" title=\"Trackback URL for this post"
+"\"> обратные ссылки</a> и пингбеки открыты."
+
+#: comments.php:77 comments.php:94
+msgid "Comments are closed."
+msgstr "Комментарии закрыты."
+
+#: content/comments-link.php:9 content/comments-link.php:13
+msgid "comment icon"
+msgstr "иконка комментария"
+
+#: content/comments-link.php:10
+msgid "Comments closed"
+msgstr "Комментарии закрыты"
+
+#: content/comments-link.php:10 content/comments-link.php:14
+msgid "1 Comment"
+msgstr "1 Комментарий"
+
+#: content/comments-link.php:14
+msgid "Leave a Comment"
+msgstr "Оставить комментарий"
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr "Предыдущее изображение"
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr "Следующее изображение"
+
+#: content/post-nav.php:6
+msgid "Previous Post"
+msgstr "Предыдущая запись"
+
+#: content/post-nav.php:9
+msgid "No Older Posts"
+msgstr "Нет старых записей"
+
+#: content/post-nav.php:15 content/post-nav.php:28
+msgid "Return to Blog"
+msgstr "Вернуться в блог"
+
+#: content/post-nav.php:19
+msgid "Next Post"
+msgstr "Следующая запись"
+
+#: content/post-nav.php:22
+msgid "No Newer Posts"
+msgstr "Нет новых записей"
+
+#: content/post-tags.php:8
+msgid "View all posts tagged %s"
+msgstr "Посмотреть все записи с меткой %s"
+
+#: content-page.php:11 content.php:12
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: footer.php:8
+msgid "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes"
+msgstr ""
+
+#: functions.php:20
+msgid ""
+"Hey! Sorry to interrupt, but you've been using Author for a little while "
+"now. If you're happy with this theme, could you take a minute to leave a "
+"review? <i>You won't see this notice again after closing it.</i>"
+msgstr ""
+
+#: functions.php:55
+msgid "Primary"
+msgstr "Основное"
+
+#: functions.php:73
+msgid "Primary Sidebar"
+msgstr "Основная боковая панель"
+
+#: functions.php:75
+msgid "Widgets in this area will be shown in the sidebar"
+msgstr "Виджеты в этой области будут показаны в боковой панели"
+
+#: functions.php:108
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает одобрения."
+
+#: functions.php:136
+msgid "(optional)"
+msgstr "(опционально)"
+
+#: functions.php:155
+msgid "Website"
+msgstr "Сайт"
+
+#: functions.php:209 functions.php:273 inc/customizer.php:274
+msgid "Continue reading"
+msgstr "Читать дальше"
+
+#: functions.php:518 inc/scripts.php:18
+msgid "open child menu"
+msgstr "открыть дочернее меню"
+
+#: functions.php:641
+msgid "Customizer settings deleted."
+msgstr "Пользовательские настройки удалены."
+
+#: functions.php:647
+msgid "%s successfully activated!"
+msgstr "%s успешно активирован!"
+
+#: functions.php:660
+msgid "Featured Post"
+msgstr "Выбранная запись"
+
+#: functions.php:755
+msgid "Scroll to the top"
+msgstr "Пролистать вверх"
+
+#: header.php:11
+msgid "Skip to content"
+msgstr "Перейти к содержанию"
+
+#: header.php:24
+msgid "avatar"
+msgstr "аватар"
+
+#: header.php:35 inc/scripts.php:16
+msgid "open primary menu"
+msgstr "открыть основное меню"
+
+#: inc/customizer.php:14
+msgid "Front Page"
+msgstr "Главная страница"
+
+#: inc/customizer.php:52
+msgid "Avatar"
+msgstr "Аватар"
+
+#: inc/customizer.php:62
+msgid "Avatar image source"
+msgstr "Источник изображения аватара"
+
+#: inc/customizer.php:66
+msgid "Gravatar uses the admin email address."
+msgstr "Граватар использует e-mail админа."
+
+#: inc/customizer.php:68 inc/customizer.php:412
+msgid "Gravatar"
+msgstr "Граватар"
+
+#: inc/customizer.php:69 inc/customizer.php:413
+msgid "Upload an image"
+msgstr "Загрузить изображение"
+
+#: inc/customizer.php:70 inc/customizer.php:414
+msgid "Do not display avatar"
+msgstr "Не показывать аватар"
+
+#: inc/customizer.php:80
+msgid "Upload your avatar"
+msgstr "Загрузить свой аватар"
+
+#: inc/customizer.php:90
+msgid "Logo"
+msgstr "Логотип"
+
+#: inc/customizer.php:92
+msgid "Use this instead of the avatar if you want a non-rounded logo image."
+msgstr ""
+"Используйте это вместо аватара если вы не хотите использовать круглый "
+"логотип."
+
+#: inc/customizer.php:101
+msgid "Upload custom logo."
+msgstr "Загрузить пользовательский логотип."
+
+#: inc/customizer.php:117
+msgid "Social Media Icons"
+msgstr "Значки Социальных Сетей"
+
+#: inc/customizer.php:119
+msgid "Add the URL for each of your social profiles."
+msgstr "Добавьте URL-адрес для каждого из своих социальных профилей."
+
+#: inc/customizer.php:132
+msgid "Email Address"
+msgstr "Адрес электронной почты"
+
+#: inc/customizer.php:141
+msgid "Google Plus"
+msgstr ""
+
+#: inc/customizer.php:143
+msgid "RSS"
+msgstr ""
+
+#: inc/customizer.php:145
+msgid "SoundCloud"
+msgstr ""
+
+#: inc/customizer.php:147
+msgid "SlideShare"
+msgstr ""
+
+#: inc/customizer.php:149
+msgid "CodePen"
+msgstr ""
+
+#: inc/customizer.php:151
+msgid "StumbleUpon"
+msgstr ""
+
+#: inc/customizer.php:153
+msgid "DeviantArt"
+msgstr ""
+
+#: inc/customizer.php:155
+msgid "Hacker News"
+msgstr ""
+
+#: inc/customizer.php:157
+msgid "Google Wallet"
+msgstr ""
+
+#: inc/customizer.php:159
+msgid "WhatsApp"
+msgstr ""
+
+#: inc/customizer.php:161
+msgid "QQ"
+msgstr ""
+
+#: inc/customizer.php:163
+msgid "VK"
+msgstr ""
+
+#: inc/customizer.php:165
+msgid "OK.ru"
+msgstr ""
+
+#: inc/customizer.php:167
+msgid "WeChat"
+msgstr ""
+
+#: inc/customizer.php:169
+msgid "Tencent Weibo"
+msgstr ""
+
+#: inc/customizer.php:171
+msgid "PayPal"
+msgstr ""
+
+#: inc/customizer.php:173
+msgid "Stack Overflow"
+msgstr ""
+
+#: inc/customizer.php:175
+msgid "Contact Form"
+msgstr "Контактная форма"
+
+#: inc/customizer.php:187
+msgid ""
+"Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn more</a>)"
+msgstr ""
+"Принимать протокол Skype (<a href=\"%s\" target=\"_blank\">Подробнее</a>)"
+
+#: inc/customizer.php:235
+msgid "Show full posts on blog?"
+msgstr "Показать полные записи в блоге?"
+
+#: inc/customizer.php:240 inc/customizer.php:256 inc/customizer.php:332
+#: inc/customizer.php:423
+msgid "Yes"
+msgstr "Да"
+
+#: inc/customizer.php:241 inc/customizer.php:257 inc/customizer.php:333
+#: inc/customizer.php:424
+msgid "No"
+msgstr "Нет"
+
+#: inc/customizer.php:251
+msgid "Show link to comments after posts?"
+msgstr "Показывать ссылку на комментарии в конце записи?"
+
+#: inc/customizer.php:267
+msgid "Excerpt word count"
+msgstr "Ограничить число слов"
+
+#: inc/customizer.php:279
+msgid "Read More link text"
+msgstr "Текст ссылки \"Читать далее\""
+
+#: inc/customizer.php:289
+msgid "Comment Display"
+msgstr "Отображение Комментариев"
+
+#: inc/customizer.php:300
+msgid "Show comments on:"
+msgstr "Показать комментарии:"
+
+#: inc/customizer.php:305 inc/customizer.php:398
+msgid "Posts"
+msgstr "Записи"
+
+#: inc/customizer.php:306 inc/customizer.php:399
+msgid "Pages"
+msgstr "Страницы"
+
+#: inc/customizer.php:307 inc/customizer.php:400
+msgid "Attachments"
+msgstr "Вложения"
+
+#: inc/customizer.php:308 inc/customizer.php:401
+msgid "Do not show"
+msgstr "Не отображать"
+
+#: inc/customizer.php:317
+msgid "Scroll-to-Top Arrow"
+msgstr "Стрелка \"Пролистать вверх\""
+
+#: inc/customizer.php:327
+msgid "Display Scroll-to-top arrow?"
+msgstr "Показывать стрелку \"Пролистать вверх\"?"
+
+#: inc/customizer.php:353
+msgid "Custom CSS"
+msgstr "Пользовательский CSS"
+
+#: inc/customizer.php:364
+msgid "Add Custom CSS Here:"
+msgstr "Добавьте пользовательский CSS сюда:"
+
+#: inc/customizer.php:380
+msgid "Show"
+msgstr "Показать"
+
+#: inc/customizer.php:381
+msgid "Hide"
+msgstr "Скрыть"
+
+#: inc/review.php:113
+msgid "Click here to leave your review"
+msgstr "Нажмите здесь, чтобы оставить свой отзыв"
+
+#: inc/scripts.php:17
+msgid "close primary menu"
+msgstr "закрыть основное меню"
+
+#: inc/scripts.php:19
+msgid "close child menu"
+msgstr "закрыть дочернее меню"
+
+#: index.php:19
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: index.php:20
+msgid "Next"
+msgstr "Следующий"
+
+#: search.php:10
+msgid "%1$d search result for \"%2$s\""
+msgid_plural "%1$d search results for \"%2$s\""
+msgstr[0] "%1$d результат поиска \"%2$s\""
+msgstr[1] "%1$d результаты поиска \"%2$s\""
+msgstr[2] "%1$d результаты поиска \"%2$s\""
+
+#: search.php:12
+msgid "No search results for \"%s\""
+msgstr "Нет результатов поиска для \" %s\""
+
+#: search.php:37
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr ""
+"Не можете найти то, что вы ищете?  Попробуйте уточнить параметры поиска:"
+
+#: searchform.php:3
+msgid "Search"
+msgstr "Поиск"
+
+#: searchform.php:5
+msgid "Search for:"
+msgstr "Искать:"
+
+#: searchform.php:6
+msgid "Go"
+msgstr "Вперед"
+
+#: sidebar-primary.php:3
+msgid "Sidebar"
+msgstr "Боковая панель"
+
+#: theme-options.php:4 theme-options.php:20
+msgid "%s Dashboard"
+msgstr "%s  Консоль"
+
+#. Description of the plugin/theme
+msgid ""
+"Author is designed for publishers who want readers. That's why Author is "
+"fast, responsive, accessibility-ready, and optimally designed for reading. "
+"All scripts and stylesheets are minified, concatenated, and conditionally "
+"loaded to maximize performance. The layout adapts fluidly to all screen "
+"sizes to enhance usability. As one of few accessibility-ready themes, it "
+"performs well for users with wide ranges of disabilities. Based on the "
+"ancient Van de Graaf canon, Author features a layout that promotes "
+"readability. Use Author to create a simple blog, magazine, or news website. "
+"The simple and minimalist design works great for gaming, business, fashion, "
+"music, food, travel, and photography niches. Now with complete WooCommerce "
+"support for eCommerce stores. Preview Author now on desktop, tablets, and "
+"mobile devices with the interactive live demo: https://www.competethemes.com/"
+"demos/?theme=author"
+msgstr ""
+"Тема \"Автор\" предназначена для издателей, которые хотят читателей. Вот "
+"почему \"Автор\" быстрый, отзывчивый, доступный и оптимально разработанный "
+"для чтения. Все скрипты и таблицы стилей минимизируются, объединяются и "
+"условно загружаются для максимальной производительности. Макет плавно "
+"адаптируется ко всем размерам экрана для повышения удобства использования. "
+"Как одна из немногих готовых к доступности тем, она хорошо работает для "
+"пользователей с широким спектром инвалидности. Основанный на древнем каноне "
+"Ван де Граафа, \"Автор\" имеет макет, который способствует читабельности. "
+"Используйте \"Автор\" для создания простого блога, журнала или новостного "
+"сайта. Простой и минималистский дизайн отлично подходит для игр, бизнеса, "
+"моды, музыки, еды, путешествий и фотографий. Теперь с полной поддержкой "
+"WooCommerce для  магазинов электронной коммерции. Предварительный просмотр "
+"\"Автора\" теперь на настольных компьютерах, планшетах и мобильных "
+"устройствах с интерактивной демо: https://www.competethemes.com/demos/?"
+"theme=author"
+
+#: comments.php:21 comments.php:41 comments.php:63 content/comments-link.php:10
+#: content/comments-link.php:14
+msgctxt "noun: 5 comments"
+msgid "% Comments"
+msgstr "% Комментарии"
+
+#: content/archive-header.php:4
+msgctxt "noun: Site Title' Posts"
+msgid "Posts"
+msgstr "Записи"
+
+#: content/post-categories.php:9
+msgctxt "Published in post category"
+msgid "Published in"
+msgstr "Опубликовано в рубрике"
+
+#: content/post-categories.php:12
+msgctxt "View all posts in post category"
+msgid "View all posts in %s"
+msgstr "Смотреть все записи в категории %s"
+
+#: content/post-meta.php:6
+msgctxt "This blog post was published by some author on some date"
+msgid "Published by %1$s on %2$s"
+msgstr "Автор %1$s. Запись от %2$s"
+
+#: functions.php:119
+msgctxt "verb: reply to this comment"
+msgid "Reply"
+msgstr "Ответить"
+
+#: functions.php:123
+msgctxt "verb: edit this comment"
+msgid "Edit"
+msgstr "Редактировать"
+
+#: functions.php:141
+msgctxt "noun"
+msgid "Name"
+msgstr "Имя"
+
+#: functions.php:148
+msgctxt "noun"
+msgid "Email"
+msgstr "Почта"
+
+#: functions.php:177
+msgctxt "noun"
+msgid "Comment"
+msgstr "Комментарий"
+
+#: functions.php:431
+msgctxt "noun"
+msgid "email"
+msgstr "почта"
+
+#: inc/customizer.php:225
+msgctxt "noun: the blog section"
+msgid "Blog"
+msgstr "Блог"
