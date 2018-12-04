@@ -374,6 +374,7 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'flickr'        => 'author_flickr_profile',
 			'foursquare'    => 'author_foursquare_profile',
 			'github'        => 'author_github_profile',
+			'goodreads'			=> 'author_goodreads_profile',
 			'google-plus'   => 'author_googleplus_profile',
 			'google-wallet' => 'author_google-wallet_profile',
 			'hacker-news'   => 'author_hacker-news_profile',
