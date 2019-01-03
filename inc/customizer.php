@@ -334,6 +334,30 @@ function ct_author_add_customizer_content( $wp_customize ) {
 		)
 	) );
 
+	/***** Additional Options  *****/
+
+	// section
+	$wp_customize->add_section( 'ct_author_additional_options', array(
+		'title'    => __( 'Additional Options', 'author' ),
+		'priority' => 65
+	) );
+	// setting - last updated
+	$wp_customize->add_setting( 'last_updated', array(
+		'default'           => 'no',
+		'sanitize_callback' => 'ct_author_sanitize_yes_no_settings'
+	) );
+	// control - last updated
+	$wp_customize->add_control( 'last_updated', array(
+		'label'    => __( 'Display the date each post was last updated?', 'author' ),
+		'section'  => 'ct_author_additional_options',
+		'settings' => 'last_updated',
+		'type'     => 'radio',
+		'choices'  => array(
+			'yes' => __( 'Yes', 'author' ),
+			'no'  => __( 'No', 'author' )
+		)
+	) );
+
 	/***** Custom CSS *****/
 
 	if ( function_exists( 'wp_update_custom_css_post' ) ) {
