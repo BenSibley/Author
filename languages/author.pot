@@ -1,14 +1,14 @@
-# Copyright (C) 2018 Compete Themes
+# Copyright (C) 2019 Compete Themes
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Author 1.34\n"
+"Project-Id-Version: Author 1.36\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2018-11-19 16:43:09+00:00\n"
+"POT-Creation-Date: 2019-01-07 21:07:05+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.5.3\n"
@@ -89,7 +89,7 @@ msgstr ""
 msgid "View all posts tagged %s"
 msgstr ""
 
-#: content-page.php:11 content.php:12
+#: content-page.php:11 content.php:13
 msgid "Pages:"
 msgstr ""
 
@@ -97,91 +97,95 @@ msgstr ""
 msgid "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes"
 msgstr ""
 
-#: functions.php:20
+#: functions.php:21
 msgid ""
 "Hey! Sorry to interrupt, but you've been using Author for a little while "
 "now. If you're happy with this theme, could you take a minute to leave a "
 "review? <i>You won't see this notice again after closing it.</i>"
 msgstr ""
 
-#: functions.php:62
+#: functions.php:63
 msgid "small"
 msgstr ""
 
-#: functions.php:63
+#: functions.php:64
 msgid "S"
 msgstr ""
 
-#: functions.php:68
+#: functions.php:69
 msgid "regular"
 msgstr ""
 
-#: functions.php:69
+#: functions.php:70
 msgid "M"
 msgstr ""
 
-#: functions.php:74
+#: functions.php:75
 msgid "large"
 msgstr ""
 
-#: functions.php:75
+#: functions.php:76
 msgid "L"
 msgstr ""
 
-#: functions.php:80
+#: functions.php:81
 msgid "larger"
 msgstr ""
 
-#: functions.php:81
+#: functions.php:82
 msgid "XL"
 msgstr ""
 
-#: functions.php:90
+#: functions.php:91
 msgid "Primary"
 msgstr ""
 
-#: functions.php:118
+#: functions.php:119
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:120
+#: functions.php:121
 msgid "Widgets in this area will be shown in the sidebar"
 msgstr ""
 
-#: functions.php:153
+#: functions.php:154
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:181
+#: functions.php:182
 msgid "(optional)"
 msgstr ""
 
-#: functions.php:200
+#: functions.php:201
 msgid "Website"
 msgstr ""
 
-#: functions.php:254 functions.php:318 inc/customizer.php:274
+#: functions.php:255 functions.php:319 inc/customizer.php:274
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:563 inc/scripts.php:18
+#: functions.php:565 inc/scripts.php:18
 msgid "open child menu"
 msgstr ""
 
-#: functions.php:686
+#: functions.php:688
 msgid "Customizer settings deleted."
 msgstr ""
 
-#: functions.php:692
+#: functions.php:694
 msgid "%s successfully activated!"
 msgstr ""
 
-#: functions.php:705
+#: functions.php:707
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:800
+#: functions.php:802
 msgid "Scroll to the top"
+msgstr ""
+
+#: functions.php:821
+msgid "Last updated on"
 msgstr ""
 
 #: header.php:11
@@ -212,15 +216,15 @@ msgstr ""
 msgid "Gravatar uses the admin email address."
 msgstr ""
 
-#: inc/customizer.php:68 inc/customizer.php:412
+#: inc/customizer.php:68 inc/customizer.php:436
 msgid "Gravatar"
 msgstr ""
 
-#: inc/customizer.php:69 inc/customizer.php:413
+#: inc/customizer.php:69 inc/customizer.php:437
 msgid "Upload an image"
 msgstr ""
 
-#: inc/customizer.php:70 inc/customizer.php:414
+#: inc/customizer.php:70 inc/customizer.php:438
 msgid "Do not display avatar"
 msgstr ""
 
@@ -335,12 +339,12 @@ msgid "Show full posts on blog?"
 msgstr ""
 
 #: inc/customizer.php:240 inc/customizer.php:256 inc/customizer.php:332
-#: inc/customizer.php:423
+#: inc/customizer.php:356 inc/customizer.php:447
 msgid "Yes"
 msgstr ""
 
 #: inc/customizer.php:241 inc/customizer.php:257 inc/customizer.php:333
-#: inc/customizer.php:424
+#: inc/customizer.php:357 inc/customizer.php:448
 msgid "No"
 msgstr ""
 
@@ -364,19 +368,19 @@ msgstr ""
 msgid "Show comments on:"
 msgstr ""
 
-#: inc/customizer.php:305 inc/customizer.php:398
+#: inc/customizer.php:305 inc/customizer.php:422
 msgid "Posts"
 msgstr ""
 
-#: inc/customizer.php:306 inc/customizer.php:399
+#: inc/customizer.php:306 inc/customizer.php:423
 msgid "Pages"
 msgstr ""
 
-#: inc/customizer.php:307 inc/customizer.php:400
+#: inc/customizer.php:307 inc/customizer.php:424
 msgid "Attachments"
 msgstr ""
 
-#: inc/customizer.php:308 inc/customizer.php:401
+#: inc/customizer.php:308 inc/customizer.php:425
 msgid "Do not show"
 msgstr ""
 
@@ -388,20 +392,44 @@ msgstr ""
 msgid "Display Scroll-to-top arrow?"
 msgstr ""
 
-#: inc/customizer.php:353
+#: inc/customizer.php:341
+msgid "Additional Options"
+msgstr ""
+
+#: inc/customizer.php:351
+msgid "Display the date each post was last updated?"
+msgstr ""
+
+#: inc/customizer.php:377
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:364
+#: inc/customizer.php:388
 msgid "Add Custom CSS Here:"
 msgstr ""
 
-#: inc/customizer.php:380
+#: inc/customizer.php:404
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:381
+#: inc/customizer.php:405
 msgid "Hide"
+msgstr ""
+
+#: inc/last-updated-meta-box.php:12
+msgid "Last Updated Date"
+msgstr ""
+
+#: inc/last-updated-meta-box.php:29
+msgid "Use Customizer setting"
+msgstr ""
+
+#: inc/last-updated-meta-box.php:32
+msgid "Show the date"
+msgstr ""
+
+#: inc/last-updated-meta-box.php:36
+msgid "Don't show the date"
 msgstr ""
 
 #: inc/review.php:113
@@ -502,32 +530,32 @@ msgctxt "This blog post was published by some author on some date"
 msgid "Published by %1$s on %2$s"
 msgstr ""
 
-#: functions.php:164
+#: functions.php:165
 msgctxt "verb: reply to this comment"
 msgid "Reply"
 msgstr ""
 
-#: functions.php:168
+#: functions.php:169
 msgctxt "verb: edit this comment"
 msgid "Edit"
 msgstr ""
 
-#: functions.php:186
+#: functions.php:187
 msgctxt "noun"
 msgid "Name"
 msgstr ""
 
-#: functions.php:193
+#: functions.php:194
 msgctxt "noun"
 msgid "Email"
 msgstr ""
 
-#: functions.php:222
+#: functions.php:223
 msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: functions.php:476
+#: functions.php:478
 msgctxt "noun"
 msgid "email"
 msgstr ""
