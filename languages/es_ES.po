@@ -4,15 +4,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Author 1.18\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2017-08-15 18:24:16+00:00\n"
-"PO-Revision-Date: 2018-02-18 00:20-0800\n"
+"POT-Creation-Date: 2019-01-07 21:07:05+00:00\n"
+"PO-Revision-Date: 2019-02-24 19:27-0800\n"
 "Last-Translator: Gustavo Rubio <gus@ahivamos.net>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.2.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: 404.php:5
@@ -44,7 +44,7 @@ msgstr ""
 "No se permiten comentarios, pero <a href=\"%s\" title=\"Trackback URL para "
 "esta entrada\">los trackbacks</a> y pingbacks están habilitados."
 
-#: comments.php:77 comments.php:84
+#: comments.php:77 comments.php:94
 msgid "Comments are closed."
 msgstr "No se permiten comentarios."
 
@@ -96,7 +96,7 @@ msgstr "Sin nuevas entradas"
 msgid "View all posts tagged %s"
 msgstr "Ver todas las entradas etiquetadas con %s"
 
-#: content-page.php:11 content.php:12
+#: content-page.php:11 content.php:13
 msgid "Pages:"
 msgstr "Páginas:"
 
@@ -104,7 +104,7 @@ msgstr "Páginas:"
 msgid "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes"
 msgstr "<a href=\"%1$s\">Tema %2$s para Wodpress</a> por Compete Themes"
 
-#: functions.php:12
+#: functions.php:21
 msgid ""
 "Hey! Sorry to interrupt, but you've been using Author for a little while "
 "now. If you're happy with this theme, could you take a minute to leave a "
@@ -114,45 +114,89 @@ msgstr ""
 "Si estás satisfecho con este tema, ¿Podrías tomarte un minuto para hacer una "
 "reseña? <i>No veras este anuncio después de cerrarlo.</i>"
 
-#: functions.php:47
+#: functions.php:63
+msgid "small"
+msgstr "chico"
+
+#: functions.php:64
+msgid "S"
+msgstr "S"
+
+#: functions.php:69
+msgid "regular"
+msgstr "mediano"
+
+#: functions.php:70
+msgid "M"
+msgstr "M"
+
+#: functions.php:75
+msgid "large"
+msgstr "grande"
+
+#: functions.php:76
+msgid "L"
+msgstr "L"
+
+#: functions.php:81
+msgid "larger"
+msgstr "mas grande"
+
+#: functions.php:82
+msgid "XL"
+msgstr "XL"
+
+#: functions.php:91
 msgid "Primary"
 msgstr "Principal"
 
-#: functions.php:58
+#: functions.php:119
 msgid "Primary Sidebar"
 msgstr "Barra Lateral Principal"
 
-#: functions.php:60
+#: functions.php:121
 msgid "Widgets in this area will be shown in the sidebar"
 msgstr "Los widgets en esta área serán mostrados en la barra lateral"
 
-#: functions.php:93
+#: functions.php:154
 msgid "Your comment is awaiting moderation."
 msgstr "Tu comentario está pendiente de moderación."
 
-#: functions.php:121
+#: functions.php:182
 msgid "(optional)"
 msgstr "(opcional)"
 
-#: functions.php:140
+#: functions.php:201
 msgid "Website"
 msgstr "Sitio Web"
 
-#: functions.php:187 functions.php:251 inc/customizer.php:298
+#: functions.php:255 functions.php:319 inc/customizer.php:274
 msgid "Continue reading"
 msgstr "Continuar leyendo"
 
-#: functions.php:598
+#: functions.php:565 inc/scripts.php:18
+msgid "open child menu"
+msgstr "abrir submenú"
+
+#: functions.php:688
 msgid "Customizer settings deleted."
 msgstr "Configuración de personalizador eliminado."
 
-#: functions.php:604
+#: functions.php:694
 msgid "%s successfully activated!"
 msgstr "% activado satisfactoriamente!"
 
-#: functions.php:617
+#: functions.php:707
 msgid "Featured Post"
 msgstr "Entrada destacada"
+
+#: functions.php:802
+msgid "Scroll to the top"
+msgstr "Ir al inicio"
+
+#: functions.php:821
+msgid "Last updated on"
+msgstr "Última actualización el"
 
 #: header.php:11
 msgid "Skip to content"
@@ -170,165 +214,235 @@ msgstr "abrir menú principal"
 msgid "Front Page"
 msgstr "Página Principal"
 
-#: inc/customizer.php:54
-msgid ""
-"<a target=\"_blank\" href=\"%1$s\">%2$s Pro</a> is the plugin that makes "
-"advanced customization simple - and fun too!"
-msgstr ""
-"<a target=\"_blank\" href=\"%1$s\">%2$s Pro</a> es el plugin que hace la "
-"personalización avanzada simple - y divertida también!"
-
-#: inc/customizer.php:55
-msgid "%1$s Pro adds the following features to %1$s:"
-msgstr "%1$s Pro agrega las siguientes características a %1$s:"
-
-#: inc/customizer.php:57
-msgid "Custom colors"
-msgstr "Colores personalizados"
-
-#: inc/customizer.php:58
-msgid "New fonts"
-msgstr "Nuevas tipografías"
-
-#: inc/customizer.php:59
-msgid "Flexible header image"
-msgstr "Imagen de encabezado flexible"
-
-#: inc/customizer.php:60
-msgid "+ 9 more features"
-msgstr "+ otras 9 funcionalidades"
-
-#: inc/customizer.php:62
-msgid "View %s Pro"
-msgstr "Ver %s Pro"
-
-#: inc/customizer.php:72
-msgid "%s Pro"
-msgstr "%s Pro"
-
-#: inc/customizer.php:92
+#: inc/customizer.php:52
 msgid "Avatar"
 msgstr "Avatar"
 
-#: inc/customizer.php:102
+#: inc/customizer.php:62
 msgid "Avatar image source"
 msgstr "Fuente de la imagen del avatar"
 
-#: inc/customizer.php:106
+#: inc/customizer.php:66
 msgid "Gravatar uses the admin email address."
 msgstr "Gravatar utiliza la dirección de correo electrónico del administrador."
 
-#: inc/customizer.php:108 inc/customizer.php:412
+#: inc/customizer.php:68 inc/customizer.php:436
 msgid "Gravatar"
 msgstr "Gravatar"
 
-#: inc/customizer.php:109 inc/customizer.php:413
+#: inc/customizer.php:69 inc/customizer.php:437
 msgid "Upload an image"
 msgstr "Subir una imagen"
 
-#: inc/customizer.php:110 inc/customizer.php:414
+#: inc/customizer.php:70 inc/customizer.php:438
 msgid "Do not display avatar"
 msgstr "No mostrar avatar"
 
-#: inc/customizer.php:120
+#: inc/customizer.php:80
 msgid "Upload your avatar"
 msgstr "Subir tu avatar"
 
-#: inc/customizer.php:130
+#: inc/customizer.php:90
 msgid "Logo"
 msgstr "Logo"
 
-#: inc/customizer.php:132
+#: inc/customizer.php:92
 msgid "Use this instead of the avatar if you want a non-rounded logo image."
 msgstr ""
 "Utiliza esta en vez del avatar si deseas una imagen de logo sin redondear."
 
-#: inc/customizer.php:141
+#: inc/customizer.php:101
 msgid "Upload custom logo."
 msgstr "Subir logo personalizado."
 
-#: inc/customizer.php:157
+#: inc/customizer.php:117
 msgid "Social Media Icons"
 msgstr "Iconos de redes sociales"
 
-#: inc/customizer.php:159
+#: inc/customizer.php:119
 msgid "Add the URL for each of your social profiles."
 msgstr "Agrega la dirección para cada uno de tus perfiles de redes sociales."
 
-#: inc/customizer.php:172
+#: inc/customizer.php:132
 msgid "Email Address"
 msgstr "Dirección de correo electrónico"
 
-#: inc/customizer.php:223
+#: inc/customizer.php:141
+msgid "Google Plus"
+msgstr "Google Plus"
+
+#: inc/customizer.php:143
+msgid "RSS"
+msgstr "RSS"
+
+#: inc/customizer.php:145
+msgid "SoundCloud"
+msgstr "SoudnCloud"
+
+#: inc/customizer.php:147
+msgid "SlideShare"
+msgstr "SlideShare"
+
+#: inc/customizer.php:149
+msgid "CodePen"
+msgstr "CodePen"
+
+#: inc/customizer.php:151
+msgid "StumbleUpon"
+msgstr "StumbleUpon"
+
+#: inc/customizer.php:153
+msgid "DeviantArt"
+msgstr "DeviantArt"
+
+#: inc/customizer.php:155
+msgid "Hacker News"
+msgstr "Hacker News"
+
+#: inc/customizer.php:157
+msgid "Google Wallet"
+msgstr "Google Wallet"
+
+#: inc/customizer.php:159
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: inc/customizer.php:161
+msgid "QQ"
+msgstr "QQ"
+
+#: inc/customizer.php:163
+msgid "VK"
+msgstr "VK"
+
+#: inc/customizer.php:165
+msgid "OK.ru"
+msgstr "OK.ru"
+
+#: inc/customizer.php:167
+msgid "WeChat"
+msgstr "WeChat"
+
+#: inc/customizer.php:169
+msgid "Tencent Weibo"
+msgstr "Tencent Weibo"
+
+#: inc/customizer.php:171
+msgid "PayPal"
+msgstr "PayPal"
+
+#: inc/customizer.php:173
+msgid "Stack Overflow"
+msgstr "Stack Overflow"
+
+#: inc/customizer.php:175
+msgid "Contact Form"
+msgstr "Forma de Contacto"
+
+#: inc/customizer.php:187
 msgid ""
 "Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn more</a>)"
 msgstr ""
 "Protocolo de enlace de Skype permitido  (<a href=\"%s\" target=\"_blank"
 "\">más info</a>)"
 
-#: inc/customizer.php:259
+#: inc/customizer.php:235
 msgid "Show full posts on blog?"
 msgstr "¿Mostrar entradas completas en el blog?"
 
-#: inc/customizer.php:264 inc/customizer.php:280 inc/customizer.php:423
+#: inc/customizer.php:240 inc/customizer.php:256 inc/customizer.php:332
+#: inc/customizer.php:356 inc/customizer.php:447
 msgid "Yes"
 msgstr "Si"
 
-#: inc/customizer.php:265 inc/customizer.php:281 inc/customizer.php:424
+#: inc/customizer.php:241 inc/customizer.php:257 inc/customizer.php:333
+#: inc/customizer.php:357 inc/customizer.php:448
 msgid "No"
 msgstr "No"
 
-#: inc/customizer.php:275
+#: inc/customizer.php:251
 msgid "Show link to comments after posts?"
 msgstr "Mostrar enlace a comentarios después de las entradas?"
 
-#: inc/customizer.php:291
+#: inc/customizer.php:267
 msgid "Excerpt word count"
 msgstr "Cantidad de palabras de extracto"
 
-#: inc/customizer.php:303
+#: inc/customizer.php:279
 msgid "Read More link text"
 msgstr "Texto del enlace Continuar Leyendo"
 
-#: inc/customizer.php:313
+#: inc/customizer.php:289
 msgid "Comment Display"
 msgstr "Desplegar comentarios"
 
-#: inc/customizer.php:324
+#: inc/customizer.php:300
 msgid "Show comments on:"
 msgstr "Mostrar comentarios en:"
 
-#: inc/customizer.php:329 inc/customizer.php:398
+#: inc/customizer.php:305 inc/customizer.php:422
 msgid "Posts"
 msgstr "Entradas"
 
-#: inc/customizer.php:330 inc/customizer.php:399
+#: inc/customizer.php:306 inc/customizer.php:423
 msgid "Pages"
 msgstr "Páginas"
 
-#: inc/customizer.php:331 inc/customizer.php:400
+#: inc/customizer.php:307 inc/customizer.php:424
 msgid "Attachments"
 msgstr "Adjuntos"
 
-#: inc/customizer.php:332 inc/customizer.php:401
+#: inc/customizer.php:308 inc/customizer.php:425
 msgid "Do not show"
 msgstr "No mostrar"
 
-#: inc/customizer.php:353
+#: inc/customizer.php:317
+msgid "Scroll-to-Top Arrow"
+msgstr "Flecha para Ir al inicio"
+
+#: inc/customizer.php:327
+msgid "Display Scroll-to-top arrow?"
+msgstr "Mostrar flecha para Ir al inicio?"
+
+#: inc/customizer.php:341
+msgid "Additional Options"
+msgstr "Opciones adicionales"
+
+#: inc/customizer.php:351
+msgid "Display the date each post was last updated?"
+msgstr "Mostrar la fecha de la última actualización de cada publicación?"
+
+#: inc/customizer.php:377
 msgid "Custom CSS"
 msgstr "CSS personalizado"
 
-#: inc/customizer.php:364
+#: inc/customizer.php:388
 msgid "Add Custom CSS Here:"
 msgstr "Agrega el CSS personalizado aquí:"
 
-#: inc/customizer.php:380
+#: inc/customizer.php:404
 msgid "Show"
 msgstr "Mostrar"
 
-#: inc/customizer.php:381
+#: inc/customizer.php:405
 msgid "Hide"
 msgstr "No Mostrar"
+
+#: inc/last-updated-meta-box.php:12
+msgid "Last Updated Date"
+msgstr "Fecha de última actualización"
+
+#: inc/last-updated-meta-box.php:29
+msgid "Use Customizer setting"
+msgstr "Usar preferencias de personalizador"
+
+#: inc/last-updated-meta-box.php:32
+msgid "Show the date"
+msgstr "Mostrar la fecha"
+
+#: inc/last-updated-meta-box.php:36
+msgid "Don't show the date"
+msgstr "No mostrar la fecha"
 
 #: inc/review.php:113
 msgid "Click here to leave your review"
@@ -337,10 +451,6 @@ msgstr "Click aquí para dejar tu reseña"
 #: inc/scripts.php:17
 msgid "close primary menu"
 msgstr "cerrar menú principal"
-
-#: inc/scripts.php:18
-msgid "open child menu"
-msgstr "abrir submenú"
 
 #: inc/scripts.php:19
 msgid "close child menu"
@@ -388,77 +498,6 @@ msgstr "Barra Lateral"
 msgid "%s Dashboard"
 msgstr "Pizarra de %s"
 
-#: theme-options.php:24
-msgid "Get Started"
-msgstr "Comenzar"
-
-#: theme-options.php:25
-msgid ""
-"Not sure where to start? The <strong>%1$s Getting Started Guide</strong> "
-"will take you step-by-step through every feature in %1$s."
-msgstr ""
-"¿No estás seguro por donde empezar? La <strong>%1$s Guía De Introducción</"
-"strong> te llevara paso por paso por cada nueva opción en %1$s."
-
-#: theme-options.php:28
-msgid "View Guide"
-msgstr "Ver guía"
-
-#: theme-options.php:33
-msgid "%s Pro Plugin"
-msgstr "Plugin %s Pro"
-
-#: theme-options.php:34
-msgid ""
-"Download the %s Pro plugin and unlock custom colors, featured videos, "
-"background images, and more"
-msgstr ""
-"Descarga el plugin %s Pro y podrás habilitar colores personalizados, videos "
-"destacados, imágenes de fondo y más"
-
-#: theme-options.php:37
-msgid "See Full Feature List"
-msgstr "Ver la Lista de Características Completas"
-
-#: theme-options.php:42 theme-options.php:44
-msgid "Leave a Review"
-msgstr "Dejar una Reseña"
-
-#: theme-options.php:43
-msgid "Help others find %s by leaving a review on wordpress.org."
-msgstr ""
-"Ayuda a otros a encontrar el tema %s dejando una reseña en wordpress.org."
-
-#: theme-options.php:47
-msgid "Turn Author into a Mobile App"
-msgstr "Convertir Author en una aplicación móvil"
-
-#: theme-options.php:48
-msgid ""
-"%s can be converted into a mobile app and listed on the App Store and Google "
-"Play Store with the help of PressPad News. Read our tutorial to learn more."
-msgstr ""
-"%s puede ser convertido en una aplicación móvil y listado en el App Store y "
-"Google Play Store con la ayuda de PressPad News. Lee nuestro tutorial para "
-"mas información."
-
-#: theme-options.php:49
-msgid "Read Tutorial"
-msgstr "Leer tutorial"
-
-#: theme-options.php:52 theme-options.php:60
-msgid "Reset Customizer Settings"
-msgstr "Reiniciar Configuracion de Personalizador"
-
-#: theme-options.php:54
-msgid ""
-"<strong>Warning:</strong> Clicking this button will erase the %2$s theme's "
-"current settings in the <a href=\"%1$s\">Customizer</a>."
-msgstr ""
-"<strong>Cuidado:</strong> Al hacer click en este botón se eliminarán las "
-"%2$s configuraciones actuales del tema Author en el <a href=\"%1$s"
-"\">Personalizador</a>."
-
 #. Description of the plugin/theme
 msgid ""
 "Author is designed for publishers who want readers. That's why Author is "
@@ -470,20 +509,26 @@ msgid ""
 "ancient Van de Graaf canon, Author features a layout that promotes "
 "readability. Use Author to create a simple blog, magazine, or news website. "
 "The simple and minimalist design works great for gaming, business, fashion, "
-"music, food, travel, and photography niches. Preview Author now on desktop, "
-"tablets, and mobile devices with the interactive live demo: https://www."
-"competethemes.com/demos/?theme=author"
+"music, food, travel, and photography niches. Now with complete WooCommerce "
+"support for eCommerce stores and fully compatible with the new Gutenberg "
+"post editor. Preview Author now on desktop, tablets, and mobile devices with "
+"the interactive live demo: https://www.competethemes.com/demos/?theme=author"
 msgstr ""
 "Author está diseñado para editores que desean lectores. Es por esto que "
 "Author es rápido, responsivo, accesible y diseñado para optimizar la "
 "lectura. Todos los scripts y hojas de estilo están minificadas, concatenadas "
 "y cargadas condicionalmente para maximizar el desempeño. El diseño se adapta "
-"fluidamente a todos los tamaños de pantalla para mejorar la usabilidad.  "
-"Siendo uno de los pocos temas accesibles, se ajusta muy bien para usuarios "
-"con ciertas discapacidades. Finalmente, basado en el antiguo canon de Van de "
-"Graaf, Author está optimizado para la lectura. Author es el tema que tu "
-"contenido se merece. Puedes ver nuestro video de configuración completa del "
-"tema aquí: https://www.competethemes.com/demos/?theme=author"
+"fluidamente a todos los tamaños de pantalla para mejorar la usabilidad. Como "
+"uno de los pocos temas listos para accesibilidad, su desempeño es bueno para "
+"usuarios con diferentes discapacidades. Basado en el viejo canon de Van de "
+"Graaf, Author ofrece un diseño que comenta la facilidad de lectura. Utiliza "
+"Author para crear un simple blog, revista o sitio de noticias. El diseño "
+"simple y minimalista funciona de maravilla para nichos de mercado de "
+"videojuegos, negocios, moda, música, comida, viaje y fotografía. Ahora con "
+"soporte integral para WooCommerce para tiendas en línea y completamente "
+"compatible con el nuevo editor de publicaciones Gutenberg. Previsualiza "
+"Author en computadoras, tablets y dispositivos móviles con el demo "
+"interactivo: https://www.competethemes.com/demos/?theme=author"
 
 #: comments.php:21 comments.php:41 comments.php:63 content/comments-link.php:10
 #: content/comments-link.php:14
@@ -511,40 +556,124 @@ msgctxt "This blog post was published by some author on some date"
 msgid "Published by %1$s on %2$s"
 msgstr "Publicado por %1$s el %2$s"
 
-#: functions.php:104
+#: functions.php:165
 msgctxt "verb: reply to this comment"
 msgid "Reply"
 msgstr "Responder"
 
-#: functions.php:108
+#: functions.php:169
 msgctxt "verb: edit this comment"
 msgid "Edit"
 msgstr "Editar"
 
-#: functions.php:126
+#: functions.php:187
 msgctxt "noun"
 msgid "Name"
 msgstr "Nombre"
 
-#: functions.php:133
+#: functions.php:194
 msgctxt "noun"
 msgid "Email"
 msgstr "Correo Electrónico"
 
-#: functions.php:155
+#: functions.php:223
 msgctxt "noun"
 msgid "Comment"
 msgstr "Comentario"
 
-#: functions.php:393 functions.php:394
+#: functions.php:478
 msgctxt "noun"
 msgid "email"
 msgstr "correo electrónico"
 
-#: inc/customizer.php:249
+#: inc/customizer.php:225
 msgctxt "noun: the blog section"
 msgid "Blog"
 msgstr "Blog"
+
+#~ msgid ""
+#~ "<a target=\"_blank\" href=\"%1$s\">%2$s Pro</a> is the plugin that makes "
+#~ "advanced customization simple - and fun too!"
+#~ msgstr ""
+#~ "<a target=\"_blank\" href=\"%1$s\">%2$s Pro</a> es el plugin que hace la "
+#~ "personalización avanzada simple - y divertida también!"
+
+#~ msgid "%1$s Pro adds the following features to %1$s:"
+#~ msgstr "%1$s Pro agrega las siguientes características a %1$s:"
+
+#~ msgid "Custom colors"
+#~ msgstr "Colores personalizados"
+
+#~ msgid "New fonts"
+#~ msgstr "Nuevas tipografías"
+
+#~ msgid "Flexible header image"
+#~ msgstr "Imagen de encabezado flexible"
+
+#~ msgid "+ 9 more features"
+#~ msgstr "+ otras 9 funcionalidades"
+
+#~ msgid "View %s Pro"
+#~ msgstr "Ver %s Pro"
+
+#~ msgid "%s Pro"
+#~ msgstr "%s Pro"
+
+#~ msgid "Get Started"
+#~ msgstr "Comenzar"
+
+#~ msgid ""
+#~ "Not sure where to start? The <strong>%1$s Getting Started Guide</strong> "
+#~ "will take you step-by-step through every feature in %1$s."
+#~ msgstr ""
+#~ "¿No estás seguro por donde empezar? La <strong>%1$s Guía De Introducción</"
+#~ "strong> te llevara paso por paso por cada nueva opción en %1$s."
+
+#~ msgid "View Guide"
+#~ msgstr "Ver guía"
+
+#~ msgid "%s Pro Plugin"
+#~ msgstr "Plugin %s Pro"
+
+#~ msgid ""
+#~ "Download the %s Pro plugin and unlock custom colors, featured videos, "
+#~ "background images, and more"
+#~ msgstr ""
+#~ "Descarga el plugin %s Pro y podrás habilitar colores personalizados, "
+#~ "videos destacados, imágenes de fondo y más"
+
+#~ msgid "See Full Feature List"
+#~ msgstr "Ver la Lista de Características Completas"
+
+#~ msgid "Leave a Review"
+#~ msgstr "Dejar una Reseña"
+
+#~ msgid "Help others find %s by leaving a review on wordpress.org."
+#~ msgstr ""
+#~ "Ayuda a otros a encontrar el tema %s dejando una reseña en wordpress.org."
+
+#~ msgid "Turn Author into a Mobile App"
+#~ msgstr "Convertir Author en una aplicación móvil"
+
+#~ msgid ""
+#~ "%s can be converted into a mobile app and listed on the App Store and "
+#~ "Google Play Store with the help of PressPad News. Read our tutorial to "
+#~ "learn more."
+#~ msgstr ""
+#~ "%s puede ser convertido en una aplicación móvil y listado en el App Store "
+#~ "y Google Play Store con la ayuda de PressPad News. Lee nuestro tutorial "
+#~ "para mas información."
+
+#~ msgid "Read Tutorial"
+#~ msgstr "Leer tutorial"
+
+#~ msgid ""
+#~ "<strong>Warning:</strong> Clicking this button will erase the %2$s "
+#~ "theme's current settings in the <a href=\"%1$s\">Customizer</a>."
+#~ msgstr ""
+#~ "<strong>Cuidado:</strong> Al hacer click en este botón se eliminarán las "
+#~ "%2$s configuraciones actuales del tema Author en el <a href=\"%1$s"
+#~ "\">Personalizador</a>."
 
 #~ msgid "The Previous Post"
 #~ msgstr "La entrada anterior"
