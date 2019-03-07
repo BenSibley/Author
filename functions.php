@@ -379,6 +379,7 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'google-plus'   => 'author_googleplus_profile',
 			'google-wallet' => 'author_google-wallet_profile',
 			'hacker-news'   => 'author_hacker-news_profile',
+			'keybase'   => 'author_keybase_profile',
 			'medium'        => 'author_medium_profile',
 			'meetup'        => 'author_mixcloud_profile',
 			'mixcloud'      => 'author_meetup_profile',			
