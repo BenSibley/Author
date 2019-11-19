@@ -386,6 +386,7 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'ok-ru'         => 'author_ok_ru_profile',
 			'patreon'				=> 'author_patreon_profile',
 			'paypal'        => 'author_paypal_profile',
+			'pocket'        => 'author_pocket_profile',
 			'podcast'       => 'author_podcast_profile',
 			'qq'            => 'author_qq_profile',
 			'quora'         => 'author_quora_profile',
@@ -465,6 +466,8 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 						$class = 'fab fa-odnoklassniki';
 					} elseif ( $active_site == 'wechat' ) {
 						$class = 'fab fa-weixin';
+					} elseif ( $active_site == 'pocket' ) {
+						$class = 'fab fa-get-pocket';
 					} elseif ( $active_site == 'phone' ) {
 						$class = 'fas fa-phone';
 					} else {
