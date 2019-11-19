@@ -688,12 +688,6 @@ if ( ! function_exists( ( 'ct_author_delete_settings_notice' ) ) ) {
 					<p><?php _e( 'Customizer settings deleted.', 'author' ); ?></p>
 				</div>
 				<?php
-			} else if ( $_GET['author_status'] == 'activated' ) {
-				?>
-				<div class="updated">
-					<p><?php printf( esc_html__( '%s successfully activated!', 'author' ), wp_get_theme( get_template() ) ); ?></p>
-				</div>
-				<?php
 			}
 		}
 	}
@@ -760,20 +754,6 @@ if ( ! function_exists( ( 'ct_author_allow_skype_protocol' ) ) ) {
 	}
 }
 add_filter( 'kses_allowed_protocols' , 'ct_author_allow_skype_protocol' );
-
-// trigger theme switch on link click and send to Appearance menu
-function ct_author_welcome_redirect() {
-
-	$welcome_url = add_query_arg(
-		array(
-			'page'          => 'author-options',
-			'author_status' => 'activated'
-		),
-		admin_url( 'themes.php' )
-	);
-	wp_safe_redirect( esc_url_raw( $welcome_url ) );
-}
-add_action( 'after_switch_theme', 'ct_author_welcome_redirect' );
 
 if ( function_exists( 'ct_author_pro_plugin_updater' ) ) {
 	remove_action( 'admin_init', 'ct_author_pro_plugin_updater', 0 );
