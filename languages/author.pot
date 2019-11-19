@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Author 1.36\n"
+"Project-Id-Version: Author 1.38\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2019-01-07 21:07:05+00:00\n"
+"POT-Creation-Date: 2019-11-19 23:53:26+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -160,31 +160,27 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: functions.php:255 functions.php:319 inc/customizer.php:274
+#: functions.php:255 functions.php:319 inc/customizer.php:276
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:565 inc/scripts.php:18
+#: functions.php:569 inc/scripts.php:18
 msgid "open child menu"
 msgstr ""
 
-#: functions.php:688
+#: functions.php:692
 msgid "Customizer settings deleted."
 msgstr ""
 
-#: functions.php:694
-msgid "%s successfully activated!"
-msgstr ""
-
-#: functions.php:707
+#: functions.php:705
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:802
+#: functions.php:786
 msgid "Scroll to the top"
 msgstr ""
 
-#: functions.php:821
+#: functions.php:805
 msgid "Last updated on"
 msgstr ""
 
@@ -216,15 +212,15 @@ msgstr ""
 msgid "Gravatar uses the admin email address."
 msgstr ""
 
-#: inc/customizer.php:68 inc/customizer.php:436
+#: inc/customizer.php:68 inc/customizer.php:438
 msgid "Gravatar"
 msgstr ""
 
-#: inc/customizer.php:69 inc/customizer.php:437
+#: inc/customizer.php:69 inc/customizer.php:439
 msgid "Upload an image"
 msgstr ""
 
-#: inc/customizer.php:70 inc/customizer.php:438
+#: inc/customizer.php:70 inc/customizer.php:440
 msgid "Do not display avatar"
 msgstr ""
 
@@ -325,94 +321,98 @@ msgid "Stack Overflow"
 msgstr ""
 
 #: inc/customizer.php:175
+msgid "ArtStation"
+msgstr ""
+
+#: inc/customizer.php:177
 msgid "Contact Form"
 msgstr ""
 
-#: inc/customizer.php:187
+#: inc/customizer.php:189
 msgid ""
 "Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn "
 "more</a>)"
 msgstr ""
 
-#: inc/customizer.php:235
+#: inc/customizer.php:237
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:240 inc/customizer.php:256 inc/customizer.php:332
-#: inc/customizer.php:356 inc/customizer.php:447
+#: inc/customizer.php:242 inc/customizer.php:258 inc/customizer.php:334
+#: inc/customizer.php:358 inc/customizer.php:449
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:241 inc/customizer.php:257 inc/customizer.php:333
-#: inc/customizer.php:357 inc/customizer.php:448
+#: inc/customizer.php:243 inc/customizer.php:259 inc/customizer.php:335
+#: inc/customizer.php:359 inc/customizer.php:450
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:251
+#: inc/customizer.php:253
 msgid "Show link to comments after posts?"
 msgstr ""
 
-#: inc/customizer.php:267
+#: inc/customizer.php:269
 msgid "Excerpt word count"
 msgstr ""
 
-#: inc/customizer.php:279
+#: inc/customizer.php:281
 msgid "Read More link text"
 msgstr ""
 
-#: inc/customizer.php:289
+#: inc/customizer.php:291
 msgid "Comment Display"
 msgstr ""
 
-#: inc/customizer.php:300
+#: inc/customizer.php:302
 msgid "Show comments on:"
 msgstr ""
 
-#: inc/customizer.php:305 inc/customizer.php:422
+#: inc/customizer.php:307 inc/customizer.php:424
 msgid "Posts"
 msgstr ""
 
-#: inc/customizer.php:306 inc/customizer.php:423
+#: inc/customizer.php:308 inc/customizer.php:425
 msgid "Pages"
 msgstr ""
 
-#: inc/customizer.php:307 inc/customizer.php:424
+#: inc/customizer.php:309 inc/customizer.php:426
 msgid "Attachments"
 msgstr ""
 
-#: inc/customizer.php:308 inc/customizer.php:425
+#: inc/customizer.php:310 inc/customizer.php:427
 msgid "Do not show"
 msgstr ""
 
-#: inc/customizer.php:317
+#: inc/customizer.php:319
 msgid "Scroll-to-Top Arrow"
 msgstr ""
 
-#: inc/customizer.php:327
+#: inc/customizer.php:329
 msgid "Display Scroll-to-top arrow?"
 msgstr ""
 
-#: inc/customizer.php:341
+#: inc/customizer.php:343
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:351
+#: inc/customizer.php:353
 msgid "Display the date each post was last updated?"
 msgstr ""
 
-#: inc/customizer.php:377
+#: inc/customizer.php:379
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:388
+#: inc/customizer.php:390
 msgid "Add Custom CSS Here:"
 msgstr ""
 
-#: inc/customizer.php:404
+#: inc/customizer.php:406
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:405
+#: inc/customizer.php:407
 msgid "Hide"
 msgstr ""
 
@@ -482,7 +482,7 @@ msgstr ""
 msgid "Sidebar"
 msgstr ""
 
-#: theme-options.php:4 theme-options.php:20
+#: theme-options.php:5 theme-options.php:6 theme-options.php:19
 msgid "%s Dashboard"
 msgstr ""
 
@@ -555,12 +555,12 @@ msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: functions.php:478
+#: functions.php:482
 msgctxt "noun"
 msgid "email"
 msgstr ""
 
-#: inc/customizer.php:225
+#: inc/customizer.php:227
 msgctxt "noun: the blog section"
 msgid "Blog"
 msgstr ""
