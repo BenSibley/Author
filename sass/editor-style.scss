@@ -126,6 +126,44 @@ th {
 
 /* Images */
 
+.alignright,
+.alignleft,
+.aligncenter,
+.alignnone,
+.alignwide,
+.alignfull,
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  height: auto;
+  line-height: 0;
+  max-width: 100%;
+  max-width: calc(100% - 48px);
+
+  // in case there is a containing div given the class
+  img {
+    max-width: 100%;
+  }
+  figcaption {
+    @extend %twelve-pixels;
+    line-height: 1.5;
+    margin: 3px 0 0 0;
+    color: $color-gray-40-blue;
+    text-align: center;
+  }
+}
+.wp-block-image {
+  margin: 0;
+  line-height: 0;
+}
+.wp-block-image figcaption {
+  @extend %twelve-pixels;
+  line-height: 1.5;
+  margin: 3px 0 0 0;
+  color: $color-gray-40-blue;
+}
 .alignleft {
   float: left;
   margin: 0 $baseline-height $baseline-height 0;
@@ -138,27 +176,25 @@ th {
   text-align: center;
   margin: $baseline-height auto;
   display: block;
+  max-width: 100%;
 }
 .alignnone {
-  margin: $baseline-height 0;
+  margin: $baseline-height;
 }
-.alignright,
-.alignleft,
-.aligncenter,
-.alignnone,
-.size-auto,
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
-  max-width: 100%;
+img {
   height: auto;
+  line-height: 0;
+}
+.singular-attachment {
+
+  img {
+    max-width: 100%;
+  }
 }
 .wp-caption-text {
-  margin: 0 0 $baseline-height / 0.813;
-  font-size: 0.813em;
-  line-height: 1.85;
-  color: $color-gray-27-blue;
+  margin: 3px 0 0 0;
+  @extend %twelve-pixels;
+  color: $color-gray-40-blue;
 }
 .wp-block {
   max-width: 645px;

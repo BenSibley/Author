@@ -23,6 +23,23 @@ h3 {
   /* 24px */
 }
 
+.alignright figcaption,
+.alignleft figcaption,
+.aligncenter figcaption,
+.alignnone figcaption,
+.alignwide figcaption,
+.alignfull figcaption,
+.size-auto figcaption,
+.size-full figcaption,
+.size-large figcaption,
+.size-medium figcaption,
+.size-thumbnail figcaption, .wp-block-image figcaption, .wp-caption-text {
+  font-size: 0.75em;
+  /* 12px / 16px */
+  line-height: 1.5;
+  /* 18px */
+}
+
 .mce-content-body.wp-editor {
   margin: 0 auto;
   padding: 0 24px !important;
@@ -136,6 +153,63 @@ th {
 }
 
 /* Images */
+.alignright,
+.alignleft,
+.aligncenter,
+.alignnone,
+.alignwide,
+.alignfull,
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  height: auto;
+  line-height: 0;
+  max-width: 100%;
+  max-width: calc(100% - 48px);
+}
+.alignright img,
+.alignleft img,
+.aligncenter img,
+.alignnone img,
+.alignwide img,
+.alignfull img,
+.size-auto img,
+.size-full img,
+.size-large img,
+.size-medium img,
+.size-thumbnail img {
+  max-width: 100%;
+}
+.alignright figcaption,
+.alignleft figcaption,
+.aligncenter figcaption,
+.alignnone figcaption,
+.alignwide figcaption,
+.alignfull figcaption,
+.size-auto figcaption,
+.size-full figcaption,
+.size-large figcaption,
+.size-medium figcaption,
+.size-thumbnail figcaption {
+  line-height: 1.5;
+  margin: 3px 0 0 0;
+  color: #5c6066;
+  text-align: center;
+}
+
+.wp-block-image {
+  margin: 0;
+  line-height: 0;
+}
+
+.wp-block-image figcaption {
+  line-height: 1.5;
+  margin: 3px 0 0 0;
+  color: #5c6066;
+}
+
 .alignleft {
   float: left;
   margin: 0 1.5em 1.5em 0;
@@ -150,30 +224,25 @@ th {
   text-align: center;
   margin: 1.5em auto;
   display: block;
+  max-width: 100%;
 }
 
 .alignnone {
-  margin: 1.5em 0;
+  margin: 1.5em;
 }
 
-.alignright,
-.alignleft,
-.aligncenter,
-.alignnone,
-.size-auto,
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
-  max-width: 100%;
+img {
   height: auto;
+  line-height: 0;
+}
+
+.singular-attachment img {
+  max-width: 100%;
 }
 
 .wp-caption-text {
-  margin: 0 0 1.8450184502em;
-  font-size: 0.813em;
-  line-height: 1.85;
-  color: #3E4145;
+  margin: 3px 0 0 0;
+  color: #5c6066;
 }
 
 .wp-block {
