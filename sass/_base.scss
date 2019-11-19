@@ -229,7 +229,8 @@ img {
     max-width: 100%;
   }
 }
-.wp-caption-text {
+.wp-caption-text,
+.wp-caption-dd {
   margin: 3px 0 0 0;
   @extend %twelve-pixels;
   color: $color-gray-40-blue;
