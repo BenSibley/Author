@@ -171,6 +171,8 @@ function ct_author_add_customizer_content( $wp_customize ) {
 				$label = __('PayPal', 'author');
 			} elseif ( $social_site == 'stack-overflow' ) {
 				$label = __('Stack Overflow', 'author');
+			} elseif ( $social_site == 'artstation' ) {
+				$label = __('ArtStation', 'author');
 			} elseif ( $social_site == 'email-form' ) {
 				$label = __('Contact Form', 'author');
 			}

@@ -362,6 +362,7 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'phone'    			=> 'author_phone_profile',
 			'email-form'    => 'author_email_form_profile',
 			'amazon'        => 'author_amazon_profile',
+			'artstation'    => 'author_artstation_profile',
 			'bandcamp'      => 'author_bandcamp_profile',
 			'behance'       => 'author_behance_profile',
 			'bitbucket'     => 'author_bitbucket_profile',
