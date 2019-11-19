@@ -1,7 +1,13 @@
 <?php
 
 function ct_author_register_theme_page() {
-	add_theme_page( sprintf( esc_html__( '%s Dashboard', 'author' ), wp_get_theme() ), sprintf( esc_html__( '%s Dashboard', 'author' ), wp_get_theme() ), 'edit_theme_options', 'author-options', 'ct_author_options_content', 'ct_author_options_content' );
+	add_theme_page( 
+		sprintf( esc_html__( '%s Dashboard', 'author' ), wp_get_theme() ), 
+		sprintf( esc_html__( '%s Dashboard', 'author' ), wp_get_theme() ), 
+		'edit_theme_options', 
+		'author-options', 
+		'ct_author_options_content'
+	);
 }
 add_action( 'admin_menu', 'ct_author_register_theme_page' );
 
