@@ -7,7 +7,7 @@
             <?php
             $footer_text = sprintf( __( '<a href="%1$s">%2$s WordPress Theme</a> by Compete Themes', 'author' ), 'https://www.competethemes.com/author/', wp_get_theme( get_template() ) );
             $footer_text = apply_filters( 'ct_author_footer_text', $footer_text );
-            echo wp_kses_post( $footer_text );
+            echo do_shortcode( wp_kses_post( $footer_text ) );
             ?>
         </span>
 	</div>
