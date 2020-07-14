@@ -4,8 +4,9 @@
 function ct_author_load_scripts_styles() {
 
 	$font_args = array(
-		'family' => urlencode( 'Rokkitt:400,700|Lato:400,700' ),
-		'subset' => urlencode( 'latin,latin-ext' )
+		'family'  => urlencode( 'Rokkitt:400,700|Lato:400,700' ),
+		'subset'  => urlencode( 'latin,latin-ext' ),
+		'display' => 'swap'
 	);
 	$fonts_url = add_query_arg( $font_args, '//fonts.googleapis.com/css' );
 
