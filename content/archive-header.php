@@ -1,5 +1,12 @@
 <?php
 
+// Don't output on bbPress (Forum pages count as archives)
+if ( function_exists( 'is_bbpress' ) ) {
+	if ( is_bbpress() ) {
+		return;
+	} 
+}
+
 if ( is_home() ) {
 	echo '<h1 class="screen-reader-text">' . esc_html( get_bloginfo("name") ) . ' ' . _x('Posts', 'noun: Site Title\' Posts', 'author') . '</h1>';
 }

@@ -2107,6 +2107,43 @@ a img {
     padding: 1.5em 9.999%;
   }
 }
+.bbpress .entry {
+  padding: 1.5em;
+  background: white;
+  box-shadow: 0 0 2px 0 rgba(58, 58, 58, 0.2);
+}
+
+div.bbp-breadcrumb {
+  display: inline-block;
+  float: none;
+}
+
+#subscription-toggle {
+  font-weight: 400;
+  margin-right: 6px;
+  text-decoration: underline;
+}
+
+span.bbp-admin-links,
+span.bbp-admin-links a,
+.bbp-reply-header a.bbp-reply-permalink {
+  color: #5c6066;
+}
+
+#bbpress-forums p.bbp-topic-meta img.avatar,
+#bbpress-forums ul.bbp-reply-revision-log img.avatar,
+#bbpress-forums ul.bbp-topic-revision-log img.avatar,
+#bbpress-forums div.bbp-template-notice img.avatar,
+#bbpress-forums .widget_display_topics img.avatar,
+#bbpress-forums .widget_display_replies img.avatar {
+  margin: 0 0 -3px;
+  display: inline-block;
+}
+
+.bbp-form textarea {
+  max-width: none;
+}
+
 /*
 
 ATTENTION:
