@@ -689,7 +689,7 @@ if ( ! function_exists( ( 'ct_author_delete_settings_notice' ) ) ) {
 			if ( $_GET['author_status'] == 'deleted' ) {
 				?>
 				<div class="updated">
-					<p><?php _e( 'Customizer settings deleted.', 'author' ); ?></p>
+					<p><?php esc_html_e( 'Customizer settings deleted.', 'author' ); ?></p>
 				</div>
 				<?php
 			}
