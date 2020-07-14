@@ -117,11 +117,39 @@ table {
 }
 td {
   padding: 0.5em 0.75em;
-  border: solid 1px black;
+  border: solid 1px $color-gray-85;
 }
 th {
   padding: 0.5em 0.75em;
-  border: solid 1px black;
+  border: solid 1px $color-gray-85;
+}
+.wp-block-table {
+  margin: 0;
+
+  thead {
+    background: $color-gray-95-blue;
+  }
+  td,
+  th {
+    border-color: $color-gray-85;
+  }
+  figcaption {
+    @extend %twelve-pixels;
+    line-height: 1.5;
+    margin: -10px 0 0 0;
+    color: $color-gray-40-blue;
+    text-align: center;
+  }
+}
+.wp-block-table.is-style-stripes {
+
+  thead {
+    background: none;
+  }
+  td,
+  th {
+    border-color: $color-gray-85;
+  }
 }
 
 /* Images */
