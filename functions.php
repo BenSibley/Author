@@ -655,7 +655,8 @@ if ( ! function_exists( ( 'ct_author_reset_customizer_options' ) ) ) {
 			'excerpt_length',
 			'read_more_text',
 			'comments_display',
-			'custom_css'
+			'custom_css',
+			'last_updated'
 		);
 
 		$social_sites = ct_author_social_array();
