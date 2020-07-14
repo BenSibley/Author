@@ -73,13 +73,11 @@
   text-decoration: none;
   color: white;
   background: #FF931E;
-  -webkit-transition: background 0.2s, -webkit-transform 0.2s, box-shadow 0.2s;
-          transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .author-dashboard-wrap .pro-ad a:hover, .author-dashboard-wrap .thanks-upgrading a:hover, .author-dashboard-wrap .pro-ad a:active, .author-dashboard-wrap .thanks-upgrading a:active, .author-dashboard-wrap .pro-ad a:focus, .author-dashboard-wrap .thanks-upgrading a:focus {
   background: #FFA33F;
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  transform: translateY(-2px);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
 }
 .author-dashboard-wrap .sidebar h4 {
@@ -118,7 +116,6 @@
 
 @media all and (min-width: 600px) {
   .author-dashboard-wrap .feature-list li {
-    display: -webkit-box;
     display: flex;
   }
   .author-dashboard-wrap .feature-list .image {
@@ -175,7 +172,6 @@
 }
 @media all and (min-width: 1100px) {
   .author-dashboard-wrap .feature-list li {
-    display: -webkit-box;
     display: flex;
   }
   .author-dashboard-wrap .feature-list img {

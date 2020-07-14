@@ -20,8 +20,7 @@
   color: white;
   text-decoration: none;
   background: #05B0E7;
-  -webkit-transition: background 0.2s;
-          transition: background 0.2s;
+  transition: background 0.2s;
 }
 .upgrades-ad a:hover {
   background: #3FBEE8;
@@ -143,9 +142,6 @@
   border-radius: 0;
   box-shadow: none;
   background: #fff url("multiple-select.png") no-repeat 100% -22px;
-  background: url("multiple-select.png") no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
-  background: url("multiple-select.png") no-repeat 100% -22px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
-  background: url("multiple-select.png") no-repeat 100% -22px, -webkit-linear-gradient(top, #ffffff 85%, #eeeeee 99%);
   background: url("multiple-select.png") no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
 }
 
@@ -169,7 +165,7 @@
 }
 
 .ms-drop ul > li .disabled {
-  opacity: .35;
+  opacity: 0.35;
   filter: Alpha(Opacity=35);
 }
 
@@ -200,7 +196,7 @@
   font-weight: bold;
 }
 
-.ms-drop input[type="checkbox"] {
+.ms-drop input[type=checkbox] {
   vertical-align: middle;
 }
 
