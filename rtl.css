@@ -1372,6 +1372,10 @@ a img {
   display: block;
 }
 
+.comment-form-cookies-consent label {
+  display: inline-block;
+}
+
 .comment-pagination {
   margin: 1.5em 0;
 }
