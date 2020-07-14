@@ -263,6 +263,11 @@ img {
   @extend %twelve-pixels;
   color: $color-gray-40-blue;
 }
+.wp-block-social-links a,
+.wp-block-social-links a:link,
+.wp-block-social-links a:visited {
+  color: #fff;
+}
 
 /* Form styles */
 
