@@ -8,6 +8,12 @@
 
 <body id="<?php print get_stylesheet(); ?>" <?php body_class(); ?>>
 	<?php do_action( 'body_top' ); ?>
+	<?php 
+	if ( function_exists( 'wp_body_open' ) ) {
+			wp_body_open();
+	} else {
+			do_action( 'wp_body_open' );
+	} ?>
 	<a class="skip-content" href="#main"><?php _e( 'Skip to content', 'author' ); ?></a>
 		<div id="overflow-container" class="overflow-container">
 			<div class="max-width">

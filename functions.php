@@ -723,10 +723,6 @@ if ( ! function_exists( ( 'ct_author_add_meta_elements' ) ) ) {
 }
 add_action( 'wp_head', 'ct_author_add_meta_elements', 1 );
 
-// Move the WordPress generator to a better priority.
-remove_action( 'wp_head', 'wp_generator' );
-add_action( 'wp_head', 'wp_generator', 1 );
-
 if ( ! function_exists( ( 'ct_author_infinite_scroll_render' ) ) ) {
 	function ct_author_infinite_scroll_render() {
 		while ( have_posts() ) {

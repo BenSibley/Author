@@ -13,5 +13,5 @@ Author also uses:
 * Multiple Select, http://wenzhixin.net.cn/p/multiple-select/, zhixin wen, licensed under MIT license, https://opensource.org/licenses/mit-license.html
 * Respond.js, https://github.com/scottjehl/Respond, Scott Jehl, licensed under MIT license, https://opensource.org/licenses/mit-license.html
 * Avatar image in screenshot.png is the theme author's image
-* City image in screenshot.png : CC0 by Israel Sundseth, https://unsplash.com/photos/BYu8ITUWMfc
-* Boardwalk image in screenshot.png : CC0 by Paul Proshin, https://unsplash.com/photos/0jgAnkgYwBE
+* City image in screenshot.png : CC0 by Israel Sundseth
+* Boardwalk image in screenshot.png : CC0 by Paul Proshin
