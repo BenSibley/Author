@@ -2107,10 +2107,19 @@ a img {
     padding: 1.5em 9.999%;
   }
 }
+.bbpress .main {
+  padding-left: 5.555%;
+}
+
 .bbpress .entry {
-  padding: 1.5em;
+  padding: 1.5em 2.25em;
   background: white;
   box-shadow: 0 0 2px 0 rgba(58, 58, 58, 0.2);
+}
+
+.bbpress .entry article {
+  padding: 0;
+  box-shadow: none;
 }
 
 div.bbp-breadcrumb {
@@ -2142,6 +2151,17 @@ span.bbp-admin-links a,
 
 .bbp-form textarea {
   max-width: none;
+}
+
+#bbpress-forums p.bbp-topic-meta img.avatar {
+  border-radius: 50%;
+  border: none;
+  margin-left: 4px;
+}
+
+#bbpress-forums div.bbp-reply-author img.avatar,
+#bbpress-forums #bbp-single-user-details #bbp-user-avatar img.avatar {
+  border-radius: 50%;
 }
 
 /*
