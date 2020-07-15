@@ -145,7 +145,7 @@ module.exports = function(grunt) {
                 colors: true
             }
         },
-        excludeFiles: '--exclude "*.gitignore" --exclude ".sass-cache/" --exclude "*.DS_Store" --exclude ".git/" --exclude ".idea/" --exclude "gruntfile.js" --exclude "node_modules/" --exclude "package.json" --exclude "sass/"',
+        excludeFiles: '--exclude "*.gitignore" --exclude ".sass-cache/" --exclude "*.DS_Store" --exclude ".git/" --exclude ".idea/" --exclude "gruntfile.js" --exclude "node_modules/" --exclude "package.json" --exclude "sass/" --exclude "styles/admin.css.map" --exclude "styles/customizer.css.map" --exclude "styles/editor-style.css.map" --exclude "package-lock.json" --exclude "style.css.map"',
         shell: {
             zip: {
                 command: [
@@ -153,7 +153,7 @@ module.exports = function(grunt) {
                     'rm -R /Users/bensibley/Documents/compete-themes/dist/author || true',
                     'rm -R /Users/bensibley/Documents/compete-themes/dist/author.zip || true',
                     // copy plugin folder to desktop without any project/meta files
-                    'rsync -r "/Users/bensibley/Local Sites/author/app/public/wp-content/themes/author" /Users/bensibley/Documents/compete-themes/dist/ <%= excludeFiles %>',
+                    'rsync -r "/Users/bensibley/Sites/new-author/wp-content/themes/author" /Users/bensibley/Documents/compete-themes/dist/ <%= excludeFiles %>',
                     // open desktop
                     'cd /Users/bensibley/Documents/compete-themes/dist/',
                     // zip the author folder on desktop
