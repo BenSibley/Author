@@ -403,6 +403,7 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'tencent-weibo' => 'author_tencent_weibo_profile',
 			'tumblr'        => 'author_tumblr_profile',
 			'twitch'        => 'author_twitch_profile',
+			'untappd'       => 'author_untappd_profile',
 			'vimeo'         => 'author_vimeo_profile',
 			'vine'          => 'author_vine_profile',
 			'vk'            => 'author_vk_profile',
