@@ -213,6 +213,10 @@ code {
   padding: 0 0.375em;
 }
 
+pre code {
+  padding: 0;
+}
+
 blockquote {
   margin: 1.5em 1.5em 1.5em 0;
   padding-left: 1.5em;
