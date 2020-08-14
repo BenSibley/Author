@@ -225,7 +225,7 @@ th {
 }
 
 .wp-block-image {
-  margin: 0;
+  margin: 0 auto;
   line-height: 0;
 }
 
