@@ -1,0 +1,591 @@
+# Copyright (C) 2019 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Author 1.38\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2019-11-19 23:53:26+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-07-10 21:07-0300\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.3.1\n"
+"Last-Translator: Daniel Moraes Bittar <bittar.daniel@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: pt_BR\n"
+
+#: 404.php:5
+msgid "404: Page Not Found"
+msgstr "404: Página Não Encontrada"
+
+#: 404.php:8
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+"Caminho não localizado. Verifique o caminho informado ou use o campo de "
+"pesquisa para encontrar o que procura."
+
+#: comments.php:21 comments.php:41 comments.php:63
+msgid "Be First to Comment"
+msgstr "Seja o primeiro a comentar"
+
+#: comments.php:21 comments.php:41 comments.php:63
+msgid "One Comment"
+msgstr "Um Comentário"
+
+#: comments.php:55
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+"Comentários estão fechados, mas <a href=\"%s\" title=\"Trackback URL for "
+"this post\">trackbacks</a> e pingbacks estão abertos."
+
+#: comments.php:77 comments.php:94
+msgid "Comments are closed."
+msgstr "Comentários fechados."
+
+#: content/comments-link.php:9 content/comments-link.php:13
+msgid "comment icon"
+msgstr "ícone de comentário"
+
+#: content/comments-link.php:10
+msgid "Comments closed"
+msgstr "Comentários fechados"
+
+#: content/comments-link.php:10 content/comments-link.php:14
+msgid "1 Comment"
+msgstr "1 Comentário"
+
+#: content/comments-link.php:14
+msgid "Leave a Comment"
+msgstr "Deixe um comentário"
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr "Imagem Anterior"
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr "Próxima Imagem"
+
+#: content/post-nav.php:6
+msgid "Previous Post"
+msgstr "Publicação Anterior"
+
+#: content/post-nav.php:9
+msgid "No Older Posts"
+msgstr "Nenhuma Publicação Antiga"
+
+#: content/post-nav.php:15 content/post-nav.php:28
+msgid "Return to Blog"
+msgstr "Retornar ao Blog"
+
+#: content/post-nav.php:19
+msgid "Next Post"
+msgstr "Próxima Publicação"
+
+#: content/post-nav.php:22
+msgid "No Newer Posts"
+msgstr "Nenhuma Publicação Nova"
+
+#: content/post-tags.php:8
+msgid "View all posts tagged %s"
+msgstr "Veja todas as publicações com a tag %s"
+
+#: content-page.php:11 content.php:13
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: footer.php:8
+msgid "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes"
+msgstr "<a href=\"%1$s\">Tema %2$s para WordPress</a> por Compete Themes"
+
+#: functions.php:21
+msgid ""
+"Hey! Sorry to interrupt, but you've been using Author for a little while "
+"now. If you're happy with this theme, could you take a minute to leave a "
+"review? <i>You won't see this notice again after closing it.</i>"
+msgstr ""
+"Oi! Desculpa a interrupção, mas você tem usado o tema Author já há algum "
+"tempo. Se você está satisfeito com o tema, poderia doar um pouco do seu "
+"tempo para deixar um comentário? <i>Essa notificação não será exibida "
+"novamente após seu fechamento.</i>"
+
+#: functions.php:63
+msgid "small"
+msgstr "pequeno"
+
+#: functions.php:64
+msgid "S"
+msgstr "S"
+
+#: functions.php:69
+msgid "regular"
+msgstr "regular"
+
+#: functions.php:70
+msgid "M"
+msgstr "M"
+
+#: functions.php:75
+msgid "large"
+msgstr "grande"
+
+#: functions.php:76
+msgid "L"
+msgstr "L"
+
+#: functions.php:81
+msgid "larger"
+msgstr "extra grande"
+
+#: functions.php:82
+msgid "XL"
+msgstr "XL"
+
+#: functions.php:91
+msgid "Primary"
+msgstr "Principal"
+
+#: functions.php:119
+msgid "Primary Sidebar"
+msgstr "Barra Lateral Principal"
+
+#: functions.php:121
+msgid "Widgets in this area will be shown in the sidebar"
+msgstr "Os widgets dessa área serão exibidos na barra lateral"
+
+#: functions.php:154
+msgid "Your comment is awaiting moderation."
+msgstr "O seu comentário está aguardando moderação."
+
+#: functions.php:182
+msgid "(optional)"
+msgstr "(opcional)"
+
+#: functions.php:201
+msgid "Website"
+msgstr "Website"
+
+#: functions.php:255 functions.php:319 inc/customizer.php:276
+msgid "Continue reading"
+msgstr "Continuar leitura"
+
+#: functions.php:569 inc/scripts.php:18
+msgid "open child menu"
+msgstr "abrir submenu"
+
+#: functions.php:692
+msgid "Customizer settings deleted."
+msgstr "Configurações de personalização deletadas."
+
+#: functions.php:705
+msgid "Featured Post"
+msgstr "Publicação Destacada"
+
+#: functions.php:786
+msgid "Scroll to the top"
+msgstr "Voltar ao início"
+
+#: functions.php:805
+msgid "Last updated on"
+msgstr "Atualizado pela última vez em"
+
+#: header.php:11
+msgid "Skip to content"
+msgstr "Ir ao conteúdo"
+
+#: header.php:24
+msgid "avatar"
+msgstr "avatar"
+
+#: header.php:35 inc/scripts.php:16
+msgid "open primary menu"
+msgstr "abrir o menu principal"
+
+#: inc/customizer.php:14
+msgid "Front Page"
+msgstr "Página Inicial"
+
+#: inc/customizer.php:52
+msgid "Avatar"
+msgstr "Avatar"
+
+#: inc/customizer.php:62
+msgid "Avatar image source"
+msgstr "Fonte da imagem do avatar"
+
+#: inc/customizer.php:66
+msgid "Gravatar uses the admin email address."
+msgstr "Gravatar usa o endereço de e-mail do administrador."
+
+#: inc/customizer.php:68 inc/customizer.php:438
+msgid "Gravatar"
+msgstr "Gravatar"
+
+#: inc/customizer.php:69 inc/customizer.php:439
+msgid "Upload an image"
+msgstr "Enviar uma imagem"
+
+#: inc/customizer.php:70 inc/customizer.php:440
+msgid "Do not display avatar"
+msgstr "Não exibir o avatar"
+
+#: inc/customizer.php:80
+msgid "Upload your avatar"
+msgstr "Enviar o seu avatar"
+
+#: inc/customizer.php:90
+msgid "Logo"
+msgstr "Logo"
+
+#: inc/customizer.php:92
+msgid "Use this instead of the avatar if you want a non-rounded logo image."
+msgstr "Usar isso como avatar se não quiser uma imagem de logo arredondada."
+
+#: inc/customizer.php:101
+msgid "Upload custom logo."
+msgstr "Enviar logo personalizado."
+
+#: inc/customizer.php:117
+msgid "Social Media Icons"
+msgstr "Ícones das Redes Sociais"
+
+#: inc/customizer.php:119
+msgid "Add the URL for each of your social profiles."
+msgstr "Adicione o endereço de cada uma das suas redes sociais."
+
+#: inc/customizer.php:132
+msgid "Email Address"
+msgstr "Email"
+
+#: inc/customizer.php:141
+msgid "Google Plus"
+msgstr "Google Plus"
+
+#: inc/customizer.php:143
+msgid "RSS"
+msgstr "RSS"
+
+#: inc/customizer.php:145
+msgid "SoundCloud"
+msgstr "SoundCloud"
+
+#: inc/customizer.php:147
+msgid "SlideShare"
+msgstr "SlideShare"
+
+#: inc/customizer.php:149
+msgid "CodePen"
+msgstr "CodePen"
+
+#: inc/customizer.php:151
+msgid "StumbleUpon"
+msgstr "StumbleUpon"
+
+#: inc/customizer.php:153
+msgid "DeviantArt"
+msgstr "DeviantArt"
+
+#: inc/customizer.php:155
+msgid "Hacker News"
+msgstr "Hacker News"
+
+#: inc/customizer.php:157
+msgid "Google Wallet"
+msgstr "Google Wallet"
+
+#: inc/customizer.php:159
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: inc/customizer.php:161
+msgid "QQ"
+msgstr "QQ"
+
+#: inc/customizer.php:163
+msgid "VK"
+msgstr "VK"
+
+#: inc/customizer.php:165
+msgid "OK.ru"
+msgstr "OK.ru"
+
+#: inc/customizer.php:167
+msgid "WeChat"
+msgstr "WeChat"
+
+#: inc/customizer.php:169
+msgid "Tencent Weibo"
+msgstr "Tencent Weibo"
+
+#: inc/customizer.php:171
+msgid "PayPal"
+msgstr "PayPal"
+
+#: inc/customizer.php:173
+msgid "Stack Overflow"
+msgstr "Stack Overflow"
+
+#: inc/customizer.php:175
+msgid "ArtStation"
+msgstr "ArtStation"
+
+#: inc/customizer.php:177
+msgid "Contact Form"
+msgstr "Formulário de Contato"
+
+#: inc/customizer.php:189
+msgid ""
+"Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn more</a>)"
+msgstr ""
+"Protocolo de link do Skype permitido (<a href=\"%s\" target=\"_blank\">saiba "
+"mais</a>)"
+
+#: inc/customizer.php:237
+msgid "Show full posts on blog?"
+msgstr "Exibir publicações completas no blog?"
+
+#: inc/customizer.php:242 inc/customizer.php:258 inc/customizer.php:334
+#: inc/customizer.php:358 inc/customizer.php:449
+msgid "Yes"
+msgstr "Sim"
+
+#: inc/customizer.php:243 inc/customizer.php:259 inc/customizer.php:335
+#: inc/customizer.php:359 inc/customizer.php:450
+msgid "No"
+msgstr "Não"
+
+#: inc/customizer.php:253
+msgid "Show link to comments after posts?"
+msgstr "Exibir links de comentários ao fim das publicações?"
+
+#: inc/customizer.php:269
+msgid "Excerpt word count"
+msgstr "Número de palavras extraídas"
+
+#: inc/customizer.php:281
+msgid "Read More link text"
+msgstr "Texto para o link Leia Mais"
+
+#: inc/customizer.php:291
+msgid "Comment Display"
+msgstr "Exibir Comentários"
+
+#: inc/customizer.php:302
+msgid "Show comments on:"
+msgstr "Mostrar comentários em:"
+
+#: inc/customizer.php:307 inc/customizer.php:424
+msgid "Posts"
+msgstr "Publicações"
+
+#: inc/customizer.php:308 inc/customizer.php:425
+msgid "Pages"
+msgstr "Páginas"
+
+#: inc/customizer.php:309 inc/customizer.php:426
+msgid "Attachments"
+msgstr "Anexos"
+
+#: inc/customizer.php:310 inc/customizer.php:427
+msgid "Do not show"
+msgstr "Não exibir"
+
+#: inc/customizer.php:319
+msgid "Scroll-to-Top Arrow"
+msgstr "Seta para Voltar ao Início"
+
+#: inc/customizer.php:329
+msgid "Display Scroll-to-top arrow?"
+msgstr "Exibir seta para Voltar ao Início?"
+
+#: inc/customizer.php:343
+msgid "Additional Options"
+msgstr "Opções Adcionais"
+
+#: inc/customizer.php:353
+msgid "Display the date each post was last updated?"
+msgstr "Mostrar a data da última atualização da publicação?"
+
+#: inc/customizer.php:379
+msgid "Custom CSS"
+msgstr "CSS personalizado"
+
+#: inc/customizer.php:390
+msgid "Add Custom CSS Here:"
+msgstr "Adicione aqui o CSS Personalizado:"
+
+#: inc/customizer.php:406
+msgid "Show"
+msgstr "Exibir"
+
+#: inc/customizer.php:407
+msgid "Hide"
+msgstr "Ocultar"
+
+#: inc/last-updated-meta-box.php:12
+msgid "Last Updated Date"
+msgstr "Data da Última Atualização"
+
+#: inc/last-updated-meta-box.php:29
+msgid "Use Customizer setting"
+msgstr "Usar Configurações de Personalização"
+
+#: inc/last-updated-meta-box.php:32
+msgid "Show the date"
+msgstr "Mostrar a data"
+
+#: inc/last-updated-meta-box.php:36
+msgid "Don't show the date"
+msgstr "Não mostrar a data"
+
+#: inc/review.php:113
+msgid "Click here to leave your review"
+msgstr "Clique aqui para deixar seu comentário"
+
+#: inc/scripts.php:17
+msgid "close primary menu"
+msgstr "fechar menu principal"
+
+#: inc/scripts.php:19
+msgid "close child menu"
+msgstr "fechar submenu"
+
+#: index.php:19
+msgid "Previous"
+msgstr "Anterior"
+
+#: index.php:20
+msgid "Next"
+msgstr "Seguinte"
+
+#: search.php:10
+msgid "%1$d search result for \"%2$s\""
+msgid_plural "%1$d search results for \"%2$s\""
+msgstr[0] "%1$d resultado da busca por \"%2$s\""
+msgstr[1] "%1$d resultados da busca por \"%2$s\""
+
+#: search.php:12
+msgid "No search results for \"%s\""
+msgstr "Nenhum resultado encontrado para a busca por \"%s\""
+
+#: search.php:37
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr "Não consegue encontrar o que procura?  Tende melhorar a sua pesquisa:"
+
+#: searchform.php:3
+msgid "Search"
+msgstr "Procurar"
+
+#: searchform.php:5
+msgid "Search for:"
+msgstr "Procurar por:"
+
+#: searchform.php:6
+msgid "Go"
+msgstr "Procurar"
+
+#: sidebar-primary.php:3
+msgid "Sidebar"
+msgstr "Barra Lateral"
+
+#: theme-options.php:5 theme-options.php:6 theme-options.php:19
+msgid "%s Dashboard"
+msgstr "Painel de controle de %s"
+
+#. Description of the plugin/theme
+msgid ""
+"Author is designed for publishers who want readers. That's why Author is "
+"fast, responsive, accessibility-ready, and optimally designed for reading. "
+"All scripts and stylesheets are minified, concatenated, and conditionally "
+"loaded to maximize performance. The layout adapts fluidly to all screen "
+"sizes to enhance usability. As one of few accessibility-ready themes, it "
+"performs well for users with wide ranges of disabilities. Based on the "
+"ancient Van de Graaf canon, Author features a layout that promotes "
+"readability. Use Author to create a simple blog, magazine, or news website. "
+"The simple and minimalist design works great for gaming, business, fashion, "
+"music, food, travel, and photography niches. Now with complete WooCommerce "
+"support for eCommerce stores and fully compatible with the new Gutenberg "
+"post editor. Preview Author now on desktop, tablets, and mobile devices with "
+"the interactive live demo: https://www.competethemes.com/demos/?theme=author"
+msgstr ""
+"Author foi desenvolvido para editores que desejam leitores. É por isso que "
+"Author é rápido, responsivo, pronto para acessibilidade e ideal para a "
+"leitura. Todos os scripts e folhas de estilo são minificados, concatenados e "
+"carregados condicionalmente para maximizar o desempenho. O layout se adapta "
+"fluidamente a todos os tamanhos de tela para aprimorar a usabilidade. Como "
+"um dos poucos temas prontos para acessibilidade, apresenta bom desempenho "
+"para usuários com diversas faixas de deficiências. Baseado no antigo cânone "
+"Van de Graaf, o Author apresenta um layout que promove a legibilidade. Use o "
+"Autor para criar um blog, revista ou site de notícias simples. O design "
+"simples e minimalista funciona muito bem para nichos de jogos, negócios, "
+"moda, música, comida, viagens e fotografia. Agora, com suporte completo ao "
+"WooCommerce para lojas de comércio eletrônico e totalmente compatível com o "
+"novo editor de postagem Gutenberg. Pré-visualize Author agora em "
+"computadores, tablets e dispositivos móveis com a demonstração ao vivo "
+"interativa: https://www.competethemes.com/demos/?theme=author"
+
+#: comments.php:21 comments.php:41 comments.php:63 content/comments-link.php:10
+#: content/comments-link.php:14
+msgctxt "noun: 5 comments"
+msgid "% Comments"
+msgstr "% Comentários"
+
+#: content/archive-header.php:4
+msgctxt "noun: Site Title' Posts"
+msgid "Posts"
+msgstr "Publicações"
+
+#: content/post-categories.php:9
+msgctxt "Published in post category"
+msgid "Published in"
+msgstr "Publicado em"
+
+#: content/post-categories.php:12
+msgctxt "View all posts in post category"
+msgid "View all posts in %s"
+msgstr "Visualizar todas as publicações de %s"
+
+#: content/post-meta.php:6
+msgctxt "This blog post was published by some author on some date"
+msgid "Published by %1$s on %2$s"
+msgstr "Publicado por %1$s em %2$s"
+
+#: functions.php:165
+msgctxt "verb: reply to this comment"
+msgid "Reply"
+msgstr "Responder"
+
+#: functions.php:169
+msgctxt "verb: edit this comment"
+msgid "Edit"
+msgstr "Editar"
+
+#: functions.php:187
+msgctxt "noun"
+msgid "Name"
+msgstr "Nome"
+
+#: functions.php:194
+msgctxt "noun"
+msgid "Email"
+msgstr "Email"
+
+#: functions.php:223
+msgctxt "noun"
+msgid "Comment"
+msgstr "Comentário"
+
+#: functions.php:482
+msgctxt "noun"
+msgid "email"
+msgstr "email"
+
+#: inc/customizer.php:227
+msgctxt "noun: the blog section"
+msgid "Blog"
+msgstr "Blog"
