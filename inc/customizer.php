@@ -138,6 +138,8 @@ function ct_author_add_customizer_content( $wp_customize ) {
 
 			if ( $social_site == 'rss' ) {
 				$label = __('RSS', 'author');
+			} elseif ( $social_site == 'researchgate' ) {
+				$label = __('ResearchGate', 'author');
 			} elseif ( $social_site == 'soundcloud' ) {
 				$label = __('SoundCloud', 'author');
 			} elseif ( $social_site == 'slideshare' ) {
