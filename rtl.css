@@ -273,6 +273,13 @@ th {
   border-color: #D9D9D9;
 }
 
+.wp-block-group.alignwide,
+.wp-block-group .alignwide,
+.wp-block-group.alignfull,
+.wp-block-group .alignfull {
+  line-height: 1.5;
+}
+
 /* Images */
 .alignright,
 .alignleft,
