@@ -119,7 +119,7 @@ jQuery(document).ready(function($){
     toggleDropdown.on('click', openDropdownMenu);
     toggleDropdown.on('click', adjustSidebarHeight);
 
-    $(window).bind("load", function() {
+    $(document).ready(function() {
         setMainMinHeight();
     });
 
@@ -313,17 +313,24 @@ jQuery(document).ready(function($){
     function setMainMinHeight() {
         // refresh
         main.css('min-height', '');
+
         // height is equal to overflow container's height
         var height = overflowContainer.height();
+        
         // if header image, subtract its height b/c its in
         // .overflow-container, but not in .main
         if ( headerImage.length > 0 ) {
-            // header image technically uses padding-bottom not height, so use 'a' element
-            height = height - headerImage.children('a').height();
+            height = height - headerImage.outerHeight();
         }
+        sidebarHeight = sidebar.outerHeight();
+
+        if ( sidebarHeight > height ) {
+            height = sidebarHeight;
+        }
+        
         // add the new minimum height
         if ( height > window.innerHeight ) {
-            main.css('min-height', height + 'px');
+            main.css('min-height', height.toString() + 'px');
         }
     }
 
