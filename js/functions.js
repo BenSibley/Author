@@ -30,7 +30,6 @@ jQuery(document).ready(function($){
 
     $('#toggle-navigation').on('click', openPrimaryMenu);
     toggleDropdown.on('click', openDropdownMenu);
-    // toggleDropdown.on('click', adjustSidebarHeight);
 
     $(document).ready(function() {
         setMainMinHeight();
