@@ -30,7 +30,7 @@ jQuery(document).ready(function($){
 
     $('#toggle-navigation').on('click', openPrimaryMenu);
     toggleDropdown.on('click', openDropdownMenu);
-    toggleDropdown.on('click', adjustSidebarHeight);
+    // toggleDropdown.on('click', adjustSidebarHeight);
 
     $(document).ready(function() {
         setMainMinHeight();
@@ -134,7 +134,9 @@ jQuery(document).ready(function($){
             $(this).children('span').text(ct_author_objectL10n.closeChildMenu);
             $(this).attr('aria-expanded', 'true');
             short = false; // return to false to be measured again (may not be shorter than window now)
+            
         }
+        adjustSidebarHeight($(this));
         setMainMinHeight();
     }
 
@@ -169,7 +171,7 @@ jQuery(document).ready(function($){
     }
 
     // move sidebar when dropdown menu items opened
-    function adjustSidebarHeight() {
+    function adjustSidebarHeight(button) {
 
         var windowWidth = window.innerWidth;
 
@@ -177,12 +179,13 @@ jQuery(document).ready(function($){
         if( windowWidth > 549 && windowWidth < 950 ) {
 
             // get the submenu
-            var list       = $(this).next();
+            var list       = button.next();
             var listHeight = 0;
 
             // get the height of all the child li elements combined (because ul has max-height: 0)
             list.children().each(function(){
-                listHeight = listHeight + $(this).height();
+                // Using 36 instead of getting height because list items are display: none when closing menu
+                listHeight = listHeight + 36;
             });
 
             // get the current top value for the sidebar
@@ -197,7 +200,7 @@ jQuery(document).ready(function($){
             mainHeight = parseInt(mainHeight);
 
             // get the li containing the toggle button
-            var menuItem = $(this).parent();
+            var menuItem = button.parent();
 
             // dropdown is being opened (increase sidebar top value)
             if( menuItem.hasClass('open') ) {
@@ -240,7 +243,7 @@ jQuery(document).ready(function($){
         if ( sidebarHeight > height ) {
             height = sidebarHeight;
         }
-        
+
         // add the new minimum height
         if ( height > window.innerHeight ) {
             main.css('min-height', height.toString() + 'px');
