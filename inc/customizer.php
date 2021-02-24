@@ -174,6 +174,10 @@ function ct_author_add_customizer_content( $wp_customize ) {
 				$label = __('ArtStation', 'author');
 			} elseif ( $social_site == 'email-form' ) {
 				$label = __('Contact Form', 'author');
+			} elseif ( $social_site == 'diaspora' ) {
+				$label = __('diaspora*', 'author');
+			} elseif ( $social_site == 'imdb' ) {
+				$label = __('IMDB', 'author');
 			}
 
 			if ( $social_site == 'skype' ) {
