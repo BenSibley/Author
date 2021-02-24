@@ -419,7 +419,10 @@ if ( ! function_exists( 'ct_author_social_array' ) ) {
 			'xing'          => 'author_xing_profile',
 			'yahoo'         => 'author_yahoo_profile',
 			'yelp'          => 'author_yelp_profile',
-			'500px'         => 'author_500px_profile'
+			'500px'         => 'author_500px_profile',
+			'social_icon_custom_1' => 'social_icon_custom_1_profile',
+			'social_icon_custom_2' => 'social_icon_custom_2_profile',
+			'social_icon_custom_3' => 'social_icon_custom_3_profile'
 		);
 
 		return apply_filters( 'ct_author_social_array_filter', $social_sites );
@@ -499,6 +502,14 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 							<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
 							   href="<?php echo esc_url( 'tel:' . get_theme_mod( $active_site ), array( 'tel' ) ); ?>">
 								<i class="<?php echo esc_attr( $class ); ?>"></i>
+								<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
+							</a>
+						</li>
+					<?php } elseif ( $active_site == 'social_icon_custom_1' || $active_site == 'social_icon_custom_2' || $active_site == 'social_icon_custom_3' ) { ?>
+						<li>
+							<a class="custom-icon" target="_blank"
+							href="<?php echo esc_url( get_theme_mod( $active_site ) ); ?>">
+							<img class="icon" src="<?php echo esc_url(get_theme_mod($active_site .'_image')); ?>" style="width: <?php echo absint(get_theme_mod($active_site . '_size')); ?>px;" />
 								<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
 							</a>
 						</li>

@@ -51,6 +51,8 @@
     margin-right: 8px;
   }
   a {
+    display: inline-block;
+    vertical-align: middle;
     color: $color-gray-80;
     font-size: 1.5em;
     line-height: 1;
@@ -61,6 +63,15 @@
     &:active,
     &:focus {
       color: $color-gray-80;
+    }
+    &.custom-icon {
+
+      img {
+        line-height: 0;
+        margin: 0;
+        width: 30px;
+        height: auto;
+      }
     }
   }
 }
