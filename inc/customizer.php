@@ -217,6 +217,20 @@ function ct_author_add_customizer_content( $wp_customize ) {
 					'section'  => 'ct_author_social_media_icons',
 					'priority' => $priority
 				) );
+
+				if ( $social_site == 'twitter' ) {
+					// setting
+					$wp_customize->add_setting( 'twitter_verified', array(
+						'sanitize_callback' => 'ct_author_sanitize_checkbox'
+					) );
+					// control
+					$wp_customize->add_control( 'twitter_verified', array(
+						'type'     => 'checkbox',
+						'label'    => __('Display verified checkmark?'),
+						'section'  => 'ct_author_social_media_icons',
+						'priority' => $priority
+					) );
+				}
 			}
 		}
 		// increment the priority for next site
@@ -555,6 +569,10 @@ function ct_author_sanitize_text( $input ) {
 
 function ct_author_sanitize_skype( $input ) {
 	return esc_url_raw( $input, array( 'http', 'https', 'skype' ) );
+}
+
+function ct_author_sanitize_checkbox( $input ) {
+	return ( ( isset( $input ) && true == $input ) ? true : false );
 }
 
 function ct_author_sanitize_css( $css ) {

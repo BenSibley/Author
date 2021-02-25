@@ -56,13 +56,16 @@
     color: $color-gray-80;
     font-size: 1.5em;
     line-height: 1;
+    text-decoration: none;
 
     &:link,
-    &:visited,
+    &:visited {
+      color: $color-gray-80;
+    }
     &:hover,
     &:active,
     &:focus {
-      color: $color-gray-80;
+      color: #fff;
     }
     &.custom-icon {
 
@@ -72,6 +75,14 @@
         width: 30px;
         height: auto;
       }
+    }
+    &.twitter {
+      position: relative;
+    }
+    .verified {
+      position: absolute;
+      bottom: -4px;
+      right: -6px;
     }
   }
 }

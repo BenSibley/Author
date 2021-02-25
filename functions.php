@@ -522,6 +522,9 @@ if ( ! function_exists( 'ct_author_social_icons_output' ) ) {
 							   href="<?php echo esc_url( get_theme_mod( $active_site ) ); ?>">
 								<i class="<?php echo esc_attr( $class ); ?>"></i>
 								<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
+								<?php if ( $active_site == 'twitter' && get_theme_mod('twitter_verified') == true ) { ?>
+									<img class="verified" src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/verified.svg'; ?>" width="19px" height="19px" />
+								<?php } ?>
 							</a>
 						</li>
 						<?php
