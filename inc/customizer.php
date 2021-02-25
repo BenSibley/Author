@@ -81,6 +81,22 @@ function ct_author_add_customizer_content( $wp_customize ) {
 			'settings' => 'avatar'
 		)
 	) );
+	// setting
+	$wp_customize->add_setting( 'comment_avatar', array(
+		'default'           => 'yes',
+		'sanitize_callback' => 'ct_author_sanitize_yes_no_settings'
+	) );
+	// control
+	$wp_customize->add_control( 'comment_avatar', array(
+		'label'       => __( 'Would you like to use this avatar in your comments?', 'author' ),
+		'section'     => 'ct_author_avatar',
+		'settings'    => 'comment_avatar',
+		'type'        => 'radio',
+		'choices'     => array(
+			'yes' => __( 'Yes', 'author' ),
+			'no'  => __( 'No', 'author' )
+		)
+	) );
 
 	/***** Logo Upload *****/
 
