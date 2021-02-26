@@ -242,7 +242,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 					// control
 					$wp_customize->add_control( 'twitter_verified', array(
 						'type'     => 'checkbox',
-						'label'    => __('Display verified checkmark?'),
+						'label'    => __('Display verified checkmark?', 'author'),
 						'section'  => 'ct_author_social_media_icons',
 						'priority' => $priority
 					) );
