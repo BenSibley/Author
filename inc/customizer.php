@@ -88,7 +88,7 @@ function ct_author_add_customizer_content( $wp_customize ) {
 	) );
 	// control
 	$wp_customize->add_control( 'comment_avatar', array(
-		'label'       => __( 'Would you like to use this avatar in your comments?', 'author' ),
+		'label'       => __( 'Would you like to use the uploaded avatar for your post comments?', 'author' ),
 		'section'     => 'ct_author_avatar',
 		'settings'    => 'comment_avatar',
 		'type'        => 'radio',
