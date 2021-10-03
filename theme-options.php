@@ -185,7 +185,7 @@ function ct_author_options_content() {
 			</div>
 			<div class="dashboard-widget">
 				<h4>Reset Customizer Settings</h4>
-				<p><b>Warning:</b> Clicking this buttin will erase the Author theme's current settings in the Customizer.</p>
+				<p><b>Warning:</b> Clicking this button will erase the Author theme's current settings in the Customizer.</p>
 				<form method="post">
 					<input type="hidden" name="author_reset_customizer" value="author_reset_customizer_settings"/>
 					<p>
