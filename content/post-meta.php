@@ -8,9 +8,9 @@
     if ($show_author != 'no' && $show_date != 'no') {
         printf(_x('Published by %1$s on %2$s', 'This blog post was published by some author on some date', 'author'), $author, $date);
     } elseif ($show_author != 'no') {
-        printf(_x('Published by %1$s', 'This blog post was published by X author', 'author'), $author, );
+        printf(_x('Published by %1$s', 'This blog post was published by X author', 'author'), $author);
     } elseif ($show_date != 'no') {
-        printf(_x('Published on %1$s', 'This blog post was published on X date', 'author'), $date, );
+        printf(_x('Published on %1$s', 'This blog post was published on X date', 'author'), $date);
     }
     ?>
 </span>
