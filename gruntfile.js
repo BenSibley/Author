@@ -71,7 +71,7 @@ module.exports = function(grunt) {
                     swapLtrRtlInUrl: false // replace 'ltr' with 'rtl'
                 },
                 src: ['style.css'],
-                dest: 'rtl.css'
+                dest: 'style-rtl.css'
             }
         },
         cssmin: {
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
                     'style.min.css': ['style.css'],
                     'styles/customizer.min.css': ['styles/customizer.css'],
                     'styles/admin.min.css': ['styles/admin.css'],
-                    'rtl.min.css': ['rtl.css']
+                    'style-rtl.min.css': ['style-rtl.css']
                 }
             }
         },

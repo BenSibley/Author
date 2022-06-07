@@ -22,7 +22,12 @@ function ct_author_load_scripts_styles()
 
     wp_enqueue_style('ct-author-font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/all.min.css');
 
-    wp_enqueue_style('ct-author-style', get_stylesheet_uri());
+    if (is_rtl()) {
+        wp_enqueue_style('ct-author-rtl-style', get_template_directory_uri() . '/style-rtl.min.css');
+    } else {
+        wp_enqueue_style('ct-author-style', get_stylesheet_uri());
+    }
+    
 
     // enqueue comment-reply script only on posts & pages with comments open ( included in WP core )
     if (is_singular() && comments_open() && get_option('thread_comments')) {
