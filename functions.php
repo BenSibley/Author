@@ -22,7 +22,7 @@ function ct_author_register_required_plugins()
             'required'  => false,
         ),
     );
-    
+
     $config = array(
         'id'           => 'ct-author',
         'default_path' => '',
@@ -153,7 +153,6 @@ add_action('admin_init', 'ct_author_add_editor_styles');
 if (! function_exists(('ct_author_register_widget_areas'))) {
     function ct_author_register_widget_areas()
     {
-
         // after post content
         register_sidebar(array(
             'name'          => esc_html__('Primary Sidebar', 'author'),
@@ -250,14 +249,13 @@ add_filter('comment_form_default_fields', 'ct_author_update_fields');
 if (! function_exists('ct_author_update_comment_field')) {
     function ct_author_update_comment_field($comment_field)
     {
-
         // don't filter the WooCommerce review form
         if (function_exists('is_woocommerce')) {
             if (is_woocommerce()) {
                 return $comment_field;
             }
         }
-        
+
         $comment_field =
             '<p class="comment-form-comment">
 	            <label for="comment">' . _x("Comment", "noun", "author") . '</label>
@@ -506,8 +504,7 @@ if (! function_exists('ct_author_social_icons_output')) {
             echo "<div class='social-media-icons'><ul>";
 
             foreach ($active_sites as $key => $active_site) {
-
-                    // get the square or plain class
+                // get the square or plain class
                 if (in_array($active_site, $square_icons)) {
                     $class = 'fab fa-' . $active_site . '-square';
                 } elseif ($active_site == 'rss') {
@@ -572,7 +569,7 @@ if (! function_exists('ct_author_social_icons_output')) {
 							</a>
 						</li>
 						<?php
-                    }
+					}
             }
             echo "</ul></div>";
         }
@@ -806,7 +803,6 @@ if (! function_exists(('ct_author_infinite_scroll_render'))) {
 if (! function_exists('ct_author_get_content_template')) {
     function ct_author_get_content_template()
     {
-
         // Get bbpress.php for all bbpress pages
         if (function_exists('is_bbpress')) {
             if (is_bbpress()) {
@@ -856,7 +852,7 @@ add_filter('get_the_archive_description', 'ct_author_modify_archive_descriptions
 function ct_author_scroll_to_top_arrow()
 {
     $setting = get_theme_mod('scroll_to_top');
-    
+
     if ($setting == 'yes') {
         echo '<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">'. __('Scroll to the top', 'author') .'</span><i class="fas fa-arrow-up"></i></button>';
     }
@@ -876,7 +872,7 @@ function ct_author_output_last_updated_date()
         if (
             ($updated_customizer == 'yes' && ($updated_post != 'no'))
             || $updated_post == 'yes'
-            ) {
+        ) {
             echo '<p class="last-updated">'. esc_html__("Last updated on", "author") . ' ' . get_the_modified_date() . ' </p>';
         }
     }
@@ -898,8 +894,7 @@ add_action('elementor/theme/register_locations', 'ct_author_register_elementor_l
 if (! function_exists(('ct_author_pagination'))) {
     function ct_author_pagination()
     {
-
-    // Never output pagination on bbpress pages
+        // Never output pagination on bbpress pages
         if (function_exists('is_bbpress')) {
             if (is_bbpress()) {
                 return;
