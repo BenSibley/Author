@@ -560,7 +560,10 @@ if (! function_exists('ct_author_social_icons_output')) {
 					<?php } else { ?>
 						<li>
 							<a class="<?php echo esc_attr($active_site); ?>" target="_blank"
-							   href="<?php echo esc_url(get_theme_mod($active_site)); ?>">
+							   href="<?php echo esc_url(get_theme_mod($active_site)); ?>" 
+                               <?php if ($active_site == 'mastodon') {
+                                   echo 'rel="me"';
+                               } ?>>
 								<i class="<?php echo esc_attr($class); ?>"></i>
 								<span class="screen-reader-text"><?php echo esc_html($active_site);  ?></span>
 								<?php if ($active_site == 'twitter' && get_theme_mod('twitter_verified') == true) { ?>
