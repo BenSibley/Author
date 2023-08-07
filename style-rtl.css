@@ -1381,6 +1381,18 @@ a img {
 .comment-footer {
   margin-top: 1.5em;
 }
+.comment-footer .comment-link a {
+  font-size: 1em;
+  text-decoration: none;
+  color: #27292B;
+}
+.comment-footer .comment-link a:link, .comment-footer .comment-link a:visited, .comment-footer .comment-link a:active, .comment-footer .comment-link a:hover, .comment-footer .comment-link a:focus {
+  color: #27292B;
+}
+.comment-footer .comment-link a:active, .comment-footer .comment-link a:hover, .comment-footer .comment-link a:focus {
+  text-decoration: underline;
+}
+
 .comment-reply-link,
 .comment-edit-link {
   margin-right: 2px;
