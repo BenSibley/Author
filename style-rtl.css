@@ -1392,6 +1392,9 @@ a img {
 .comment-footer .comment-link a:active, .comment-footer .comment-link a:hover, .comment-footer .comment-link a:focus {
   text-decoration: underline;
 }
+.comment-footer .comment-link a span {
+  font-size: 1em;
+}
 
 .comment-reply-link,
 .comment-edit-link {

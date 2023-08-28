@@ -198,8 +198,11 @@ if (! function_exists('ct_author_customize_comments')) {
             // if not a pingback
             if ($comment_type !== 'pingback') { ?>
 				<div class="comment-footer">
-                    <span class="comment-link"><a href="<?php echo esc_url(get_comment_link()); ?>">#</a></span>
-					<span class="comment-date"><?php comment_date(); ?></span>
+                    <span class="comment-link">
+                        <a href="<?php echo esc_url(get_comment_link()); ?>">
+                            # <span class="comment-date"><?php comment_date(); ?></span>
+                        </a>
+                    </span>
 					<?php comment_reply_link(array_merge($args, array(
                         'reply_text' => _x('Reply', 'verb: reply to this comment', 'author'),
                         'depth'      => $depth,

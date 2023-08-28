@@ -102,6 +102,9 @@
     &:focus {
       text-decoration: underline;
     }
+    span {
+      font-size: 1em;
+    }
   }
 }
 .comment-reply-link,
