@@ -404,12 +404,14 @@ if (! function_exists('ct_author_social_array')) {
             'twitter'       => 'author_twitter_profile',
             'facebook'      => 'author_facebook_profile',
             'instagram'     => 'author_instagram_profile',
+            'tiktok'        => 'author_tiktok_profile',
             'linkedin'      => 'author_linkedin_profile',
             'pinterest'     => 'author_pinterest_profile',
+            'threads'       => 'author_threads_profile',
             'youtube'       => 'author_youtube_profile',
             'rss'           => 'author_rss_profile',
             'email'         => 'author_email_profile',
-            'phone'    			=> 'author_phone_profile',
+            'phone'    		=> 'author_phone_profile',
             'email-form'    => 'author_email_form_profile',
             'amazon'        => 'author_amazon_profile',
             'artstation'    => 'author_artstation_profile',
@@ -446,6 +448,7 @@ if (! function_exists('ct_author_social_array')) {
             'ravelry'       => 'author_ravelry_profile',
             'reddit'        => 'author_reddit_profile',
             'researchgate'  => 'author_researchgate_profile',
+            'signal-messenger' => 'author_signal_messenger_profile',
             'skype'         => 'author_skype_profile',
             'slack'         => 'author_slack_profile',
             'slideshare'    => 'author_slideshare_profile',
@@ -541,6 +544,14 @@ if (! function_exists('ct_author_social_icons_output')) {
 						<li>
 							<a class="<?php echo esc_attr($active_site); ?>" target="_blank"
 							   href="<?php echo esc_url(get_theme_mod($active_site), array( 'http', 'https', 'skype' )); ?>">
+								<i class="<?php echo esc_attr($class); ?>"></i>
+								<span class="screen-reader-text"><?php echo esc_html($active_site);  ?></span>
+							</a>
+						</li>
+                    <?php } elseif ($active_site == 'signal-messenger') { ?>
+						<li>
+							<a class="<?php echo esc_attr($active_site); ?>" target="_blank"
+							   href="<?php echo esc_url(get_theme_mod($active_site), array( 'http', 'https', 'sgnl' )); ?>">
 								<i class="<?php echo esc_attr($class); ?>"></i>
 								<span class="screen-reader-text"><?php echo esc_html($active_site);  ?></span>
 							</a>
