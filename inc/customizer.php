@@ -200,6 +200,8 @@ function ct_author_add_customizer_content($wp_customize)
                 $label = __('IMDB', 'author');
             } elseif ($social_site == 'signal-messenger') {
                 $label = __('Signal', 'author');
+            } elseif ($social_site == 'twitter') {
+                $label = __('X (Twitter)', 'author');
             }
 
             if ($social_site == 'skype') {

@@ -474,7 +474,6 @@ if (! function_exists('ct_author_social_icons_output')) {
     {
         $social_sites = ct_author_social_array();
         $square_icons = array(
-            'twitter',
             'vimeo',
             'youtube',
             'pinterest',
@@ -514,7 +513,9 @@ if (! function_exists('ct_author_social_icons_output')) {
                     $class = 'fab fa-get-pocket';
                 } elseif ($active_site == 'phone') {
                     $class = 'fas fa-phone';
-                } else {
+                } elseif ($active_site == 'twitter') {
+                    $class = 'fab fa-square-x-twitter';
+                }  else {
                     $class = 'fab fa-' . $active_site;
                 }
 
