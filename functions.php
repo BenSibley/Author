@@ -388,6 +388,7 @@ if (! function_exists('ct_author_social_array')) {
     {
         $social_sites = array(
             'twitter'       => 'author_twitter_profile',
+            'bluesky'       => 'author_bluesky_profile',
             'facebook'      => 'author_facebook_profile',
             'instagram'     => 'author_instagram_profile',
             'tiktok'        => 'author_tiktok_profile',
