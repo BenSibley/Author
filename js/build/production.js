@@ -316,23 +316,26 @@ jQuery(document).ready(function($){
         // refresh
         main.css('min-height', '');
 
-        // height is equal to overflow container's height
-        var height = overflowContainer.height();
-        
-        // if header image, subtract its height b/c its in
-        // .overflow-container, but not in .main
-        if ( headerImage.length > 0 ) {
-            height = height - headerImage.outerHeight();
-        }
-        sidebarHeight = sidebar.outerHeight();
+        if( windowWidth > 549) {
 
-        if ( sidebarHeight > height ) {
-            height = sidebarHeight;
-        }
+            // height is equal to overflow container's height
+            var height = overflowContainer.height();
+            
+            // if header image, subtract its height b/c its in
+            // .overflow-container, but not in .main
+            if ( headerImage.length > 0 ) {
+                height = height - headerImage.outerHeight();
+            }
+            sidebarHeight = sidebar.outerHeight();
 
-        // add the new minimum height
-        if ( height > window.innerHeight ) {
-            main.css('min-height', height.toString() + 'px');
+            if ( sidebarHeight > height ) {
+                height = sidebarHeight;
+            }
+
+            // add the new minimum height
+            if ( height > window.innerHeight ) {
+                main.css('min-height', height.toString() + 'px');
+            }
         }
     }
 
