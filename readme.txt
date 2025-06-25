@@ -3,7 +3,7 @@ Contributors: bensibley
 Tags: one-column, two-columns, left-sidebar, accessibility-ready, custom-logo, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, news
 Requires at least: 4.5
 Tested up to: 6.8
-Stable tag: 1.55
+Stable tag: 1.56
 
 Author is designed for publishers who want readers.
 
