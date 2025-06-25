@@ -33,6 +33,7 @@ jQuery(document).ready(function($){
 
     $(document).ready(function() {
         setMainMinHeight();
+        adjustSidebarHeight(false);
     });
 
     $(window).on( 'resize', function(){
@@ -172,6 +173,9 @@ jQuery(document).ready(function($){
     // move sidebar when dropdown menu items opened
     function adjustSidebarHeight(button) {
 
+        if (button == false) {
+            button = $('.menu-primary-items .menu-item-has-children.open > button');
+        }
         var windowWidth = window.innerWidth;
 
         // if at width when menu is absolutely positioned
