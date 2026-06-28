@@ -355,7 +355,10 @@ function ct_author_update_yoast_og_description($ogdesc)
     if (empty($read_more_text)) {
         $read_more_text = esc_html__('Continue reading', 'author');
     }
-    $ogdesc = substr($ogdesc, 0, strpos($ogdesc, $read_more_text));
+    $read_more_pos = strpos($ogdesc, $read_more_text);
+    if ($read_more_pos !== false) {
+        $ogdesc = substr($ogdesc, 0, strpos($ogdesc, $read_more_text));
+    }
 
     return $ogdesc;
 }
