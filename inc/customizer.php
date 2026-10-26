@@ -202,6 +202,8 @@ function ct_author_add_customizer_content($wp_customize)
                 $label = __('Signal', 'author');
             } elseif ($social_site == 'twitter') {
                 $label = __('X (Twitter)', 'author');
+            } elseif ($social_site == 'tiktok') {
+                $label = __('TikTok', 'author');
             }
 
             if ($social_site == 'skype') {
