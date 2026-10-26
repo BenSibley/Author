@@ -19,12 +19,14 @@ function ct_author_register_recommended_plugins()
             array(
                 'name'        => 'Independent Analytics',
                 'slug'        => 'independent-analytics',
-                'description' => __('Simple, privacy-friendly visitor stats right in your WordPress dashboard. A Google Analytics alternative.', 'author'),
+                'description' => __('a simple, privacy-friendly alternative to Google Analytics.', 'author'),
+                'url'         => 'https://independentwp.com',
             ),
             array(
                 'name'        => 'Resolver',
                 'slug'        => 'resolver-ai-chatbot',
-                'description' => __('An AI chatbot that answers your visitors\' questions using your site\'s content.', 'author'),
+                'description' => __('an AI-powered chatbot that trains on your website\'s content in seconds and answers visitor questions intelligently.', 'author'),
+                'url'         => 'https://resolverchatbot.com',
             ),
         ),
     ));
