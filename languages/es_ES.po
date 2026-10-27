@@ -711,13 +711,13 @@ msgstr "Blog"
 #~ msgstr "Ir al Centro de Soporte"
 
 #~ msgid "WordPress Resources"
-#~ msgstr "Recursos de Wordpress"
+#~ msgstr "Recursos de WordPress"
 
 #~ msgid ""
 #~ "Save time and money searching for WordPress products by following our "
 #~ "recommendations"
 #~ msgstr ""
-#~ "Ahorra tiempo y dinero buscando productos para Wordpress siguiendo "
+#~ "Ahorra tiempo y dinero buscando productos para WordPress siguiendo "
 #~ "nuestras recomendaciones"
 
 #~ msgid "View Resources"

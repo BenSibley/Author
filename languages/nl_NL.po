@@ -473,14 +473,14 @@ msgstr "Bekijk volledige lijst van mogelijkheden"
 
 #: theme-options.php:45
 msgid "WordPress Resources"
-msgstr "Wordpress Bronnen"
+msgstr "WordPress Bronnen"
 
 #: theme-options.php:46
 msgid ""
 "Save time and money searching for WordPress products by following our "
 "recommendations"
 msgstr ""
-"Bespaar tijd en geld op het zoeken naar Wordpressproducten door onze "
+"Bespaar tijd en geld op het zoeken naar WordPress-producten door onze "
 "aanbevelingen te volgen"
 
 #: theme-options.php:48

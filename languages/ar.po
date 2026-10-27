@@ -475,7 +475,7 @@ msgstr "اترك تعليقا"
 #: theme-options.php:63
 msgid "Help others find Author by leaving a review on wordpress.org."
 msgstr ""
-"ساعد الآخرين ليجدوا قالب Author وذلك عند كتابتك تعليقا في موقع Wordpress.org."
+"ساعد الآخرين ليجدوا قالب Author وذلك عند كتابتك تعليقا في موقع WordPress.org."
 
 #: theme-options.php:67 theme-options.php:75
 msgid "Reset Customizer Settings"
