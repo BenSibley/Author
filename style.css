@@ -88,8 +88,6 @@ textarea, .wp-caption-text,
 
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -528,7 +526,8 @@ a img {
   }
 }
 .main-sidebar {
-  transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
   position: relative;
   padding: 1.5em 7.4074%;
   background: #27292B;
@@ -754,7 +753,8 @@ a img {
   .title-container .container {
     float: none;
     top: auto;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
     margin-bottom: 0.75em;
   }
   .site-title img {
@@ -883,7 +883,8 @@ a img {
 .menu-primary-items .page_item_has_children.open > button,
 .menu-unset > ul .menu-item-has-children.open > button,
 .menu-unset > ul .page_item_has_children.open > button {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .menu-primary-items .menu-item-has-children.open > ul,
 .menu-primary-items .page_item_has_children.open > ul,
@@ -965,7 +966,8 @@ a img {
     padding: 1.5em 7.4074%;
   }
   .open ~ .main {
-    transform: translateX(320px);
+    -webkit-transform: translateX(320px);
+            transform: translateX(320px);
   }
   .open ~ .main:after {
     content: "";
@@ -1020,7 +1022,8 @@ a img {
   left: 0;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .featured-image > img.no-object-fit,
 .featured-image > a > img.no-object-fit {
@@ -1033,7 +1036,8 @@ a img {
   top: 50%;
   right: 50%;
   left: auto;
-  transform: translateX(50%) translateY(-50%);
+  -webkit-transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
 }
 .featured-image .ccfic {
   position: absolute;
@@ -1745,21 +1749,27 @@ a img {
   color: #fff;
   padding: 12px 0;
   width: 60px;
+  transition: background 0.2s, -webkit-transform 0.3s;
   transition: background 0.2s, transform 0.3s;
+  transition: background 0.2s, transform 0.3s, -webkit-transform 0.3s;
 }
 .scroll-to-top.visible {
-  transform: translateY(-45px);
+  -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
 }
 .scroll-to-top:hover {
   cursor: pointer;
   background: #27292B;
 }
 .scroll-to-top:hover i {
-  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
 }
 .scroll-to-top i {
   font-size: 21px;
+  transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 @media all and (min-width: 59.375em) {
@@ -2183,4 +2193,3 @@ If you want to make CSS edits, use the "Custom CSS" section in the Customizer in
 If you want more information about customizing Author with CSS, check out this guide: https://www.competethemes.com/help/custom-css-author/
 
 */
-/*# sourceMappingURL=style.css.map */
