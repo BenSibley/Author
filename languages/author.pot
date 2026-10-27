@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Author 1.57\n"
+"Project-Id-Version: Author 1.58\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/author\n"
-"POT-Creation-Date: 2026-10-27 12:33:19+00:00\n"
+"POT-Creation-Date: 2026-10-27 12:37:47+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
